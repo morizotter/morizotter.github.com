@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-02T01:26:11+09:00</updated>
+  <updated>2012-07-02T02:32:02+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[backup to bitbucket]]></title>
+    <link href="http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket/"/>
+    <updated>2012-07-02T02:24:00+09:00</updated>
+    <id>http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket</id>
+    <content type="html"><![CDATA[<p><a href="http://tokkonopapa.github.com/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで</a>を参考にしてoctopressディレクトリをbitbucketのリポジトリに追加してみました。あとついでにoctopressの更新も試してみました。入れたばかりだからまぁ更新は無かったんだけれど。本当にわかりやすくて助かりました！octopressディレクトリをpushしてるんですが、どこにpushしてるかもわからず、これじゃremoteで管理できないどうしようという状態だったので！</p>
+
+<p>最初はremoteの登録がいまいちよくわからず、push対象を追加してよいのか！？などと立ち止まっていたんですが、おそらくこれ、pushするときに登録してあるremoteのどこにpushするか指定してるんですね。<code>push -u bitbucket source</code>て感じで。で、一度指定したら次回からは<code>push</code>のみで同じところにpushすると。ちなみに、この場合のbitbucketはremote登録先の名前で、sourceはbranchになるのかな。</p>
+
+<p>いやぁ、よかった！</p>
+
+<p>ちなみにbitbucketは非公開リモート・リポジトリです。下書きなど書いても公開せず管理できますね！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopressで記事を更新した際に]]></title>

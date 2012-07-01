@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Octopressで記事を更新した際に - MORIZOTTER PRESS</title>
+  <title>backup to bitbucket - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="Octopressで記事を更新した際に、ブラウザの更新ボタンを押さないと新しい記事が反映されない。ブラウザのキャッシュが影響していると思うんだけど、これどうにかする方法ないかなぁ。 と、風呂入ろうとしてたんですがまた書いてしまいました。何度も書いてますがmarkdownで記事を書けるって素敵すぎる &hellip;">
+  <meta name="description" content="Octopressのインストールから運用管理までを参考にしてoctopressディレクトリをbitbucketのリポジトリに追加してみました。あとついでにoctopressの更新も試してみました。入れたばかりだからまぁ更新は無かったんだけれど。本当にわかりやすくて助かりました！ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.github.com/blog/2012/07/02/reload/">
+  <link rel="canonical" href="http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -72,7 +72,7 @@
   
   <header>
     
-      <h1 class="entry-title">Octopressで記事を更新した際に</h1>
+      <h1 class="entry-title">backup to bitbucket</h1>
     
     
       <p class="meta">
@@ -88,7 +88,7 @@
   
 
 
-<time datetime="2012-07-02T01:23:00+09:00" pubdate data-updated="true">Jul 2<span>nd</span>, 2012</time>
+<time datetime="2012-07-02T02:24:00+09:00" pubdate data-updated="true">Jul 2<span>nd</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -97,9 +97,13 @@
   </header>
 
 
-<div class="entry-content"><p>Octopressで記事を更新した際に、ブラウザの更新ボタンを押さないと新しい記事が反映されない。ブラウザのキャッシュが影響していると思うんだけど、これどうにかする方法ないかなぁ。</p>
+<div class="entry-content"><p><a href="http://tokkonopapa.github.com/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで</a>を参考にしてoctopressディレクトリをbitbucketのリポジトリに追加してみました。あとついでにoctopressの更新も試してみました。入れたばかりだからまぁ更新は無かったんだけれど。本当にわかりやすくて助かりました！octopressディレクトリをpushしてるんですが、どこにpushしてるかもわからず、これじゃremoteで管理できないどうしようという状態だったので！</p>
 
-<p>と、風呂入ろうとしてたんですがまた書いてしまいました。何度も書いてますがmarkdownで記事を書けるって素敵すぎる。これかいたら、エディタをCtr+SしてCtr+Qして、ターミナルで<code>rake gen_deploy</code>して、Enterターン！が気もちいいw</p>
+<p>最初はremoteの登録がいまいちよくわからず、push対象を追加してよいのか！？などと立ち止まっていたんですが、おそらくこれ、pushするときに登録してあるremoteのどこにpushするか指定してるんですね。<code>push -u bitbucket source</code>て感じで。で、一度指定したら次回からは<code>push</code>のみで同じところにpushすると。ちなみに、この場合のbitbucketはremote登録先の名前で、sourceはbranchになるのかな。</p>
+
+<p>いやぁ、よかった！</p>
+
+<p>ちなみにbitbucketは非公開リモート・リポジトリです。下書きなど書いても公開せず管理できますね！</p>
 </div>
 
 
@@ -122,7 +126,7 @@
   
 
 
-<time datetime="2012-07-02T01:23:00+09:00" pubdate data-updated="true">Jul 2<span>nd</span>, 2012</time>
+<time datetime="2012-07-02T02:24:00+09:00" pubdate data-updated="true">Jul 2<span>nd</span>, 2012</time>
       
 
 
@@ -130,7 +134,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.github.com/blog/2012/07/02/reload/" data-via="morizotter" data-counturl="http://morizotter.github.com/blog/2012/07/02/reload/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket/" data-via="morizotter" data-counturl="http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -143,10 +147,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/01/for-ruby-beginners-like-me/" title="Previous Post: Rubyビギナー">&laquo; Rubyビギナー</a>
+        <a class="basic-alignment left" href="/blog/2012/07/02/reload/" title="Previous Post: Octopressで記事を更新した際に">&laquo; Octopressで記事を更新した際に</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/02/backup-to-bitbucket/" title="Next Post: backup to bitbucket">backup to bitbucket &raquo;</a>
       
     </p>
   </footer>
@@ -262,8 +264,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.github.com/blog/2012/07/02/reload/';
-        var disqus_url = 'http://morizotter.github.com/blog/2012/07/02/reload/';
+        var disqus_identifier = 'http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket/';
+        var disqus_url = 'http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket/';
         var disqus_script = 'embed.js';
       
     (function () {
