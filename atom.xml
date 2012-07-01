@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-01T19:37:08+09:00</updated>
+  <updated>2012-07-01T19:41:43+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[octopress setting modified]]></title>
+    <link href="http://morizotter.github.com/blog/2012/07/01/octopress-setting-modified/"/>
+    <updated>2012-07-01T19:38:00+09:00</updated>
+    <id>http://morizotter.github.com/blog/2012/07/01/octopress-setting-modified</id>
+    <content type="html"><![CDATA[<p>2回目のポストになります。少しレイアウトなどいじってみたのですが、デフォルトの設定に戻しました。google sitesで作っていた旧morizotter.comのコンテンツをある程度移したので、もう少ししてからmorizotter.comでこちらにアクセスできるように変更予定です。</p>
+
+<p>MORIZOTTER PRESSのランディングページを固定のPageに仕様と思ったのですが、どうやらその設定にするとHTMLを記述する必要がありそうで面倒なのでやめました。やっぱりmarkdownで書けるってのが本当に楽でいいですね！！！！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[はじめてのポスト]]></title>
