@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-02T02:35:14+09:00</updated>
+  <updated>2012-07-02T02:36:18+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[backup to bitbucket]]></title>
+    <title type="html"><![CDATA[octopressのバックアップをbitbucketにとる]]></title>
     <link href="http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket/"/>
     <updated>2012-07-02T02:24:00+09:00</updated>
     <id>http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket</id>
