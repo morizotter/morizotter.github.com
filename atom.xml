@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-01T19:41:43+09:00</updated>
+  <updated>2012-07-01T19:43:23+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[octopress setting modified]]></title>
+    <title type="html"><![CDATA[Octopressの準備中！]]></title>
     <link href="http://morizotter.github.com/blog/2012/07/01/octopress-setting-modified/"/>
     <updated>2012-07-01T19:38:00+09:00</updated>
     <id>http://morizotter.github.com/blog/2012/07/01/octopress-setting-modified</id>
