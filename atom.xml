@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-01T19:48:00+09:00</updated>
+  <updated>2012-07-01T19:52:34+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[特に意味のない記事]]></title>
+    <link href="http://morizotter.github.com/blog/2012/07/01/no-meaning/"/>
+    <updated>2012-07-01T19:50:00+09:00</updated>
+    <id>http://morizotter.github.com/blog/2012/07/01/no-meaning</id>
+    <content type="html"><![CDATA[<p>markdownで記事が書けるというのは本当に気楽で楽しい！そして、このブログには自由に思ったことを書くという設定なので、それもありなんだか楽しいです。</p>
+
+<p>意味もなくまた書いてしまいました。</p>
+
+<p><code>rake new_post["post name"]</code></p>
+
+<p>で記事を作り、</p>
+
+<p><code>rake gen_deploy</code></p>
+
+<p>で反映させます。この辺りをターミナルでやるのも楽しいです！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopressの準備中！]]></title>
