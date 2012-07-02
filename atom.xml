@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-03T01:07:13+09:00</updated>
+  <updated>2012-07-03T01:20:55+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[WordPressで書いているブログの存在意義が]]></title>
+    <link href="http://morizotter.github.com/blog/2012/07/03/reason-d-etre/"/>
+    <updated>2012-07-03T01:17:00+09:00</updated>
+    <id>http://morizotter.github.com/blog/2012/07/03/reason-d-etre</id>
+    <content type="html"><![CDATA[<p>少し前にWordPressで作ったプログラム専門のブログ<a href="http://morizotter.com/blog">programming from 30</a>（そのうちURL変わるかもしれません）の存在意義が希薄化してる。Octopressの使い勝手がよすぎてこちらにがんがんプログラムのことも書いていきそうな雰囲気になっている。</p>
+
+<p>まぁ、形になる前の思いつきみたいなのはこっちに書いてある程度まとまったらあっちに書くって棲み分けをすることにしてみよう。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[どうして気持ちいいのか]]></title>
