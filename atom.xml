@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-03T01:21:54+09:00</updated>
+  <updated>2012-07-03T01:57:26+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[herokuを使ってみたい]]></title>
+    <link href="http://morizotter.github.com/blog/2012/07/03/heroku/"/>
+    <updated>2012-07-03T01:44:00+09:00</updated>
+    <id>http://morizotter.github.com/blog/2012/07/03/heroku</id>
+    <content type="html"><![CDATA[<p>先日のOctopressに味をしめ、毎日Rubyが気になって仕方ありません。全部がそうではないのかもしれないのですが、gitと連携しているところが素敵すぎです。先日のgithubとの連携もそうでしたが、herokuもgit pushすればデプロイできるなんて素敵過ぎ。</p>
+
+<p>ウェブをさまよっていたら<a href="http://kuroigamen.com/22">KUROIGAMEN</a>のサイトに非常に分かりやすい説明があり、さらに惹かれています。</p>
+
+<p>Ruby,railsなんかおしゃれな感じもしますし。</p>
+
+<p><a href="http://www.heroku.com/">heroku</a></p>
+
+<p>Objective-CとかPHPとかMySQLとか目の前のやらなければ行けない&amp;楽しいことがあるのですが、さらにここにRubyが加わりました！楽しいことは時間を忘れて没頭できます。そして楽しいことでも、多分波があって飽きたりする自機もくると思いますが、いくつも楽しいことがあれば、螺旋状にあっちこっちとぐるぐる回って力がついていくと思います。</p>
+
+<p>とりあえずやりたいことをやる時間が十分にないっていう（たぶん、贅沢。普通のサラリーマンよりは大分あると思う）一般的な状況の中で、こう思うことで楽しんで技術力高めていこうと思ってます！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[WordPressで書いているブログの存在意義が]]></title>
