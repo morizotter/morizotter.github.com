@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-02T02:48:01+09:00</updated>
+  <updated>2012-07-02T20:58:13+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[今日もOctopress]]></title>
+    <link href="http://morizotter.github.com/blog/2012/07/02/today-rake-too/"/>
+    <updated>2012-07-02T20:52:00+09:00</updated>
+    <id>http://morizotter.github.com/blog/2012/07/02/today-rake-too</id>
+    <content type="html"><![CDATA[<p>今日もまたOctopressです。この傾向は数日続くかも。ブログ書いてる感じがしない。でも、ブログなんだよな一応ジャンル的に。すごい簡単に書けるので、書くことへの抵抗がほんとになくなる。恐らくほとんど読まれていないこの記事。思いついたままを書くのって楽しいな。</p>
+
+<p>ということで、2004年にはじめてブログを書き始めた当時と同じくらいの楽しさを感じています。ブログを書くことがこんなに楽しいなんて久しぶり。</p>
+
+<p>ちょっとプログラミングが分かる人にはOctopressおすすめです！！！</p>
+
+<p>今日は、早めに会社をあがり着替えて喫茶店に来てます。少しでもコード書いて技術力高めよ〜。q</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[octopressのバックアップをbitbucketにとる]]></title>
