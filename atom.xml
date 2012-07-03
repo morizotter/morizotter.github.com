@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[MORIZOTTER PRESS]]></title>
-  <link href="http://morizotter.github.com/atom.xml" rel="self"/>
-  <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-03T22:54:27+09:00</updated>
-  <id>http://morizotter.github.com/</id>
+  <link href="http://morizotter.com/atom.xml" rel="self"/>
+  <link href="http://morizotter.com/"/>
+  <updated>2012-07-03T23:22:03+09:00</updated>
+  <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
     
@@ -14,10 +14,21 @@
 
   
   <entry>
+    <title type="html"><![CDATA[ドメインを変更しました]]></title>
+    <link href="http://morizotter.com/blog/2012/07/03/morizotter-s-cname/"/>
+    <updated>2012-07-03T22:55:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/03/morizotter-s-cname</id>
+    <content type="html"><![CDATA[<p><a href="http://www.sankitch.me/blog/2012/05/05/build-octopress-on-github-dropbox/">この記事</a>を参考にmorizotter.github.comをmorizotter.comに変えてみた。morizotter.github.comって名前もよかったけどね。</p>
+
+<p>この記事との出会いは本当によかった。この記事と出会わなければOctopressをこんなに楽しんでなかったんじゃないかと思う。&#8221;簡単にできる&#8221;って思って、本当にある程度簡単にできました！</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[php login]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/03/php-login/"/>
+    <link href="http://morizotter.com/blog/2012/07/03/php-login/"/>
     <updated>2012-07-03T22:31:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/03/php-login</id>
+    <id>http://morizotter.com/blog/2012/07/03/php-login</id>
     <content type="html"><![CDATA[<p><a href="http://d.hatena.ne.jp/replication/20100828/1282994791">このサイト</a>の記事を参考にPHPでログイン画面を作ってみました。といってもほぼ写経です。$_SESSIONで判定してるんだなというくらいが学べました。</p>
 
 <p>きちんとしたシステムを作るにはDBなど利用して判定する必要がありそうですが、簡易システムならば外からアクセスできない場所にIDとパスワードのセットを保管しておけばできるのかな。Apacheのフォルダをちゃんと理解してないのでだめだな。</p>
@@ -28,9 +39,9 @@
   
   <entry>
     <title type="html"><![CDATA[MacBookAir11インチにした理由]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/03/air-display-and-macbook-air-11/"/>
+    <link href="http://morizotter.com/blog/2012/07/03/air-display-and-macbook-air-11/"/>
     <updated>2012-07-03T21:59:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/03/air-display-and-macbook-air-11</id>
+    <id>http://morizotter.com/blog/2012/07/03/air-display-and-macbook-air-11</id>
     <content type="html"><![CDATA[<p>MacBookAirを購入するときにいつも迷うのは11インチにするか13インチにするかというところです。迷いながら1回目は11インチにしました。プログラムをやるときは大きい画面の方がよいですが、それ以外のことをやる時のことや持ち運びを考えると断然11インチがいい。</p>
 
 <p>最初はよくわからずメモリ2GB版を購入してしまい、Lionが来てから頻繁にフリーズするようになってしまいました。そして2回目の購入の機会がやってきます。</p>
@@ -43,9 +54,9 @@
   
   <entry>
     <title type="html"><![CDATA[vim]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/03/vim/"/>
+    <link href="http://morizotter.com/blog/2012/07/03/vim/"/>
     <updated>2012-07-03T21:02:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/03/vim</id>
+    <id>http://morizotter.com/blog/2012/07/03/vim</id>
     <content type="html"><![CDATA[<p><a href="http://archiva.jp/web/tool/vim_basic.html">Vim基本操作まとめ</a>というよいページを見つけたので、これを参考に少しずつVimに慣れていこうと思ってる。Vimを使う機会はちょくちょくあるんだけど、どうしても慣れないので作業が遅くなるので。bashとかも同じように少しずつ学んでいきたいなぁ。</p>
 
 <p>とりあえず、基本操作っぽいh,j,k,lを学ぶ。これを入力する前に5とか入れるとその文字分移動する。例えば、<code>5l</code>ならば右に5移動する。今までカーソルだけで移動してたから少しは楽になりそう。</p>
@@ -56,9 +67,9 @@
   
   <entry>
     <title type="html"><![CDATA[herokuを使ってみたい]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/03/heroku/"/>
+    <link href="http://morizotter.com/blog/2012/07/03/heroku/"/>
     <updated>2012-07-03T01:44:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/03/heroku</id>
+    <id>http://morizotter.com/blog/2012/07/03/heroku</id>
     <content type="html"><![CDATA[<p>先日のOctopressに味をしめ、毎日Rubyが気になって仕方ありません。全部がそうではないのかもしれないのですが、gitと連携しているところが素敵すぎです。先日のgithubとの連携もそうでしたが、herokuもgit pushすればデプロイできるなんて素敵過ぎ。</p>
 
 <p>ウェブをさまよっていたら<a href="http://kuroigamen.com/22">KUROIGAMEN</a>のサイトに非常に分かりやすい説明があり、さらに惹かれています。</p>
@@ -75,9 +86,9 @@
   
   <entry>
     <title type="html"><![CDATA[WordPressで書いているブログの存在意義が]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/03/reason-d-etre/"/>
+    <link href="http://morizotter.com/blog/2012/07/03/reason-d-etre/"/>
     <updated>2012-07-03T01:17:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/03/reason-d-etre</id>
+    <id>http://morizotter.com/blog/2012/07/03/reason-d-etre</id>
     <content type="html"><![CDATA[<p>少し前にWordPressで作ったプログラム専門のブログ<a href="http://morizotter.com/blog">programming from 30</a>（そのうちURL変わるかもしれません）の存在意義が希薄化してる。Octopressの使い勝手がよすぎてこちらにがんがんプログラムのことも書いていきそうな雰囲気になっている。</p>
 
 <p>まぁ、形になる前の思いつきみたいなのはこっちに書いてある程度まとまったらあっちに書くって棲み分けをすることにしてみよう。</p>
@@ -86,9 +97,9 @@
   
   <entry>
     <title type="html"><![CDATA[どうして気持ちいいのか]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/03/why-i-am-so-satisfied/"/>
+    <link href="http://morizotter.com/blog/2012/07/03/why-i-am-so-satisfied/"/>
     <updated>2012-07-03T01:03:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/03/why-i-am-so-satisfied</id>
+    <id>http://morizotter.com/blog/2012/07/03/why-i-am-so-satisfied</id>
     <content type="html"><![CDATA[<p>コマンドラインでいろいろやった経験が少ないからかもしれませんが、Rubyのrakeやgitのaddやcommit、pushなどの流れが気持ちがいいです。</p>
 
 <p>なんで、気持ちがいいんだろう。</p>
@@ -103,18 +114,18 @@
   
   <entry>
     <title type="html"><![CDATA[解決！]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/02/solved/"/>
+    <link href="http://morizotter.com/blog/2012/07/02/solved/"/>
     <updated>2012-07-02T22:18:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/02/solved</id>
+    <id>http://morizotter.com/blog/2012/07/02/solved</id>
     <content type="html"><![CDATA[<p>さてさて、以前から躓いていた問題が解決した！ある程度理解もした（完全ではないが）。資料にまとめる為にWordが面倒なので、markdownからwordに変換する方法を調べるぞ（ここは僕のエリア。便利な方法を探すのは楽しいぞっと！）</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[今日もOctopress]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/02/today-rake-too/"/>
+    <link href="http://morizotter.com/blog/2012/07/02/today-rake-too/"/>
     <updated>2012-07-02T20:52:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/02/today-rake-too</id>
+    <id>http://morizotter.com/blog/2012/07/02/today-rake-too</id>
     <content type="html"><![CDATA[<p>今日もまたOctopressです。この傾向は数日続くかも。ブログ書いてる感じがしない。でも、ブログなんだよな一応ジャンル的に。すごい簡単に書けるので、書くことへの抵抗がほんとになくなる。恐らくほとんど読まれていないこの記事。思いついたままを書くのって楽しいな。</p>
 
 <p>ということで、2004年にはじめてブログを書き始めた当時と同じくらいの楽しさを感じています。ブログを書くことがこんなに楽しいなんて久しぶり。</p>
@@ -127,9 +138,9 @@
   
   <entry>
     <title type="html"><![CDATA[octopressのバックアップをbitbucketにとる]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket/"/>
+    <link href="http://morizotter.com/blog/2012/07/02/backup-to-bitbucket/"/>
     <updated>2012-07-02T02:24:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/02/backup-to-bitbucket</id>
+    <id>http://morizotter.com/blog/2012/07/02/backup-to-bitbucket</id>
     <content type="html"><![CDATA[<p><a href="http://tokkonopapa.github.com/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで</a>を参考にしてoctopressディレクトリをbitbucketのリポジトリに追加してみました。あとついでにoctopressの更新も試してみました。入れたばかりだからまぁ更新は無かったんだけれど。本当にわかりやすくて助かりました！octopressディレクトリをpushしてるんですが、どこにpushしてるかもわからず、これじゃremoteで管理できないどうしようという状態だったので！</p>
 
 <p>最初はremoteの登録がいまいちよくわからず、push対象を追加してよいのか！？などと立ち止まっていたんですが、おそらくこれ、pushするときに登録してあるremoteのどこにpushするか指定してるんですね。<code>push -u bitbucket source</code>て感じで。で、一度指定したら次回からは<code>push</code>のみで同じところにpushすると。ちなみに、この場合のbitbucketはremote登録先の名前で、sourceはbranchになるのかな。</p>
@@ -142,9 +153,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopressで記事を更新した際に]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/02/reload/"/>
+    <link href="http://morizotter.com/blog/2012/07/02/reload/"/>
     <updated>2012-07-02T01:23:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/02/reload</id>
+    <id>http://morizotter.com/blog/2012/07/02/reload</id>
     <content type="html"><![CDATA[<p>Octopressで記事を更新した際に、ブラウザの更新ボタンを押さないと新しい記事が反映されない。ブラウザのキャッシュが影響していると思うんだけど、これどうにかする方法ないかなぁ。</p>
 
 <p>と、風呂入ろうとしてたんですがまた書いてしまいました。何度も書いてますがmarkdownで記事を書けるって素敵すぎる。これかいたら、エディタをCtr+SしてCtr+Qして、ターミナルで<code>rake gen_deploy</code>して、Enterターン！が気もちいいw</p>
@@ -153,9 +164,9 @@
   
   <entry>
     <title type="html"><![CDATA[Rubyビギナー]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/01/for-ruby-beginners-like-me/"/>
+    <link href="http://morizotter.com/blog/2012/07/01/for-ruby-beginners-like-me/"/>
     <updated>2012-07-01T23:27:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/01/for-ruby-beginners-like-me</id>
+    <id>http://morizotter.com/blog/2012/07/01/for-ruby-beginners-like-me</id>
     <content type="html"><![CDATA[<p>RubyのビギナーにとってOctopressはよい練習台になるんじゃないかな。まぁ何でもそうだけど、Rubyを使う為の環境設定から入るんだけど、訳の分からないままとりあえず使える状態になっちゃう。Octopressは簡単だからね。で、訳の分からないままRubyを使って記事を書き始めるんだけど、本に載ってるサンプルコードを写経するよりは、実際にまぁブログとはいえサービスを運用しながらやると効率も良いのではないか。新たに学んだことはOctopressで書いていけばいいし。</p>
 
 <p>ということで、優先順位はあまり高くできないけどRubyの学習を始めようと思っています！といっても、楽しいから他のことより優先してRubyをいじくり倒してしまうかもしれませんが！</p>
@@ -164,9 +175,9 @@
   
   <entry>
     <title type="html"><![CDATA[特に意味のない記事2]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/01/no-meaning-2/"/>
+    <link href="http://morizotter.com/blog/2012/07/01/no-meaning-2/"/>
     <updated>2012-07-01T22:45:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/01/no-meaning-2</id>
+    <id>http://morizotter.com/blog/2012/07/01/no-meaning-2</id>
     <content type="html"><![CDATA[<p>特に意味のない記事2です。このサイトには技術に縛られることなく思いついたことをだらだらと思いつくままに書いていこうと思っています。だから絶対的な意味で質は高くはありません。</p>
 
 <p>OctopressをいじりながらRubyのことを少しずつでも理解できたらいいなぁ。あとgithubの仕組みも。markdownで記事を書けるってのが本当に楽しい。</p>
@@ -177,9 +188,9 @@
   
   <entry>
     <title type="html"><![CDATA[特に意味のない記事]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/01/no-meaning/"/>
+    <link href="http://morizotter.com/blog/2012/07/01/no-meaning/"/>
     <updated>2012-07-01T19:50:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/01/no-meaning</id>
+    <id>http://morizotter.com/blog/2012/07/01/no-meaning</id>
     <content type="html"><![CDATA[<p>markdownで記事が書けるというのは本当に気楽で楽しい！そして、このブログには自由に思ったことを書くという設定なので、それもありなんだか楽しいです。</p>
 
 <p>意味もなくまた書いてしまいました。</p>
@@ -196,9 +207,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopressの準備中！]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/01/octopress-setting-modified/"/>
+    <link href="http://morizotter.com/blog/2012/07/01/octopress-setting-modified/"/>
     <updated>2012-07-01T19:38:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/01/octopress-setting-modified</id>
+    <id>http://morizotter.com/blog/2012/07/01/octopress-setting-modified</id>
     <content type="html"><![CDATA[<p>2回目のポストになります。少しレイアウトなどいじってみたのですが、デフォルトの設定に戻しました。google sitesで作っていた旧morizotter.comのコンテンツをある程度移したので、もう少ししてからmorizotter.comでこちらにアクセスできるように変更予定です。</p>
 
 <p>MORIZOTTER PRESSのランディングページを固定のPageに仕様と思ったのですが、どうやらその設定にするとHTMLを記述する必要がありそうで面倒なのでやめました。やっぱりmarkdownで書けるってのが本当に楽でいいですね！！！！</p>
@@ -207,9 +218,9 @@
   
   <entry>
     <title type="html"><![CDATA[はじめてのポスト]]></title>
-    <link href="http://morizotter.github.com/blog/2012/07/01/first-post/"/>
+    <link href="http://morizotter.com/blog/2012/07/01/first-post/"/>
     <updated>2012-07-01T01:11:00+09:00</updated>
-    <id>http://morizotter.github.com/blog/2012/07/01/first-post</id>
+    <id>http://morizotter.com/blog/2012/07/01/first-post</id>
     <content type="html"><![CDATA[<p>octopressを使っての最初のポストになります。練習です。</p>
 ]]></content>
   </entry>
