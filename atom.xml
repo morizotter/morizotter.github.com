@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-03T21:11:19+09:00</updated>
+  <updated>2012-07-03T22:06:14+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MacBookAir11インチにした理由]]></title>
+    <link href="http://morizotter.github.com/blog/2012/07/03/air-display-and-macbook-air-11/"/>
+    <updated>2012-07-03T21:59:00+09:00</updated>
+    <id>http://morizotter.github.com/blog/2012/07/03/air-display-and-macbook-air-11</id>
+    <content type="html"><![CDATA[<p>MacBookAirを購入するときにいつも迷うのは11インチにするか13インチにするかというところです。迷いながら1回目は11インチにしました。プログラムをやるときは大きい画面の方がよいですが、それ以外のことをやる時のことや持ち運びを考えると断然11インチがいい。</p>
+
+<p>最初はよくわからずメモリ2GB版を購入してしまい、Lionが来てから頻繁にフリーズするようになってしまいました。そして2回目の購入の機会がやってきます。</p>
+
+<p>2回目に選んだものそれもまたMBAでした。これを選んだ理由は前述のものもありますが、さらに付け加えて<a href="http://itunes.apple.com/jp/app/air-display/id368158927?mt=8">AirDisplay</a>というアプリがあったからだと思っています。</p>
+
+<p>これをMacとつなげば簡単に2画面が実現します。これで、何かを参照しながら文を書いたりプログラミングをしたりすることが可能になります。どうせMacBookAirとiPadは同時に持ち歩いているので、わざわざ13インチを買う必要はないかなと。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[vim]]></title>
