@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-03T22:06:14+09:00</updated>
+  <updated>2012-07-03T22:37:13+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[php login]]></title>
+    <link href="http://morizotter.github.com/blog/2012/07/03/php-login/"/>
+    <updated>2012-07-03T22:31:00+09:00</updated>
+    <id>http://morizotter.github.com/blog/2012/07/03/php-login</id>
+    <content type="html"><![CDATA[<p><a href="http://d.hatena.ne.jp/replication/20100828/1282994791">このサイト</a>の記事を参考にPHPでログイン画面を作ってみました。といってもほぼ写経です。$_SESSIONで判定してるんだなというくらいが学べました。</p>
+
+<p>きちんとしたシステムを作るにはDBなど利用して判定する必要がありそうですが、簡易システムならば外からアクセスできない場所にIDとパスワードのセットを保管しておけばできるのかな。Apacheのフォルダをちゃんと理解してないのでだめだな。</p>
+
+<p>というか、今日はあまりのらないな。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MacBookAir11インチにした理由]]></title>
