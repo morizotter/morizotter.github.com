@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.github.com/atom.xml" rel="self"/>
   <link href="http://morizotter.github.com/"/>
-  <updated>2012-07-03T02:33:10+09:00</updated>
+  <updated>2012-07-03T21:11:19+09:00</updated>
   <id>http://morizotter.github.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[vim]]></title>
+    <link href="http://morizotter.github.com/blog/2012/07/03/vim/"/>
+    <updated>2012-07-03T21:02:00+09:00</updated>
+    <id>http://morizotter.github.com/blog/2012/07/03/vim</id>
+    <content type="html"><![CDATA[<p><a href="http://archiva.jp/web/tool/vim_basic.html">Vim基本操作まとめ</a>というよいページを見つけたので、これを参考に少しずつVimに慣れていこうと思ってる。Vimを使う機会はちょくちょくあるんだけど、どうしても慣れないので作業が遅くなるので。bashとかも同じように少しずつ学んでいきたいなぁ。</p>
+
+<p>とりあえず、基本操作っぽいh,j,k,lを学ぶ。これを入力する前に5とか入れるとその文字分移動する。例えば、<code>5l</code>ならば右に5移動する。今までカーソルだけで移動してたから少しは楽になりそう。</p>
+
+<p>それにしても今日はなんだか眠い。眠いと新しいことをやろうという気分にならないなぁ。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[herokuを使ってみたい]]></title>
