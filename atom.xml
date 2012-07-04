@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-04T01:32:07+09:00</updated>
+  <updated>2012-07-04T23:32:54+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[シェルスクリプトとか]]></title>
+    <link href="http://morizotter.com/blog/2012/07/04/shell-script/"/>
+    <updated>2012-07-04T23:22:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/04/shell-script</id>
+    <content type="html"><![CDATA[<p><a href="http://www.atmarkit.co.jp/flinux/rensai/smart_shell/01/01.html">こんな記事</a>を参考にしてシェルスクリプトを書いてみた。本当に簡単なやつだけど。</p>
+
+<div><script src='https://gist.github.com/3047630.js?file='></script>
+<noscript><pre><code>#!/bin/sh
+
+printf &quot;hello world\n&quot;</code></pre></noscript></div>
+
+
+<p>こんなに簡単。で、このコードはgithubのgistというcode snippetを共有するサービスからOctopressの<a href="http://octopress.org/docs/plugins/gist-tag/">gistタグ</a>を使って簡単に持ってきてる。</p>
+
+<p>サーバサイドが使いこなせるようになるとかっこいいしな憧れるしな。あー、最近、躓いてることが常態化してしている。なんか慣れてきたんだけど、不適機できつさが襲ってくる。で、今日はそんな日でしたわん。</p>
+
+<p>ちなみに、このブログ？ではこんな簡単なことでも思いついて実行したことをきっちりまとめることなく吐き出し/書き出していきます。これ、意味ない？いや、意味あると思っています。多いに。そしてそれはOctopressが会ったからこそできた可能性の広がり。</p>
+
+<p>これについては次のポストで書いてみます。断片から入るって感じのことです。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopressでブログを書くことがなぜ快適か]]></title>
