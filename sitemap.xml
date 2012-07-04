@@ -77,20 +77,24 @@
         <lastmod>2012-07-05T00:12:26+09:00</lastmod>
     </url>
     <url>
+        <loc>http://morizotter.com/about/certificate/</loc>
+        <lastmod>2012-07-01T19:32:30+09:00</lastmod>
+    </url>
+    <url>
         <loc>http://morizotter.com/about/english/</loc>
         <lastmod>2012-07-01T21:02:50+09:00</lastmod>
     </url>
     <url>
         <loc>http://morizotter.com/about/</loc>
-        <lastmod>2012-07-05T00:23:48+09:00</lastmod>
+        <lastmod>2012-07-05T00:30:10+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://morizotter.com/about/travel/</loc>
+        <lastmod>2012-07-03T01:01:41+09:00</lastmod>
     </url>
     <url>
         <loc>http://morizotter.com/blog/archives/</loc>
         <lastmod>2012-07-05T00:12:26+09:00</lastmod>
-    </url>
-    <url>
-        <loc>http://morizotter.com/certificate/</loc>
-        <lastmod>2012-07-01T19:32:30+09:00</lastmod>
     </url>
     <url>
         <loc>http://morizotter.com/</loc>
@@ -99,9 +103,5 @@
     <url>
         <loc>http://morizotter.com/product/</loc>
         <lastmod>2012-07-01T19:33:22+09:00</lastmod>
-    </url>
-    <url>
-        <loc>http://morizotter.com/travel/</loc>
-        <lastmod>2012-07-03T01:01:41+09:00</lastmod>
     </url>
 </urlset>
