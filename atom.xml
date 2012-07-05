@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-05T23:33:52+09:00</updated>
+  <updated>2012-07-06T00:44:00+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Homebrewを知ろう！]]></title>
+    <link href="http://morizotter.com/blog/2012/07/05/let-s-know-about-homebrew/"/>
+    <updated>2012-07-05T23:36:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/05/let-s-know-about-homebrew</id>
+    <content type="html"><![CDATA[<p>さて、意味も分からず数日間使っているHomebrewのことをもっと知ろうということで、今、タブを5つくらい開いたのでこれから勉強です。</p>
+
+<p>まずは、<a href="http://blog.hifumi.info/mac/mac-%E3%83%87-homebrew-%E3%83%8E%E3%82%B9%E3%82%B9%E3%83%A1/">homebrewのススメ</a>!homebrewの基本的なことがまとまっていて、分かりやすいです。冒頭で「どういうものか」を一言で表すのっていいですね！曰く、MacPortsの代わりになっておしゃれということらしいです！</p>
+
+<p>ふむふむ、searchコマンド、doctorコマンド、/usr/local/にあるわけね。んー、/usr/local/を空にした方がよいというけれど、mysqlが入ってる。どうしよう。とりあえずそのまま使い続ける。</p>
+
+<p><a href="http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?Mac%2FOS%20X%2FHomebrew">こちら</a>にはMySqlをインストールする方法が書かれてる。そのうちbrewを通してMySqlをインストールすることになるかもしれないのでメモっと。そういえば、前回Macに搭載のRubyがあるにもかかわらず、brewでRubyをインストールしたとき特に問題なかったな。大丈夫なのかな。この辺り分かってない。</p>
+
+<p><a href="http://www.maruko2.com/mw/Homebrew%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">HomeBrewの使い方</a>以前から参考にしているページ。基本コマンドが分かりやすくまとまっている。</p>
+
+<p><a href="http://tech.caph.jp/2011/04/06/homebrew%E3%81%AE%E5%B0%8E%E5%85%A5%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/">Homebrewの導入と使い方</a>こちらも基本コマンドが説明されていて分かりやすい。最初はこういうのを手引きに調べていくといいな。</p>
+
+<p>そして、<a href="http://mxcl.github.com/homebrew/">Homebrewの本家サイト</a>シンプルで、いい感じ。全体的に無駄な装飾がなくおしゃれ。urlもgithubが残ってていい感じ。</p>
+
+<p>ということで、本当に表面上だけですが一通りHomebrewのことを少しは知れました。MacOSXにないソフトのバージョン管理システムって感じなのかな。そういえば、Linuxにはあるしな〜。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Subversionの設定をして泣きそうになった]]></title>
@@ -355,17 +378,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
     <content type="html"><![CDATA[<p>Octopressで記事を更新した際に、ブラウザの更新ボタンを押さないと新しい記事が反映されない。ブラウザのキャッシュが影響していると思うんだけど、これどうにかする方法ないかなぁ。</p>
 
 <p>と、風呂入ろうとしてたんですがまた書いてしまいました。何度も書いてますがmarkdownで記事を書けるって素敵すぎる。これかいたら、エディタをCtr+SしてCtr+Qして、ターミナルで<code>rake gen_deploy</code>して、Enterターン！が気もちいいw</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Rubyビギナー]]></title>
-    <link href="http://morizotter.com/blog/2012/07/01/for-ruby-beginners-like-me/"/>
-    <updated>2012-07-01T23:27:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/01/for-ruby-beginners-like-me</id>
-    <content type="html"><![CDATA[<p>RubyのビギナーにとってOctopressはよい練習台になるんじゃないかな。まぁ何でもそうだけど、Rubyを使う為の環境設定から入るんだけど、訳の分からないままとりあえず使える状態になっちゃう。Octopressは簡単だからね。で、訳の分からないままRubyを使って記事を書き始めるんだけど、本に載ってるサンプルコードを写経するよりは、実際にまぁブログとはいえサービスを運用しながらやると効率も良いのではないか。新たに学んだことはOctopressで書いていけばいいし。</p>
-
-<p>ということで、優先順位はあまり高くできないけどRubyの学習を始めようと思っています！といっても、楽しいから他のことより優先してRubyをいじくり倒してしまうかもしれませんが！</p>
 ]]></content>
   </entry>
   
