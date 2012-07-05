@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-05T20:37:46+09:00</updated>
+  <updated>2012-07-05T22:43:45+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -23,6 +23,17 @@
 <p><a href="http://blog.livedoor.jp/sasata299/archives/51275014.html">ローカルのファイルをは残しつつsvn管理下から外す</a>や、<a href="http://stackoverflow.com/questions/6474523/svn-ignore-pattern-with-xcode-4">Stackoverflow</a>や、<a href="http://akabeko.me/blog/2011/09/xcode-4-svn/">Xcode4とSubversionの連携</a>が参考になった。</p>
 
 <p>他にもいろいろやったんだけれど後ほど…。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[新しいことを始めるときは]]></title>
+    <link href="http://morizotter.com/blog/2012/07/05/doing-something-new/"/>
+    <updated>2012-07-05T22:36:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/05/doing-something-new</id>
+    <content type="html"><![CDATA[<p>というか新しいことでもないのだが、Photoshopは慣れない作業でストレスがたまる。これが効率的な方法なのかというのは、まぁまだしも、常に手探りで方法を探さなければいけないという状況はストレスがたまる。Eclipseもそうだったなぁ。</p>
+
+<p>でもまぁ、はじめはこういう状況に陥るのは仕方のないことだし、ここは落ち込まず意識的に平静を装うのが吉だなとまぁ、いつものように判断し努めて平静でいる。</p>
 ]]></content>
   </entry>
   
@@ -355,19 +366,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
     <content type="html"><![CDATA[<p>RubyのビギナーにとってOctopressはよい練習台になるんじゃないかな。まぁ何でもそうだけど、Rubyを使う為の環境設定から入るんだけど、訳の分からないままとりあえず使える状態になっちゃう。Octopressは簡単だからね。で、訳の分からないままRubyを使って記事を書き始めるんだけど、本に載ってるサンプルコードを写経するよりは、実際にまぁブログとはいえサービスを運用しながらやると効率も良いのではないか。新たに学んだことはOctopressで書いていけばいいし。</p>
 
 <p>ということで、優先順位はあまり高くできないけどRubyの学習を始めようと思っています！といっても、楽しいから他のことより優先してRubyをいじくり倒してしまうかもしれませんが！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[特に意味のない記事2]]></title>
-    <link href="http://morizotter.com/blog/2012/07/01/no-meaning-2/"/>
-    <updated>2012-07-01T22:45:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/01/no-meaning-2</id>
-    <content type="html"><![CDATA[<p>特に意味のない記事2です。このサイトには技術に縛られることなく思いついたことをだらだらと思いつくままに書いていこうと思っています。だから絶対的な意味で質は高くはありません。</p>
-
-<p>OctopressをいじりながらRubyのことを少しずつでも理解できたらいいなぁ。あとgithubの仕組みも。markdownで記事を書けるってのが本当に楽しい。</p>
-
-<p>ちなみに、記事はmou.appで書いています。書きながらHTML形式のアウトプットが横に出るので便利です。</p>
 ]]></content>
   </entry>
   
