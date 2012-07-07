@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-07T16:51:15+09:00</updated>
+  <updated>2012-07-07T17:13:38+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -157,7 +157,7 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 
 <h4>システム環境設定</h4>
 
-<p>Finderの設定を変更。トラックパッドの設定を変更。ことえりをいれとく。へー、アイヌ語キーボードなんてあるんだ。アイヌ語って文字あったっけな。ふむ。便宜的に日本語を拡張して表現するのか。USキーボードの<code>Cmmand+Space</code>に慣れなきゃな。いちおキーボードのファンクションキーを使えるようにしておく。コンピュータ名が&#8221;〜〜no Macbook Air&#8221;とか変な感じだったので共有から変更。</p>
+<p>Finderの設定を変更。トラックパッドの設定を変更。ことえりをいれとく。へー、アイヌ語キーボードなんてあるんだ。アイヌ語って文字あったっけな。ふむ。便宜的に日本語を拡張して表現するのか。USキーボードの<code>Command+Space</code>に慣れなきゃな。いちおキーボードのファンクションキーを使えるようにしておく。コンピュータ名が&#8221;〜〜no Macbook Air&#8221;とか変な感じだったので共有から変更。</p>
 
 <h4>アプリをインストール</h4>
 
