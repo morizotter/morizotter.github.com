@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-06T01:12:45+09:00</updated>
+  <updated>2012-07-07T10:11:36+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[少しNumbersのことを]]></title>
+    <link href="http://morizotter.com/blog/2012/07/06/numbers/"/>
+    <updated>2012-07-06T13:34:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/06/numbers</id>
+    <content type="html"><![CDATA[<p>今日は少しNumbersのことを学ぼうと思っている。Numbersはプログラムを書く前に思考を整理したりするのに使っている。ただ単に項目を列挙するだけのシンプルな使い方。だけど、やっぱりExcelほど使いこなしていない。</p>
+
+<h3>選択中のセルを編集</h3>
+
+<p>Numbersについてちょっと学ぼうと思ったのは、ExcelのF2にあたる<strong>選択中のセルを編集</strong>機能を当たりをつけて探っていたところ、<code>Option+Enter</code>でできたことがきっかけ。これがあるだけで、大分違う。できるだけ、トラックパッドやマウスを使わないで作業をしたいのだ。</p>
+
+<h3>セルの中で改行</h3>
+
+<p>他に便利なのは確か<code>Alt+Enter</code>にあたる<code>Option+Enter</code>。セルの中で改行ができる。</p>
+
+<h3>行を追加</h3>
+
+<p>うっほ、<code>Option+↑</code>で行を追加できるのね！これはいい！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Homebrewを知ろう！]]></title>
@@ -367,17 +388,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
 <p>いやぁ、よかった！</p>
 
 <p>ちなみにbitbucketは非公開リモート・リポジトリです。下書きなど書いても公開せず管理できますね！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Octopressで記事を更新した際に]]></title>
-    <link href="http://morizotter.com/blog/2012/07/02/reload/"/>
-    <updated>2012-07-02T01:23:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/02/reload</id>
-    <content type="html"><![CDATA[<p>Octopressで記事を更新した際に、ブラウザの更新ボタンを押さないと新しい記事が反映されない。ブラウザのキャッシュが影響していると思うんだけど、これどうにかする方法ないかなぁ。</p>
-
-<p>と、風呂入ろうとしてたんですがまた書いてしまいました。何度も書いてますがmarkdownで記事を書けるって素敵すぎる。これかいたら、エディタをCtr+SしてCtr+Qして、ターミナルで<code>rake gen_deploy</code>して、Enterターン！が気もちいいw</p>
 ]]></content>
   </entry>
   
