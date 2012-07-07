@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-08T00:25:25+09:00</updated>
+  <updated>2012-07-08T02:05:14+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -128,7 +128,7 @@
 
 <p><a href="http://d.hatena.ne.jp/gelegele/20120530/git_dropbox_fatal">ゲレゲレめも</a>さんの記述が大変参考になりました。ヒントであってもあるのとないのとは大違いです。</p>
 
-<p>僕の場合は<code>.git</code>と<code>.git/refs/heads</code>とさらに<code>.git/refs/remotes/origin/master</code>に問題のあるファイルが生成されていたので、すべてデスクトップにrmして解消しました。</p>
+<p>僕の場合は<code>.git</code>と<code>.git/refs/heads</code>とさらに<code>.git/refs/remotes/origin/master</code>に問題のあるファイルが生成されていたので、すべてrmして解消しました。</p>
 
 <p>ふー。</p>
 ]]></content>
