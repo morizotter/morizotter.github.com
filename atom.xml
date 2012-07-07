@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-07T22:33:02+09:00</updated>
+  <updated>2012-07-07T22:37:49+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -36,9 +36,23 @@
 <td align="left">指定したタブへ移動 </td>
 <td align="left"> Command + 数字(0〜9)</td>
 </tr>
+<tr>
+<td align="left">アドレスバーにカーソルを移動 </td>
+<td align="left"> Command + L</td>
+</tr>
+<tr>
+<td align="left">ページを更新      </td>
+<td align="left"> Command + R</td>
+</tr>
+<tr>
+<td align="left">テキストの情報のみをペースト </td>
+<td align="left"> Command + Shif + Option + V</td>
+</tr>
 </tbody>
 </table>
 
+
+<p>最後のは使わないかも。特に<code>Command + V</code>と<code>Command + L</code>と<code>Command + R</code>が重宝しそうです！</p>
 ]]></content>
   </entry>
   
