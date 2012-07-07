@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-07T17:27:50+09:00</updated>
+  <updated>2012-07-07T22:33:02+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Google Chromeをさらに便利に]]></title>
+    <link href="http://morizotter.com/blog/2012/07/07/chrome-shortcut/"/>
+    <updated>2012-07-07T22:24:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/07/chrome-shortcut</id>
+    <content type="html"><![CDATA[<p>GoogleChromeを使っているときに、まだトラックパッドを使うことがちょこちょこあるので、調べてみました。調べた中で秀逸だったのがこのページ。</p>
+
+<p><a href="http://wayohoo.com/google-chrome/tips/useful-shortcut-key-list.html">【厳選】本当に使える Google Chrome のショートカットキー17個まとめ。</a></p>
+
+<p>17個という数も適切です。既に使っているものも多々あるのですが、今後使っていこうと思ったものを書いてみます。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">タブを閉じる      </th>
+<th align="left"> Command + W</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">指定したタブへ移動 </td>
+<td align="left"> Command + 数字(0〜9)</td>
+</tr>
+</tbody>
+</table>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[gitをDropboxで使うと起こる問題]]></title>
@@ -506,23 +535,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
     <content type="html"><![CDATA[<p>少し前にWordPressで作ったプログラム専門のブログ<a href="http://morizotter.com/blog">programming from 30</a>（そのうちURL変わるかもしれません）の存在意義が希薄化してる。Octopressの使い勝手がよすぎてこちらにがんがんプログラムのことも書いていきそうな雰囲気になっている。</p>
 
 <p>まぁ、形になる前の思いつきみたいなのはこっちに書いてある程度まとまったらあっちに書くって棲み分けをすることにしてみよう。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[どうして気持ちいいのか]]></title>
-    <link href="http://morizotter.com/blog/2012/07/03/why-i-am-so-satisfied/"/>
-    <updated>2012-07-03T01:03:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/03/why-i-am-so-satisfied</id>
-    <content type="html"><![CDATA[<p>コマンドラインでいろいろやった経験が少ないからかもしれませんが、Rubyのrakeやgitのaddやcommit、pushなどの流れが気持ちがいいです。</p>
-
-<p>なんで、気持ちがいいんだろう。</p>
-
-<p>わからない。</p>
-
-<p>少ないコマンドで直ぐに動くって所かもしれない。Objective-Cの場合はビルドしたりして少し時間かかるからかな。Xcodeでやるのとコマンドラインでやるのとの違いかもしれない。</p>
-
-<p>まぁ、今は本当に障りの既に用意されたコマンドをうってるだけだからそう感じるのかも。</p>
 ]]></content>
   </entry>
   
