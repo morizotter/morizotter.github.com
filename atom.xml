@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-07T13:53:19+09:00</updated>
+  <updated>2012-07-07T13:53:59+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -71,7 +71,7 @@
 
 <p>メールアドレスが増えすぎちゃっているのだが、ほとんどgmailなので登録は一発。ただ、さくらのメール設定には苦戦した。ユーザ名はメールアドレスなので。でも、最終的に躓いた原因はパスワードの間違えでした。あふあふ。</p>
 
-<p>さて、基本設定はこれでほぼ終わりかな。次は恐怖の環境設定です。Homebrewで一通りやろうと思ってます。phpの設定ファイルとか面倒そうだ！そもそお</p>
+<p>さて、基本設定はこれでほぼ終わりかな。次は恐怖の環境設定です。Homebrewで一通りやろうと思ってます。phpの設定ファイルとか面倒そうだ！</p>
 ]]></content>
   </entry>
   
