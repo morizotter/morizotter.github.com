@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-07T10:11:36+09:00</updated>
+  <updated>2012-07-07T13:53:19+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,68 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Macbook Air mid 2012が届いた！]]></title>
+    <link href="http://morizotter.com/blog/2012/07/07/macbook-air-2012/"/>
+    <updated>2012-07-07T10:12:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/07/macbook-air-2012</id>
+    <content type="html"><![CDATA[<p><a href="http://www.apple.com/jp/macbookair/">MacbookAir Mid 2012</a>が届いた！これから設定！設定の過程を記しておこうと思います。</p>
+
+<p>移行アシスタントで一気に移行してみてもよかったんですが、ほとんどDropboxやiCloudやEvernoteなので移行らくちん。面倒なのはPHPやMySQLなどの環境系だけなので、勉強も兼ねつつ環境系は再設定するということで、きれいな状態からやります！</p>
+
+<h2>構成</h2>
+
+<ul>
+<li>11インチ</li>
+<li>2.0GHz Intel Corei7 (Turbo Boost使用時最大2.6GHz)</li>
+<li>8GB</li>
+<li>256GB</li>
+<li>USキーボード</li>
+</ul>
+
+
+<h2>ファーストインプレッション</h2>
+
+<p><strong>早い！</strong></p>
+
+<p>MacbookAir2010と比べると格段の差です。まぁ以前はメモリ2GBでLionにしてからメモリぎりぎりでやってるしな〜。2012は検索やウィンドウを閉じるときなど早いです。きれいな環境というのもあると思いますが！</p>
+
+<h2>セッティング開始</h2>
+
+<h4>ソフトウェア・ダウンロード</h4>
+
+<p>早速実行したのはソフトウェアダウンロード。いくつか更新がありました。</p>
+
+<h4>システム環境設定</h4>
+
+<p>Finderの設定を変更。トラックパッドの設定を変更。ことえりをいれとく。へー、アイヌ語キーボードなんてあるんだ。アイヌ語って文字あったっけな。ふむ。便宜的に日本語を拡張して表現するのか。USキーボードの<code>Cmmand+Space</code>に慣れなきゃな。いちおキーボードのファンクションキーを使えるようにしておく。コンピュータ名が&#8221;〜〜no Macbook Air&#8221;とか変な感じだったので共有から変更。</p>
+
+<h4>アプリをインストール</h4>
+
+<p>DropboxとEvernoteをインストールして同期。がっつり同期！GoogleChromeインストール。最近、iOS系でAppStoreに問題がありインストールしても起動しないなどのエラーが心配だったが、ちょっと調べて問題は解決してるらしいので、他のアプリもDL、TwitterとかPixelmaterとかスカイプとかiWorkとかiTerms2とかいろいろ！ MacAppStoreからOS X Lionがダウンロードできるんだけど何だろう。Snowleopard用かな。ちなみに、The Tiny Bang Stroyってゲーム面白いっす。</p>
+
+<h4>もう移行終わり？</h4>
+
+<p>んーーー。これでほぼ移行完了したっぽい。。10分くらいだよこれ。すごすぎる。まぁ、今裏ではEvernoteやDropboxが、そしてiCloudがメール関係で動いてるっぽいけど。移行アシスタント必要ないな。</p>
+
+<hr />
+
+<h4>ちょい手間取った1</h4>
+
+<p>あ、Photoshopの移行忘れてた！現行のPhotoshopをアンインストールしてライセンス認証を解除してっと。うは、新しいMacBook Airにソフトをインストールするにはどうすればいいの！？</p>
+
+<p>Adobeの体験版ダウンロードページに行ってもCS5のダウンロードは終了しているということ。サポートフォーラムでも、インストール用CDやDVDがない場合は、アップグレードの推奨。うーむ、困った。</p>
+
+<p>ネットを探してもグレーっぽいものしか見つからず来週Adobeに電話するかと諦めかけていたところで、昔購入した本にCS5の体験版があったことを思い出した。で、はじめて<a href="http://support.apple.com/kb/HT5287?viewlocale=ja_JP">リモートディスク</a>を使いiMacに接続、CD-ROMから無事インストールし、Adobeのサイトに登録していたシリアルから無事ライセンス認証をクリアしたのでした。</p>
+
+<h4>ちょい手間取った2</h4>
+
+<p>メールアドレスが増えすぎちゃっているのだが、ほとんどgmailなので登録は一発。ただ、さくらのメール設定には苦戦した。ユーザ名はメールアドレスなので。でも、最終的に躓いた原因はパスワードの間違えでした。あふあふ。</p>
+
+<p>さて、基本設定はこれでほぼ終わりかな。次は恐怖の環境設定です。Homebrewで一通りやろうと思ってます。phpの設定ファイルとか面倒そうだ！そもそお</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[少しNumbersのことを]]></title>
@@ -373,21 +435,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
 <p>ちょっとプログラミングが分かる人にはOctopressおすすめです！！！</p>
 
 <p>今日は、早めに会社をあがり着替えて喫茶店に来てます。少しでもコード書いて技術力高めよ〜。q</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[octopressのバックアップをbitbucketにとる]]></title>
-    <link href="http://morizotter.com/blog/2012/07/02/backup-to-bitbucket/"/>
-    <updated>2012-07-02T02:24:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/02/backup-to-bitbucket</id>
-    <content type="html"><![CDATA[<p><a href="http://tokkonopapa.github.com/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで</a>を参考にしてoctopressディレクトリをbitbucketのリポジトリに追加してみました。あとついでにoctopressの更新も試してみました。入れたばかりだからまぁ更新は無かったんだけれど。本当にわかりやすくて助かりました！octopressディレクトリをpushしてるんですが、どこにpushしてるかもわからず、これじゃremoteで管理できないどうしようという状態だったので！</p>
-
-<p>最初はremoteの登録がいまいちよくわからず、push対象を追加してよいのか！？などと立ち止まっていたんですが、おそらくこれ、pushするときに登録してあるremoteのどこにpushするか指定してるんですね。<code>push -u bitbucket source</code>て感じで。で、一度指定したら次回からは<code>push</code>のみで同じところにpushすると。ちなみに、この場合のbitbucketはremote登録先の名前で、sourceはbranchになるのかな。</p>
-
-<p>いやぁ、よかった！</p>
-
-<p>ちなみにbitbucketは非公開リモート・リポジトリです。下書きなど書いても公開せず管理できますね！</p>
 ]]></content>
   </entry>
   
