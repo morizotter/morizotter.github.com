@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-07T15:01:45+09:00</updated>
+  <updated>2012-07-07T15:06:25+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -20,7 +20,11 @@
     <id>http://morizotter.com/blog/2012/07/07/macbook-air-2012-env</id>
     <content type="html"><![CDATA[<p><a href="http://www.morizotter.com/blog/2012/07/07/macbook-air-2012/">先ほどの基本的な設定</a>に加え、プログラミングの環境を整えていきます。</p>
 
+<h2>Xcodeとコマンドラインツール（gitも付属）</h2>
+
 <p>まずはXcodeのインストール。そしてコマンドラインツールをインストール。</p>
+
+<h2>HomebrewとRuby</h2>
 
 <p><a href="http://morizotter.com/blog/2012/07/249/">以前書いた記事</a>を参考にRubyをインストール。</p>
 
@@ -38,6 +42,8 @@
 
 <p>ここで記事をPushできず。githubとbitbucketにSSH Keyを登録しなきゃ。ていうか、その前にgitの初期情報ちゃんとセットしよう。</p>
 
+<h2>gitの設定とgithub、bitbucketへの接続</h2>
+
 <p><a href="https://help.github.com/articles/set-up-git">名前の設定はgithubの設定ページ</a>に載っていたのでそこで。以前の端末のgitconfigをみたかったのだが、<code>git config --global --list</code>でいけるらしい。<a href="http://d.hatena.ne.jp/nabnab/20100805/1281015625">ここ</a>で確認。<code>git credential-osxkeychain</code>ができるように一応設定。昔これをやったようなおぼろげな記憶があったので。</p>
 
 <ul>
@@ -45,6 +51,10 @@
 <li><a href="https://confluence.atlassian.com/display/BITBUCKET/How+to+install+a+public+key+on+your+bitbucket+account">bitbucket</a></li>
 </ul>
 
+
+<p>オッケー。githubもbitbucketもアクセスできた。</p>
+
+<p>ちょっと休憩。US配列は思った以上にストレスあるな。チルダとかダルブクオテーションとか、+とか結構違う。地味にControlの位置が変わったのが影響して小指が痛い。</p>
 ]]></content>
   </entry>
   
