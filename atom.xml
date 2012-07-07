@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-08T00:21:52+09:00</updated>
+  <updated>2012-07-08T00:22:17+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -44,7 +44,20 @@
     <link href="http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap/"/>
     <updated>2012-07-07T23:10:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>が参考になりました。USキーボードと日本語キーボードとの間で論争があるんですね。想像できますけどね。決着はなかなかつかないでしょうね〜。どちらもよいので。</p>
+
+<p>で、専用のソフトを入れるんですが、ここ。</p>
+
+<ul>
+<li><a href="http://pqrs.org/macosx/keyremap4macbook/index.html.ja">KeyRemap4MacBook</a></li>
+</ul>
+
+
+<p>Twitter Bootstrapを使って作られたサイトだと思うんですが、とてもきれいで情報量も適切で参考になります。すごい。</p>
+
+<p>とりあえず、このソフトをインストールし、左右のCommandを単体で押したときに日本語キーボードと同じように左が英数、右がかなと変更できるようにしました。かなり使いやすくなった！</p>
+
+<p>よかった。</p>
 ]]></content>
   </entry>
   
