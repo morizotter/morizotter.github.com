@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-07T13:53:59+09:00</updated>
+  <updated>2012-07-07T14:29:25+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MacBook Air環境設定]]></title>
+    <link href="http://morizotter.com/blog/2012/07/07/macbook-air-2012-env/"/>
+    <updated>2012-07-07T13:59:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/07/macbook-air-2012-env</id>
+    <content type="html"><![CDATA[<p><a href="http://www.morizotter.com/blog/2012/07/07/macbook-air-2012/">先ほどの基本的な設定</a>に加え、プログラミングの環境を整えていきます。</p>
+
+<p>まずはXcodeのインストール。そしてコマンドラインツールをインストール。</p>
+
+<p><a href="http://morizotter.com/blog/2012/07/249/">以前書いた記事</a>を参考にRubyをインストール。</p>
+
+<p><code>brew update</code>しといた。落としてきたのは最新かもしれないけどさ。あと、まず最初に<code>brew doctor</code>やれと表示されたので、こちらもやっておきました。</p>
+
+<p><a href="http://octopress.org/docs/setup/">Octopressのセットアップページ</a>からセットアップの続きを行う。</p>
+
+<p><code>gem install</code></p>
+
+<p><code>rbenv rehash</code></p>
+
+<p><code>bundle install</code></p>
+
+<p>Mou.appも入れたので、この記事は新しいMacBook Airで書いてます。USキーボードに慣れないけど、2010と比べて別物のようなサクサク状態にうきうきです！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Macbook Air mid 2012が届いた！]]></title>
@@ -420,21 +445,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
     <updated>2012-07-02T22:18:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/07/02/solved</id>
     <content type="html"><![CDATA[<p>さてさて、以前から躓いていた問題が解決した！ある程度理解もした（完全ではないが）。資料にまとめる為にWordが面倒なので、markdownからwordに変換する方法を調べるぞ（ここは僕のエリア。便利な方法を探すのは楽しいぞっと！）</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[今日もOctopress]]></title>
-    <link href="http://morizotter.com/blog/2012/07/02/today-rake-too/"/>
-    <updated>2012-07-02T20:52:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/02/today-rake-too</id>
-    <content type="html"><![CDATA[<p>今日もまたOctopressです。この傾向は数日続くかも。ブログ書いてる感じがしない。でも、ブログなんだよな一応ジャンル的に。すごい簡単に書けるので、書くことへの抵抗がほんとになくなる。恐らくほとんど読まれていないこの記事。思いついたままを書くのって楽しいな。</p>
-
-<p>ということで、2004年にはじめてブログを書き始めた当時と同じくらいの楽しさを感じています。ブログを書くことがこんなに楽しいなんて久しぶり。</p>
-
-<p>ちょっとプログラミングが分かる人にはOctopressおすすめです！！！</p>
-
-<p>今日は、早めに会社をあがり着替えて喫茶店に来てます。少しでもコード書いて技術力高めよ〜。q</p>
 ]]></content>
   </entry>
   
