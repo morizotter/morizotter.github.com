@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-08T00:12:58+09:00</updated>
+  <updated>2012-07-08T00:21:52+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -36,6 +36,15 @@
 
 
 <p>ということくらいです。楽チンでよかった！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[USキーボードのキーのリマッップをしてみた]]></title>
+    <link href="http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap/"/>
+    <updated>2012-07-07T23:10:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap</id>
+    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
@@ -548,25 +557,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
 <p>とりあえず、基本操作っぽいh,j,k,lを学ぶ。これを入力する前に5とか入れるとその文字分移動する。例えば、<code>5l</code>ならば右に5移動する。今までカーソルだけで移動してたから少しは楽になりそう。</p>
 
 <p>それにしても今日はなんだか眠い。眠いと新しいことをやろうという気分にならないなぁ。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[herokuを使ってみたい]]></title>
-    <link href="http://morizotter.com/blog/2012/07/03/heroku/"/>
-    <updated>2012-07-03T01:44:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/03/heroku</id>
-    <content type="html"><![CDATA[<p>先日のOctopressに味をしめ、毎日Rubyが気になって仕方ありません。全部がそうではないのかもしれないのですが、gitと連携しているところが素敵すぎです。先日のgithubとの連携もそうでしたが、herokuもgit pushすればデプロイできるなんて素敵過ぎ。</p>
-
-<p>ウェブをさまよっていたら<a href="http://kuroigamen.com/22">KUROIGAMEN</a>のサイトに非常に分かりやすい説明があり、さらに惹かれています。</p>
-
-<p>Ruby,railsなんかおしゃれな感じもしますし。</p>
-
-<p><a href="http://www.heroku.com/">heroku</a></p>
-
-<p>Objective-CとかPHPとかMySQLとか目の前のやらなければ行けない&amp;楽しいことがあるのですが、さらにここにRubyが加わりました！楽しいことは時間を忘れて没頭できます。そして楽しいことでも、多分波があって飽きたりする時期もくると思いますが、いくつも楽しいことがあれば、螺旋状にあっちこっちとぐるぐる回って力がついていくと思います。</p>
-
-<p>とりあえずやりたいことをやる時間が十分にないっていう（たぶん、贅沢。普通のサラリーマンよりは大分あると思う）一般的な状況の中で、こう思うことで楽しんで技術力高めていこうと思ってます！</p>
 ]]></content>
   </entry>
   

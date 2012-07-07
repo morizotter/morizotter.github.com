@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="Eclipseのsvnとの連携をやっていたんだけど、基本的なことが分からず泣きたい。しかも、慣れてないからか調べ方も分からない。調べても知りたいところが全然出てこない。たぶん、当たり前すぎるんだろう。そもそもEclipseでできることが分からなくて、、、きつすぎる。 &hellip;">
+  <meta name="description" content="ここやここを参照してsubversionをHomebrewでインストールしてみた。brew svnでエラーが出るなと思ったら、brew subversionで解決。日本語のファイル名の扱いに問題があったみたいだけど--unicode-pathオプションを付けることで解消するらしい。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,74 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/05/subversion-with-homebrew/">HomebrewでSubversionをインストールしてみた</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-05T22:10:00+09:00" pubdate data-updated="true">Jul 5<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/05/subversion-with-homebrew/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://d.hatena.ne.jp/nobeans/20110401/1301634519">ここ</a>や<a href="http://qiita.com/items/ec4f45e3339f19783e1e">ここ</a>を参照してsubversionをHomebrewでインストールしてみた。<code>brew svn</code>でエラーが出るなと思ったら、<code>brew subversion</code>で解決。日本語のファイル名の扱いに問題があったみたいだけど<code>--unicode-path</code>オプションを付けることで解消するらしい。</p>
+
+<p>それにしてもsubversionてパッチのDownloadとインストールに時間がかかるものなのだな。完了するまで数分かかった。</p>
+
+<p><a href="http://www.maruko2.com/mw/Homebrew%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">Homebrewの使い方</a>が参考になる。Homebrewももっと調べなくちゃな。</p>
+
+<p>ちなみにインストール中にmakeで固まるという問題が発生。よくないかもしれないけど、一度<code>Ctr+C</code>で止め、検索したら<a href="http://d.hatena.ne.jp/irof/touch/searchdiary?word=*%5B%A5%C8%A5%E9%A5%D6%A5%EB%5D">ここ</a>に情報があった。まぁ、ただもう一度繰り返すだけだけど、繰り返したら本当に3分ほどで終わった。</p>
+
+<p>で、今度は新しく入れたsubversionのバージョンが古い問題。上記サイトを参考にpathの優先順位を変更してみた。不安なので一応記録に残しておく。</p>
+
+<p>初期設定はこれ。</p>
+
+<pre><code>/usr/bin
+/bin
+/usr/sbin
+/sbin
+/usr/local/bin
+</code></pre>
+
+<p>で、こうしてみた。</p>
+
+<pre><code>/usr/local/bin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+</code></pre>
+
+<p>設定が反映されないので、しょぼい解決策だと思いながらMacを再起動して反映。解消。</p>
+
+<p>ほんとはコマンドラインからリポジトリへリモート登録をトライしてみようと思ったけど、時間もかかりそうだったのでこれはパスしてリポジトリからCheckout。で、作業用フォルダを作成して<code>svn add</code>、<code>svn commit -m "firstcommit"</code>してコミットされていることを確認！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -505,54 +573,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/03/heroku/">herokuを使ってみたい</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-03T01:44:00+09:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/03/heroku/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>先日のOctopressに味をしめ、毎日Rubyが気になって仕方ありません。全部がそうではないのかもしれないのですが、gitと連携しているところが素敵すぎです。先日のgithubとの連携もそうでしたが、herokuもgit pushすればデプロイできるなんて素敵過ぎ。</p>
-
-<p>ウェブをさまよっていたら<a href="http://kuroigamen.com/22">KUROIGAMEN</a>のサイトに非常に分かりやすい説明があり、さらに惹かれています。</p>
-
-<p>Ruby,railsなんかおしゃれな感じもしますし。</p>
-
-<p><a href="http://www.heroku.com/">heroku</a></p>
-
-<p>Objective-CとかPHPとかMySQLとか目の前のやらなければ行けない&amp;楽しいことがあるのですが、さらにここにRubyが加わりました！楽しいことは時間を忘れて没頭できます。そして楽しいことでも、多分波があって飽きたりする時期もくると思いますが、いくつも楽しいことがあれば、螺旋状にあっちこっちとぐるぐる回って力がついていくと思います。</p>
-
-<p>とりあえずやりたいことをやる時間が十分にないっていう（たぶん、贅沢。普通のサラリーマンよりは大分あると思う）一般的な状況の中で、こう思うことで楽しんで技術力高めていこうと思ってます！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -578,6 +598,10 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
       </li>
     
       <li class="post">
+        <a href="/blog/2012/07/07/us-keyboard-key-remap/">USキーボードのキーのリマッップをしてみた</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/07/chrome-shortcut/">Google Chromeをさらに便利に</a>
       </li>
     
@@ -587,10 +611,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
     
       <li class="post">
         <a href="/blog/2012/07/07/macbook-air-2012-env/">MacBook Air環境設定</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/07/macbook-air-2012/">Macbook Air mid 2012が届いた！</a>
       </li>
     
   </ul>
