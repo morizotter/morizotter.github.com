@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="GoogleChromeを使っているときに、まだトラックパッドを使うことがちょこちょこあるので、調べてみました。調べた中で秀逸だったのがこのページ。 【厳選】本当に使える Google Chrome のショートカットキー17個まとめ。 17個という数も適切です。既に使っているものも多々あるのですが &hellip;">
+  <meta name="description" content="新しいMacなどに開発環境を移行したときに面倒なのはXcodeの証明書の移行でした。ちょっとしらべたところもとまかさんの簡単そうに見える記事を見つけやってみたところ、超絶簡単だったのでメモとして記しておきます。 参考にした記事 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,61 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/07/xcode-device-install/">Xcodeの環境移行が超楽！</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-07T23:42:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/07/xcode-device-install/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>新しいMacなどに開発環境を移行したときに面倒なのはXcodeの証明書の移行でした。ちょっとしらべたところもとまかさんの簡単そうに見える記事を見つけやってみたところ、超絶簡単だったのでメモとして記しておきます。</p>
+
+<p><strong>参考にした記事</strong></p>
+
+<ul>
+<li><a href="http://d.hatena.ne.jp/moto_maka/touch/20120623/1340396415">Mac環境を移行するときにXcodeでiPhone実記転送を可能にするまでの手順</a></li>
+</ul>
+
+
+<p>記事通りにやれば問題なく、いきました。間違えることはないだろうし、まぁ間違えても即復旧可能なのですがポイントとして、</p>
+
+<ul>
+<li>新しいXcodeのDeviceタブにTEAMがなかった場合は、Probivioning ProfilesのところからImportすればOK</li>
+<li>ファイルはいくつか生成されるが、&lt;作成したファイル名>.developerprofileのみImportすればその他のプロビジョニングプロファイルがついてくる。</li>
+</ul>
+
+
+<p>ということくらいです。楽チンでよかった！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -667,56 +722,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/05/i-want-to-cry/">Eclipseの使い方が分からず泣きたい</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-05T20:31:00+09:00" pubdate data-updated="true">Jul 5<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/05/i-want-to-cry/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Eclipseのsvnとの連携をやっていたんだけど、基本的なことが分からず泣きたい。しかも、慣れてないからか調べ方も分からない。調べても知りたいところが全然出てこない。たぶん、当たり前すぎるんだろう。そもそもEclipseでできることが分からなくて、、、きつすぎる。Eclipseでフォルダが開けない。どうして開けないんだろう、、、開こうとするとプロジェクトじゃないですとか、、、</p>
-
-<p>既存のプロジェクトは追加できないのか、、、</p>
-
-<p>なぞだらけ、、、</p>
-
-<p>結局、svnのリポジトリから持ってきたフォルダは認識された。そして、フォルダの中には.projectというのができてた。恐らくこれでプロジェクトって認識してるんだろうな。。。既存のプロジェクトをEclipseのプロジェクトとして認識させることにはとうとう成功しませんでした。</p>
-
-<p>3時間…</p>
-
-<p>Eclipseは何度触っても慣れない。ほとんど触ってないからだと思うけど………………………………………</p>
-
-<p>うああああ。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -736,6 +741,10 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/07/xcode-device-install/">Xcodeの環境移行が超楽！</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/07/chrome-shortcut/">Google Chromeをさらに便利に</a>
       </li>
     
@@ -749,10 +758,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
     
       <li class="post">
         <a href="/blog/2012/07/07/macbook-air-2012/">Macbook Air mid 2012が届いた！</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/06/numbers/">少しNumbersのことを</a>
       </li>
     
   </ul>
