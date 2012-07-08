@@ -146,6 +146,69 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2012/07/08/grep/">grepについて少し学んでみた</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-08T20:38:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/08/grep/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>コマンドラインでファイル検索できないと不便だなと思ったので、grepを学んでみることにした。</p>
+
+<p>最初に参考にしたのは<a href="http://www.nurs.or.jp/~sugi/grep.htm">ここ</a>。基本的だと思う。テストとしてデスクトップに一つ適当にファイルを作ってみた。</p>
+
+<pre><code>$ cd ~/Desktop/
+$ mkdir test
+$ echo "test テスト" &gt; test/test.txt
+</code></pre>
+
+<p>で、</p>
+
+<pre><code>$ grep -r "テスト" ./test/
+</code></pre>
+
+<p>で、検索成功。出力結果はこんな感じ。</p>
+
+<pre><code>./test/test.txt:test テスト
+</code></pre>
+
+<p>このブログのgitを含む記事を検索してみた。ぐは。大量に出てきた。gitを含む分が出力されるみたい。</p>
+
+<p>ファイルを特定してみたらgitを含む行が出力されるのがわかった。</p>
+
+<p><a href="http://blog.paz-para.com/?p=386">ここ</a>を参照してオプションを知る。とりあえず、ファイル名だけを出力する<code>-l</code>を覚えておこう！</p>
+
+<p>電車の中の細切れ時間での学習でした！</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2012/07/08/rails/">Railsを入れてみました</a></h1>
     
     
@@ -681,56 +744,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/06/numbers/">少しNumbersのことを</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-06T13:34:00+09:00" pubdate data-updated="true">Jul 6<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/06/numbers/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今日は少しNumbersのことを学ぼうと思っている。Numbersはプログラムを書く前に思考を整理したりするのに使っている。ただ単に項目を列挙するだけのシンプルな使い方。だけど、やっぱりExcelほど使いこなしていない。</p>
-
-<h3>選択中のセルを編集</h3>
-
-<p>Numbersについてちょっと学ぼうと思ったのは、ExcelのF2にあたる<strong>選択中のセルを編集</strong>機能を当たりをつけて探っていたところ、<code>Option+Enter</code>でできたことがきっかけ。これがあるだけで、大分違う。できるだけ、トラックパッドやマウスを使わないで作業をしたいのだ。</p>
-
-<h3>セルの中で改行</h3>
-
-<p>他に便利なのは確か<code>Alt+Enter</code>にあたる<code>Option+Enter</code>。セルの中で改行ができる。</p>
-
-<h3>行を追加</h3>
-
-<p>うっほ、<code>Option+↑</code>で行を追加できるのね！これはいい！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -754,6 +767,10 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
       </li>
     
       <li class="post">
+        <a href="/blog/2012/07/08/grep/">grepについて少し学んでみた</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/08/rails/">Railsを入れてみました</a>
       </li>
     
@@ -763,10 +780,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
     
       <li class="post">
         <a href="/blog/2012/07/07/xcode-device-install/">Xcodeの環境移行が超楽！</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/07/us-keyboard-key-remap/">USキーボードのキーのリマッップをしてみた</a>
       </li>
     
   </ul>

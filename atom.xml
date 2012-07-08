@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-08T20:28:25+09:00</updated>
+  <updated>2012-07-08T20:57:46+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -43,6 +43,40 @@
 <p>完全に理解した訳ではないですが、上記の件だけでだいぶgitが身近になった気分です。</p>
 
 <p>Dropboxに共有リポジトリを作る方法は<a href="http://naoki.sato.name/lab/archives/38">こちら</a>を参考にしました。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[grepについて少し学んでみた]]></title>
+    <link href="http://morizotter.com/blog/2012/07/08/grep/"/>
+    <updated>2012-07-08T20:38:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/08/grep</id>
+    <content type="html"><![CDATA[<p>コマンドラインでファイル検索できないと不便だなと思ったので、grepを学んでみることにした。</p>
+
+<p>最初に参考にしたのは<a href="http://www.nurs.or.jp/~sugi/grep.htm">ここ</a>。基本的だと思う。テストとしてデスクトップに一つ適当にファイルを作ってみた。</p>
+
+<pre><code>$ cd ~/Desktop/
+$ mkdir test
+$ echo "test テスト" &gt; test/test.txt
+</code></pre>
+
+<p>で、</p>
+
+<pre><code>$ grep -r "テスト" ./test/
+</code></pre>
+
+<p>で、検索成功。出力結果はこんな感じ。</p>
+
+<pre><code>./test/test.txt:test テスト
+</code></pre>
+
+<p>このブログのgitを含む記事を検索してみた。ぐは。大量に出てきた。gitを含む分が出力されるみたい。</p>
+
+<p>ファイルを特定してみたらgitを含む行が出力されるのがわかった。</p>
+
+<p><a href="http://blog.paz-para.com/?p=386">ここ</a>を参照してオプションを知る。とりあえず、ファイル名だけを出力する<code>-l</code>を覚えておこう！</p>
+
+<p>電車の中の細切れ時間での学習でした！</p>
 ]]></content>
   </entry>
   
@@ -591,17 +625,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
 
 
 <p>Octopressは本当におすすめです！これ、なんど書いたことか。でも、一人ツイッターだからよいのさ！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ドメインを変更しました]]></title>
-    <link href="http://morizotter.com/blog/2012/07/03/morizotter-s-cname/"/>
-    <updated>2012-07-03T22:55:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/03/morizotter-s-cname</id>
-    <content type="html"><![CDATA[<p><a href="http://www.sankitch.me/blog/2012/05/05/build-octopress-on-github-dropbox/">この記事</a>を参考にmorizotter.github.comをmorizotter.comに変えてみた。morizotter.github.comって名前もよかったけどね。</p>
-
-<p>この記事との出会いは本当によかった。この記事と出会わなければOctopressをこんなに楽しんでなかったんじゃないかと思う。&#8221;簡単にできる&#8221;って思って、本当にある程度簡単にできました！</p>
 ]]></content>
   </entry>
   
