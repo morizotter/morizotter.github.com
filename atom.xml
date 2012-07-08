@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-08T20:57:46+09:00</updated>
+  <updated>2012-07-08T21:01:33+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -70,11 +70,11 @@ $ echo "test テスト" &gt; test/test.txt
 <pre><code>./test/test.txt:test テスト
 </code></pre>
 
-<p>このブログのgitを含む記事を検索してみた。ぐは。大量に出てきた。gitを含む分が出力されるみたい。</p>
+<p>このブログのgitを含む記事を検索してみた。ぐは。大量に出てきた。gitを含む行が出力されるみたい。</p>
 
-<p>ファイルを特定してみたらgitを含む行が出力されるのがわかった。</p>
+<p>ファイルを特定して検索してみた。やっぱり行。</p>
 
-<p><a href="http://blog.paz-para.com/?p=386">ここ</a>を参照してオプションを知る。とりあえず、ファイル名だけを出力する<code>-l</code>を覚えておこう！</p>
+<p><a href="http://blog.paz-para.com/?p=386">ここ</a>を参照してオプションを知る。とりあえず、ファイル名だけを出力する<code>-l</code>とディレクトリ以下を再起的に検索する<code>-r</code>を覚えておこう！</p>
 
 <p>電車の中の細切れ時間での学習でした！</p>
 ]]></content>
