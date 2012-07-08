@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-08T02:05:14+09:00</updated>
+  <updated>2012-07-08T15:34:52+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[gitの基本設定]]></title>
+    <link href="http://morizotter.com/blog/2012/07/08/git-config/"/>
+    <updated>2012-07-08T12:42:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/08/git-config</id>
+    <content type="html"><![CDATA[<p>細切れ記事です。基本的にMORIZOTTER PRESSでは思いつきを思いつきのまま書いていくというスタイルなのでご了承ください。</p>
+
+<p>gitの表示色をかえられるとどこかで読んだことを思い出し少し調べてみたら、<a href="http://d.hatena.ne.jp/nabnab/20100805/1281015625">良さげなページ</a>を見つけました。出力のカラーにとどまらず、基本的な設定部分が丁寧に説明されています。</p>
+
+<p>まず、<code>git config --global</code>に続いての名前、emailの設定、<code>$git config --global color.ui auto</code>でのカラー設定、<code>git config --global --list</code>での基本設定内容の確認。</p>
+
+<p>ふむふむ。勉強になりました！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Xcodeの環境移行が超楽！]]></title>
@@ -44,7 +59,7 @@
     <link href="http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap/"/>
     <updated>2012-07-07T23:10:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap</id>
-    <content type="html"><![CDATA[<p>いろいろ読んでるうちにUSキーボード使いやすいだろう。よしやってみるか！ということで、新しいAirはUSキーボードにしてみたんですね。で、これが結構ストレスフル。キーの配列が想像していた以上に違って、特に<code>`</code>や<code>~</code>、<code>_</code>や<code>+</code>や<code>_</code>や、<code>:</code>や<code>"</code>など基本的によく使いそうなところがだいぶ違う。もちろんControlやCommandの配置なども変わっているんですが、これは慣れでいけるなと思うし使いやすい面もあっていいのですが、上記の細かいのは少し時間がかかりそうです。</p>
+    <content type="html"><![CDATA[<p>いろいろ読んでるうちにUSキーボード使いやすいだろう。よしやってみるか！ということで、新しいAirはUSキーボードにしてみたんですね。で、これが結構ストレスフル。キーの配列が想像していた以上に違って、特に<code>`</code>や<code>~</code>、<code>_</code>や<code>+</code>や、<code>:</code>や<code>"</code>など基本的によく使いそうなところがだいぶ違う。もちろんControlやCommandの配置なども変わっているんですが、これは慣れでいけるなと思うし使いやすい面もあっていいのですが、上記の細かいのは少し時間がかかりそうです。</p>
 
 <p>で、あと大きな問題は日本語-英語変換のを<code>Command + Space</code>（また+の場所間違った）でトグルでやらなければいけないところです。日本語キーボードの場合は&#8221;英数&#8221;と&#8221;かな&#8221;ボタンがあって一発なんですけどね。</p>
 
@@ -569,19 +584,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
 <p>2回目に選んだものそれもまたMBAでした。これを選んだ理由は前述のものもありますが、さらに付け加えて<a href="http://itunes.apple.com/jp/app/air-display/id368158927?mt=8">AirDisplay</a>というアプリがあったからだと思っています。2回目ともなると用途は明確で、CPUもメモリもアップグレードで迷いはありませんでした。一時的に出費は生じても普段使っている途中でフリーズするなどして無駄にする時間の累積の価値の方が高いですからね！</p>
 
 <p>これをMacとつなげば簡単に2画面が実現します。これで、何かを参照しながら文を書いたりプログラミングをしたりすることが可能になります。どうせMacBookAirとiPadは同時に持ち歩いているので、わざわざ13インチを買う必要はないかなと。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[vim]]></title>
-    <link href="http://morizotter.com/blog/2012/07/03/vim/"/>
-    <updated>2012-07-03T21:02:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/03/vim</id>
-    <content type="html"><![CDATA[<p><a href="http://archiva.jp/web/tool/vim_basic.html">Vim基本操作まとめ</a>というよいページを見つけたので、これを参考に少しずつVimに慣れていこうと思ってる。Vimを使う機会はちょくちょくあるんだけど、どうしても慣れないので作業が遅くなるので。bashとかも同じように少しずつ学んでいきたいなぁ。</p>
-
-<p>とりあえず、基本操作っぽいh,j,k,lを学ぶ。これを入力する前に5とか入れるとその文字分移動する。例えば、<code>5l</code>ならば右に5移動する。今までカーソルだけで移動してたから少しは楽になりそう。</p>
-
-<p>それにしても今日はなんだか眠い。眠いと新しいことをやろうという気分にならないなぁ。</p>
 ]]></content>
   </entry>
   

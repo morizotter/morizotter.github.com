@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Octopressでブログを書くことがなぜ快適か - MORIZOTTER PRESS</title>
+  <title>gitの基本設定 - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="Octopressでブログを書くことがなぜ快適かを考えた。考えていたらOctopress以外の要因もいろいろ出てきたのだけど。 速い 通常ブログサービスで記事を書く場合、サービスを開いて、新規記事投稿ボタンを押して、画面開いて画像足すときは画像ボタン押してとか、 &hellip;">
+  <meta name="description" content="細切れ記事です。基本的にMORIZOTTER PRESSでは思いつきを思いつきのまま書いていくというスタイルなのでご了承ください。 gitの表示色をかえられるとどこかで読んだことを思い出し少し調べてみたら、良さげなページを見つけました。出力のカラーにとどまらず、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/04/octopress-is-confortable/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/07/08/git-config/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">Octopressでブログを書くことがなぜ快適か</h1>
+      <h1 class="entry-title">gitの基本設定</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2012-07-04T01:12:00+09:00" pubdate data-updated="true">Jul 4<span>th</span>, 2012</time>
+<time datetime="2012-07-08T12:42:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,40 +106,13 @@
   </header>
 
 
-<div class="entry-content"><p>Octopressでブログを書くことがなぜ快適かを考えた。考えていたらOctopress以外の要因もいろいろ出てきたのだけど。</p>
+<div class="entry-content"><p>細切れ記事です。基本的にMORIZOTTER PRESSでは思いつきを思いつきのまま書いていくというスタイルなのでご了承ください。</p>
 
-<ol>
-<li><p>速い</p>
+<p>gitの表示色をかえられるとどこかで読んだことを思い出し少し調べてみたら、<a href="http://d.hatena.ne.jp/nabnab/20100805/1281015625">良さげなページ</a>を見つけました。出力のカラーにとどまらず、基本的な設定部分が丁寧に説明されています。</p>
 
-<p>  通常ブログサービスで記事を書く場合、サービスを開いて、新規記事投稿ボタンを押して、画面開いて画像足すときは画像ボタン押してとか、その都度通信したりなんか処理してるので時間がかかる。</p>
+<p>まず、<code>git config --global</code>に続いての名前、emailの設定、<code>$git config --global color.ui auto</code>でのカラー設定、<code>git config --global --list</code>での基本設定内容の確認。</p>
 
-<p>  Octopressはターミナルからかちゃかちゃっとやって書ける。</p>
-
-<p>  まぁただターミナルでコマンド打ってる時間もかかっている訳だけど、通信に比べたら断然速いし、手を動かしているのでただ待っているのと比べて体感待ち時間が違う。まぁPushの時に少し待ちはあるんだけど、もう記事書き終えてるし充実感とともに訪れる待ち。ってか待たなくていい。他のこと始めればいいんだから。あと、Pushしててもログが表示されるし、単なる待ちとは感じられない。この辺りUIデザインするときに役に立ちそう。</p></li>
-<li><p>markdownで書ける</p>
-
-<p>  これ素敵すぎます。普通のブログサービスで記事を書こうとした場合、ちょっとしたことをやるのに、見出しの選択だとか、リンクだとかいちいちボタンが面倒くさい。HTML編集モードもあるけどHTML自体が面倒くさい。</p>
-
-<p>  その点、markdownはある程度のことは*とか1.とかTabとか使って簡単に書ける。速い！</p></li>
-<li><p>gitがいい！</p>
-
-<p>  履歴管理ができて安心。commitやPushが気持ちいい。たぶん、今後訪れるPullも気持ちいい。</p></li>
-<li><p>Rubyがいい！</p>
-
-<p>  使って楽しい。これから覚えようと思っているから知的好奇心くすぐられる。</p></li>
-</ol>
-
-
-<p><em>その他の要因</em></p>
-
-<ul>
-<li>カテゴリもタグも付けてない、テーマすら決めていないのですらすら書ける。（といってもプログラムの話題ばかりになっているけど）</li>
-<li>すらすらを許してくれるレイアウト。</li>
-<li>一人ツイッター。他の人のTLを汚すこともないし。</li>
-</ul>
-
-
-<p>Octopressは本当におすすめです！これ、なんど書いたことか。でも、一人ツイッターだからよいのさ！</p>
+<p>ふむふむ。勉強になりました！</p>
 </div>
 
 
@@ -162,7 +135,7 @@
   
 
 
-<time datetime="2012-07-04T01:12:00+09:00" pubdate data-updated="true">Jul 4<span>th</span>, 2012</time>
+<time datetime="2012-07-08T12:42:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
       
 
 
@@ -170,7 +143,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/04/octopress-is-confortable/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/04/octopress-is-confortable/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/08/git-config/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/08/git-config/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -183,10 +156,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/03/morizotter-s-cname/" title="Previous Post: ドメインを変更しました">&laquo; ドメインを変更しました</a>
+        <a class="basic-alignment left" href="/blog/2012/07/07/xcode-device-install/" title="Previous Post: Xcodeの環境移行が超楽！">&laquo; Xcodeの環境移行が超楽！</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/04/shell-script/" title="Next Post: シェルスクリプトとか">シェルスクリプトとか &raquo;</a>
       
     </p>
   </footer>
@@ -302,8 +273,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/04/octopress-is-confortable/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/04/octopress-is-confortable/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/07/08/git-config/';
+        var disqus_url = 'http://morizotter.com/blog/2012/07/08/git-config/';
         var disqus_script = 'embed.js';
       
     (function () {
