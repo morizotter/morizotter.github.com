@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="細切れ記事です。基本的にMORIZOTTER PRESSでは思いつきを思いつきのまま書いていくというスタイルなのでご了承ください。 gitの表示色をかえられるとどこかで読んだことを思い出し少し調べてみたら、良さげなページを見つけました。出力のカラーにとどまらず、 &hellip;">
+  <meta name="description" content="共有リポジトリを作るという記事が非常に参考になったので備忘録として記しておきます。 基本的にはからのリポジトリを&lt;任意の名前&gt;.gitという形で作り、 git init --bare --shared=true をするということですね。 あとはローカルの方でgit &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,97 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/08/git-init/">gitで共有レポジトリを作る</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-08T22:15:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/08/git-init/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://blog.s21g.com/articles/1312">共有リポジトリを作る</a>という記事が非常に参考になったので備忘録として記しておきます。</p>
+
+<p>基本的にはからのリポジトリを<code>&lt;任意の名前&gt;.git</code>という形で作り、</p>
+
+<pre><code>git init --bare --shared=true
+</code></pre>
+
+<p>をするということですね。</p>
+
+<p>あとはローカルの方でgit pushするとcloneできるようです。</p>
+
+<p>Dropboxに共有リポジトリを作る方法は<a href="http://naoki.sato.name/lab/archives/38">こちら</a>を参考にしました。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/08/rails/">Railsを入れてみました</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-08T19:50:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/08/rails/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Rubyの有名なフレームワークであるRailsを入れてみました。といってももうほとんどネットにある情報をそのままなぞっただけです。</p>
+
+<p><a href="http://pplog.org/?p=1845">このサイト</a>が本当に丁寧でわかりやすかったです。とりあえずのプロジェクトも作成し実際動いたところで感動しました。</p>
+
+<p>Railsもっと使いこなしていきたい！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -627,100 +718,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/05/let-s-know-about-homebrew/">Homebrewを知ろう！</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-05T23:36:00+09:00" pubdate data-updated="true">Jul 5<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/05/let-s-know-about-homebrew/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>さて、意味も分からず数日間使っているHomebrewのことをもっと知ろうということで、今、タブを5つくらい開いたのでこれから勉強です。</p>
-
-<p>まずは、<a href="http://blog.hifumi.info/mac/mac-%E3%83%87-homebrew-%E3%83%8E%E3%82%B9%E3%82%B9%E3%83%A1/">homebrewのススメ</a>!homebrewの基本的なことがまとまっていて、分かりやすいです。冒頭で「どういうものか」を一言で表すのっていいですね！曰く、MacPortsの代わりになっておしゃれということらしいです！</p>
-
-<p>ふむふむ、searchコマンド、doctorコマンド、/usr/local/にあるわけね。んー、/usr/local/を空にした方がよいというけれど、mysqlが入ってる。どうしよう。とりあえずそのまま使い続ける。</p>
-
-<p><a href="http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?Mac%2FOS%20X%2FHomebrew">こちら</a>にはMySqlをインストールする方法が書かれてる。そのうちbrewを通してMySqlをインストールすることになるかもしれないのでメモっと。そういえば、前回Macに搭載のRubyがあるにもかかわらず、brewでRubyをインストールしたとき特に問題なかったな。大丈夫なのかな。この辺り分かってない。</p>
-
-<p><a href="http://www.maruko2.com/mw/Homebrew%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">HomeBrewの使い方</a>以前から参考にしているページ。基本コマンドが分かりやすくまとまっている。</p>
-
-<p><a href="http://tech.caph.jp/2011/04/06/homebrew%E3%81%AE%E5%B0%8E%E5%85%A5%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/">Homebrewの導入と使い方</a>こちらも基本コマンドが説明されていて分かりやすい。最初はこういうのを手引きに調べていくといいな。</p>
-
-<p>そして、<a href="http://mxcl.github.com/homebrew/">Homebrewの本家サイト</a>シンプルで、いい感じ。全体的に無駄な装飾がなくおしゃれ。urlもgithubが残ってていい感じ。</p>
-
-<p>ということで、本当に表面上だけですが一通りHomebrewのことを少しは知れました。MacOSXにないソフトのバージョン管理システムって感じなのかな。そういえば、Linuxにはあるしな〜。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/05/subversion-crying/">Subversionの設定をして泣きそうになった</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-05T23:33:00+09:00" pubdate data-updated="true">Jul 5<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/05/subversion-crying/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>gitに慣れてきたからかSubversionの設定が複雑怪奇に思えて泣きそうになった。.gitignoreに変わる設定を行いたかったのだけれど、gitと違って個別に設定するのは面倒で、<code>~/.subversion/config</code>で設定するようだった。</p>
-
-<p><a href="http://blog.livedoor.jp/sasata299/archives/51275014.html">ローカルのファイルをは残しつつsvn管理下から外す</a>や、<a href="http://stackoverflow.com/questions/6474523/svn-ignore-pattern-with-xcode-4">Stackoverflow</a>や、<a href="http://akabeko.me/blog/2011/09/xcode-4-svn/">Xcode4とSubversionの連携</a>が参考になった。</p>
-
-<p>他にもいろいろやったんだけれど後ほど…。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -740,6 +737,14 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/08/git-init/">gitで共有レポジトリを作る</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/07/08/rails/">Railsを入れてみました</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/08/git-config/">gitの基本設定</a>
       </li>
     
@@ -749,14 +754,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
     
       <li class="post">
         <a href="/blog/2012/07/07/us-keyboard-key-remap/">USキーボードのキーのリマッップをしてみた</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/07/chrome-shortcut/">Google Chromeをさらに便利に</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/07/git-dropbox-problem/">gitをDropboxで使うと起こる問題</a>
       </li>
     
   </ul>
