@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="共有リポジトリを作るという記事が非常に参考になったので備忘録として記しておきます。 基本的にはからのリポジトリを&lt;任意の名前&gt;.gitという形で作り、 git init --bare --shared=true をするということですね。 あとはローカルの方でgit &hellip;">
+  <meta name="description" content="共有リポジトリを作るという記事が非常に参考になったので備忘録として記しておきます。 基本的にはからのリポジトリを&lt;任意の名前&gt;.gitという形で作り、 git init --bare --shared=true をするということですね。 --bareオプションに関しては、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -115,7 +115,20 @@
 
 <p>をするということですね。</p>
 
+<p><code>--bare</code>オプションに関しては、<a href="http://d.hatena.ne.jp/naokirin/20111201/1322576109">ここ</a>を参考にすると、管理ファイルのみのリポジトリを作成するということなんですね。で、グループ作業するときには<code>--shared=true</code>を指定すると。</p>
+
+<p><code>--shared=true</code>を設定するとsshでアクセスしたときに自動的に適切なパーミッション設定をしてくれる？</p>
+
+<pre><code>If a user SSHs into a server and has write access to the /opt/git/my_project.git directory, they will also automatically have push access. Git will automatically add group write permissions to a repository properly if you run the git init command with the --shared option.
+</code></pre>
+
+<p><a href="http://git-scm.com/book/en/Git-on-the-Server-Getting-Git-on-a-Server#Putting-the-Bare-Repository-on-a-Server">Putting the Bare Repository on a Server</a></p>
+
+<p>この辺りはちょっとまだわかっていません。</p>
+
 <p>あとはローカルの方でgit pushするとcloneできるようです。</p>
+
+<p>完全に理解した訳ではないですが、上記の件だけでだいぶgitが身近になった気分です。特に調べず`git init</p>
 
 <p>Dropboxに共有リポジトリを作る方法は<a href="http://naoki.sato.name/lab/archives/38">こちら</a>を参考にしました。</p>
 </div>

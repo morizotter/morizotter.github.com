@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-08T19:53:17+09:00</updated>
+  <updated>2012-07-08T20:24:47+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -27,7 +27,20 @@
 
 <p>をするということですね。</p>
 
+<p><code>--bare</code>オプションに関しては、<a href="http://d.hatena.ne.jp/naokirin/20111201/1322576109">ここ</a>を参考にすると、管理ファイルのみのリポジトリを作成するということなんですね。で、グループ作業するときには<code>--shared=true</code>を指定すると。</p>
+
+<p><code>--shared=true</code>を設定するとsshでアクセスしたときに自動的に適切なパーミッション設定をしてくれる？</p>
+
+<pre><code>If a user SSHs into a server and has write access to the /opt/git/my_project.git directory, they will also automatically have push access. Git will automatically add group write permissions to a repository properly if you run the git init command with the --shared option.
+</code></pre>
+
+<p><a href="http://git-scm.com/book/en/Git-on-the-Server-Getting-Git-on-a-Server#Putting-the-Bare-Repository-on-a-Server">Putting the Bare Repository on a Server</a></p>
+
+<p>この辺りはちょっとまだわかっていません。</p>
+
 <p>あとはローカルの方でgit pushするとcloneできるようです。</p>
+
+<p>完全に理解した訳ではないですが、上記の件だけでだいぶgitが身近になった気分です。特に調べず`git init</p>
 
 <p>Dropboxに共有リポジトリを作る方法は<a href="http://naoki.sato.name/lab/archives/38">こちら</a>を参考にしました。</p>
 ]]></content>
