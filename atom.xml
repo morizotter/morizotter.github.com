@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-08T22:36:25+09:00</updated>
+  <updated>2012-07-09T01:25:54+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[USキーボードに慣れてしまうと]]></title>
+    <link href="http://morizotter.com/blog/2012/07/09/us-vs-jpn-keyboard/"/>
+    <updated>2012-07-09T01:15:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/09/us-vs-jpn-keyboard</id>
+    <content type="html"><![CDATA[<p>新しいMacBook Air気に入ってます。早いです。キーボードもUSにして正解です。最初は慣れなかったのですが、<code>`</code>や<code>_</code>や<code>=</code>などが打ちやすいです。単体で考えればの話しですが&#8230;。</p>
+
+<p>mou US ya JPN nantenakunatte dochirakani touitsusarerebaiinoni!</p>
+
+<p>あああ</p>
+
+<p>US使いやすいです。</p>
+
+<p>でも、もう一台のPCはJPNです。一気に使いづらくなりました。文章を書いている分にはいいのですが、<code>`</code>を打ったり、<code>_</code>を打ったり<code>=</code>を打ったりするときに、いちいちキーボードを見なきゃ行けなくなったりしてます。そして、最初に一番困ったのはEnterの押し間違えです。USの方がEnterが近いので（横に長い）、JPNだと、<code>」</code>を入力しちゃいます。Controlの位置もたまに間違えます。最初は嫌だったのですが、Controlの位置はJPNの方がよいかなと思います。<code>Control + A</code>だとか、<code>Control + K</code>だとかするときに、USだと小指の根元が痛くなります。まぁ、これも慣れと思ってがんばりますが。</p>
+
+<p>んー、USキーボード。単体では正解。プログラミングも早くなりますきっと。まぁ、出費になるけど家のiMacのキーボードはUS買い直せばよいのかなぁなんて思います。</p>
+
+<p>JPNキーボードとの混在はややこしいですね。。他人のPCで作業することが多い場合はJPNが無難なのかと思いましたよ。</p>
+
+<p>その点差し引いても、USはプログラミングはしやすくなると思うので正解だと思っていますが！</p>
+
+<p>どなたか、iMac日本語キーボード5ヶ月仕様（結構きれい）とUSキーボード交換してくれる人いませんかねぇ。。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[電車の中での学習]]></title>
@@ -574,29 +599,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 <p>で、断片を量産しているのだけれど、断片を量産化したい人にはお勧めのサービスですw</p>
 
 <p>最後ぐだぐだになりましたが、アウトプット大事ですよね。僕は興味があることはとりあえず全体像が見えなくても書いていこうといういう方針でやってますが、この方針でできるのもOctopressだからです。あー、Octopress礼賛はいつまで続くのかw</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[シェルスクリプトとか]]></title>
-    <link href="http://morizotter.com/blog/2012/07/04/shell-script/"/>
-    <updated>2012-07-04T23:22:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/04/shell-script</id>
-    <content type="html"><![CDATA[<p><a href="http://www.atmarkit.co.jp/flinux/rensai/smart_shell/01/01.html">こんな記事</a>を参考にしてシェルスクリプトを書いてみた。本当に簡単なやつだけど。</p>
-
-<div><script src='https://gist.github.com/3047630.js?file='></script>
-<noscript><pre><code>#!/bin/sh
-
-printf &quot;hello world\n&quot;</code></pre></noscript></div>
-
-
-<p>こんなに簡単。で、このコードはgithubのgistというcode snippetを共有するサービスからOctopressの<a href="http://octopress.org/docs/plugins/gist-tag/">gistタグ</a>を使って簡単に持ってきてる。</p>
-
-<p>サーバサイドが使いこなせるようになるとかっこいいしな憧れるしな。あー、最近、躓いてることが常態化してしている。なんか慣れてきたんだけど、不定期できつさが襲ってくる。で、今日はそんな日でしたわん。</p>
-
-<p>ちなみに、このブログ？ではこんな簡単なことでも思いついて実行したことをきっちりまとめることなく吐き出し/書き出していきます。これ、意味ない？いや、意味あると思っています。多いに。そしてそれはOctopressが会ったからこそできた可能性の広がり。</p>
-
-<p>これについては次のポストで書いてみます。断片から入るって感じのことです。</p>
 ]]></content>
   </entry>
   
