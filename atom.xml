@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-08T20:25:23+09:00</updated>
+  <updated>2012-07-08T20:28:25+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -40,7 +40,7 @@
 
 <p>あとはローカルの方でgit pushするとcloneできるようです。</p>
 
-<p>完全に理解した訳ではないですが、上記の件だけでだいぶgitが身近になった気分です。特に調べず`git init</p>
+<p>完全に理解した訳ではないですが、上記の件だけでだいぶgitが身近になった気分です。</p>
 
 <p>Dropboxに共有リポジトリを作る方法は<a href="http://naoki.sato.name/lab/archives/38">こちら</a>を参考にしました。</p>
 ]]></content>
