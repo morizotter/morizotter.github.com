@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="先ほどの基本的な設定に加え、プログラミングの環境を整えていきます。 Xcodeとコマンドラインツール（gitも付属） まずはXcodeのインストール。そしてコマンドラインツールをインストール。 HomebrewとRuby 以前書いた記事を参考にRubyをインストール。 brew &hellip;">
+  <meta name="description" content="gitのPushに失敗するという面倒な事態に陥りました。おそらく、以前のMacBookAirと今のMacBookAirで同じファイルを編集したが原因です。 ゲレゲレめもさんの記述が大変参考になりました。ヒントであってもあるのとないのとは大違いです。 僕の場合は.gitと.git/refs/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,50 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/07/git-dropbox-problem/">gitをDropboxで使うと起こる問題</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-07T16:44:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/07/git-dropbox-problem/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>gitのPushに失敗するという面倒な事態に陥りました。おそらく、以前のMacBookAirと今のMacBookAirで同じファイルを編集したが原因です。</p>
+
+<p><a href="http://d.hatena.ne.jp/gelegele/20120530/git_dropbox_fatal">ゲレゲレめも</a>さんの記述が大変参考になりました。ヒントであってもあるのとないのとは大違いです。</p>
+
+<p>僕の場合は<code>.git</code>と<code>.git/refs/heads</code>とさらに<code>.git/refs/remotes/origin/master</code>に問題のあるファイルが生成されていたので、すべてrmして解消しました。</p>
+
+<p>ふー。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -638,51 +682,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/04/fragment-to-fragments/">断片から断片の集合へ</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-04T23:40:00+09:00" pubdate data-updated="true">Jul 4<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/04/fragment-to-fragments/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>物事には始まりがある。で、始まりは大体全体の一部なのだ。断片。いやいや俯瞰だよ。俯瞰が大事だよという声もあるだろうし、以前ひねくれていた僕は恐らく断片だと言われたら俯瞰だと返答するだろう。しかし、<strong>前提知識の希薄な俯瞰もまた断片でしかないのだ</strong>。</p>
-
-<p>で、断片を知れたらしめたものであって、次にやることは次の断片を収集することなのだ。そして、その次にやることは？そう、また断片を収集することだ。この継続。そして、たまに断片を整理してある程度まとまりのある断片にする。これが学習。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/07/04/fragment-to-fragments/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -704,6 +703,10 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/09/magictrackpad/">iMacでMagic Trackpad</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/09/us-vs-jpn-keyboard/">USキーボードに慣れてしまうと</a>
       </li>
     
@@ -717,10 +720,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
     
       <li class="post">
         <a href="/blog/2012/07/08/grep/">grepについて少し学んでみた</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/08/rails/">Railsを入れてみました</a>
       </li>
     
   </ul>
