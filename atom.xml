@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-08T21:02:35+09:00</updated>
+  <updated>2012-07-08T22:36:25+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[電車の中での学習]]></title>
+    <link href="http://morizotter.com/blog/2012/07/08/train-study/"/>
+    <updated>2012-07-08T22:29:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/08/train-study</id>
+    <content type="html"><![CDATA[<p>最近、よく電車の中で移動中に記事を更新してる。このブログは完成度を高めるというよりも思いつきで断片的なことを書く傾向があるので、電車の中の移動時間が記事を書くのにちょうど良い。都内の移動なのでだいたい10分〜15分くらい。座れたら書くという感じ。</p>
+
+<p>だいたいこれが最寄り駅のホームに着く頃に<code>rake gen_deploy</code>する。で、余裕があれば扉が開く前に、<code>git add .</code>して<code>git commit -m "*"</code>して、<code>git push</code>する。たいてい、<code>git push</code>の途中で電車を降りるが、pushが終わってなかったら駅のベンチで終わりまで見守り歩き出す。</p>
+
+<p>そんな感じ。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[gitで共有リポジトリを作る]]></title>
@@ -584,48 +597,6 @@ printf &quot;hello world\n&quot;</code></pre></noscript></div>
 <p>ちなみに、このブログ？ではこんな簡単なことでも思いついて実行したことをきっちりまとめることなく吐き出し/書き出していきます。これ、意味ない？いや、意味あると思っています。多いに。そしてそれはOctopressが会ったからこそできた可能性の広がり。</p>
 
 <p>これについては次のポストで書いてみます。断片から入るって感じのことです。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Octopressでブログを書くことがなぜ快適か]]></title>
-    <link href="http://morizotter.com/blog/2012/07/04/octopress-is-confortable/"/>
-    <updated>2012-07-04T01:12:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/04/octopress-is-confortable</id>
-    <content type="html"><![CDATA[<p>Octopressでブログを書くことがなぜ快適かを考えた。考えていたらOctopress以外の要因もいろいろ出てきたのだけど。</p>
-
-<ol>
-<li><p>速い</p>
-
-<p>  通常ブログサービスで記事を書く場合、サービスを開いて、新規記事投稿ボタンを押して、画面開いて画像足すときは画像ボタン押してとか、その都度通信したりなんか処理してるので時間がかかる。</p>
-
-<p>  Octopressはターミナルからかちゃかちゃっとやって書ける。</p>
-
-<p>  まぁただターミナルでコマンド打ってる時間もかかっている訳だけど、通信に比べたら断然速いし、手を動かしているのでただ待っているのと比べて体感待ち時間が違う。まぁPushの時に少し待ちはあるんだけど、もう記事書き終えてるし充実感とともに訪れる待ち。ってか待たなくていい。他のこと始めればいいんだから。あと、Pushしててもログが表示されるし、単なる待ちとは感じられない。この辺りUIデザインするときに役に立ちそう。</p></li>
-<li><p>markdownで書ける</p>
-
-<p>  これ素敵すぎます。普通のブログサービスで記事を書こうとした場合、ちょっとしたことをやるのに、見出しの選択だとか、リンクだとかいちいちボタンが面倒くさい。HTML編集モードもあるけどHTML自体が面倒くさい。</p>
-
-<p>  その点、markdownはある程度のことは*とか1.とかTabとか使って簡単に書ける。速い！</p></li>
-<li><p>gitがいい！</p>
-
-<p>  履歴管理ができて安心。commitやPushが気持ちいい。たぶん、今後訪れるPullも気持ちいい。</p></li>
-<li><p>Rubyがいい！</p>
-
-<p>  使って楽しい。これから覚えようと思っているから知的好奇心くすぐられる。</p></li>
-</ol>
-
-
-<p><em>その他の要因</em></p>
-
-<ul>
-<li>カテゴリもタグも付けてない、テーマすら決めていないのですらすら書ける。（といってもプログラムの話題ばかりになっているけど）</li>
-<li>すらすらを許してくれるレイアウト。</li>
-<li>一人ツイッター。他の人のTLを汚すこともないし。</li>
-</ul>
-
-
-<p>Octopressは本当におすすめです！これ、なんど書いたことか。でも、一人ツイッターだからよいのさ！</p>
 ]]></content>
   </entry>
   
