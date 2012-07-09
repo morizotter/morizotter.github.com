@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>USキーボードに慣れてしまうと - MORIZOTTER PRESS</title>
+  <title>bashのコマンド - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="新しいMacBook Air気に入ってます。早いです。キーボードもUSにして正解です。最初は慣れなかったのですが、`や_や=などが打ちやすいです。単体で考えればの話しですが&#8230;。 mou US ya JIS nantenakunatte dochirakani &hellip;">
+  <meta name="description" content="先日お世話になったのがこのサイトです。 複数のファイル拡張子を一括で変更するには シェルのコマンドって抵抗感があったけど、こんなに簡単にできるとは！ $ ls
+1.txt 2.txt 3.txt 4.txt $ for fname in *.txt; do
+&gt; mv $fname ${ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/09/us-vs-jpn-keyboard/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/07/09/bash-command/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +83,7 @@
   
   <header>
     
-      <h1 class="entry-title">USキーボードに慣れてしまうと</h1>
+      <h1 class="entry-title">bashのコマンド</h1>
     
     
       <p class="meta">
@@ -97,7 +99,7 @@
   
 
 
-<time datetime="2012-07-09T01:15:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
+<time datetime="2012-07-09T23:27:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,23 +108,25 @@
   </header>
 
 
-<div class="entry-content"><p>新しいMacBook Air気に入ってます。早いです。キーボードもUSにして正解です。最初は慣れなかったのですが、<code>`</code>や<code>_</code>や<code>=</code>などが打ちやすいです。単体で考えればの話しですが&#8230;。</p>
+<div class="entry-content"><p>先日お世話になったのが<a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/248chngext.html">このサイト</a>です。</p>
 
-<p>mou US ya JIS nantenakunatte dochirakani touitsusarerebaiinoni!</p>
+<p><a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/248chngext.html">複数のファイル拡張子を一括で変更するには</a></p>
 
-<p>あああ</p>
+<p>シェルのコマンドって抵抗感があったけど、こんなに簡単にできるとは！</p>
 
-<p>US使いやすいです。</p>
+<pre><code>$ ls
+1.txt   2.txt   3.txt   4.txt 
 
-<p>でも、もう一台のMacはJISです。一気に使いづらくなりました。文章を書いている分にはいいのですが、<code>`</code>を打ったり、<code>_</code>を打ったり<code>=</code>を打ったりするときに、いちいちキーボードを見なきゃ行けなくなったりしてます。そして、最初に一番困ったのはEnterの押し間違えです。USの方がEnterが近いので（横に長い）、JISだと、<code>」</code>を入力しちゃいます。Controlの位置もたまに間違えます。最初は嫌だったのですが、Controlの位置はJISの方がよいかなと思います。<code>Control + A</code>だとか、<code>Control + K</code>だとかするときに、USだと小指の根元が痛くなります。まぁ、これも慣れと思ってがんばりますが。</p>
+$ for fname in *.txt; do
+&gt; mv $fname ${fname%.txt}.md;
+&gt; done
 
-<p>んー、USキーボード。単体では正解。プログラミングも早くなりますきっと。まぁ、出費になるけど家のiMacのキーボードはUS買い直せばよいのかなぁなんて思います。</p>
+$ ls
+1.md    2.md    3.md    4.md
+</code></pre>
 
-<p>JISキーボードとの混在はややこしいですね。。他人のMacで作業することが多い場合はJISが無難なのかと思いましたよ。</p>
-
-<p>その点差し引いても、USはプログラミングはしやすくなると思うので正解だと思っていますが！</p>
-
-<p>どなたか、iMac日本語キーボード5ヶ月使用（結構きれい）とUSキーボード交換してくれる人いませんかねぇ。。</p>
+<p>ちょっと復習がてらやってみた。できた。
+bashももっと学びたい！</p>
 </div>
 
 
@@ -145,7 +149,7 @@
   
 
 
-<time datetime="2012-07-09T01:15:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
+<time datetime="2012-07-09T23:27:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
       
 
 
@@ -153,7 +157,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/09/us-vs-jpn-keyboard/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/09/us-vs-jpn-keyboard/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/09/bash-command/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/09/bash-command/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -166,10 +170,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/08/train-study/" title="Previous Post: 電車の中での学習">&laquo; 電車の中での学習</a>
+        <a class="basic-alignment left" href="/blog/2012/07/09/magictrackpad/" title="Previous Post: iMacでMagic Trackpad">&laquo; iMacでMagic Trackpad</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/09/magictrackpad/" title="Next Post: iMacでMagic Trackpad">iMacでMagic Trackpad &raquo;</a>
       
     </p>
   </footer>
@@ -285,8 +287,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/09/us-vs-jpn-keyboard/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/09/us-vs-jpn-keyboard/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/07/09/bash-command/';
+        var disqus_url = 'http://morizotter.com/blog/2012/07/09/bash-command/';
         var disqus_script = 'embed.js';
       
     (function () {

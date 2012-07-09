@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-09T02:50:14+09:00</updated>
+  <updated>2012-07-09T23:37:19+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[bashのコマンド]]></title>
+    <link href="http://morizotter.com/blog/2012/07/09/bash-command/"/>
+    <updated>2012-07-09T23:27:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/09/bash-command</id>
+    <content type="html"><![CDATA[<p>先日お世話になったのが<a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/248chngext.html">このサイト</a>です。</p>
+
+<p><a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/248chngext.html">複数のファイル拡張子を一括で変更するには</a></p>
+
+<p>シェルのコマンドって抵抗感があったけど、こんなに簡単にできるとは！</p>
+
+<pre><code>$ ls
+1.txt   2.txt   3.txt   4.txt 
+
+$ for fname in *.txt; do
+&gt; mv $fname ${fname%.txt}.md;
+&gt; done
+
+$ ls
+1.md    2.md    3.md    4.md
+</code></pre>
+
+<p>ちょっと復習がてらやってみた。できた。
+bashももっと学びたい！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iMacでMagic Trackpad]]></title>
@@ -576,17 +603,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 <p>Eclipseは何度触っても慣れない。ほとんど触ってないからだと思うけど………………………………………</p>
 
 <p>うああああ。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Octopressのフォルダ構成を変えた]]></title>
-    <link href="http://morizotter.com/blog/2012/07/05/organize/"/>
-    <updated>2012-07-05T00:34:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/05/organize</id>
-    <content type="html"><![CDATA[<p>Octopressはシンプルに使っていきたいので、構成を変えました。以前、ナビゲーションバーに旅行や資格、英語でのAboutなどを配置していましたが、ナビゲーションバーから削除し、aboutのディレクトリに移しました。で、aboutからリンクを張って読めるようにしてます。別にaboutディレクトリ下に移す必要はないのですが、その方がまとまって管理しやすいと思ったので。</p>
-
-<p>この辺り簡単にできるのもOctopressのいいところですね〜。</p>
 ]]></content>
   </entry>
   
