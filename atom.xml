@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-09T23:37:19+09:00</updated>
+  <updated>2012-07-09T23:47:19+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iTerm2がなかなか良い]]></title>
+    <link href="http://morizotter.com/blog/2012/07/09/iterm2/"/>
+    <updated>2012-07-09T23:40:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/09/iterm2</id>
+    <content type="html"><![CDATA[<p>何人かの人に勧められたのでMac標準のターミナル.appからiTerm2に変えたのが多分1ヶ月ほど前。少しの間背景をぼやかして薄暗くしているだけでターミナルと同じようにしか使ってなかった。</p>
+
+<p>ただ、最近、この良さに気づき始めている。一番シンプルだけど良いのは、<code>Command + D</code>での複数画面表示、そして、<code>Command + Shift + D</code>で上下にも分割できる。横に広いテーブルを見るときなど便利。下にできたビューで<code>Command + D</code>をするとまた左右に分割なんて。テーブルをたくさん表示したい時にかなり助かる。</p>
+
+<p>更に、テーブルがビューに収まりきらなかったらテーブル単位で<code>Command + +</code>とか<code>Command + -</code>とかで、拡大縮小できる！地味に助かる。</p>
+
+<p>ちょっと関連のない作業するときには右下の小さいビューでやったり、タブを開いてそちらでやったり。タブへの移動は<code>Command + 数字（タブ番号）</code>でらくらく。</p>
+
+<p>そして早い！</p>
+
+<p>こりゃ、人気の訳がわかりますなぁ！！</p>
+
+<p>それにしても、日本語キーボードと英語キーボードの行き来はちょっと疲れる。MacBook Airの軽快さで印象がアップしているのかわからないけど、US慣れるとかなりいいよ！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[bashのコマンド]]></title>
@@ -582,27 +603,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 <p>設定が反映されないので、しょぼい解決策だと思いながらMacを再起動して反映。解消。</p>
 
 <p>ほんとはコマンドラインからリポジトリへリモート登録をトライしてみようと思ったけど、時間もかかりそうだったのでこれはパスしてリポジトリからCheckout。で、作業用フォルダを作成して<code>svn add</code>、<code>svn commit -m "firstcommit"</code>してコミットされていることを確認！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Eclipseの使い方が分からず泣きたい]]></title>
-    <link href="http://morizotter.com/blog/2012/07/05/i-want-to-cry/"/>
-    <updated>2012-07-05T20:31:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/05/i-want-to-cry</id>
-    <content type="html"><![CDATA[<p>Eclipseのsvnとの連携をやっていたんだけど、基本的なことが分からず泣きたい。しかも、慣れてないからか調べ方も分からない。調べても知りたいところが全然出てこない。たぶん、当たり前すぎるんだろう。そもそもEclipseでできることが分からなくて、、、きつすぎる。Eclipseでフォルダが開けない。どうして開けないんだろう、、、開こうとするとプロジェクトじゃないですとか、、、</p>
-
-<p>既存のプロジェクトは追加できないのか、、、</p>
-
-<p>なぞだらけ、、、</p>
-
-<p>結局、svnのリポジトリから持ってきたフォルダは認識された。そして、フォルダの中には.projectというのができてた。恐らくこれでプロジェクトって認識してるんだろうな。。。既存のプロジェクトをEclipseのプロジェクトとして認識させることにはとうとう成功しませんでした。</p>
-
-<p>3時間…</p>
-
-<p>Eclipseは何度触っても慣れない。ほとんど触ってないからだと思うけど………………………………………</p>
-
-<p>うああああ。</p>
 ]]></content>
   </entry>
   
