@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>USキーボードのキーのリマッップをしてみた - MORIZOTTER PRESS</title>
+  <title>git revert - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="いろいろ読んでるうちにUSキーボード使いやすいだろう。よしやってみるか！ということで、新しいAirはUSキーボードにしてみたんですね。で、これが結構ストレスフル。キーの配列が想像していた以上に違って、特に`や~、_や+や、:や"など基本的によく使いそうなところがだいぶ違う。 &hellip;">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/07/09/git-revert/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +82,7 @@
   
   <header>
     
-      <h1 class="entry-title">USキーボードのキーのリマッップをしてみた</h1>
+      <h1 class="entry-title">git revert</h1>
     
     
       <p class="meta">
@@ -97,7 +98,7 @@
   
 
 
-<time datetime="2012-07-07T23:10:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
+<time datetime="2012-07-09T23:53:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,32 +107,7 @@
   </header>
 
 
-<div class="entry-content"><p>いろいろ読んでるうちにUSキーボード使いやすいだろう。よしやってみるか！ということで、新しいAirはUSキーボードにしてみたんですね。で、これが結構ストレスフル。キーの配列が想像していた以上に違って、特に<code>`</code>や<code>~</code>、<code>_</code>や<code>+</code>や、<code>:</code>や<code>"</code>など基本的によく使いそうなところがだいぶ違う。もちろんControlやCommandの配置なども変わっているんですが、これは慣れでいけるなと思うし使いやすい面もあっていいのですが、上記の細かいのは少し時間がかかりそうです。</p>
-
-<p>で、あと大きな問題は日本語-英語変換のを<code>Command + Space</code>（また+の場所間違った）でトグルでやらなければいけないところです。日本語キーボードの場合は&#8221;英数&#8221;と&#8221;かな&#8221;ボタンがあって一発なんですけどね。</p>
-
-<p>ということで、この部分だけでも日本語を打ちやすいように変更することにしました。以前から情報は持っていたのですが、</p>
-
-<ul>
-<li><a href="http://www.fraction.jp/log/archives/2008/10/28/US_">USキーボードで入力切り替え</a></li>
-<li><a href="http://yucomac.blog96.fc2.com/blog-entry-576.html">MacのUSキーボードで「英数キー」と「かなキー」を使いたい</a></li>
-</ul>
-
-
-<p>が参考になりました。USキーボードと日本語キーボードとの間で論争があるんですね。想像できますけどね。決着はなかなかつかないでしょうね〜。どちらもよいので。</p>
-
-<p>で、専用のソフトを入れるんですが、ここ。</p>
-
-<ul>
-<li><a href="http://pqrs.org/macosx/keyremap4macbook/index.html.ja">KeyRemap4MacBook</a></li>
-</ul>
-
-
-<p>Twitter Bootstrapを使って作られたサイトだと思うんですが、とてもきれいで情報量も適切で参考になります。すごい。</p>
-
-<p>とりあえず、このソフトをインストールし、左右のCommandを単体で押したときに日本語キーボードと同じように左が英数、右がかなと変更できるようにしました。かなり使いやすくなった！</p>
-
-<p>よかった。</p>
+<div class="entry-content">
 </div>
 
 
@@ -154,7 +130,7 @@
   
 
 
-<time datetime="2012-07-07T23:10:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
+<time datetime="2012-07-09T23:53:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
       
 
 
@@ -162,7 +138,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/09/git-revert/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/09/git-revert/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -175,10 +151,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/07/chrome-shortcut/" title="Previous Post: Google Chromeをさらに便利に">&laquo; Google Chromeをさらに便利に</a>
+        <a class="basic-alignment left" href="/blog/2012/07/09/iterm2/" title="Previous Post: iTerm2がなかなか良い">&laquo; iTerm2がなかなか良い</a>
       
       
-        <a class="basic-alignment right" href="/blog/2012/07/07/xcode-device-install/" title="Next Post: Xcodeの環境移行が超楽！">Xcodeの環境移行が超楽！ &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2012/07/10/about-this-blog/" title="Next Post: 最近、見に来てくれくれる人も増えたので">最近、見に来てくれくれる人も増えたので &raquo;</a>
       
     </p>
   </footer>
@@ -294,8 +270,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/07/09/git-revert/';
+        var disqus_url = 'http://morizotter.com/blog/2012/07/09/git-revert/';
         var disqus_script = 'embed.js';
       
     (function () {

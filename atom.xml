@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-09T23:47:19+09:00</updated>
+  <updated>2012-07-10T01:33:45+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[最近、見に来てくれくれる人も増えたので]]></title>
+    <link href="http://morizotter.com/blog/2012/07/10/about-this-blog/"/>
+    <updated>2012-07-10T01:26:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/10/about-this-blog</id>
+    <content type="html"><![CDATA[<p>軽くこのブログについて書いておきます。</p>
+
+<ul>
+<li>思いつきをそのまま書いていきます。</li>
+<li>一つの記事のボリュームはとても少ないと思います。</li>
+<li>情報収集は基本的にネットです。他の人の書いたブログ記事へのリンクが沢山出ています。</li>
+<li>ノウハウや知恵の共有はほんとうに素晴らしいことですね。ありがとうございます。</li>
+<li>僕も提供できる側になれるように少しつづ頑張ります！</li>
+<li>カテゴリもタグも付けていません。記事を書くスピードややる気を削ぐことがないように削ってます。</li>
+<li>ただ、そのうちまとめ記事を書いていこうかななんて思っています。</li>
+<li>Twitterでは<a href="http://twitter.com/morizotter/">@morizotter</a>という名前で呟いてます。</li>
+<li><a href="http://morizotter.com">morizotter.com</a>は30歳からプログラミングを始めたmorizotterの活動のまとめ的な役割を担えれば良いと思っています。</li>
+<li>記事は簡易ブログ作成フレームワークのOctopressでやってます。</li>
+<li>markdownという基本で書けるのでほんとに軽く、楽しいです。</li>
+<li>サクサクです。</li>
+<li>ルビー気持ちいいです。</li>
+</ul>
+
+
+<p>こんなところです。
+よろしくお願いします。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[git revert]]></title>
+    <link href="http://morizotter.com/blog/2012/07/09/git-revert/"/>
+    <updated>2012-07-09T23:53:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/09/git-revert</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iTerm2がなかなか良い]]></title>
@@ -553,56 +591,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 <p><a href="http://blog.livedoor.jp/sasata299/archives/51275014.html">ローカルのファイルをは残しつつsvn管理下から外す</a>や、<a href="http://stackoverflow.com/questions/6474523/svn-ignore-pattern-with-xcode-4">Stackoverflow</a>や、<a href="http://akabeko.me/blog/2011/09/xcode-4-svn/">Xcode4とSubversionの連携</a>が参考になった。</p>
 
 <p>他にもいろいろやったんだけれど後ほど…。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[新しいことを始めるときは]]></title>
-    <link href="http://morizotter.com/blog/2012/07/05/doing-something-new/"/>
-    <updated>2012-07-05T22:36:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/05/doing-something-new</id>
-    <content type="html"><![CDATA[<p>というか新しいことでもないのだが、Photoshopは慣れない作業でストレスがたまる。これが効率的な方法なのかというのは、まぁまだしも、常に手探りで方法を探さなければいけないという状況はストレスがたまる。Eclipseもそうだったなぁ。</p>
-
-<p>でもまぁ、はじめはこういう状況に陥るのは仕方のないことだし、ここは落ち込まず意識的に平静を装うのが吉だなとまぁ、いつものように判断し努めて平静でいる。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[HomebrewでSubversionをインストールしてみた]]></title>
-    <link href="http://morizotter.com/blog/2012/07/05/subversion-with-homebrew/"/>
-    <updated>2012-07-05T22:10:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/05/subversion-with-homebrew</id>
-    <content type="html"><![CDATA[<p><a href="http://d.hatena.ne.jp/nobeans/20110401/1301634519">ここ</a>や<a href="http://qiita.com/items/ec4f45e3339f19783e1e">ここ</a>を参照してsubversionをHomebrewでインストールしてみた。<code>brew svn</code>でエラーが出るなと思ったら、<code>brew subversion</code>で解決。日本語のファイル名の扱いに問題があったみたいだけど<code>--unicode-path</code>オプションを付けることで解消するらしい。</p>
-
-<p>それにしてもsubversionてパッチのDownloadとインストールに時間がかかるものなのだな。完了するまで数分かかった。</p>
-
-<p><a href="http://www.maruko2.com/mw/Homebrew%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">Homebrewの使い方</a>が参考になる。Homebrewももっと調べなくちゃな。</p>
-
-<p>ちなみにインストール中にmakeで固まるという問題が発生。よくないかもしれないけど、一度<code>Ctr+C</code>で止め、検索したら<a href="http://d.hatena.ne.jp/irof/touch/searchdiary?word=*%5B%A5%C8%A5%E9%A5%D6%A5%EB%5D">ここ</a>に情報があった。まぁ、ただもう一度繰り返すだけだけど、繰り返したら本当に3分ほどで終わった。</p>
-
-<p>で、今度は新しく入れたsubversionのバージョンが古い問題。上記サイトを参考にpathの優先順位を変更してみた。不安なので一応記録に残しておく。</p>
-
-<p>初期設定はこれ。</p>
-
-<pre><code>/usr/bin
-/bin
-/usr/sbin
-/sbin
-/usr/local/bin
-</code></pre>
-
-<p>で、こうしてみた。</p>
-
-<pre><code>/usr/local/bin
-/usr/bin
-/bin
-/usr/sbin
-/sbin
-</code></pre>
-
-<p>設定が反映されないので、しょぼい解決策だと思いながらMacを再起動して反映。解消。</p>
-
-<p>ほんとはコマンドラインからリポジトリへリモート登録をトライしてみようと思ったけど、時間もかかりそうだったのでこれはパスしてリポジトリからCheckout。で、作業用フォルダを作成して<code>svn add</code>、<code>svn commit -m "firstcommit"</code>してコミットされていることを確認！</p>
 ]]></content>
   </entry>
   
