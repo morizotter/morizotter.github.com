@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-11T02:07:09+09:00</updated>
+  <updated>2012-07-11T02:12:59+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -19,6 +19,12 @@
     <updated>2012-07-11T00:08:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/07/11/launchpad</id>
     <content type="html"><![CDATA[<p>今までDockにアプリケーションのフォルダのエイリアスを作ってたので、一切使ってなかったんだけど使ってみるとほんとうに便利。少なくともDockにアプリケーションのフォルダ置くよりは便利。フォルダもiOSっぽく綺麗にまとまるので美しい。</p>
+
+<p>フォルダで管理するのと違ってページごとに並び替えができるのが地味にとても便利。大まかにページ分けして、よく使うアプリを上の方においておくと検索性も高まる。</p>
+
+<p>全画面使うので一覧性がある。</p>
+
+<p>いいことづくし。今までなぜ使わなかったか！（一因は前のAirが遅かったからだろうな。。）</p>
 ]]></content>
   </entry>
   
