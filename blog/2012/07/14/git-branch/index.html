@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>gitで現在と過去をいったりきたり - MORIZOTTER PRESS</title>
+  <title>gitのブランチについて学ぶ - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="さて、gitの学習の時間です。今では毎日暇さえあればgitしてます。なんか気持ちいいんですよね。でも、せっかくgitを使っているのにコミットするばかりで、あまり過去の履歴を見たり過去に戻ったりしていません。 これからちょっと、過去に戻ったり、現在に戻ってきたりやってみようと思います。 &hellip;">
+  <meta name="description" content="調子に乗ってgitのブランチについても学ぼうと思います！最近、誰かが書いたブログ記事から学ぶことが多いのですが、これってなんて素晴らしいことなんでしょうね。知識の共有って善だと思います。確かに本の方がまとまっていたり、全体を俯瞰できたりする点は優れているのですが、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/14/git-git/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/07/14/git-branch/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">gitで現在と過去をいったりきたり</h1>
+      <h1 class="entry-title">gitのブランチについて学ぶ</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2012-07-14T01:34:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2012</time>
+<time datetime="2012-07-14T14:12:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,87 +106,60 @@
   </header>
 
 
-<div class="entry-content"><p>さて、gitの学習の時間です。今では毎日暇さえあればgitしてます。なんか気持ちいいんですよね。でも、せっかくgitを使っているのにコミットするばかりで、あまり過去の履歴を見たり過去に戻ったりしていません。</p>
+<div class="entry-content"><p>調子に乗ってgitのブランチについても学ぼうと思います！最近、誰かが書いたブログ記事から学ぶことが多いのですが、これってなんて素晴らしいことなんでしょうね。知識の共有って善だと思います。確かに本の方がまとまっていたり、全体を俯瞰できたりする点は優れているのですが、個人のブログのほうがリアルでしかも情報量が適切で飽きません。また、書いた人の個性や工夫などが感じられて楽しいです！</p>
 
-<p>これからちょっと、過去に戻ったり、現在に戻ってきたりやってみようと思います。ネットで探したらよい記事がたくさん！</p>
+<p>では、gitのbranchについて。</p>
 
-<p>まずは、<a href="http://d.hatena.ne.jp/idesaku/20091106/1257507849">Git初心者が絶対に覚えておくべきコマンド</a>を参考に学習していきます！</p>
+<p>基本的にはメインにmasterがあって、masterに変更を加えずbranchでいろいろ作業進めていって、良い感じだったらmasterにmergeするっていうのが今の漠然とした理解です。</p>
 
-<h2>git &#8211;amend</h2>
+<p>始めます。参考にしたのは、<a href="http://d.hatena.ne.jp/zariganitosh/20080912/1221260782">アリスがチャレンジなコードを書く時、git branchをちゃんと理解したい！</a>です。うー、これも結構前の記事なんだなぁ。僕がプログラミングをはじめたタイミングより2年も昔だ。</p>
 
-<p><strong>直前のコミットを修正</strong></p>
+<p>作業前の僕のブラ地の状態はこんなかんじです。</p>
 
-<p><code>git --amend</code>で直前のコミットの内容を修正！できました！良い感じです。ちなみに、やり方としては、<code>git commit -m "t.txtを変更しまshia"</code>とか変なコミット文を打ってしまったときは、</p>
-
-<pre><code>git --amend -m "t.txtを変更しました。"
+<pre><code>$ git branch
+* master
 </code></pre>
 
-<p>とやれば直前のコミット文が上書きされます。またコード上でも、例えば<code>NSString *widht;</code>とかやっちゃっているときに、コードを修正して、<code>git add .</code>して、</p>
+<p>ここで、</p>
 
-<pre><code>git --amend -m "適当なコミット文"
+<pre><code>$ git branch challenge
 </code></pre>
 
-<p>をすれば、直近のコミットが上書きされます。どっかの時点に戻ってしまうということもありません。これは便利！僕の場合、ついコミットしてしまってコミット後に動かしてアプリが落ちるので微修正して再度コミットということがちょくちょくあるので便利に使えそうです。</p>
+<p>で、branchを作ります。こんな状態になります。</p>
 
-<h2>git reset</h2>
-
-<p><strong>指定位置まで戻る</strong></p>
-
-<p>先ほどのコミットが終わったあと、logを出し、一応最新のSHAをメモってから、</p>
-
-<pre><code>git reset HEAD^
+<pre><code>$ git branch
+  challenge
+* master
 </code></pre>
 
-<p>とやってみました。すると最後のコミットをしていない状態に戻りました。<code>git log</code>で確認してみると、最後のコミットの情報が表示されません。ただ単にコミット前に戻っただけで、ソースは何も変わっていませんでした。git resetはHEADの位置を変更することが出来るようです。<code>^</code>はどのくらい前に戻るかということなんでしょうかね。うほ。HEADのいちを移動できるということは、新たにコミットしなければさっきの状態に戻れるかなと思い、以下のコマンドを実行してみました。</p>
+<p>branchが作成されました。作業branchを変更して、現在どのbranchにいるか表示します。</p>
 
-<pre><code>git reset e66e5…(先ほどメモしたSHA)
+<pre><code>$ git checkout challenge
+$ git branch
+* challenge
+  master
 </code></pre>
 
-<p>すると、最新の状態に戻りました！<code>git status</code>とやっても変更点はないとメッセージが出るだけです。<code>git log</code>を確認して、２つ前に戻ってみました</p>
+<p>&lt;&#8211;! more &#8211;></p>
 
-<pre><code>git reset ga1rg…（２つ前のSHA）
+<p>こんな感じになりました。現在の作業branchはchallengeです。とりあえずこの状態でファイルに変更を加えて、新たにファイルを作成して<code>git add .</code>してcommitしてみました。現在のファイルです。</p>
+
+<pre><code>$ ls
+t.txt   u.txt
 </code></pre>
 
-<p>戻りました。というか、コードは全く変わってないのですが、2つ前より後にcommitしたものは、すべて未commitの状態に戻りました。この状態から最新の状態にも戻れました。更にもう一度2つ前の状態に戻って、</p>
+<p>この状態で、masterブランチに変更してみます。</p>
 
-<p><a href="http://transitive.info/article/git/command/checkout/">git checkoutの使い方</a>を参考に、修正されているファイルを修正前の状態に戻します。</p>
-
-<pre><code>git checkout t.txt
+<pre><code>$ git checkout master
+Switched to branch 'master'
+$ git branch
+  challenge
+* master
+$ ls
+t.txt
 </code></pre>
 
-<p><code>git status</code>で見たところ、変更点はないというメッセージのみになりました。そして、この状態でちょっと変更を加えてコミット。更に、先ほどの最新の状態のSHAへ<code>git reset e66e5…(先ほどメモしたSHA)</code>で戻って見ることにしました。</p>
-
-<p>ここで少々ややこしいことになりました。2つ前に戻って変更した部分が未コミットのadd候補、そしてe66e5…にはあるが2つ前に戻って変更したファイルにない部分がrm候補の未コミット状態で復活しました。とりあえず、ファイル自体は2つ前に戻って変更したものと変わらないようです。</p>
-
-<p>ふむふむ。</p>
-
-<p>そして最後に紹介されているのが、</p>
-
-<h2>git reflog</h2>
-
-<p><strong>HEADの変更の経緯を見ることができる</strong></p>
-
-<p>ずらっと出てきた。</p>
-
-<pre><code>c7d36af HEAD@{0}: reset: moving to c7d36af...
-57a61a6 HEAD@{1}: commit: この状態の変更は？って文を追加
-e66e588 HEAD@{2}: reset: moving to HEAD^
-c7d36af HEAD@{3}: reset: moving to c7d36af...
-0887fdb HEAD@{4}: reset: moving to 0887fdb...
-c7d36af HEAD@{5}: reset: moving to c7d36af...
-e66e588 HEAD@{6}: reset: moving to HEAD^
-c7d36af HEAD@{7}: commit: -追加
-e66e588 HEAD@{8}: commit (amend): コミット文を変更
-6727c21 HEAD@{9}: commit (amend): 3
-e130159 HEAD@{10}: commit: 3
-0887fdb HEAD@{11}: commit: 更に文を追加
-8d426c4 HEAD@{12}: commit: 文を追加
-3c20bd5 HEAD@{13}: commit (initial): initial commit
-</code></pre>
-
-<p>ウホ、良い感じ。上記の&#8221;…&#8221;の部分は、伏せているだけで実際はちゃんとSHAが出てきます。これで、自分が作業してきたHEADの戻りたい部分に戻れるわけですね！</p>
-
-<p>いや、このブログ分量も適切で説明もわかり易くほんとうに勉強になりました！</p>
+<p>うほ。良い感じ。ファイルの中身を見ても先ほど加えた変更が何にも反映されてません!ちょっとここから参考にしているブログが難しくなってくるのですが、とりあえず、他の人がmasterに変更を加えた状況を作成するために自分でマスターに変更を加えます。</p>
 </div>
 
 
@@ -209,7 +182,7 @@ e130159 HEAD@{10}: commit: 3
   
 
 
-<time datetime="2012-07-14T01:34:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2012</time>
+<time datetime="2012-07-14T14:12:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2012</time>
       
 
 
@@ -217,7 +190,7 @@ e130159 HEAD@{10}: commit: 3
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/14/git-git/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/14/git-git/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/14/git-branch/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/14/git-branch/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -230,10 +203,8 @@ e130159 HEAD@{10}: commit: 3
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/12/magicwand/" title="Previous Post: MagicWandが届いた">&laquo; MagicWandが届いた</a>
+        <a class="basic-alignment left" href="/blog/2012/07/14/git-git/" title="Previous Post: gitで現在と過去をいったりきたり">&laquo; gitで現在と過去をいったりきたり</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/14/git-branch/" title="Next Post: gitのブランチについて学ぶ">gitのブランチについて学ぶ &raquo;</a>
       
     </p>
   </footer>
@@ -351,8 +322,8 @@ e130159 HEAD@{10}: commit: 3
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/14/git-git/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/14/git-git/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/07/14/git-branch/';
+        var disqus_url = 'http://morizotter.com/blog/2012/07/14/git-branch/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T14:11:11+09:00</updated>
+  <updated>2012-07-14T14:29:57+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,68 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[gitのブランチについて学ぶ]]></title>
+    <link href="http://morizotter.com/blog/2012/07/14/git-branch/"/>
+    <updated>2012-07-14T14:12:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/14/git-branch</id>
+    <content type="html"><![CDATA[<p>調子に乗ってgitのブランチについても学ぼうと思います！最近、誰かが書いたブログ記事から学ぶことが多いのですが、これってなんて素晴らしいことなんでしょうね。知識の共有って善だと思います。確かに本の方がまとまっていたり、全体を俯瞰できたりする点は優れているのですが、個人のブログのほうがリアルでしかも情報量が適切で飽きません。また、書いた人の個性や工夫などが感じられて楽しいです！</p>
+
+<p>では、gitのbranchについて。</p>
+
+<p>基本的にはメインにmasterがあって、masterに変更を加えずbranchでいろいろ作業進めていって、良い感じだったらmasterにmergeするっていうのが今の漠然とした理解です。</p>
+
+<p>始めます。参考にしたのは、<a href="http://d.hatena.ne.jp/zariganitosh/20080912/1221260782">アリスがチャレンジなコードを書く時、git branchをちゃんと理解したい！</a>です。うー、これも結構前の記事なんだなぁ。僕がプログラミングをはじめたタイミングより2年も昔だ。</p>
+
+<p>作業前の僕のブラ地の状態はこんなかんじです。</p>
+
+<pre><code>$ git branch
+* master
+</code></pre>
+
+<p>ここで、</p>
+
+<pre><code>$ git branch challenge
+</code></pre>
+
+<p>で、branchを作ります。こんな状態になります。</p>
+
+<pre><code>$ git branch
+  challenge
+* master
+</code></pre>
+
+<p>branchが作成されました。作業branchを変更して、現在どのbranchにいるか表示します。</p>
+
+<pre><code>$ git checkout challenge
+$ git branch
+* challenge
+  master
+</code></pre>
+
+<p>&lt;&#8211;! more &#8211;></p>
+
+<p>こんな感じになりました。現在の作業branchはchallengeです。とりあえずこの状態でファイルに変更を加えて、新たにファイルを作成して<code>git add .</code>してcommitしてみました。現在のファイルです。</p>
+
+<pre><code>$ ls
+t.txt   u.txt
+</code></pre>
+
+<p>この状態で、masterブランチに変更してみます。</p>
+
+<pre><code>$ git checkout master
+Switched to branch 'master'
+$ git branch
+  challenge
+* master
+$ ls
+t.txt
+</code></pre>
+
+<p>うほ。良い感じ。ファイルの中身を見ても先ほど加えた変更が何にも反映されてません!ちょっとここから参考にしているブログが難しくなってくるのですが、とりあえず、他の人がmasterに変更を加えた状況を作成するために自分でマスターに変更を加えます。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[gitで現在と過去をいったりきたり]]></title>
@@ -656,70 +718,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 <p>以前、この設定を変えるのに苦戦したのが何だったんだというあっけなさ。</p>
 
 <p>とりあえず、この辺にしておきます。ほとんどもう以前と同じように使えるんじゃないだろうか。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Macbook Air mid 2012が届いた！]]></title>
-    <link href="http://morizotter.com/blog/2012/07/07/macbook-air-2012/"/>
-    <updated>2012-07-07T10:12:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/07/macbook-air-2012</id>
-    <content type="html"><![CDATA[<p><a href="http://www.apple.com/jp/macbookair/">MacbookAir Mid 2012</a>が届いた！これから設定！設定の過程を記しておこうと思います。</p>
-
-<p>移行アシスタントで一気に移行してみてもよかったんですが、ほとんどDropboxやiCloudやEvernoteなので移行らくちん。面倒なのはPHPやMySQLなどの環境系だけなので、勉強も兼ねつつ環境系は再設定するということで、きれいな状態からやります！</p>
-
-<h2>構成</h2>
-
-<ul>
-<li>11インチ</li>
-<li>2.0GHz Intel Corei7 (Turbo Boost使用時最大2.6GHz)</li>
-<li>8GB</li>
-<li>256GB</li>
-<li>USキーボード</li>
-</ul>
-
-
-<h2>ファーストインプレッション</h2>
-
-<p><strong>早い！</strong></p>
-
-<p>MacbookAir2010と比べると格段の差です。まぁ以前はメモリ2GBでLionにしてからメモリぎりぎりでやってるしな〜。2012は検索やウィンドウを閉じるときなど早いです。きれいな環境というのもあると思いますが！</p>
-
-<h2>セッティング開始</h2>
-
-<h4>ソフトウェア・ダウンロード</h4>
-
-<p>早速実行したのはソフトウェアダウンロード。いくつか更新がありました。</p>
-
-<h4>システム環境設定</h4>
-
-<p>Finderの設定を変更。トラックパッドの設定を変更。ことえりをいれとく。へー、アイヌ語キーボードなんてあるんだ。アイヌ語って文字あったっけな。ふむ。便宜的に日本語を拡張して表現するのか。USキーボードの<code>Command+Space</code>に慣れなきゃな。いちおキーボードのファンクションキーを使えるようにしておく。コンピュータ名が&#8221;〜〜no Macbook Air&#8221;とか変な感じだったので共有から変更。</p>
-
-<h4>アプリをインストール</h4>
-
-<p>DropboxとEvernoteをインストールして同期。がっつり同期！GoogleChromeインストール。最近、iOS系でAppStoreに問題がありインストールしても起動しないなどのエラーが心配だったが、ちょっと調べて問題は解決してるらしいので、他のアプリもDL、TwitterとかPixelmaterとかスカイプとかiWorkとかiTerms2とかいろいろ！ MacAppStoreからOS X Lionがダウンロードできるんだけど何だろう。Snowleopard用かな。ちなみに、The Tiny Bang Stroyってゲーム面白いっす。</p>
-
-<h4>もう移行終わり？</h4>
-
-<p>んーーー。これでほぼ移行完了したっぽい。。10分くらいだよこれ。すごすぎる。まぁ、今裏ではEvernoteやDropboxが、そしてiCloudがメール関係で動いてるっぽいけど。移行アシスタント必要ないな。</p>
-
-<hr />
-
-<h4>ちょい手間取った1</h4>
-
-<p>あ、Photoshopの移行忘れてた！現行のPhotoshopをアンインストールしてライセンス認証を解除してっと。うは、新しいMacBook Airにソフトをインストールするにはどうすればいいの！？</p>
-
-<p>Adobeの体験版ダウンロードページに行ってもCS5のダウンロードは終了しているということ。サポートフォーラムでも、インストール用CDやDVDがない場合は、アップグレードの推奨。うーむ、困った。</p>
-
-<p>ネットを探してもグレーっぽいものしか見つからず来週Adobeに電話するかと諦めかけていたところで、昔購入した本にCS5の体験版があったことを思い出した。で、はじめて<a href="http://support.apple.com/kb/HT5287?viewlocale=ja_JP">リモートディスク</a>を使いiMacに接続、CD-ROMから無事インストールし、Adobeのサイトに登録していたシリアルから無事ライセンス認証をクリアしたのでした。</p>
-
-<h4>ちょい手間取った2</h4>
-
-<p>メールアドレスが増えすぎちゃっているのだが、ほとんどgmailなので登録は一発。ただ、さくらのメール設定には苦戦した。ユーザ名はメールアドレスなので。でも、最終的に躓いた原因はパスワードの間違えでした。あふあふ。</p>
-
-<p>さて、基本設定はこれでほぼ終わりかな。次は恐怖の環境設定です。Homebrewで一通りやろうと思ってます。phpの設定ファイルとか面倒そうだ！</p>
-
-<p><a href="http://www.morizotter.com/blog/2012/07/07/macbook-air-2012-env/">環境設定について読む</a></p>
 ]]></content>
   </entry>
   
