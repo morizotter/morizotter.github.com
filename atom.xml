@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T14:00:45+09:00</updated>
+  <updated>2012-07-14T14:02:11+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -18,15 +18,11 @@
     <link href="http://morizotter.com/blog/2012/07/14/git-git/"/>
     <updated>2012-07-14T01:34:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/07/14/git-git</id>
-    <content type="html"><![CDATA[<p>さて、gitの学習の時間です。</p>
-
-<p>今では毎日暇さえあればgitしてます。なんか気持ちいいんですよね。</p>
-
-<p>でも、せっかくgitを使っているのにコミットするばかりで、あまり過去の履歴を見たり過去に戻ったりしていません。</p>
+    <content type="html"><![CDATA[<p>さて、gitの学習の時間です。今では毎日暇さえあればgitしてます。なんか気持ちいいんですよね。でも、せっかくgitを使っているのにコミットするばかりで、あまり過去の履歴を見たり過去に戻ったりしていません。</p>
 
 <p>これからちょっと、過去に戻ったり、現在に戻ってきたりやってみようと思います。ネットで探したらよい記事がたくさん！</p>
 
-<p>まずは、<a href="http://d.hatena.ne.jp/idesaku/20091106/1257507849">Git初心者が絶対に覚えておくべきコマンド</a></p>
+<p>まずは、<a href="http://d.hatena.ne.jp/idesaku/20091106/1257507849">Git初心者が絶対に覚えておくべきコマンド</a>を参考に学習していきます！</p>
 
 <h2>git &#8211;amend</h2>
 
