@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T14:29:57+09:00</updated>
+  <updated>2012-07-14T14:30:48+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -52,7 +52,8 @@ $ git branch
   master
 </code></pre>
 
-<p>&lt;&#8211;! more &#8211;></p>
+<!-- more -->
+
 
 <p>こんな感じになりました。現在の作業branchはchallengeです。とりあえずこの状態でファイルに変更を加えて、新たにファイルを作成して<code>git add .</code>してcommitしてみました。現在のファイルです。</p>
 
