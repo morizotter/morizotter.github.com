@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T12:47:13+09:00</updated>
+  <updated>2012-07-14T13:50:16+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,71 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[gitを学ぼう！]]></title>
+    <link href="http://morizotter.com/blog/2012/07/14/git-git/"/>
+    <updated>2012-07-14T01:34:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/14/git-git</id>
+    <content type="html"><![CDATA[<p>さて、gitの学習の時間です。</p>
+
+<p>今では毎日暇さえあればgitしてます。なんか気持ちいいんですよね。</p>
+
+<p>でも、せっかくgitを使っているのにコミットするばかりで、あまり過去の履歴を見たり過去に戻ったりしていません。</p>
+
+<p>これからちょっと、過去に戻ったり、現在に戻ってきたりやってみようと思います。ネットで探したらよい記事がたくさん！</p>
+
+<p>まずは、<a href="http://d.hatena.ne.jp/idesaku/20091106/1257507849">Git初心者が絶対に覚えておくべきコマンド</a></p>
+
+<h2>git &#8211;amend</h2>
+
+<p><strong>直前のコミットを修正</strong></p>
+
+<p><code>git --amend</code>で直前のコミットの内容を修正！できました！良い感じです。ちなみに、やり方としては、<code>git commit -m "t.txtを変更しまshia"</code>とか変なコミット分を打ってしまったときは、</p>
+
+<pre><code>git --amend -m "t.txtを変更しました。"
+</code></pre>
+
+<p>とやれば直前のコミット文が上書きされます。またコード上でも、例えば<code>NSString *widht;</code>とかやっちゃっているときに、コードを修正して、<code>git add .</code>して、</p>
+
+<pre><code>git --amend -m "適当なコミット文"
+</code></pre>
+
+<p>をすれば、直近のコミットが上書きされます。どっかの時点に戻ってしまうということもありません。これは便利！僕の場合、ついコミットしてしまってコミット後に動かしてアプリが落ちるので微修正して再度コミットということがちょくちょくあるので便利に使えそうです。</p>
+
+<h2>git reset</h2>
+
+<p><strong>指定位置まで戻る</strong></p>
+
+<p>先ほどのコミットが終わったあと、logを出し、一応最新のSHAをメモってから、</p>
+
+<pre><code>git reset HEAD^
+</code></pre>
+
+<p>とやってみました。すると最後のコミットをしていない状態に戻りました。<code>git log</code>で確認してみると、最後のコミットの情報が戻って来ません。ただ単にコミット前に戻っただけで、ソースは何も変わっていませんでした。git resetはHEADの位置を変更することが出来るようです。<code>^</code>はどのくらい前に戻るかということなんでしょうかね。うほ。HEADのいちを移動できるということは、新たにコミットしなければさっきの状態に戻れるかなと思い、以下のコマンドを実行してみました。</p>
+
+<pre><code>git reset e66e5…(先ほどメモしたSHA)
+</code></pre>
+
+<p>すると、最新の状態に戻りました！<code>git status</code>とやっても変更点はないとメッセージが出るだけです。<code>git log</code>を確認して、２つ前に戻ってみました</p>
+
+<pre><code>git reset ga1rg…（２つ前のSHA）
+</code></pre>
+
+<p>戻りました。というか、コードは全く変わってないのですが、2つ前より後にcommitしたものは、すべて未commitの状態に戻りました。この状態から最新の状態にも戻れました。更にもう一度2つ前の状態に戻って、</p>
+
+<p><a href="http://transitive.info/article/git/command/checkout/">git checkoutの使い方</a>を参考に、修正されているファイルを修正前の状態に戻します。</p>
+
+<pre><code>git checkout t.txt
+</code></pre>
+
+<p><code>git status</code>で見たところ、変更点はないというメッセージのみになりました。そして、この状態でちょっと変更を加えてコミット。更に、先ほどの最新の状態のSHAへ<code>git reset e66e5…(先ほどメモしたSHA)</code>で戻って見ることにしました。</p>
+
+<p>ここで少々ややこしいことになりました。2つ前に戻って変更した部分が未コミットのadd候補、そしてe66e5…にはあるが2つ前に戻って変更したファイルにない部分がrm候補の未コミット状態で復活しました。とりあえず、ファイル自体は2つ前に戻って変更したものと変わらないようです。</p>
+
+<p>ふむふむ。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MagicWandが届いた]]></title>
@@ -631,27 +696,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 <p>さて、基本設定はこれでほぼ終わりかな。次は恐怖の環境設定です。Homebrewで一通りやろうと思ってます。phpの設定ファイルとか面倒そうだ！</p>
 
 <p><a href="http://www.morizotter.com/blog/2012/07/07/macbook-air-2012-env/">環境設定について読む</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[少しNumbersのことを]]></title>
-    <link href="http://morizotter.com/blog/2012/07/06/numbers/"/>
-    <updated>2012-07-06T13:34:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/06/numbers</id>
-    <content type="html"><![CDATA[<p>今日は少しNumbersのことを学ぼうと思っている。Numbersはプログラムを書く前に思考を整理したりするのに使っている。ただ単に項目を列挙するだけのシンプルな使い方。だけど、やっぱりExcelほど使いこなしていない。</p>
-
-<h3>選択中のセルを編集</h3>
-
-<p>Numbersについてちょっと学ぼうと思ったのは、ExcelのF2にあたる<strong>選択中のセルを編集</strong>機能を当たりをつけて探っていたところ、<code>Option+Enter</code>でできたことがきっかけ。これがあるだけで、大分違う。できるだけ、トラックパッドやマウスを使わないで作業をしたいのだ。</p>
-
-<h3>セルの中で改行</h3>
-
-<p>他に便利なのは確か<code>Alt+Enter</code>にあたる<code>Option+Enter</code>。セルの中で改行ができる。</p>
-
-<h3>行を追加</h3>
-
-<p>うっほ、<code>Option+↑</code>で行を追加できるのね！これはいい！</p>
 ]]></content>
   </entry>
   

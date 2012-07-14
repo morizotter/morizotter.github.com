@@ -9,9 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="コマンドラインでファイル検索できないと不便だなと思ったので、grepを学んでみることにした。 最初に参考にしたのはここ。基本的だと思う。テストとしてデスクトップに一つ適当にファイルを作ってみた。 $ cd ~/Desktop/
-$ mkdir test
-$ echo "test テスト" &gt &hellip;">
+  <meta name="description" content="共有リポジトリを作るという記事が非常に参考になったので備忘録として記しておきます。 基本的にはからのリポジトリを&lt;任意の名前&gt;.gitという形で作り、 git init --bare --shared=true をするということですね。 --bareオプションに関しては、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +78,68 @@ $ echo "test テスト" &gt &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/08/git-init/">gitで共有リポジトリを作る</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-08T22:15:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/08/git-init/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://blog.s21g.com/articles/1312">共有リポジトリを作る</a>という記事が非常に参考になったので備忘録として記しておきます。</p>
+
+<p>基本的にはからのリポジトリを<code>&lt;任意の名前&gt;.git</code>という形で作り、</p>
+
+<pre><code>git init --bare --shared=true
+</code></pre>
+
+<p>をするということですね。</p>
+
+<p><code>--bare</code>オプションに関しては、<a href="http://d.hatena.ne.jp/naokirin/20111201/1322576109">ここ</a>を参考にすると、管理ファイルのみのリポジトリを作成するということなんですね。で、グループ作業するときには<code>--shared=true</code>を指定すると。</p>
+
+<p><code>--shared=true</code>を設定するとsshでアクセスしたときに自動的に適切なパーミッション設定をしてくれる？</p>
+
+<pre><code>If a user SSHs into a server and has write access to the /opt/git/my_project.git directory, they will also automatically have push access. Git will automatically add group write permissions to a repository properly if you run the git init command with the --shared option.
+</code></pre>
+
+<p><a href="http://git-scm.com/book/en/Git-on-the-Server-Getting-Git-on-a-Server#Putting-the-Bare-Repository-on-a-Server">Putting the Bare Repository on a Server</a></p>
+
+<p>この辺りはちょっとまだわかっていません。</p>
+
+<p>あとはローカルの方でgit pushするとcloneできるようです。</p>
+
+<p>完全に理解した訳ではないですが、上記の件だけでだいぶgitが身近になった気分です。</p>
+
+<p>Dropboxに共有リポジトリを作る方法は<a href="http://naoki.sato.name/lab/archives/38">こちら</a>を参考にしました。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -685,56 +745,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/06/numbers/">少しNumbersのことを</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-06T13:34:00+09:00" pubdate data-updated="true">Jul 6<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/06/numbers/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今日は少しNumbersのことを学ぼうと思っている。Numbersはプログラムを書く前に思考を整理したりするのに使っている。ただ単に項目を列挙するだけのシンプルな使い方。だけど、やっぱりExcelほど使いこなしていない。</p>
-
-<h3>選択中のセルを編集</h3>
-
-<p>Numbersについてちょっと学ぼうと思ったのは、ExcelのF2にあたる<strong>選択中のセルを編集</strong>機能を当たりをつけて探っていたところ、<code>Option+Enter</code>でできたことがきっかけ。これがあるだけで、大分違う。できるだけ、トラックパッドやマウスを使わないで作業をしたいのだ。</p>
-
-<h3>セルの中で改行</h3>
-
-<p>他に便利なのは確か<code>Alt+Enter</code>にあたる<code>Option+Enter</code>。セルの中で改行ができる。</p>
-
-<h3>行を追加</h3>
-
-<p>うっほ、<code>Option+↑</code>で行を追加できるのね！これはいい！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -758,6 +768,10 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/14/git-git/">gitを学ぼう！</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/12/magicwand/">MagicWandが届いた</a>
       </li>
     
@@ -771,10 +785,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
     
       <li class="post">
         <a href="/blog/2012/07/10/about-this-blog/">最近、見に来てくれくれる人も増えたので</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/09/iterm2/">iTerm2がなかなか良い</a>
       </li>
     
   </ul>

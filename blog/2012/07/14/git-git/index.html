@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>iTerm2がなかなか良い - MORIZOTTER PRESS</title>
+  <title>gitを学ぼう！ - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="何人かの人に勧められたのでMac標準のターミナル.appからiTerm2に変えたのが多分1ヶ月ほど前。少しの間背景をぼやかして薄暗くしているだけでターミナルと同じようにしか使ってなかった。 ただ、最近、この良さに気づき始めている。一番シンプルだけど良いのは、Command + Dでの複数画面表示、 &hellip;">
+  <meta name="description" content="さて、gitの学習の時間です。 今では毎日暇さえあればgitしてます。なんか気持ちいいんですよね。 でも、せっかくgitを使っているのにコミットするばかりで、あまり過去の履歴を見たり過去に戻ったりしていません。 これからちょっと、過去に戻ったり、現在に戻ってきたりやってみようと思います。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/09/iterm2/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/07/14/git-git/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">iTerm2がなかなか良い</h1>
+      <h1 class="entry-title">gitを学ぼう！</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2012-07-09T23:40:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
+<time datetime="2012-07-14T01:34:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,19 +106,63 @@
   </header>
 
 
-<div class="entry-content"><p>何人かの人に勧められたのでMac標準のターミナル.appからiTerm2に変えたのが多分1ヶ月ほど前。少しの間背景をぼやかして薄暗くしているだけでターミナルと同じようにしか使ってなかった。</p>
+<div class="entry-content"><p>さて、gitの学習の時間です。</p>
 
-<p>ただ、最近、この良さに気づき始めている。一番シンプルだけど良いのは、<code>Command + D</code>での複数画面表示、そして、<code>Command + Shift + D</code>で上下にも分割できる。横に広いテーブルを見るときなど便利。下にできたビューで<code>Command + D</code>をするとまた左右に分割なんて。テーブルをたくさん表示したい時にかなり助かる。</p>
+<p>今では毎日暇さえあればgitしてます。なんか気持ちいいんですよね。</p>
 
-<p>更に、テーブルがビューに収まりきらなかったらテーブル単位で<code>Command + +</code>とか<code>Command + -</code>とかで、拡大縮小できる！地味に助かる。</p>
+<p>でも、せっかくgitを使っているのにコミットするばかりで、あまり過去の履歴を見たり過去に戻ったりしていません。</p>
 
-<p>ちょっと関連のない作業するときには右下の小さいビューでやったり、タブを開いてそちらでやったり。タブへの移動は<code>Command + 数字（タブ番号）</code>でらくらく。</p>
+<p>これからちょっと、過去に戻ったり、現在に戻ってきたりやってみようと思います。ネットで探したらよい記事がたくさん！</p>
 
-<p>そして早い！</p>
+<p>まずは、<a href="http://d.hatena.ne.jp/idesaku/20091106/1257507849">Git初心者が絶対に覚えておくべきコマンド</a></p>
 
-<p>こりゃ、人気の訳がわかりますなぁ！！</p>
+<h2>git &#8211;amend</h2>
 
-<p>それにしても、日本語キーボードと英語キーボードの行き来はちょっと疲れる。MacBook Airの軽快さで印象がアップしているのかわからないけど、US慣れるとかなりいいよ！</p>
+<p><strong>直前のコミットを修正</strong></p>
+
+<p><code>git --amend</code>で直前のコミットの内容を修正！できました！良い感じです。ちなみに、やり方としては、<code>git commit -m "t.txtを変更しまshia"</code>とか変なコミット分を打ってしまったときは、</p>
+
+<pre><code>git --amend -m "t.txtを変更しました。"
+</code></pre>
+
+<p>とやれば直前のコミット文が上書きされます。またコード上でも、例えば<code>NSString *widht;</code>とかやっちゃっているときに、コードを修正して、<code>git add .</code>して、</p>
+
+<pre><code>git --amend -m "適当なコミット文"
+</code></pre>
+
+<p>をすれば、直近のコミットが上書きされます。どっかの時点に戻ってしまうということもありません。これは便利！僕の場合、ついコミットしてしまってコミット後に動かしてアプリが落ちるので微修正して再度コミットということがちょくちょくあるので便利に使えそうです。</p>
+
+<h2>git reset</h2>
+
+<p><strong>指定位置まで戻る</strong></p>
+
+<p>先ほどのコミットが終わったあと、logを出し、一応最新のSHAをメモってから、</p>
+
+<pre><code>git reset HEAD^
+</code></pre>
+
+<p>とやってみました。すると最後のコミットをしていない状態に戻りました。<code>git log</code>で確認してみると、最後のコミットの情報が戻って来ません。ただ単にコミット前に戻っただけで、ソースは何も変わっていませんでした。git resetはHEADの位置を変更することが出来るようです。<code>^</code>はどのくらい前に戻るかということなんでしょうかね。うほ。HEADのいちを移動できるということは、新たにコミットしなければさっきの状態に戻れるかなと思い、以下のコマンドを実行してみました。</p>
+
+<pre><code>git reset e66e5…(先ほどメモしたSHA)
+</code></pre>
+
+<p>すると、最新の状態に戻りました！<code>git status</code>とやっても変更点はないとメッセージが出るだけです。<code>git log</code>を確認して、２つ前に戻ってみました</p>
+
+<pre><code>git reset ga1rg…（２つ前のSHA）
+</code></pre>
+
+<p>戻りました。というか、コードは全く変わってないのですが、2つ前より後にcommitしたものは、すべて未commitの状態に戻りました。この状態から最新の状態にも戻れました。更にもう一度2つ前の状態に戻って、</p>
+
+<p><a href="http://transitive.info/article/git/command/checkout/">git checkoutの使い方</a>を参考に、修正されているファイルを修正前の状態に戻します。</p>
+
+<pre><code>git checkout t.txt
+</code></pre>
+
+<p><code>git status</code>で見たところ、変更点はないというメッセージのみになりました。そして、この状態でちょっと変更を加えてコミット。更に、先ほどの最新の状態のSHAへ<code>git reset e66e5…(先ほどメモしたSHA)</code>で戻って見ることにしました。</p>
+
+<p>ここで少々ややこしいことになりました。2つ前に戻って変更した部分が未コミットのadd候補、そしてe66e5…にはあるが2つ前に戻って変更したファイルにない部分がrm候補の未コミット状態で復活しました。とりあえず、ファイル自体は2つ前に戻って変更したものと変わらないようです。</p>
+
+<p>ふむふむ。</p>
 </div>
 
 
@@ -141,7 +185,7 @@
   
 
 
-<time datetime="2012-07-09T23:40:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
+<time datetime="2012-07-14T01:34:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2012</time>
       
 
 
@@ -149,7 +193,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/09/iterm2/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/09/iterm2/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/14/git-git/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/14/git-git/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -162,10 +206,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/09/bash-command/" title="Previous Post: bashのコマンド">&laquo; bashのコマンド</a>
+        <a class="basic-alignment left" href="/blog/2012/07/12/magicwand/" title="Previous Post: MagicWandが届いた">&laquo; MagicWandが届いた</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/10/about-this-blog/" title="Next Post: 最近、見に来てくれくれる人も増えたので">最近、見に来てくれくれる人も増えたので &raquo;</a>
       
     </p>
   </footer>
@@ -283,8 +325,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/09/iterm2/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/09/iterm2/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/07/14/git-git/';
+        var disqus_url = 'http://morizotter.com/blog/2012/07/14/git-git/';
         var disqus_script = 'embed.js';
       
     (function () {
