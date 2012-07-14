@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T23:52:47+09:00</updated>
+  <updated>2012-07-15T02:20:51+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[LogMeInでMacにアクセス]]></title>
+    <link href="http://morizotter.com/blog/2012/07/15/logmein/"/>
+    <updated>2012-07-15T02:08:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/15/logmein</id>
+    <content type="html"><![CDATA[<p>うむぅ。微妙。微妙だけど、まぁ、とにかく自宅マックじゃなきゃ作業できないってときは重宝するね。というのはLogMeInの話です。LogMeInはPCにリモートアクセスできるアプリです。ちなみに、今この記事もMacにアクセスして作成したテキストファイルにiPad側で書き込みをしています。</p>
+
+<p><strong>微妙な点</strong></p>
+
+<ul>
+<li>日本語、英語の切り替えが面倒
+
+<ul>
+<li>できないこともないのですが、Mac側で設定しなければいけません。キーボードのショートカットが使えないので、結局、メニューバーのことえりやらGoogle日本語入力やらをタップして変更ます。。。</li>
+</ul>
+</li>
+<li>アンダーバーが押せない。なぜか外付けキーボードだとアンダーバーが押せません。IMEのキーボードパットを出して、押しています。。。</li>
+</ul>
+
+
+<p>まぁそうは言っても、簡単にMacにアクセスできるのは素晴らしいですね！旅行先でも気軽にOctopressで投稿できそうですw Octopressは便利なんですが、ターミナル使う必要がありますからねぇ。。sshで接続すればいいのかもしれないのですが、ちょっと設定が面倒なので、まぁほとんど使う機会もないですし、LogMeInをもう少し使い続けそうです。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[OctopressをHerokuにデプロイ]]></title>
@@ -713,21 +737,6 @@ $ echo "test テスト" &gt; test/test.txt
 
 
 <p>最後のは使わないかも。特に<code>Command + W</code>と<code>Command + L</code>と<code>Command + R</code>が重宝しそうです！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[gitをDropboxで使うと起こる問題]]></title>
-    <link href="http://morizotter.com/blog/2012/07/07/git-dropbox-problem/"/>
-    <updated>2012-07-07T16:44:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/07/git-dropbox-problem</id>
-    <content type="html"><![CDATA[<p>gitのPushに失敗するという面倒な事態に陥りました。おそらく、以前のMacBookAirと今のMacBookAirで同じファイルを編集したが原因です。</p>
-
-<p><a href="http://d.hatena.ne.jp/gelegele/20120530/git_dropbox_fatal">ゲレゲレめも</a>さんの記述が大変参考になりました。ヒントであってもあるのとないのとは大違いです。</p>
-
-<p>僕の場合は<code>.git</code>と<code>.git/refs/heads</code>とさらに<code>.git/refs/remotes/origin/master</code>に問題のあるファイルが生成されていたので、すべてrmして解消しました。</p>
-
-<p>ふー。</p>
 ]]></content>
   </entry>
   

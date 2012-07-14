@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>grepについて少し学んでみた - MORIZOTTER PRESS</title>
+  <title>LogMeInでMacにアクセス - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="コマンドラインでファイル検索できないと不便だなと思ったので、grepを学んでみることにした。 最初に参考にしたのはここ。基本的だと思う。テストとしてデスクトップに一つ適当にファイルを作ってみた。 $ cd ~/Desktop/
-$ mkdir test
-$ echo "test テスト" &gt &hellip;">
+  <meta name="description" content="うむぅ。微妙。微妙だけど、まぁ、とにかく自宅マックじゃなきゃ作業できないってときは重宝するね。というのはLogMeInの話です。LogMeInはPCにリモートアクセスできるアプリです。ちなみに、今この記事もMacにアクセスして作成したテキストファイルにiPad側で書き込みをしています。 微妙な点 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ $ echo "test テスト" &gt &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/08/grep/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/07/15/logmein/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -83,7 +81,7 @@ $ echo "test テスト" &gt &hellip;">
   
   <header>
     
-      <h1 class="entry-title">grepについて少し学んでみた</h1>
+      <h1 class="entry-title">LogMeInでMacにアクセス</h1>
     
     
       <p class="meta">
@@ -99,7 +97,7 @@ $ echo "test テスト" &gt &hellip;">
   
 
 
-<time datetime="2012-07-08T20:38:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
+<time datetime="2012-07-15T02:08:00+09:00" pubdate data-updated="true">Jul 15<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -108,33 +106,22 @@ $ echo "test テスト" &gt &hellip;">
   </header>
 
 
-<div class="entry-content"><p>コマンドラインでファイル検索できないと不便だなと思ったので、grepを学んでみることにした。</p>
+<div class="entry-content"><p>うむぅ。微妙。微妙だけど、まぁ、とにかく自宅マックじゃなきゃ作業できないってときは重宝するね。というのはLogMeInの話です。LogMeInはPCにリモートアクセスできるアプリです。ちなみに、今この記事もMacにアクセスして作成したテキストファイルにiPad側で書き込みをしています。</p>
 
-<p>最初に参考にしたのは<a href="http://www.nurs.or.jp/~sugi/grep.htm">ここ</a>。基本的だと思う。テストとしてデスクトップに一つ適当にファイルを作ってみた。</p>
+<p><strong>微妙な点</strong></p>
 
-<pre><code>$ cd ~/Desktop/
-$ mkdir test
-$ echo "test テスト" &gt; test/test.txt
-</code></pre>
+<ul>
+<li>日本語、英語の切り替えが面倒
 
-<p>で、</p>
+<ul>
+<li>できないこともないのですが、Mac側で設定しなければいけません。キーボードのショートカットが使えないので、結局、メニューバーのことえりやらGoogle日本語入力やらをタップして変更ます。。。</li>
+</ul>
+</li>
+<li>アンダーバーが押せない。なぜか外付けキーボードだとアンダーバーが押せません。IMEのキーボードパットを出して、押しています。。。</li>
+</ul>
 
-<pre><code>$ grep -r "テスト" ./test/
-</code></pre>
 
-<p>で、検索成功。出力結果はこんな感じ。</p>
-
-<pre><code>./test/test.txt:test テスト
-</code></pre>
-
-<p>このブログのgitを含む記事を検索してみた。ぐは。大量に出てきた。gitを含む行が出力されるみたい。</p>
-
-<p>ファイルを特定して検索してみた。やっぱり行。</p>
-
-<p><a href="http://blog.paz-para.com/?p=386">ここ</a>を参照してオプションを知る。とりあえず、ファイル名だけを出力する<code>-l</code>とディレクトリ以下を再起的に検索する<code>-r</code>を覚えておこう！</p>
-
-<p>これだけでも開きたいファイルを探すのが大変楽になった！
-電車の中の細切れ時間での学習でした！</p>
+<p>まぁそうは言っても、簡単にMacにアクセスできるのは素晴らしいですね！旅行先でも気軽にOctopressで投稿できそうですw Octopressは便利なんですが、ターミナル使う必要がありますからねぇ。。sshで接続すればいいのかもしれないのですが、ちょっと設定が面倒なので、まぁほとんど使う機会もないですし、LogMeInをもう少し使い続けそうです。</p>
 </div>
 
 
@@ -157,7 +144,7 @@ $ echo "test テスト" &gt; test/test.txt
   
 
 
-<time datetime="2012-07-08T20:38:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
+<time datetime="2012-07-15T02:08:00+09:00" pubdate data-updated="true">Jul 15<span>th</span>, 2012</time>
       
 
 
@@ -165,7 +152,7 @@ $ echo "test テスト" &gt; test/test.txt
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/08/grep/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/08/grep/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/15/logmein/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/15/logmein/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -178,10 +165,8 @@ $ echo "test テスト" &gt; test/test.txt
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/08/rails/" title="Previous Post: Railsを入れてみました">&laquo; Railsを入れてみました</a>
+        <a class="basic-alignment left" href="/blog/2012/07/14/octopress-ruby-heroku/" title="Previous Post: OctopressをHerokuにデプロイ">&laquo; OctopressをHerokuにデプロイ</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/08/git-init/" title="Next Post: gitで共有リポジトリを作る">gitで共有リポジトリを作る &raquo;</a>
       
     </p>
   </footer>
@@ -299,8 +284,8 @@ $ echo "test テスト" &gt; test/test.txt
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/08/grep/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/08/grep/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/07/15/logmein/';
+        var disqus_url = 'http://morizotter.com/blog/2012/07/15/logmein/';
         var disqus_script = 'embed.js';
       
     (function () {
