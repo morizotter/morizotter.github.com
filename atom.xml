@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T17:46:50+09:00</updated>
+  <updated>2012-07-14T17:50:06+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -75,7 +75,7 @@ origin  git://github.com/imathis/octopress.git (push)
 
 <p>このあと、パスの設定をしてみました。このあたり曖昧です。というかまぁ、パスを通すと長いパス打たなくて済むからいいよねというのは分かるんですが、$PATHに色々ぐちゃぐちゃ書いていいのかなと少し不安です。不安もありながら、<a href="https://devcenter.heroku.com/articles/cli-command-not-found">herokuのTroubleShooting</a>を参考に以下のようにやったところなんとかherokuコマンドを使えるようになりました。</p>
 
-<pre><code>export PATH=/Users/namorit/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/heroku-2.28.12/bin:$PATH
+<pre><code>export PATH=/Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/heroku-2.28.12/bin:$PATH
 </code></pre>
 
 <p>やっと次のステップに進めます。。。</p>
