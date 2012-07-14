@@ -178,6 +178,23 @@ origin  git://github.com/imathis/octopress.git (push)
 <p><code>heroku create</code>では自動でアプリ名が決められるため、すぐにこの名前の変更をトライしてみました。が、その後がうまくいかない。herokuのアプリのページで<strong>Rename</strong>した後、herokuのヘルプ<a href="https://devcenter.heroku.com/articles/renaming-apps">Renaming Apps from the CLI</a>と、<a href="http://d.hatena.ne.jp/Syunpei/20111202/1322806676">herokuでアプリケーションの名前を変更する方法</a>を参照して何とか行ったかのように見えたのですが、<code>rake generate</code>は使えるものの<code>rake deploy</code>が使えない。sshが拒否される。</p>
 
 <p>んー。ただ、pushすれば画面は更新されている。githubでホストしてるのとなんか管理方法が違っていそう。一応記事も表示されるし問題はなさげなので、今日のところはここまでということで！（<code>rake gen_deploy</code>が気持ちがいいので使いたい。。）</p>
+
+<h2>はまり4: 記事が更新されない!?</h2>
+
+<p>その後。。。</p>
+
+<p>サイトの表示と、一つ目の記事が投稿されたのは確認できたのですが、一向に次に投稿した長めの記事が更新されません。タイトルなど設定も変えていたので問題はそこにあると思い、いろいろ試した後に一旦アプリを削除して再度、作り直しました。一度経験していたらほんの数分でブログの構築まではできます。実はこの再作成の間に原因がわかったような気がしました。</p>
+
+<p>さて、同じようにpushしましたが、サイトには何も変化がありません。そこで、</p>
+
+<pre><code>rake generate
+</code></pre>
+
+<p>をやってみました。するとpublicフォルダにザクザク入ります。で、commitしてpush。さて！？</p>
+
+<p>反映されました（＞＜）</p>
+
+<p>ただ単に<code>rake generate</code>を忘れてただけだったみたいです！</p>
 </div>
   
   
