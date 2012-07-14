@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T15:47:33+09:00</updated>
+  <updated>2012-07-14T17:37:24+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -22,7 +22,7 @@
 
 <p>基本は、<a href="http://octopress.org/docs/setup/">Octopress Setup</a>を参考に勧めていきます。</p>
 
-<h2>躓き1</h2>
+<h2>はまり1: Rubyのバージョンがない？？</h2>
 
 <p>Rubyは1.9.3-p194が入っているはずなのに、cloneしたフォルダに入ると、</p>
 
@@ -43,6 +43,48 @@
 <p><a href="http://octopress.org/docs/deploying/heroku/">Using Octopress With Herok</a>へ進みます。</p>
 
 <hr />
+
+<h2>はまり2: herokuコマンドがnot found</h2>
+
+<p>資料にそって<code>gem install heroku</code>やったのに、<code>heroku</code>コマンドが使えない！</p>
+
+<pre><code>-bash: heroku: command not found
+</code></pre>
+
+<p>勝手にパスを追加して良いかとかまだ曖昧なのでとりあえず<a href="https://devcenter.heroku.com/articles/cli-command-not-found">herokuのTroubleShooting</a>を見て以下を実行。</p>
+
+<pre><code>$ gem environment
+</code></pre>
+
+<p>すると、PATHの場所として、</p>
+
+<pre><code> - GEM PATHS:
+    - /Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1
+    - /Users/&lt;username&gt;/.gem/ruby/1.9.1
+</code></pre>
+
+<p>こんなかんじで出てきた。そのあたりでherokuコマンドを探したら、</p>
+
+<pre><code>/Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/heroku
+</code></pre>
+
+<p>こんなところにあった。おしい。とりあえず上記の長いパスを入れてherokuコマンドを実行。herokuのサイトで登録したemailとパスワード聞かれたので入れたら自動的にmacのsshの情報が転送されていった。で、remoteにherokuが追加された。</p>
+
+<pre><code>$ git remote -v
+git@heroku.com:stormy-lightning-9306.git (fetch)
+heroku  git@heroku.com:stormy-lightning-9306.git (push)
+origin  git://github.com/imathis/octopress.git (fetch)
+origin  git://github.com/imathis/octopress.git (push)
+</code></pre>
+
+<p>このあと、パスの設定をしてみました。このあたり曖昧です。というかまぁ、パスを通すと長いパス打たなくて済むからいいよねというのは分かるんですが、$PATHに色々ぐちゃぐちゃ書いていいのかなと少し不安です。不安もありながら、<a href="https://devcenter.heroku.com/articles/cli-command-not-found">herokuのTroubleShooting</a>を参考に以下のようにやったところなんとかherokuコマンドを使えるようになりました。</p>
+
+<pre><code>export PATH=/Users/namorit/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/heroku-2.28.12/bin:$PATH
+</code></pre>
+
+<p>やっと次のステップに進めます。。。</p>
+
+<p>はまり3: herokuアプリのリネーム。。</p>
 ]]></content>
   </entry>
   
