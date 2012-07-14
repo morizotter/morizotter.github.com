@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T14:30:48+09:00</updated>
+  <updated>2012-07-14T15:04:44+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -72,7 +72,14 @@ $ ls
 t.txt
 </code></pre>
 
-<p>うほ。良い感じ。ファイルの中身を見ても先ほど加えた変更が何にも反映されてません!ちょっとここから参考にしているブログが難しくなってくるのですが、とりあえず、他の人がmasterに変更を加えた状況を作成するために自分でマスターに変更を加えます。</p>
+<p>うほ。良い感じ。ファイルの中身を見ても先ほど加えた変更が何にも反映されてません!ちょっとここから参考にしているブログが難しくなってくるのでちょっと飛ばして、masterで今の変更をmergeします。</p>
+
+<pre><code>$ git merge challenge
+$ ls
+t.txt   u.txt
+</code></pre>
+
+<p>できました！良い感じ。</p>
 ]]></content>
   </entry>
   
