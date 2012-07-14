@@ -170,6 +170,9 @@ origin  git://github.com/imathis/octopress.git (push)
 
 <p>この後は順調でサイトが表示されるところまで行きました。</p>
 
+<!-- more -->
+
+
 <h2>はまり3: herokuアプリのリネーム。。</h2>
 
 <p><code>heroku create</code>では自動でアプリ名が決められるため、すぐにこの名前の変更をトライしてみました。が、その後がうまくいかない。herokuのアプリのページで<strong>Rename</strong>した後、herokuのヘルプ<a href="https://devcenter.heroku.com/articles/renaming-apps">Renaming Apps from the CLI</a>と、<a href="http://d.hatena.ne.jp/Syunpei/20111202/1322806676">herokuでアプリケーションの名前を変更する方法</a>を参照して何とか行ったかのように見えたのですが、<code>rake generate</code>は使えるものの<code>rake deploy</code>が使えない。sshが拒否される。</p>

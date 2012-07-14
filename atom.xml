@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T23:47:16+09:00</updated>
+  <updated>2012-07-14T23:52:47+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -81,6 +81,9 @@ origin  git://github.com/imathis/octopress.git (push)
 <p>やっと次のステップに進めます。。。</p>
 
 <p>この後は順調でサイトが表示されるところまで行きました。</p>
+
+<!-- more -->
+
 
 <h2>はまり3: herokuアプリのリネーム。。</h2>
 
