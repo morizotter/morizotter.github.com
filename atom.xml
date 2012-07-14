@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T13:59:40+09:00</updated>
+  <updated>2012-07-14T14:00:45+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[gitで現在と過去をいったりきたり編]]></title>
+    <title type="html"><![CDATA[gitで現在と過去をいったりきたり]]></title>
     <link href="http://morizotter.com/blog/2012/07/14/git-git/"/>
     <updated>2012-07-14T01:34:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/07/14/git-git</id>
