@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-14T14:02:11+09:00</updated>
+  <updated>2012-07-14T14:02:49+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -96,9 +96,7 @@ e130159 HEAD@{10}: commit: 3
 3c20bd5 HEAD@{13}: commit (initial): initial commit
 </code></pre>
 
-<p>ウホ、良い感じ。上記の&#8221;…&#8221;の部分は、伏せているだけで実際はちゃんとSHAが出てきます。</p>
-
-<p>これで、自分が作業してきたHEADの戻りたい部分に戻れるわけですね！</p>
+<p>ウホ、良い感じ。上記の&#8221;…&#8221;の部分は、伏せているだけで実際はちゃんとSHAが出てきます。これで、自分が作業してきたHEADの戻りたい部分に戻れるわけですね！</p>
 
 <p>いや、このブログ分量も適切で説明もわかり易くほんとうに勉強になりました！</p>
 ]]></content>
