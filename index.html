@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="うむぅ。微妙。微妙だけど、まぁ、とにかく自宅マックじゃなきゃ作業できないってときは重宝するね。というのはLogMeInの話です。LogMeInはPCにリモートアクセスできるアプリです。ちなみに、今この記事もMacにアクセスして作成したテキストファイルにiPad側で書き込みをしています。 微妙な点 &hellip;">
+  <meta name="description" content="とりあえず、コーディングの全体的な復讐の意味も含めてたのしいRubyを読み始めています。書きながら読んでいますが、Rubyって楽しいです！自分の使っているRubyのバージョンがruby 1.9.3p194なのですが、書籍の記述どおりに行かなかった部分や、ポイントになる部分をメモっておきます。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,74 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/15/tanoshii-ruby/">Reading: たのしいRuby</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-15T13:52:00+09:00" pubdate data-updated="true">Jul 15<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/15/tanoshii-ruby/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>とりあえず、コーディングの全体的な復讐の意味も含めて<strong>たのしいRuby</strong>を読み始めています。書きながら読んでいますが、Rubyって楽しいです！自分の使っているRubyのバージョンが<strong>ruby 1.9.3p194</strong>なのですが、書籍の記述どおりに行かなかった部分や、ポイントになる部分をメモっておきます。</p>
+
+<h2>日本語を正しく表示するために</h2>
+
+<p><em>p16</em></p>
+
+<pre><code># encoding: UTF-8
+</code></pre>
+
+<p>をファイル冒頭に追加する。</p>
+
+<h2>requireができない</h2>
+
+<p><em>p.31</em></p>
+
+<p>同じディレクトリ内にある<code>hello.rb</code>が読み込み出来ません。</p>
+
+<pre><code>require "hello"
+</code></pre>
+
+<p>本書にあるこれを、</p>
+
+<pre><code>require "./hello.rb"
+</code></pre>
+
+<p>に書き換えたら読み込みました。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/07/15/tanoshii-ruby/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -731,62 +799,6 @@ e130159 HEAD@{10}: commit: 3
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/09/bash-command/">bashのコマンド</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-09T23:27:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/09/bash-command/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>先日お世話になったのが<a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/248chngext.html">このサイト</a>です。</p>
-
-<p><a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/248chngext.html">複数のファイル拡張子を一括で変更するには</a></p>
-
-<p>シェルのコマンドって抵抗感があったけど、こんなに簡単にできるとは！</p>
-
-<pre><code>$ ls
-1.txt   2.txt   3.txt   4.txt 
-
-$ for fname in *.txt; do
-&gt; mv $fname ${fname%.txt}.md;
-&gt; done
-
-$ ls
-1.md    2.md    3.md    4.md
-</code></pre>
-
-<p>ちょっと復習がてらやってみた。できた。
-bashももっと学びたい！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -808,6 +820,10 @@ bashももっと学びたい！</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/15/tanoshii-ruby/">Reading: たのしいRuby</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/15/logmein/">LogMeInでMacにアクセス</a>
       </li>
     
@@ -821,10 +837,6 @@ bashももっと学びたい！</p>
     
       <li class="post">
         <a href="/blog/2012/07/14/git-git/">gitで現在と過去をいったりきたり</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/12/magicwand/">MagicWandが届いた</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-15T02:20:51+09:00</updated>
+  <updated>2012-07-15T15:32:37+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Reading: たのしいRuby]]></title>
+    <link href="http://morizotter.com/blog/2012/07/15/tanoshii-ruby/"/>
+    <updated>2012-07-15T13:52:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/15/tanoshii-ruby</id>
+    <content type="html"><![CDATA[<p>とりあえず、コーディングの全体的な復讐の意味も含めて<strong>たのしいRuby</strong>を読み始めています。書きながら読んでいますが、Rubyって楽しいです！自分の使っているRubyのバージョンが<strong>ruby 1.9.3p194</strong>なのですが、書籍の記述どおりに行かなかった部分や、ポイントになる部分をメモっておきます。</p>
+
+<h2>日本語を正しく表示するために</h2>
+
+<p><em>p16</em></p>
+
+<pre><code># encoding: UTF-8
+</code></pre>
+
+<p>をファイル冒頭に追加する。</p>
+
+<h2>requireができない</h2>
+
+<p><em>p.31</em></p>
+
+<p>同じディレクトリ内にある<code>hello.rb</code>が読み込み出来ません。</p>
+
+<pre><code>require "hello"
+</code></pre>
+
+<p>本書にあるこれを、</p>
+
+<pre><code>require "./hello.rb"
+</code></pre>
+
+<p>に書き換えたら読み込みました。</p>
+
+<!-- more -->
+
+
+<p>書きかけの記事です。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[LogMeInでMacにアクセス]]></title>
@@ -691,52 +730,6 @@ $ echo "test テスト" &gt; test/test.txt
 <p>とりあえず、このソフトをインストールし、左右のCommandを単体で押したときに日本語キーボードと同じように左が英数、右がかなと変更できるようにしました。かなり使いやすくなった！</p>
 
 <p>よかった。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Google Chromeをさらに便利に]]></title>
-    <link href="http://morizotter.com/blog/2012/07/07/chrome-shortcut/"/>
-    <updated>2012-07-07T22:24:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/07/chrome-shortcut</id>
-    <content type="html"><![CDATA[<p>GoogleChromeを使っているときに、まだトラックパッドを使うことがちょこちょこあるので、調べてみました。調べた中で秀逸だったのがこのページ。</p>
-
-<p><a href="http://wayohoo.com/google-chrome/tips/useful-shortcut-key-list.html">【厳選】本当に使える Google Chrome のショートカットキー17個まとめ。</a></p>
-
-<p>17個という数も適切です。既に使っているものも多々あるのですが、今後使っていこうと思ったものを書いてみます。</p>
-
-<table>
-<thead>
-<tr>
-<th align="left">タブを閉じる      </th>
-<th align="left"> Command + W</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">指定したタブへ移動 </td>
-<td align="left"> Command + 数字(0〜9)</td>
-</tr>
-<tr>
-<td align="left">アドレスバーにカーソルを移動 </td>
-<td align="left"> Command + L</td>
-</tr>
-<tr>
-<td align="left">ページを更新      </td>
-<td align="left"> Command + R</td>
-</tr>
-<tr>
-<td align="left">テキストの情報のみをペースト </td>
-<td align="left"> Command + Shif + Option + V</td>
-</tr>
-</tbody>
-</table>
-
-
-<br>
-
-
-<p>最後のは使わないかも。特に<code>Command + W</code>と<code>Command + L</code>と<code>Command + R</code>が重宝しそうです！</p>
 ]]></content>
   </entry>
   
