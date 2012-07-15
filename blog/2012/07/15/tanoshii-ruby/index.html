@@ -136,7 +136,35 @@
 <!-- more -->
 
 
+<p>ちなみに、ここでエディタをEmacsに変えて作業を始めました。Emacs学習時間が数十分。あー、それにしても普段から使ってる<code>Ctr+*</code>が使えるってのがでかいですね！コピーなどもVimに比べたら直感的です！</p>
+
 <p>書きかけの記事です。</p>
+
+<h2>比較</h2>
+
+<p><em>p69</em></p>
+
+<p>オブジェクトの比較は<code>equal?</code>。</p>
+
+<pre><code>p obj1.equal?(obj2)     #=&gt; true
+</code></pre>
+
+<p>値の比較は、<code>==</code>か<code>eql?</code>。<code>eql?</code>はクラスの違いも判定する。数値の場合は注意する。</p>
+
+<pre><code>p 1.0 == 1      #=&gt;true
+p 1.0.eql? 1    #=&gt;false
+</code></pre>
+
+<h2>ARGV</h2>
+
+<p><em>p49</em></p>
+
+<p>コマンドラインから入力された値を格納する配列。値は文字列で渡ってくるので注意が必要。整数の場合、</p>
+
+<pre><code>ARGV[0].to_i
+</code></pre>
+
+<p>のような形で変換する。</p>
 </div>
 
 
@@ -183,6 +211,8 @@
         <a class="basic-alignment left" href="/blog/2012/07/15/logmein/" title="Previous Post: LogMeInでMacにアクセス">&laquo; LogMeInでMacにアクセス</a>
       
       
+        <a class="basic-alignment right" href="/blog/2012/07/15/emacs/" title="Next Post: Rubyを書いていたらEmacsが使いたくなった">Rubyを書いていたらEmacsが使いたくなった &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -208,6 +238,14 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/15/mac-control/">うっほ！US配列でControlの位置を変更！</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/07/15/emacs/">Rubyを書いていたらEmacsが使いたくなった</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/15/tanoshii-ruby/">Reading: たのしいRuby</a>
       </li>
     
@@ -217,14 +255,6 @@
     
       <li class="post">
         <a href="/blog/2012/07/14/octopress-ruby-heroku/">OctopressをHerokuにデプロイ</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/14/git-branch/">gitのブランチについて学ぶ</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/14/git-git/">gitで現在と過去をいったりきたり</a>
       </li>
     
   </ul>

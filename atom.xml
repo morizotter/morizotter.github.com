@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-15T15:32:37+09:00</updated>
+  <updated>2012-07-15T23:51:48+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,79 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[うっほ！US配列でControlの位置を変更！]]></title>
+    <link href="http://morizotter.com/blog/2012/07/15/mac-control/"/>
+    <updated>2012-07-15T16:08:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/15/mac-control</id>
+    <content type="html"><![CDATA[<p>こんにちは。</p>
+
+<p>US配列キーボードが気に入ってます。<a href="http://www.morizotter.com/blog/2012/07/07/us-keyboard-key-remap/">日本語、英語変換をJISキーボードと同じように設定</a>してから、更に使い勝手が良くなってます。</p>
+
+<p>で、実はもうひとつ困っている問題がありました。Controlの位置です。USキーボードの場合、Controlがかなり下の方にあるので、入力するときに小指がガッと下がってかなり手が痛いし不自然なんですね。Emacsを練習していたらそれが顕著にダメージとなって現れてきました。それ以外はUSキーボードのキーはJISよりもスペースキーから近い感じがするので楽になんですが。。。</p>
+
+<p>で、<strong>caps lock</strong>キーにControlの機能をもたせることにしました。</p>
+
+<p>やり方はわかってたのですが、検索してみると<a href="http://firstmac.blogspot.jp/2007/08/caps-lock-control.html">こんな記事</a>も出てきて、みんなやってるらしいし良いだろうということで。</p>
+
+<pre><code>環境設定 &gt; キーボード &gt; 装飾キー
+</code></pre>
+
+<p>で割り当てを変えます。caps lockキーは使わないと思うので、controlキーの機能はそのまま残しました。</p>
+
+<p>うーん、快適！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rubyを書いていたらEmacsが使いたくなった]]></title>
+    <link href="http://morizotter.com/blog/2012/07/15/emacs/"/>
+    <updated>2012-07-15T16:02:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/15/emacs</id>
+    <content type="html"><![CDATA[<p>RubyではIDEを使わない。エディタで書く。らしいです。で、世界で一番使われているRuby用エディタのTextMateは日本語が使えない。TextMate2は出力はできるようですが、入力に難ありという事です。まぁ、エディタ探す前にVimでやっていて、不便感じないしいちいちソフトを立ち上げなくて済むので楽だなと感じていたのでした。</p>
+
+<p>ただ、Vimの操作にはやっぱりなれない。カーソルの移動などが面倒。Control+F,B,P,Nで移動したい！ということで、Emacsの方がいいような気がしてきました。</p>
+
+<h2>一覧</h2>
+
+<ul>
+<li><p><a href="http://www.unixuser.org/~euske/doc/emacsref/">Emacsクイックリファレンス</a></p>
+
+<ul>
+<li>こちらのサイトの一覧がわかり易かったので、これをiPadに表示しながらいろいろやっていこうと思っています。</li>
+</ul>
+</li>
+<li><p><a href="http://www.k-tanaka.net/unix/emacs.html">Unixコマンド(Emacs)</a></p>
+
+<ul>
+<li>こちらも分かりやすそう。</li>
+</ul>
+</li>
+<li><p><a href="http://e-sahf.jp/class/12/emacs.htm">emacs操作方法</a></p>
+
+<ul>
+<li>こちらも。</li>
+</ul>
+</li>
+</ul>
+
+
+<p>後ろに行くにつれてわかりやすくなってるかも。ちなみに、emacsのとじ方がわからず、emacs操作方法を見つけて本当に助かりましたよ。。。</p>
+
+<h2>Ctr + Spaceの問題</h2>
+
+<p>Emacsを練習していると、どうやらMacの初期設定で<code>Ctr+Space</code>でSpotlightが開いてしまうようなので<a href="http://osuban.jp/devdi/?p=665">ここ</a>を参考にキーバインドを変更しました。</p>
+
+<h2>メタキーの問題</h2>
+
+<p>EmacsでMetaキーをよく使うのですが、これがMacの標準だと<code>esc</code>に設定されているようです。これだと遠い！そこで調べてみたところ、<a href="http://d.hatena.ne.jp/goinger/20090104/1231048095">こんな記事</a>がありまして、参考にしてみました。で、普段使っているiTermで設定しようとしたらメッセージが。</p>
+
+<p><img class="centr" src="http://dl.dropbox.com/u/8131276/octopress/emacs-iterm.png"></p>
+
+<p>メッセージどおり<code>+esc</code>の方にしてみました。とりあえずこの設定でやってみます。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Reading: たのしいRuby]]></title>
@@ -48,7 +121,35 @@
 <!-- more -->
 
 
+<p>ちなみに、ここでエディタをEmacsに変えて作業を始めました。Emacs学習時間が数十分。あー、それにしても普段から使ってる<code>Ctr+*</code>が使えるってのがでかいですね！コピーなどもVimに比べたら直感的です！</p>
+
 <p>書きかけの記事です。</p>
+
+<h2>比較</h2>
+
+<p><em>p69</em></p>
+
+<p>オブジェクトの比較は<code>equal?</code>。</p>
+
+<pre><code>p obj1.equal?(obj2)     #=&gt; true
+</code></pre>
+
+<p>値の比較は、<code>==</code>か<code>eql?</code>。<code>eql?</code>はクラスの違いも判定する。数値の場合は注意する。</p>
+
+<pre><code>p 1.0 == 1      #=&gt;true
+p 1.0.eql? 1    #=&gt;false
+</code></pre>
+
+<h2>ARGV</h2>
+
+<p><em>p49</em></p>
+
+<p>コマンドラインから入力された値を格納する配列。値は文字列で渡ってくるので注意が必要。整数の場合、</p>
+
+<pre><code>ARGV[0].to_i
+</code></pre>
+
+<p>のような形で変換する。</p>
 ]]></content>
   </entry>
   
@@ -670,66 +771,6 @@ $ echo "test テスト" &gt; test/test.txt
 <p>まず、<code>git config --global</code>に続いての名前、emailの設定、<code>$git config --global color.ui auto</code>でのカラー設定、<code>git config --global --list</code>での基本設定内容の確認。</p>
 
 <p>ふむふむ。勉強になりました！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Xcodeの環境移行が超楽！]]></title>
-    <link href="http://morizotter.com/blog/2012/07/07/xcode-device-install/"/>
-    <updated>2012-07-07T23:42:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/07/xcode-device-install</id>
-    <content type="html"><![CDATA[<p>新しいMacなどに開発環境を移行したときに面倒なのはXcodeの証明書の移行でした。ちょっとしらべたところもとまかさんの簡単そうに見える記事を見つけやってみたところ、超絶簡単だったのでメモとして記しておきます。</p>
-
-<p><strong>参考にした記事</strong></p>
-
-<ul>
-<li><a href="http://d.hatena.ne.jp/moto_maka/touch/20120623/1340396415">Mac環境を移行するときにXcodeでiPhone実記転送を可能にするまでの手順</a></li>
-</ul>
-
-
-<p>記事通りにやれば問題なく、いきました。間違えることはないだろうし、まぁ間違えても即復旧可能なのですがポイントとして、</p>
-
-<ul>
-<li>新しいXcodeのDeviceタブにTEAMがなかった場合は、Probivioning ProfilesのところからImportすればOK</li>
-<li>ファイルはいくつか生成されるが、&lt;作成したファイル名>.developerprofileのみImportすればその他のプロビジョニングプロファイルがついてくる。</li>
-</ul>
-
-
-<p>ということくらいです。楽チンでよかった！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[USキーボードのキーのリマッップをしてみた]]></title>
-    <link href="http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap/"/>
-    <updated>2012-07-07T23:10:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/07/us-keyboard-key-remap</id>
-    <content type="html"><![CDATA[<p>いろいろ読んでるうちにUSキーボード使いやすいだろう。よしやってみるか！ということで、新しいAirはUSキーボードにしてみたんですね。で、これが結構ストレスフル。キーの配列が想像していた以上に違って、特に<code>`</code>や<code>~</code>、<code>_</code>や<code>+</code>や、<code>:</code>や<code>"</code>など基本的によく使いそうなところがだいぶ違う。もちろんControlやCommandの配置なども変わっているんですが、これは慣れでいけるなと思うし使いやすい面もあっていいのですが、上記の細かいのは少し時間がかかりそうです。</p>
-
-<p>で、あと大きな問題は日本語-英語変換のを<code>Command + Space</code>（また+の場所間違った）でトグルでやらなければいけないところです。日本語キーボードの場合は&#8221;英数&#8221;と&#8221;かな&#8221;ボタンがあって一発なんですけどね。</p>
-
-<p>ということで、この部分だけでも日本語を打ちやすいように変更することにしました。以前から情報は持っていたのですが、</p>
-
-<ul>
-<li><a href="http://www.fraction.jp/log/archives/2008/10/28/US_">USキーボードで入力切り替え</a></li>
-<li><a href="http://yucomac.blog96.fc2.com/blog-entry-576.html">MacのUSキーボードで「英数キー」と「かなキー」を使いたい</a></li>
-</ul>
-
-
-<p>が参考になりました。USキーボードと日本語キーボードとの間で論争があるんですね。想像できますけどね。決着はなかなかつかないでしょうね〜。どちらもよいので。</p>
-
-<p>で、専用のソフトを入れるんですが、ここ。</p>
-
-<ul>
-<li><a href="http://pqrs.org/macosx/keyremap4macbook/index.html.ja">KeyRemap4MacBook</a></li>
-</ul>
-
-
-<p>Twitter Bootstrapを使って作られたサイトだと思うんですが、とてもきれいで情報量も適切で参考になります。すごい。</p>
-
-<p>とりあえず、このソフトをインストールし、左右のCommandを単体で押したときに日本語キーボードと同じように左が英数、右がかなと変更できるようにしました。かなり使いやすくなった！</p>
-
-<p>よかった。</p>
 ]]></content>
   </entry>
   
