@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>ドメインを変更しました - MORIZOTTER PRESS</title>
+  <title>Vimもいいなと思ってVimtutorを試してみた - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="この記事を参考にmorizotter.github.comをmorizotter.comに変えてみた。morizotter.github.comって名前もよかったけどね。 この記事との出会いは本当によかった。この記事と出会わなければOctopressをこんなに楽しんでなかったんじゃないかと思う &hellip;">
+  <meta name="description" content="ターミナルでの作業が快適なので、簡単なRubyなら専用のエディタじゃなくてもいいだろうということで、VimよりいろいろできそうなEmacsの学習を始めました。しかし！やっぱりVimの気軽さが気になってもう一回Vimも学んでみようと思い、vimtutorをやって見ることにしました。 冒頭： Note &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/03/morizotter-s-cname/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/07/16/vimtutor/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">ドメインを変更しました</h1>
+      <h1 class="entry-title">Vimもいいなと思ってVimtutorを試してみた</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2012-07-03T22:55:00+09:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2012</time>
+<time datetime="2012-07-16T02:26:00+09:00" pubdate data-updated="true">Jul 16<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,9 +106,86 @@
   </header>
 
 
-<div class="entry-content"><p><a href="http://www.sankitch.me/blog/2012/05/05/build-octopress-on-github-dropbox/">この記事</a>を参考にmorizotter.github.comをmorizotter.comに変えてみた。morizotter.github.comって名前もよかったけどね。</p>
+<div class="entry-content"><p>ターミナルでの作業が快適なので、簡単なRubyなら専用のエディタじゃなくてもいいだろうということで、VimよりいろいろできそうなEmacsの学習を始めました。しかし！やっぱりVimの気軽さが気になってもう一回Vimも学んでみようと思い、vimtutorをやって見ることにしました。</p>
 
-<p>この記事との出会いは本当によかった。この記事と出会わなければOctopressをこんなに楽しんでなかったんじゃないかと思う。&#8221;簡単にできる&#8221;って思って、本当にある程度簡単にできました！</p>
+<h2>冒頭：</h2>
+
+<pre><code>Note: カーソルキーでも移動できます。しかし hjkl に一度慣れてしまえば、はるかに速く移動することができるでしょう。いやマジで!
+</code></pre>
+
+<p>出だしからすごいな！期待できるかも。</p>
+
+<h2>メモ：</h2>
+
+<p><strong>文字の置き換え</strong></p>
+
+<pre><code>:s/oldword/newword/
+</code></pre>
+
+<p>最後にgをつけると一行分置き換わる</p>
+
+<p><strong>アンドゥ</strong></p>
+
+<pre><code>u
+</code></pre>
+
+<p><strong>アンドゥをキャンセル</strong></p>
+
+<pre><code>Ctr+r
+</code></pre>
+
+<p><strong>カーソルの移動</strong></p>
+
+<pre><code>ワードの先頭  : w
+ワードの最後  : e
+行の先頭 : 0
+行の最後 : $
+</code></pre>
+
+<p><strong>置き換え</strong></p>
+
+<pre><code>一文字 : r
+一文字以上 : R
+</code></pre>
+
+<p><strong>削除</strong></p>
+
+<pre><code>x
+</code></pre>
+
+<p><strong>コピー</strong></p>
+
+<pre><code>ヴィジュアルモードで選択範囲をy
+yw でコピー
+</code></pre>
+
+<p><strong>貼り付け</strong></p>
+
+<pre><code>p
+</code></pre>
+
+<p><strong>行の移動</strong></p>
+
+<pre><code>行ナンバーG
+Ctr+Gで現在の行表示
+Gでテキスト最後の行
+ggでテキスト最初の行
+</code></pre>
+
+<p><strong>外部コマンドを利用する</strong></p>
+
+<pre><code>:!ここにコマンドを入れる。
+(例):!ls -lha
+</code></pre>
+
+<p><strong>外部テキストを読み込み</strong></p>
+
+<pre><code>:r テキスト名
+(例):r test.txt
+(例):r !ls -lha
+</code></pre>
+
+<p>使いそうなキーをまとめました。このチュートリアルよくできてます。Vimの使い方がいまいちわからないという人は是非試してみてください！</p>
 </div>
 
 
@@ -131,7 +208,7 @@
   
 
 
-<time datetime="2012-07-03T22:55:00+09:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2012</time>
+<time datetime="2012-07-16T02:26:00+09:00" pubdate data-updated="true">Jul 16<span>th</span>, 2012</time>
       
 
 
@@ -139,7 +216,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/03/morizotter-s-cname/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/03/morizotter-s-cname/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/16/vimtutor/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/16/vimtutor/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -152,10 +229,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/03/php-login/" title="Previous Post: php login">&laquo; php login</a>
+        <a class="basic-alignment left" href="/blog/2012/07/16/file-count/" title="Previous Post: ディレクトリ下のファイル数をカウントする">&laquo; ディレクトリ下のファイル数をカウントする</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/04/octopress-is-confortable/" title="Next Post: Octopressでブログを書くことがなぜ快適か">Octopressでブログを書くことがなぜ快適か &raquo;</a>
       
     </p>
   </footer>
@@ -273,8 +348,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/03/morizotter-s-cname/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/03/morizotter-s-cname/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/07/16/vimtutor/';
+        var disqus_url = 'http://morizotter.com/blog/2012/07/16/vimtutor/';
         var disqus_script = 'embed.js';
       
     (function () {

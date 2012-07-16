@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-15T23:51:48+09:00</updated>
+  <updated>2012-07-16T13:57:44+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,114 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Vimもいいなと思ってVimtutorを試してみた]]></title>
+    <link href="http://morizotter.com/blog/2012/07/16/vimtutor/"/>
+    <updated>2012-07-16T02:26:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/16/vimtutor</id>
+    <content type="html"><![CDATA[<p>ターミナルでの作業が快適なので、簡単なRubyなら専用のエディタじゃなくてもいいだろうということで、VimよりいろいろできそうなEmacsの学習を始めました。しかし！やっぱりVimの気軽さが気になってもう一回Vimも学んでみようと思い、vimtutorをやって見ることにしました。</p>
+
+<h2>冒頭：</h2>
+
+<pre><code>Note: カーソルキーでも移動できます。しかし hjkl に一度慣れてしまえば、はるかに速く移動することができるでしょう。いやマジで!
+</code></pre>
+
+<p>出だしからすごいな！期待できるかも。</p>
+
+<h2>メモ：</h2>
+
+<p><strong>文字の置き換え</strong></p>
+
+<pre><code>:s/oldword/newword/
+</code></pre>
+
+<p>最後にgをつけると一行分置き換わる</p>
+
+<p><strong>アンドゥ</strong></p>
+
+<pre><code>u
+</code></pre>
+
+<p><strong>アンドゥをキャンセル</strong></p>
+
+<pre><code>Ctr+r
+</code></pre>
+
+<p><strong>カーソルの移動</strong></p>
+
+<pre><code>ワードの先頭  : w
+ワードの最後  : e
+行の先頭 : 0
+行の最後 : $
+</code></pre>
+
+<p><strong>置き換え</strong></p>
+
+<pre><code>一文字 : r
+一文字以上 : R
+</code></pre>
+
+<p><strong>削除</strong></p>
+
+<pre><code>x
+</code></pre>
+
+<p><strong>コピー</strong></p>
+
+<pre><code>ヴィジュアルモードで選択範囲をy
+yw でコピー
+</code></pre>
+
+<p><strong>貼り付け</strong></p>
+
+<pre><code>p
+</code></pre>
+
+<p><strong>行の移動</strong></p>
+
+<pre><code>行ナンバーG
+Ctr+Gで現在の行表示
+Gでテキスト最後の行
+ggでテキスト最初の行
+</code></pre>
+
+<p><strong>外部コマンドを利用する</strong></p>
+
+<pre><code>:!ここにコマンドを入れる。
+(例):!ls -lha
+</code></pre>
+
+<p><strong>外部テキストを読み込み</strong></p>
+
+<pre><code>:r テキスト名
+(例):r test.txt
+(例):r !ls -lha
+</code></pre>
+
+<p>使いそうなキーをまとめました。このチュートリアルよくできてます。Vimの使い方がいまいちわからないという人は是非試してみてください！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ディレクトリ下のファイル数をカウントする]]></title>
+    <link href="http://morizotter.com/blog/2012/07/16/file-count/"/>
+    <updated>2012-07-16T00:49:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/16/file-count</id>
+    <content type="html"><![CDATA[<p>今日Rubyの小さなコマンドを書いたファイルを作りまくっていたのですが、どれだけ作った知りたくなりました。で、検索したところわかりやすい記事が。</p>
+
+<p><a href="http://linux.just4fun.biz/%E9%80%86%E5%BC%95%E3%81%8DUNIX%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B.html">ファイル数を取得する方法</a></p>
+
+<p>基本、このリンク先を見れば解決すると思います。自分メモとして記録しておきます。結論としては、</p>
+
+<pre><code>$ ls -1 | wc -l
+</code></pre>
+
+<p>ですね。<code>ls</code>の<code>-l</code>オプションでファイルを1行表示にし、パイプでwcにつなげるということらしいです。</p>
+
+<p><a href="http://www.k-tanaka.net/unix/wc.html">wc</a>は行数や単語数、バイト数をカウントするコマンドで、行数のみカウントする場合は、<code>-l</code>オプションを付けます。この<a href="http://www.k-tanaka.net/unix/">UNIXコマンド</a>ってサイトいいな！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[うっほ！US配列でControlの位置を変更！]]></title>
@@ -743,34 +851,6 @@ $ echo "test テスト" &gt; test/test.txt
 
 <p>これだけでも開きたいファイルを探すのが大変楽になった！
 電車の中の細切れ時間での学習でした！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Railsを入れてみました]]></title>
-    <link href="http://morizotter.com/blog/2012/07/08/rails/"/>
-    <updated>2012-07-08T19:50:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/08/rails</id>
-    <content type="html"><![CDATA[<p>Rubyの有名なフレームワークであるRailsを入れてみました。といってももうほとんどネットにある情報をそのままなぞっただけです。</p>
-
-<p><a href="http://pplog.org/?p=1845">このサイト</a>が本当に丁寧でわかりやすかったです。とりあえずのプロジェクトも作成し実際動いたところで感動しました。</p>
-
-<p>Railsもっと使いこなしていきたい！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[gitの基本設定]]></title>
-    <link href="http://morizotter.com/blog/2012/07/08/git-config/"/>
-    <updated>2012-07-08T12:42:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/08/git-config</id>
-    <content type="html"><![CDATA[<p>細切れ記事です。基本的にMORIZOTTER PRESSでは思いつきを思いつきのまま書いていくというスタイルなのでご了承ください。</p>
-
-<p>gitの表示色をかえられるとどこかで読んだことを思い出し少し調べてみたら、<a href="http://d.hatena.ne.jp/nabnab/20100805/1281015625">良さげなページ</a>を見つけました。出力のカラーにとどまらず、基本的な設定部分が丁寧に説明されています。</p>
-
-<p>まず、<code>git config --global</code>に続いての名前、emailの設定、<code>$git config --global color.ui auto</code>でのカラー設定、<code>git config --global --list</code>での基本設定内容の確認。</p>
-
-<p>ふむふむ。勉強になりました！</p>
 ]]></content>
   </entry>
   
