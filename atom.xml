@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-18T00:01:24+09:00</updated>
+  <updated>2012-07-18T20:25:19+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[TextMateを日本語化してみた]]></title>
+    <link href="http://morizotter.com/blog/2012/07/18/textmate-japanese/"/>
+    <updated>2012-07-18T20:13:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/18/textmate-japanese</id>
+    <content type="html"><![CDATA[<p>Rubyを使っている人の8割（世界）はTextMateを使っているという情報をネットで見て、入れてみました。シェアウェアなのでとりあえず30日間のフリートライアル期間を過ぎたら購入するか決めます（多分買います）。</p>
+
+<p><a href="http://macromates.com/">TextMate</a></p>
+
+<p>使ってみて動作が軽快で気持ちいいですね！サクサク、コード補完があるとやっぱいいなぁ。でも、日本語の入力がちょっとおかしいのがマイナスポイント。これは定番の問題らしいので、ネット上に記事がたくさんありました。で、いろいろ見たんですが、結局下記の２つを参照すればとりあえずいけるかなと。</p>
+
+<ol>
+<li><a href="http://hisasann.com/housetect/2008/05/railstextmate.html">Railsに最適なテキストエディター「TextMate」を入れて日本語化してみた</a></li>
+<li><a href="https://twitter.com/yusabana/statuses/194607922771263489">Google日本語入力のサジェストが邪魔な件に関するツイート</a></li>
+</ol>
+
+
+<p>上記２つを参考に設定完了。日本語が半角で表示されるのはちょっと…。だけどまぁ英語で補えばいいし、何より入力が気持ちいいので良い感じ。使って見てまた感想書きます！</p>
+
+<p>次は、viをPHP用にカスタマイズしてみるぞ！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Amazon Cloud Driveを入れてみた]]></title>
@@ -798,39 +821,6 @@ bashももっと学びたい！</p>
 <p>だいたいこれが最寄り駅のホームに着く頃に<code>rake gen_deploy</code>する。で、余裕があれば扉が開く前に、<code>git add .</code>して<code>git commit -m "*"</code>して、<code>git push</code>する。たいてい、<code>git push</code>の途中で電車を降りるが、pushが終わってなかったら駅のベンチで終わりまで見守り歩き出す。</p>
 
 <p>そんな感じ。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[gitで共有リポジトリを作る]]></title>
-    <link href="http://morizotter.com/blog/2012/07/08/git-init/"/>
-    <updated>2012-07-08T22:15:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/08/git-init</id>
-    <content type="html"><![CDATA[<p><a href="http://blog.s21g.com/articles/1312">共有リポジトリを作る</a>という記事が非常に参考になったので備忘録として記しておきます。</p>
-
-<p>基本的にはからのリポジトリを<code>&lt;任意の名前&gt;.git</code>という形で作り、</p>
-
-<pre><code>git init --bare --shared=true
-</code></pre>
-
-<p>をするということですね。</p>
-
-<p><code>--bare</code>オプションに関しては、<a href="http://d.hatena.ne.jp/naokirin/20111201/1322576109">ここ</a>を参考にすると、管理ファイルのみのリポジトリを作成するということなんですね。で、グループ作業するときには<code>--shared=true</code>を指定すると。</p>
-
-<p><code>--shared=true</code>を設定するとsshでアクセスしたときに自動的に適切なパーミッション設定をしてくれる？</p>
-
-<pre><code>If a user SSHs into a server and has write access to the /opt/git/my_project.git directory, they will also automatically have push access. Git will automatically add group write permissions to a repository properly if you run the git init command with the --shared option.
-</code></pre>
-
-<p><a href="http://git-scm.com/book/en/Git-on-the-Server-Getting-Git-on-a-Server#Putting-the-Bare-Repository-on-a-Server">Putting the Bare Repository on a Server</a></p>
-
-<p>この辺りはちょっとまだわかっていません。</p>
-
-<p>あとはローカルの方でgit pushするとcloneできるようです。</p>
-
-<p>完全に理解した訳ではないですが、上記の件だけでだいぶgitが身近になった気分です。</p>
-
-<p>Dropboxに共有リポジトリを作る方法は<a href="http://naoki.sato.name/lab/archives/38">こちら</a>を参考にしました。</p>
 ]]></content>
   </entry>
   
