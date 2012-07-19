@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="さて、gitの学習の時間です。今では毎日暇さえあればgitしてます。なんか気持ちいいんですよね。でも、せっかくgitを使っているのにコミットするばかりで、あまり過去の履歴を見たり過去に戻ったりしていません。 これからちょっと、過去に戻ったり、現在に戻ってきたりやってみようと思います。 &hellip;">
+  <meta name="description" content="調子に乗ってgitのブランチについても学ぼうと思います！最近、誰かが書いたブログ記事から学ぶことが多いのですが、これってなんて素晴らしいことなんでしょうね。知識の共有って善だと思います。確かに本の方がまとまっていたり、全体を俯瞰できたりする点は優れているのですが、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,81 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/14/git-branch/">gitのブランチについて学ぶ</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-14T14:12:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/14/git-branch/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>調子に乗ってgitのブランチについても学ぼうと思います！最近、誰かが書いたブログ記事から学ぶことが多いのですが、これってなんて素晴らしいことなんでしょうね。知識の共有って善だと思います。確かに本の方がまとまっていたり、全体を俯瞰できたりする点は優れているのですが、個人のブログのほうがリアルでしかも情報量が適切で飽きません。また、書いた人の個性や工夫などが感じられて楽しいです！</p>
+
+<p>では、gitのbranchについて。</p>
+
+<p>基本的にはメインにmasterがあって、masterに変更を加えずbranchでいろいろ作業進めていって、良い感じだったらmasterにmergeするっていうのが今の漠然とした理解です。</p>
+
+<p>始めます。参考にしたのは、<a href="http://d.hatena.ne.jp/zariganitosh/20080912/1221260782">アリスがチャレンジなコードを書く時、git branchをちゃんと理解したい！</a>です。うー、これも結構前の記事なんだなぁ。僕がプログラミングをはじめたタイミングより2年も昔だ。</p>
+
+<p>作業前の僕のbranchの状態はこんなかんじです。</p>
+
+<pre><code>$ git branch
+* master
+</code></pre>
+
+<p>ここで、</p>
+
+<pre><code>$ git branch challenge
+</code></pre>
+
+<p>で、branchを作ります。こんな状態になります。</p>
+
+<pre><code>$ git branch
+  challenge
+* master
+</code></pre>
+
+<p>branchが作成されました。作業branchを変更して、現在どのbranchにいるか表示します。</p>
+
+<pre><code>$ git checkout challenge
+$ git branch
+* challenge
+  master
+</code></pre>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/07/14/git-branch/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -661,48 +736,6 @@ bashももっと学びたい！</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/08/train-study/">電車の中での学習</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-08T22:29:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/08/train-study/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>最近、よく電車の中で移動中に記事を更新してる。このブログは完成度を高めるというよりも思いつきで断片的なことを書く傾向があるので、電車の中の移動時間が記事を書くのにちょうど良い。都内の移動なのでだいたい10分〜15分くらい。座れたら書くという感じ。</p>
-
-<p>だいたいこれが最寄り駅のホームに着く頃に<code>rake gen_deploy</code>する。で、余裕があれば扉が開く前に、<code>git add .</code>して<code>git commit -m "*"</code>して、<code>git push</code>する。たいてい、<code>git push</code>の途中で電車を降りるが、pushが終わってなかったら駅のベンチで終わりまで見守り歩き出す。</p>
-
-<p>そんな感じ。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -726,6 +759,10 @@ bashももっと学びたい！</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/18/vundle/">vundleの設定とやらを!</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/18/textmate-japanese/">TextMateを日本語化してみた</a>
       </li>
     
@@ -739,10 +776,6 @@ bashももっと学びたい！</p>
     
       <li class="post">
         <a href="/blog/2012/07/16/file-count/">ディレクトリ下のファイル数をカウントする</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/15/mac-control/">うっほ！US配列でControlの位置を変更！</a>
       </li>
     
   </ul>

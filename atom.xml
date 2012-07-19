@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-18T20:25:19+09:00</updated>
+  <updated>2012-07-19T12:29:29+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[vundleの設定とやらを!]]></title>
+    <link href="http://morizotter.com/blog/2012/07/18/vundle/"/>
+    <updated>2012-07-18T22:39:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/18/vundle</id>
+    <content type="html"><![CDATA[<p>Vimを使いこなしたいと思って、いろいろ調べていったらどうやらvundleを使ってプラグインを一元管理するのがよさそうということを知りました。そして良いサイトも幾つか！</p>
+
+<ul>
+<li><a href="http://www.curiosity-drives.me/2012/01/rails.html">今年こそ始める！何度も挫折した人のためのモダンVim再入門</a></li>
+</ul>
+
+
+<p>何はともあれ、ここを参考にすれば良いのではないでしょうか。参考になるYoutube動画や、理解を助けるリンクなどが充実しています。一番素晴らしいのは、この方の設定を一つ一つ説明してくれている点です。ここまで手取り足取り教えてもらえれば、すぐにある程度使いこなせるようになるんじゃないでしょうか。</p>
+
+<p>とか思ったんですが、不可でした（汗）。<strong>今の僕には</strong>。</p>
+
+<p>いきなり、参考の設定でが便利そうなプラグインをがっつり入れて、<code>:BundleInstall</code>したのですが、vimが全く分けのわからないものになってしまいました(;;)。多分、vimのシンプルなところが好きだった僕には高機能過ぎました。</p>
+
+<p>いろいろ説明見ていて思ったのですが、標準状態でvimを使っている人にとってはこれ失敗したと思ったら<code>.vim/bundle</code>と、<code>.vimrc</code>を削除すれば元に戻ると思います。そのあたりの気楽さはいいですね。</p>
+
+<p>で、まぁ消そうと思ったんですが、これから少しずつ試していくために基本設定だけは残しておこうと思って、ややこしそうなプラグインは全部<code>.vimrc</code>から削除して、<code>:BundleClean</code>しちゃいました。<code>:BundleClean</code>をすることで、<code>.vimrc</code>にないプラグインが<code>.vim/bundle</code>から削除されます。</p>
+
+<p>で、残したのはこれ。</p>
+
+<pre><code> set nocompatible               " be iMproved
+ filetype off                   " required!
+ set rtp+=~/.vim/bundle/vundle/
+ call vundle#rc()
+ " let Vundle manage Vundle
+ " required!
+ Bundle 'gmarik/vundle'
+ "------------------------------------------------------------------
+
+
+ "------------------------------------------------------------------
+ filetype plugin indent on     " required!
+ "
+ " Brief help
+ " :BundleList          - list configured bundles
+ " :BundleInstall(!)    - install(update) bundles
+ " :BundleSearch(!) foo - search(or refresh cache first) for foo
+ " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+ "
+ " see :h vundle for more details or wiki for FAQ
+ " NOTE: comments after Bundle command are not allowed..
+</code></pre>
+
+<p>とりあえずの基本設定と、コマンドリストだけです。
+これから１つずつ理解してから入れていこうと思います。そういえば、<code>set number</code>とか基本的なものはちょこちょこ書いておこう。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[TextMateを日本語化してみた]]></title>
@@ -808,19 +860,6 @@ bashももっと学びたい！</p>
 <p>その点差し引いても、USはプログラミングはしやすくなると思うので正解だと思っていますが！</p>
 
 <p>どなたか、iMac日本語キーボード5ヶ月使用（結構きれい）とUSキーボード交換してくれる人いませんかねぇ。。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[電車の中での学習]]></title>
-    <link href="http://morizotter.com/blog/2012/07/08/train-study/"/>
-    <updated>2012-07-08T22:29:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/08/train-study</id>
-    <content type="html"><![CDATA[<p>最近、よく電車の中で移動中に記事を更新してる。このブログは完成度を高めるというよりも思いつきで断片的なことを書く傾向があるので、電車の中の移動時間が記事を書くのにちょうど良い。都内の移動なのでだいたい10分〜15分くらい。座れたら書くという感じ。</p>
-
-<p>だいたいこれが最寄り駅のホームに着く頃に<code>rake gen_deploy</code>する。で、余裕があれば扉が開く前に、<code>git add .</code>して<code>git commit -m "*"</code>して、<code>git push</code>する。たいてい、<code>git push</code>の途中で電車を降りるが、pushが終わってなかったら駅のベンチで終わりまで見守り歩き出す。</p>
-
-<p>そんな感じ。</p>
 ]]></content>
   </entry>
   

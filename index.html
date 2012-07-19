@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="Rubyを使っている人の8割（世界）はTextMateを使っているという情報をネットで見て、入れてみました。シェアウェアなのでとりあえず30日間のフリートライアル期間を過ぎたら購入するか決めます（多分買います）。 TextMate 使ってみて動作が軽快で気持ちいいですね！サクサク、 &hellip;">
+  <meta name="description" content="Vimを使いこなしたいと思って、いろいろ調べていったらどうやらvundleを使ってプラグインを一元管理するのがよさそうということを知りました。そして良いサイトも幾つか！ 今年こそ始める！何度も挫折した人のためのモダンVim再入門 何はともあれ、ここを参考にすれば良いのではないでしょうか。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,87 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/18/vundle/">vundleの設定とやらを!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-18T22:39:00+09:00" pubdate data-updated="true">Jul 18<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/18/vundle/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Vimを使いこなしたいと思って、いろいろ調べていったらどうやらvundleを使ってプラグインを一元管理するのがよさそうということを知りました。そして良いサイトも幾つか！</p>
+
+<ul>
+<li><a href="http://www.curiosity-drives.me/2012/01/rails.html">今年こそ始める！何度も挫折した人のためのモダンVim再入門</a></li>
+</ul>
+
+
+<p>何はともあれ、ここを参考にすれば良いのではないでしょうか。参考になるYoutube動画や、理解を助けるリンクなどが充実しています。一番素晴らしいのは、この方の設定を一つ一つ説明してくれている点です。ここまで手取り足取り教えてもらえれば、すぐにある程度使いこなせるようになるんじゃないでしょうか。</p>
+
+<p>とか思ったんですが、不可でした（汗）。<strong>今の僕には</strong>。</p>
+
+<p>いきなり、参考の設定でが便利そうなプラグインをがっつり入れて、<code>:BundleInstall</code>したのですが、vimが全く分けのわからないものになってしまいました(;;)。多分、vimのシンプルなところが好きだった僕には高機能過ぎました。</p>
+
+<p>いろいろ説明見ていて思ったのですが、標準状態でvimを使っている人にとってはこれ失敗したと思ったら<code>.vim/bundle</code>と、<code>.vimrc</code>を削除すれば元に戻ると思います。そのあたりの気楽さはいいですね。</p>
+
+<p>で、まぁ消そうと思ったんですが、これから少しずつ試していくために基本設定だけは残しておこうと思って、ややこしそうなプラグインは全部<code>.vimrc</code>から削除して、<code>:BundleClean</code>しちゃいました。<code>:BundleClean</code>をすることで、<code>.vimrc</code>にないプラグインが<code>.vim/bundle</code>から削除されます。</p>
+
+<p>で、残したのはこれ。</p>
+
+<pre><code> set nocompatible               " be iMproved
+ filetype off                   " required!
+ set rtp+=~/.vim/bundle/vundle/
+ call vundle#rc()
+ " let Vundle manage Vundle
+ " required!
+ Bundle 'gmarik/vundle'
+ "------------------------------------------------------------------
+
+
+ "------------------------------------------------------------------
+ filetype plugin indent on     " required!
+ "
+ " Brief help
+ " :BundleList          - list configured bundles
+ " :BundleInstall(!)    - install(update) bundles
+ " :BundleSearch(!) foo - search(or refresh cache first) for foo
+ " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+ "
+ " see :h vundle for more details or wiki for FAQ
+ " NOTE: comments after Bundle command are not allowed..
+</code></pre>
+
+<p>とりあえずの基本設定と、コマンドリストだけです。
+これから１つずつ理解してから入れていこうと思います。そういえば、<code>set number</code>とか基本的なものはちょこちょこ書いておこう。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -698,81 +779,6 @@ origin  git://github.com/imathis/octopress.git (push)
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/14/git-branch/">gitのブランチについて学ぶ</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-14T14:12:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/14/git-branch/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>調子に乗ってgitのブランチについても学ぼうと思います！最近、誰かが書いたブログ記事から学ぶことが多いのですが、これってなんて素晴らしいことなんでしょうね。知識の共有って善だと思います。確かに本の方がまとまっていたり、全体を俯瞰できたりする点は優れているのですが、個人のブログのほうがリアルでしかも情報量が適切で飽きません。また、書いた人の個性や工夫などが感じられて楽しいです！</p>
-
-<p>では、gitのbranchについて。</p>
-
-<p>基本的にはメインにmasterがあって、masterに変更を加えずbranchでいろいろ作業進めていって、良い感じだったらmasterにmergeするっていうのが今の漠然とした理解です。</p>
-
-<p>始めます。参考にしたのは、<a href="http://d.hatena.ne.jp/zariganitosh/20080912/1221260782">アリスがチャレンジなコードを書く時、git branchをちゃんと理解したい！</a>です。うー、これも結構前の記事なんだなぁ。僕がプログラミングをはじめたタイミングより2年も昔だ。</p>
-
-<p>作業前の僕のbranchの状態はこんなかんじです。</p>
-
-<pre><code>$ git branch
-* master
-</code></pre>
-
-<p>ここで、</p>
-
-<pre><code>$ git branch challenge
-</code></pre>
-
-<p>で、branchを作ります。こんな状態になります。</p>
-
-<pre><code>$ git branch
-  challenge
-* master
-</code></pre>
-
-<p>branchが作成されました。作業branchを変更して、現在どのbranchにいるか表示します。</p>
-
-<pre><code>$ git checkout challenge
-$ git branch
-* challenge
-  master
-</code></pre>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/07/14/git-branch/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -794,6 +800,10 @@ $ git branch
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/18/vundle/">vundleの設定とやらを!</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/18/textmate-japanese/">TextMateを日本語化してみた</a>
       </li>
     
@@ -807,10 +817,6 @@ $ git branch
     
       <li class="post">
         <a href="/blog/2012/07/16/file-count/">ディレクトリ下のファイル数をカウントする</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/15/mac-control/">うっほ！US配列でControlの位置を変更！</a>
       </li>
     
   </ul>
