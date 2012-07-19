@@ -9,8 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="vimにphpコード補完のsnipMateを入れてみました。例えば、forと入れると、 for ($i = 0; $i &lt; count; $i++) { // code...
-} とか自動で出るやつです。使いこなしてはいませんが、少しは楽になりそう。 vim snipMate &hellip;">
+  <meta name="description" content="textMateはMacやEmacsと同じようにCtr+f,b,p,nでサクサク動けると思ったんだけど、思ったんだけど、なんか変。止まる。なんか表示される。調べてみると、Ctr+fの設定が変わったということ。今は定義を調べるコマンドになっているらしい。そこで、下記のサイトを参考に、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +78,51 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/20/textmate-control-f/">textMateのcontrol+f</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-20T03:34:00+09:00" pubdate data-updated="true">Jul 20<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/20/textmate-control-f/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>textMateはMacやEmacsと同じように<code>Ctr+f,b,p,n</code>でサクサク動けると思ったんだけど、思ったんだけど、なんか変。止まる。なんか表示される。調べてみると、<code>Ctr+f</code>の設定が変わったということ。今は定義を調べるコマンドになっているらしい。そこで、下記のサイトを参考に、ショートカットキーの設定を変えました。</p>
+
+<ul>
+<li><a href="http://andr.esmejia.com/posts/31-changing-ctrl-f-to-move-forward-on-textmate">Changing Ctrl+F to move forward on TextMate</a></li>
+</ul>
+
+
+<p>うーん、良い感じ！備忘録として記しました！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -686,76 +730,6 @@ ggでテキスト最初の行
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/15/tanoshii-ruby/">Reading: たのしいRuby</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-15T13:52:00+09:00" pubdate data-updated="true">Jul 15<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/15/tanoshii-ruby/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>とりあえず、コーディングの全体的な復讐の意味も含めて<strong>たのしいRuby</strong>を読み始めています。書きながら読んでいますが、Rubyって楽しいです！自分の使っているRubyのバージョンが<strong>ruby 1.9.3p194</strong>なのですが、書籍の記述どおりに行かなかった部分や、ポイントになる部分をメモっておきます。</p>
-
-<p>ちなみに、途中くらいまで読んで気づいたのですが、<a href="http://www.notwork.org/tanoshiiruby3/">サポートページ</a>に正誤表があり、どうしても動かないメソッドなどはこちらに目を通すと良いかもしれません。練習問題の回答等もあり、必要な情報がわかりやすくまとまっています。</p>
-
-<h2>日本語を正しく表示するために</h2>
-
-<p><em>p16</em></p>
-
-<pre><code># encoding: UTF-8
-</code></pre>
-
-<p>をファイル冒頭に追加する。</p>
-
-<h2>requireができない</h2>
-
-<p><em>p.31</em></p>
-
-<p>同じディレクトリ内にある<code>hello.rb</code>が読み込み出来ません。</p>
-
-<pre><code>require "hello"
-</code></pre>
-
-<p>本書にあるこれを、</p>
-
-<pre><code>require "./hello.rb"
-</code></pre>
-
-<p>に書き換えたら読み込みました。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/07/15/tanoshii-ruby/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -777,6 +751,10 @@ ggでテキスト最初の行
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/20/textmate-control-f/">textMateのcontrol+f</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/20/vundle-snipmate/">Vimにphpコード補完のsnipMateとか</a>
       </li>
     
@@ -790,10 +768,6 @@ ggでテキスト最初の行
     
       <li class="post">
         <a href="/blog/2012/07/18/textmate-japanese/">TextMateを日本語化してみた</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/17/amazon-cloud-drive/">Amazon Cloud Driveを入れてみた</a>
       </li>
     
   </ul>
