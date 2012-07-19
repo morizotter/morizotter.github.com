@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-20T02:39:45+09:00</updated>
+  <updated>2012-07-20T03:06:13+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -20,7 +20,7 @@
     <id>http://morizotter.com/blog/2012/07/20/vundle-snipmate</id>
     <content type="html"><![CDATA[<p>vimにphpコード補完のsnipMateを入れてみました。例えば、<code>for</code>と入れると、</p>
 
-<pre><code>for ($i = 0; $i &lt; jj; $i++) {
+<pre><code>for ($i = 0; $i &lt; count; $i++) {
      // code...
 }
 </code></pre>
