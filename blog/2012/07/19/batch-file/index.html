@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>MacBook Air環境設定 - MORIZOTTER PRESS</title>
+  <title>バッチ・ファイルを作ってみた - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="先ほどの基本的な設定に加え、プログラミングの環境を整えていきます。 Xcodeとコマンドラインツール（gitも付属） まずはXcodeのインストール。そしてコマンドラインツールをインストール。 HomebrewとRuby 以前書いた記事を参考にRubyをインストール。 brew &hellip;">
+  <meta name="description" content="一般的な人はコマンドラインでPCを扱うことはないと思う。で、作業を自動化する仕組みをウェブで作ろうとも思ったんだけど、ちょっとこれは面倒だということでバッチ・ファイルの作り方を検索してみました。バッチ・ファイルというのは、コマンドラインから実行するのではなく、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/07/macbook-air-2012-env/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/07/19/batch-file/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">MacBook Air環境設定</h1>
+      <h1 class="entry-title">バッチ・ファイルを作ってみた</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2012-07-07T13:59:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
+<time datetime="2012-07-19T22:23:00+09:00" pubdate data-updated="true">Jul 19<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,93 +106,32 @@
   </header>
 
 
-<div class="entry-content"><p><a href="http://www.morizotter.com/blog/2012/07/07/macbook-air-2012/">先ほどの基本的な設定</a>に加え、プログラミングの環境を整えていきます。</p>
-
-<h2>Xcodeとコマンドラインツール（gitも付属）</h2>
-
-<p>まずはXcodeのインストール。そしてコマンドラインツールをインストール。</p>
-
-<h2>HomebrewとRuby</h2>
-
-<p><a href="http://morizotter.com/blog/2012/07/249/">以前書いた記事</a>を参考にRubyをインストール。</p>
-
-<p><code>brew update</code>しといた。落としてきたのは最新かもしれないけどさ。あと、まず最初に<code>brew doctor</code>やれと表示されたので、こちらもやっておきました。</p>
-
-<p><a href="http://octopress.org/docs/setup/">Octopressのセットアップページ</a>からセットアップの続きを行う。</p>
-
-<p><code>gem install</code></p>
-
-<p><code>rbenv rehash</code></p>
-
-<p><code>bundle install</code></p>
-
-<p>Mou.appも入れたので、この記事は新しいMacBook Airで書いてます。USキーボードに慣れないけど、2010と比べて別物のようなサクサク状態にうきうきです！</p>
-
-<p>ここで記事をPushできず。githubとbitbucketにSSH Keyを登録しなきゃ。ていうか、その前にgitの初期情報ちゃんとセットしよう。</p>
-
-<h2>gitの設定とgithub、bitbucketへの接続</h2>
-
-<p><a href="https://help.github.com/articles/set-up-git">名前の設定はgithubの設定ページ</a>に載っていたのでそこで。以前の端末のgitconfigをみたかったのだが、<code>git config --global --list</code>でいけるらしい。<a href="http://d.hatena.ne.jp/nabnab/20100805/1281015625">ここ</a>で確認。<code>git credential-osxkeychain</code>ができるように一応設定。昔これをやったようなおぼろげな記憶があったので。</p>
+<div class="entry-content"><p>一般的な人はコマンドラインでPCを扱うことはないと思う。で、作業を自動化する仕組みをウェブで作ろうとも思ったんだけど、ちょっとこれは面倒だということでバッチ・ファイルの作り方を検索してみました。バッチ・ファイルというのは、コマンドラインから実行するのではなく、ファイルをダブルクリックすることで実行できるファイルのことだそうです(<a href="http://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%83%81%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">wikipedia</a>)。</p>
 
 <ul>
-<li><a href="https://help.github.com/articles/generating-ssh-keys">git SSH Key</a></li>
-<li><a href="https://confluence.atlassian.com/display/BITBUCKET/How+to+install+a+public+key+on+your+bitbucket+account">bitbucket</a></li>
+<li><a href="http://sakuranon.blog.fc2.com/blog-entry-27.html">macでバッチファイル実行</a></li>
 </ul>
 
 
-<p>オッケー。githubもbitbucketもアクセスできた。</p>
+<p>とりあえずすぐに出てきてわかり易かったのがここです。紹介されているリンク先とあわせて見れば、基本的なことは抑えつつ、ファイルを作成することができました。</p>
 
-<p>ちょっと休憩。US配列は思った以上にストレスあるな。チルダとかダルブクオテーションとか、+とか結構違う。地味にControlの位置が変わったのが影響して小指が痛い。</p>
+<p>作成したファイルはこれです。</p>
 
-<p>さて、ここで、Xcodeと一緒にインストールされたgitもhomebrewで管理したいと思い、<code>brew install git</code>やってみたところ、一部でエラー</p>
-
-<pre><code>Error: The linking step did not complete successfully
-The formula built, but is not symlinked into /usr/local
-You can try again using `brew link git'
+<pre><code>#!/bin/bash
+MY_DIRNAME=$(dirname $0)
+cd $MY_DIRNAME
+ls -lha
 </code></pre>
-
-<p>てことなので、<code>brew link git</code>を実行するも、再度エラー。</p>
-
-<pre><code>Error: Could not symlink file: /usr/local/Cellar/git/1.7.11.1/bin/git-credential-osxkeychain
-Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to delete it.
-</code></pre>
-
-<p>さっき作ったファイルが影響しているっぽい。ここは新しい環境の気楽なところで、いわれるがままに<code>rm</code>してもう一度、<code>brew link git</code>で、gitのCommitもPushもいけたのでよしとする。次は最近やったSubversion</p>
-
-<h2>Subversion</h2>
-
-<p><a href="http://www.morizotter.com/blog/2012/07/05/subversion-with-homebrew/">これ</a>を参考に進める。Subversionの設定は完了！</p>
-
-<h2>MySQL</h2>
-
-<p>PHPも入れようと思ったけれど、面倒なのでMacに標準で搭載されてるものでよしとする。で、以下のブログ記事を参考に、<code>brew install mysql</code>やってみた！</p>
 
 <ul>
-<li><a href="http://blog.kiftwi.net/2011/06/22/mbp%E3%81%ABbrew%E3%81%A7mysql%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%9F%E3%80%82/">MBPにbrewでMySQLを導入した</a></li>
-<li><a href="http://dev.classmethod.jp/etc/macbookair-homebrew-mysql5-5-14/">MacBookAirでHomebrewを使ったMySQL 5.5.14のインストール</a></li>
-<li><a href="http://tukaikta.blog135.fc2.com/blog-entry-197.html">HomebrewでMySQLをインストールする時に知っておきたいこと</a></li>
+<li>一行目はシェルを使うよということ</li>
+<li>二行目はカレントディレクトリを読み込んでいるようです。</li>
+<li>で、三行目でカレントディレクトリに移動します。</li>
+<li>四行目で処理の実行です。</li>
 </ul>
 
 
-<p>上記参考ブログにも書いてあったのですが、実際の設定は対話式で非常に簡単。しかも、DBの言語変更するの面倒くさいなと思っていたけど、<code>$mysql&gt; show variables like "char%";</code>を実行するといきなり下記の設定でうれしかった。</p>
-
-<pre><code>+--------------------------+-------------------------------------------------------+
-| Variable_name            | Value                                                 |
-+--------------------------+-------------------------------------------------------+
-| character_set_client     | utf8                                                  |
-| character_set_connection | utf8                                                  |
-| character_set_database   | utf8                                                  |
-| character_set_filesystem | binary                                                |
-| character_set_results    | utf8                                                  |
-| character_set_server     | utf8                                                  |
-| character_set_system     | utf8                                                  |
-| character_sets_dir       | /usr/local/Cellar/mysql/5.5.25a/share/mysql/charsets/ |
-+-------------------------- +-------------------------------------------------------+
-</code></pre>
-
-<p>以前、この設定を変えるのに苦戦したのが何だったんだというあっけなさ。</p>
-
-<p>とりあえず、この辺にしておきます。ほとんどもう以前と同じように使えるんじゃないだろうか。</p>
+<p>ファイル名は<code>test.command</code>としました。で、これに<code>chmod u+x</code>で実行権限を与えます。ダブルクリックで使えました！次回はrubyを動かしてみよう！</p>
 </div>
 
 
@@ -215,7 +154,7 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
   
 
 
-<time datetime="2012-07-07T13:59:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
+<time datetime="2012-07-19T22:23:00+09:00" pubdate data-updated="true">Jul 19<span>th</span>, 2012</time>
       
 
 
@@ -223,7 +162,7 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/07/macbook-air-2012-env/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/07/macbook-air-2012-env/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/19/batch-file/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/19/batch-file/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -236,10 +175,8 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/07/macbook-air-2012/" title="Previous Post: Macbook Air mid 2012が届いた！">&laquo; Macbook Air mid 2012が届いた！</a>
+        <a class="basic-alignment left" href="/blog/2012/07/18/vundle/" title="Previous Post: vundleの設定とやらを!">&laquo; vundleの設定とやらを!</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/07/git-dropbox-problem/" title="Next Post: gitをDropboxで使うと起こる問題">gitをDropboxで使うと起こる問題 &raquo;</a>
       
     </p>
   </footer>
@@ -357,8 +294,8 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/07/macbook-air-2012-env/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/07/macbook-air-2012-env/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/07/19/batch-file/';
+        var disqus_url = 'http://morizotter.com/blog/2012/07/19/batch-file/';
         var disqus_script = 'embed.js';
       
     (function () {
