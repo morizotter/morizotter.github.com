@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-20T03:38:05+09:00</updated>
+  <updated>2012-07-23T01:04:07+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[textMateでテスト実行時のRubyのバージョンを変更する！]]></title>
+    <link href="http://morizotter.com/blog/2012/07/23/textmate-ruby-version/"/>
+    <updated>2012-07-23T00:45:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/23/textmate-ruby-version</id>
+    <content type="html"><![CDATA[<p>こんにちは。Ruby初心者です！Rubyを始めてとりあえずエディタを探していたのですが、vimは初期設定が難しいしファイル間の移動が面倒だし、NetBeansは大げさだしということでtextMateに落ち着きそうです。で、使っているうちに最初の問題に遭遇しました。</p>
+
+<h2>実行(⌘+r)時に古いRubyで実行してる</h2>
+
+<p>問題が発覚したのは、<a href="http://www.amazon.co.jp/gp/product/4797336617/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4797336617&linkCode=as2&tag=nettoshinjiyu-22">たのしいRuby 第2版 Rubyではじめる気軽なプログラミング</a><img src="http://www.assoc-amazon.jp/e/ir?t=nettoshinjiyu-22&l=as2&o=9&a=4797336617" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />の記述通りにコードを書いているのに、なぜか実行時に失敗するということが続いたからです。</p>
+
+<p><code>Command+R</code>時に表示されるウィンドウを見るとRubyのバージョンが表示されていました。</p>
+
+<p><img src="http://dl.dropbox.com/u/8131276/octopress/textMateversion.png"></p>
+
+<p><em>画像は修正後のものです。赤枠内が古いバージョンを示していました</em></p>
+
+<p>これが古かったんです。それでおそらく<code>require</code>が失敗していたんだと思います。とりあえず、terminalで実行した場合は成功するので、普段使っている<code>ruby 1.9.3p194</code>に変えればよいだろうということで、ネットで情報を探しました。</p>
+
+<p>なかなか見つからなかったのですが、下記の記事に回答に近いものがありました。</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/6546308/how-do-i-change-the-ruby-version-textmate-uses">How do I change the Ruby version Textmate uses?</a></li>
+</ul>
+
+
+<p>方法としては、</p>
+
+<ol>
+<li>textMateのPreference>Advanced>Shell Variablesに移動する</li>
+<li>titleを<code>TM_RUBY</code>として、rubyのパスを入力する</li>
+</ol>
+
+
+<p>これだけで完了です。ただ僕はここで少しつまずきました。rubyの場所を</p>
+
+<pre><code>$ which ruby
+</code></pre>
+
+<p>で調べると、</p>
+
+<pre><code>/Users/myname/.rbenv/shims/ruby
+</code></pre>
+
+<p>と出てきたので、最初これを指定したのですがエラーになりました。おそらくこれはただの参照だからダメだったんだと思います（詳しい方教えて下さい＞＜）。下記のように入力することで成功しました。</p>
+
+<pre><code>/Users/myname/.rbenv/versions/1.9.3-p194/bin/ruby
+</code></pre>
+
+<p>これで、実行すると対処の画像の用に指定したRubyのバージョンで実行ができます。ふー、わざわざターミナルで実行するよりも一画面で実行できるのでストレスなく効率的にテストができます！わーい。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[textMateのcontrol+f]]></title>
@@ -855,27 +908,6 @@ e130159 HEAD@{10}: commit: 3
 
 <p>こんなところです。
 よろしくお願いします。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iTerm2がなかなか良い]]></title>
-    <link href="http://morizotter.com/blog/2012/07/09/iterm2/"/>
-    <updated>2012-07-09T23:40:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/09/iterm2</id>
-    <content type="html"><![CDATA[<p>何人かの人に勧められたのでMac標準のターミナル.appからiTerm2に変えたのが多分1ヶ月ほど前。少しの間背景をぼやかして薄暗くしているだけでターミナルと同じようにしか使ってなかった。</p>
-
-<p>ただ、最近、この良さに気づき始めている。一番シンプルだけど良いのは、<code>Command + D</code>での複数画面表示、そして、<code>Command + Shift + D</code>で上下にも分割できる。横に広いテーブルを見るときなど便利。下にできたビューで<code>Command + D</code>をするとまた左右に分割なんて。テーブルをたくさん表示したい時にかなり助かる。</p>
-
-<p>更に、テーブルがビューに収まりきらなかったらテーブル単位で<code>Command + +</code>とか<code>Command + -</code>とかで、拡大縮小できる！地味に助かる。</p>
-
-<p>ちょっと関連のない作業するときには右下の小さいビューでやったり、タブを開いてそちらでやったり。タブへの移動は<code>Command + 数字（タブ番号）</code>でらくらく。</p>
-
-<p>そして早い！</p>
-
-<p>こりゃ、人気の訳がわかりますなぁ！！</p>
-
-<p>それにしても、日本語キーボードと英語キーボードの行き来はちょっと疲れる。MacBook Airの軽快さで印象がアップしているのかわからないけど、US慣れるとかなりいいよ！</p>
 ]]></content>
   </entry>
   

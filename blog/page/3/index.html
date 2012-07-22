@@ -9,9 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="先日お世話になったのがこのサイトです。 複数のファイル拡張子を一括で変更するには シェルのコマンドって抵抗感があったけど、こんなに簡単にできるとは！ $ ls
-1.txt 2.txt 3.txt 4.txt $ for fname in *.txt; do
-&gt; mv $fname ${ &hellip;">
+  <meta name="description" content="何人かの人に勧められたのでMac標準のターミナル.appからiTerm2に変えたのが多分1ヶ月ほど前。少しの間背景をぼやかして薄暗くしているだけでターミナルと同じようにしか使ってなかった。 ただ、最近、この良さに気づき始めている。一番シンプルだけど良いのは、Command + Dでの複数画面表示、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +78,56 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/09/iterm2/">iTerm2がなかなか良い</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-09T23:40:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/09/iterm2/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>何人かの人に勧められたのでMac標準のターミナル.appからiTerm2に変えたのが多分1ヶ月ほど前。少しの間背景をぼやかして薄暗くしているだけでターミナルと同じようにしか使ってなかった。</p>
+
+<p>ただ、最近、この良さに気づき始めている。一番シンプルだけど良いのは、<code>Command + D</code>での複数画面表示、そして、<code>Command + Shift + D</code>で上下にも分割できる。横に広いテーブルを見るときなど便利。下にできたビューで<code>Command + D</code>をするとまた左右に分割なんて。テーブルをたくさん表示したい時にかなり助かる。</p>
+
+<p>更に、テーブルがビューに収まりきらなかったらテーブル単位で<code>Command + +</code>とか<code>Command + -</code>とかで、拡大縮小できる！地味に助かる。</p>
+
+<p>ちょっと関連のない作業するときには右下の小さいビューでやったり、タブを開いてそちらでやったり。タブへの移動は<code>Command + 数字（タブ番号）</code>でらくらく。</p>
+
+<p>そして早い！</p>
+
+<p>こりゃ、人気の訳がわかりますなぁ！！</p>
+
+<p>それにしても、日本語キーボードと英語キーボードの行き来はちょっと疲れる。MacBook Airの軽快さで印象がアップしているのかわからないけど、US慣れるとかなりいいよ！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -553,69 +601,6 @@ $ echo "test テスト" &gt; test/test.txt
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/07/us-keyboard-key-remap/">USキーボードのキーのリマッップをしてみた</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-07T23:10:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/07/us-keyboard-key-remap/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>いろいろ読んでるうちにUSキーボード使いやすいだろう。よしやってみるか！ということで、新しいAirはUSキーボードにしてみたんですね。で、これが結構ストレスフル。キーの配列が想像していた以上に違って、特に<code>`</code>や<code>~</code>、<code>_</code>や<code>+</code>や、<code>:</code>や<code>"</code>など基本的によく使いそうなところがだいぶ違う。もちろんControlやCommandの配置なども変わっているんですが、これは慣れでいけるなと思うし使いやすい面もあっていいのですが、上記の細かいのは少し時間がかかりそうです。</p>
-
-<p>で、あと大きな問題は日本語-英語変換のを<code>Command + Space</code>（また+の場所間違った）でトグルでやらなければいけないところです。日本語キーボードの場合は&#8221;英数&#8221;と&#8221;かな&#8221;ボタンがあって一発なんですけどね。</p>
-
-<p>ということで、この部分だけでも日本語を打ちやすいように変更することにしました。以前から情報は持っていたのですが、</p>
-
-<ul>
-<li><a href="http://www.fraction.jp/log/archives/2008/10/28/US_">USキーボードで入力切り替え</a></li>
-<li><a href="http://yucomac.blog96.fc2.com/blog-entry-576.html">MacのUSキーボードで「英数キー」と「かなキー」を使いたい</a></li>
-</ul>
-
-
-<p>が参考になりました。USキーボードと日本語キーボードとの間で論争があるんですね。想像できますけどね。決着はなかなかつかないでしょうね〜。どちらもよいので。</p>
-
-<p>で、専用のソフトを入れるんですが、ここ。</p>
-
-<ul>
-<li><a href="http://pqrs.org/macosx/keyremap4macbook/index.html.ja">KeyRemap4MacBook</a></li>
-</ul>
-
-
-<p>Twitter Bootstrapを使って作られたサイトだと思うんですが、とてもきれいで情報量も適切で参考になります。すごい。</p>
-
-<p>とりあえず、このソフトをインストールし、左右のCommandを単体で押したときに日本語キーボードと同じように左が英数、右がかなと変更できるようにしました。かなり使いやすくなった！</p>
-
-<p>よかった。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -639,6 +624,10 @@ $ echo "test テスト" &gt; test/test.txt
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/23/textmate-ruby-version/">textMateでテスト実行時のRubyのバージョンを変更する！</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/20/textmate-control-f/">textMateのcontrol+f</a>
       </li>
     
@@ -652,10 +641,6 @@ $ echo "test テスト" &gt; test/test.txt
     
       <li class="post">
         <a href="/blog/2012/07/18/vundle/">vundleの設定とやらを!</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/18/textmate-japanese/">TextMateを日本語化してみた</a>
       </li>
     
   </ul>

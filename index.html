@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="textMateはMacやEmacsと同じようにCtr+f,b,p,nでサクサク動けると思ったんだけど、思ったんだけど、なんか変。止まる。なんか表示される。調べてみると、Ctr+fの設定が変わったということ。今は定義を調べるコマンドになっているらしい。そこで、下記のサイトを参考に、 &hellip;">
+  <meta name="description" content="こんにちは。Ruby初心者です！Rubyを始めてとりあえずエディタを探していたのですが、vimは初期設定が難しいしファイル間の移動が面倒だし、NetBeansは大げさだしということでtextMateに落ち着きそうです。で、使っているうちに最初の問題に遭遇しました。 実行(⌘+r) &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,88 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/23/textmate-ruby-version/">textMateでテスト実行時のRubyのバージョンを変更する！</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-23T00:45:00+09:00" pubdate data-updated="true">Jul 23<span>rd</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/23/textmate-ruby-version/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>こんにちは。Ruby初心者です！Rubyを始めてとりあえずエディタを探していたのですが、vimは初期設定が難しいしファイル間の移動が面倒だし、NetBeansは大げさだしということでtextMateに落ち着きそうです。で、使っているうちに最初の問題に遭遇しました。</p>
+
+<h2>実行(⌘+r)時に古いRubyで実行してる</h2>
+
+<p>問題が発覚したのは、<a href="http://www.amazon.co.jp/gp/product/4797336617/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4797336617&linkCode=as2&tag=nettoshinjiyu-22">たのしいRuby 第2版 Rubyではじめる気軽なプログラミング</a><img src="http://www.assoc-amazon.jp/e/ir?t=nettoshinjiyu-22&l=as2&o=9&a=4797336617" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />の記述通りにコードを書いているのに、なぜか実行時に失敗するということが続いたからです。</p>
+
+<p><code>Command+R</code>時に表示されるウィンドウを見るとRubyのバージョンが表示されていました。</p>
+
+<p><img src="http://dl.dropbox.com/u/8131276/octopress/textMateversion.png"></p>
+
+<p><em>画像は修正後のものです。赤枠内が古いバージョンを示していました</em></p>
+
+<p>これが古かったんです。それでおそらく<code>require</code>が失敗していたんだと思います。とりあえず、terminalで実行した場合は成功するので、普段使っている<code>ruby 1.9.3p194</code>に変えればよいだろうということで、ネットで情報を探しました。</p>
+
+<p>なかなか見つからなかったのですが、下記の記事に回答に近いものがありました。</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/6546308/how-do-i-change-the-ruby-version-textmate-uses">How do I change the Ruby version Textmate uses?</a></li>
+</ul>
+
+
+<p>方法としては、</p>
+
+<ol>
+<li>textMateのPreference>Advanced>Shell Variablesに移動する</li>
+<li>titleを<code>TM_RUBY</code>として、rubyのパスを入力する</li>
+</ol>
+
+
+<p>これだけで完了です。ただ僕はここで少しつまずきました。rubyの場所を</p>
+
+<pre><code>$ which ruby
+</code></pre>
+
+<p>で調べると、</p>
+
+<pre><code>/Users/myname/.rbenv/shims/ruby
+</code></pre>
+
+<p>と出てきたので、最初これを指定したのですがエラーになりました。おそらくこれはただの参照だからダメだったんだと思います（詳しい方教えて下さい＞＜）。下記のように入力することで成功しました。</p>
+
+<pre><code>/Users/myname/.rbenv/versions/1.9.3-p194/bin/ruby
+</code></pre>
+
+<p>これで、実行すると対処の画像の用に指定したRubyのバージョンで実行ができます。ふー、わざわざターミナルで実行するよりも一画面で実行できるのでストレスなく効率的にテストができます！わーい。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -652,84 +734,6 @@ ggでテキスト最初の行
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/15/emacs/">Rubyを書いていたらEmacsが使いたくなった</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-15T16:02:00+09:00" pubdate data-updated="true">Jul 15<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/15/emacs/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>RubyではIDEを使わない。エディタで書く。らしいです。で、世界で一番使われているRuby用エディタのTextMateは日本語が使えない。TextMate2は出力はできるようですが、入力に難ありという事です。まぁ、エディタ探す前にVimでやっていて、不便感じないしいちいちソフトを立ち上げなくて済むので楽だなと感じていたのでした。</p>
-
-<p>ただ、Vimの操作にはやっぱりなれない。カーソルの移動などが面倒。Control+F,B,P,Nで移動したい！ということで、Emacsの方がいいような気がしてきました。</p>
-
-<h2>一覧</h2>
-
-<ul>
-<li><p><a href="http://www.unixuser.org/~euske/doc/emacsref/">Emacsクイックリファレンス</a></p>
-
-<ul>
-<li>こちらのサイトの一覧がわかり易かったので、これをiPadに表示しながらいろいろやっていこうと思っています。</li>
-</ul>
-</li>
-<li><p><a href="http://www.k-tanaka.net/unix/emacs.html">Unixコマンド(Emacs)</a></p>
-
-<ul>
-<li>こちらも分かりやすそう。</li>
-</ul>
-</li>
-<li><p><a href="http://e-sahf.jp/class/12/emacs.htm">emacs操作方法</a></p>
-
-<ul>
-<li>こちらも。</li>
-</ul>
-</li>
-</ul>
-
-
-<p>後ろに行くにつれてわかりやすくなってるかも。ちなみに、emacsのとじ方がわからず、emacs操作方法を見つけて本当に助かりましたよ。。。</p>
-
-<h2>Ctr + Spaceの問題</h2>
-
-<p>Emacsを練習していると、どうやらMacの初期設定で<code>Ctr+Space</code>でSpotlightが開いてしまうようなので<a href="http://osuban.jp/devdi/?p=665">ここ</a>を参考にキーバインドを変更しました。</p>
-
-<h2>メタキーの問題</h2>
-
-<p>EmacsでMetaキーをよく使うのですが、これがMacの標準だと<code>esc</code>に設定されているようです。これだと遠い！そこで調べてみたところ、<a href="http://d.hatena.ne.jp/goinger/20090104/1231048095">こんな記事</a>がありまして、参考にしてみました。で、普段使っているiTermで設定しようとしたらメッセージが。</p>
-
-<p><img class="centr" src="http://dl.dropbox.com/u/8131276/octopress/emacs-iterm.png"></p>
-
-<p>メッセージどおり<code>+esc</code>の方にしてみました。とりあえずこの設定でやってみます。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -751,6 +755,10 @@ ggでテキスト最初の行
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/23/textmate-ruby-version/">textMateでテスト実行時のRubyのバージョンを変更する！</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/20/textmate-control-f/">textMateのcontrol+f</a>
       </li>
     
@@ -764,10 +772,6 @@ ggでテキスト最初の行
     
       <li class="post">
         <a href="/blog/2012/07/18/vundle/">vundleの設定とやらを!</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/18/textmate-japanese/">TextMateを日本語化してみた</a>
       </li>
     
   </ul>
