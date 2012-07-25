@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-23T01:04:07+09:00</updated>
+  <updated>2012-07-26T00:28:33+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[xcode4.4でコード補完できなくなる問題が解消！？]]></title>
+    <link href="http://morizotter.com/blog/2012/07/26/xcode4-dot-4/"/>
+    <updated>2012-07-26T00:20:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/26/xcode4-dot-4</id>
+    <content type="html"><![CDATA[<p>おお、Xcodeのアップデート文を読んでいたら嬉しい一文を発見！</p>
+
+<p><img src="http://dl.dropbox.com/u/8131276/octopress/xcode44.png"></p>
+
+<p>赤枠内です。コード補完ができなくなる問題を解消と書いてあります。</p>
+
+<pre><code>Fixes an issue where code completion could fail, requiring the user to delete derived data.
+</code></pre>
+
+<p>&#8220;ユーザにderived dataの削除を要求する&#8221;って、そういう状況に追い込まれた人にはすっと入り込むわかりやすいフレーズ。この問題に何度悩まされたことか！でも、derived dataを削除したくらいじゃ回復しなかったこともあったしなぁ。</p>
+
+<p>そういうのが起こらないようになってるならすごくいいアップデート！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[textMateでテスト実行時のRubyのバージョンを変更する！]]></title>
@@ -879,35 +899,6 @@ e130159 HEAD@{10}: commit: 3
 
 
 <p>こんなところです。このコンバージョンはかなりよかったので自宅のiMacもUSキーボードにしたいなと思っています。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[最近、見に来てくれくれる人も増えたので]]></title>
-    <link href="http://morizotter.com/blog/2012/07/10/about-this-blog/"/>
-    <updated>2012-07-10T01:26:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/10/about-this-blog</id>
-    <content type="html"><![CDATA[<p>軽くこのブログについて書いておきます。</p>
-
-<ul>
-<li>思いつきをそのまま書いていきます。</li>
-<li>一つの記事のボリュームはとても少ないと思います。</li>
-<li>情報収集は基本的にネットです。他の人の書いたブログ記事へのリンクが沢山出ています。</li>
-<li>ノウハウや知恵の共有はほんとうに素晴らしいことですね。ありがとうございます。</li>
-<li>僕も提供できる側になれるように少しつづ頑張ります！</li>
-<li>カテゴリもタグも付けていません。記事を書くスピードややる気を削ぐことがないように削ってます。</li>
-<li>ただ、そのうちまとめ記事を書いていこうかななんて思っています。</li>
-<li>Twitterでは<a href="http://twitter.com/morizotter/">@morizotter</a>という名前で呟いてます。</li>
-<li><a href="http://morizotter.com">MORIZOTTER PRESS</a>は30歳からプログラミングを始めたmorizotterの活動のまとめ的な役割を担えれば良いと思っています。</li>
-<li>記事は簡易ブログ作成フレームワークの<a href="http://octopress.org/">Octopress</a>でやってます。</li>
-<li><a href="http://ja.wikipedia.org/wiki/Markdown">markdown</a>という記法で書けるのでほんとに軽く、楽しいです。</li>
-<li>サクサクです。</li>
-<li>Ruby気持ちいいです。</li>
-</ul>
-
-
-<p>こんなところです。
-よろしくお願いします。</p>
 ]]></content>
   </entry>
   

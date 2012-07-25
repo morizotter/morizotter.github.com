@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="RubyではIDEを使わない。エディタで書く。らしいです。で、世界で一番使われているRuby用エディタのTextMateは日本語が使えない。TextMate2は出力はできるようですが、入力に難ありという事です。まぁ、エディタ探す前にVimでやっていて、 &hellip;">
+  <meta name="description" content="こんにちは。 US配列キーボードが気に入ってます。日本語、英語変換をJISキーボードと同じように設定してから、更に使い勝手が良くなってます。 で、実はもうひとつ困っている問題がありました。Controlの位置です。USキーボードの場合、Controlがかなり下の方にあるので、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,59 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/15/mac-control/">うっほ！US配列でControlの位置を変更！</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-15T16:08:00+09:00" pubdate data-updated="true">Jul 15<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/15/mac-control/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>こんにちは。</p>
+
+<p>US配列キーボードが気に入ってます。<a href="http://www.morizotter.com/blog/2012/07/07/us-keyboard-key-remap/">日本語、英語変換をJISキーボードと同じように設定</a>してから、更に使い勝手が良くなってます。</p>
+
+<p>で、実はもうひとつ困っている問題がありました。Controlの位置です。USキーボードの場合、Controlがかなり下の方にあるので、入力するときに小指がガッと下がってかなり手が痛いし不自然なんですね。Emacsを練習していたらそれが顕著にダメージとなって現れてきました。それ以外はUSキーボードのキーはJISよりもスペースキーから近い感じがするので楽になんですが。。。</p>
+
+<p>で、<strong>caps lock</strong>キーにControlの機能をもたせることにしました。</p>
+
+<p>やり方はわかってたのですが、検索してみると<a href="http://firstmac.blogspot.jp/2007/08/caps-lock-control.html">こんな記事</a>も出てきて、みんなやってるらしいし良いだろうということで。</p>
+
+<pre><code>環境設定 &gt; キーボード &gt; 装飾キー
+</code></pre>
+
+<p>で割り当てを変えます。caps lockキーは使わないと思うので、controlキーの機能はそのまま残しました。</p>
+
+<p>うーん、快適！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -771,64 +824,6 @@ e130159 HEAD@{10}: commit: 3
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/10/about-this-blog/">最近、見に来てくれくれる人も増えたので</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-10T01:26:00+09:00" pubdate data-updated="true">Jul 10<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/10/about-this-blog/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>軽くこのブログについて書いておきます。</p>
-
-<ul>
-<li>思いつきをそのまま書いていきます。</li>
-<li>一つの記事のボリュームはとても少ないと思います。</li>
-<li>情報収集は基本的にネットです。他の人の書いたブログ記事へのリンクが沢山出ています。</li>
-<li>ノウハウや知恵の共有はほんとうに素晴らしいことですね。ありがとうございます。</li>
-<li>僕も提供できる側になれるように少しつづ頑張ります！</li>
-<li>カテゴリもタグも付けていません。記事を書くスピードややる気を削ぐことがないように削ってます。</li>
-<li>ただ、そのうちまとめ記事を書いていこうかななんて思っています。</li>
-<li>Twitterでは<a href="http://twitter.com/morizotter/">@morizotter</a>という名前で呟いてます。</li>
-<li><a href="http://morizotter.com">MORIZOTTER PRESS</a>は30歳からプログラミングを始めたmorizotterの活動のまとめ的な役割を担えれば良いと思っています。</li>
-<li>記事は簡易ブログ作成フレームワークの<a href="http://octopress.org/">Octopress</a>でやってます。</li>
-<li><a href="http://ja.wikipedia.org/wiki/Markdown">markdown</a>という記法で書けるのでほんとに軽く、楽しいです。</li>
-<li>サクサクです。</li>
-<li>Ruby気持ちいいです。</li>
-</ul>
-
-
-<p>こんなところです。
-よろしくお願いします。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -852,6 +847,10 @@ e130159 HEAD@{10}: commit: 3
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/26/xcode4-dot-4/">xcode4.4でコード補完できなくなる問題が解消！？</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/23/textmate-ruby-version/">textMateでテスト実行時のRubyのバージョンを変更する！</a>
       </li>
     
@@ -865,10 +864,6 @@ e130159 HEAD@{10}: commit: 3
     
       <li class="post">
         <a href="/blog/2012/07/19/batch-file/">バッチ・ファイルを作ってみた</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/18/vundle/">vundleの設定とやらを!</a>
       </li>
     
   </ul>
