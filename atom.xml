@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-07-26T00:28:33+09:00</updated>
+  <updated>2012-07-26T01:21:19+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Dashが快適！]]></title>
+    <link href="http://morizotter.com/blog/2012/07/26/dash/"/>
+    <updated>2012-07-26T00:52:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/07/26/dash</id>
+    <content type="html"><![CDATA[<p>先日、Macおすすめアプリって記事をどこかで見て入れたのがDash。プログラミング言語の閲覧とコードスニペットの管理が主な用途ですが、利用開始直後からかなりよい具合で愛してます。</p>
+
+<p><img src="http://dl.dropbox.com/u/8131276/octopress/dash.png"></p>
+
+<p>とりあえず今貼りつけた画像は、ドキュメント表示画面です。検索早いです。そして、<code>option+Space</code>でDash自体が一発起動するってのも素敵です。</p>
+
+<p>スニペット管理画面もあります。ここにスニペットを書き込めば指定した文字を打つと即コードが差し込まれます。スニペット中に<code>__</code>で囲んだ文字、例えば<code>__filename__</code>なんてやると、スニペットを差し込む前にその部分が選択されて自由に差し込めるようになっています。</p>
+
+<h2>Dropboxで共有</h2>
+
+<p>スニペットを格納したファイルはDropboxに入れることで、複数のMacで情報を共有できます。わかりやすいサイトを見つけたので興味のある方はご参考に。</p>
+
+<ul>
+<li><a href="http://fujitaiju.com/blog/%E3%82%A2%E3%83%97%E3%83%AA/%E5%A4%AAmac%E7%94%A8%E3%82%B9%E3%83%8B%E3%83%9A%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AAdashexpander%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92dropbox%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%90%8C/">[太]Mac用スニペットアプリDashExpanderの設定をDropboxを使って同期する方法。</a></li>
+</ul>
+
+
+<p>あー、でも一つだけよくわからずいらっときている点が。PreferencesのSnippetsにある<code>enable snippet detection</code>をオンにすると何が変わるのか。うううー。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[xcode4.4でコード補完できなくなる問題が解消！？]]></title>
@@ -837,68 +863,6 @@ e130159 HEAD@{10}: commit: 3
 <p>全画面使うので一覧性がある。</p>
 
 <p>いいことづくし。今までなぜ使わなかったか！（一因は前のAirが遅かったからだろうな。。）</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[USキーボード4日目の感想]]></title>
-    <link href="http://morizotter.com/blog/2012/07/10/us-keyboard/"/>
-    <updated>2012-07-10T08:46:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/10/us-keyboard</id>
-    <content type="html"><![CDATA[<p>7/7にMacBook Air Mid 2012が届いて4日になります。この間毎日使っているのですが、初めてトライしたUSキーボードの感想を書きたいと思います。概ね良好です！</p>
-
-<p><strong>よい所</strong></p>
-
-<ul>
-<li>キーの配置
-
-<ul>
-<li>日本語キーボードに比べてキーを見ることが減りました。日本語キーボードよりキーの配置が良いと思います。</li>
-<li>手に馴染みます。今のところControlを押す時以外は自然な手の配置のままでキーが打てます。</li>
-<li>Return、Commandなどが近いところにあるなど指を不自然に伸ばす必要がないので疲労が軽減されます。</li>
-</ul>
-</li>
-<li>見た目がすっきりしていて綺麗。
-
-<ul>
-<li>不要な情報が目に入ってこないというのは地味ですがすっきり感が増します。</li>
-</ul>
-</li>
-<li>日本語キーボードからのスイッチが意外と楽。
-
-<ul>
-<li>最初は押し間違えが起こるかなぁなどと思っていたのですが、2日くらいで慣れました。Mac日本語キーボードとWindows日本語キーボードの差よりもだいぶ差が小さいです。</li>
-</ul>
-</li>
-</ul>
-
-
-<p><strong>最初戸惑ったところ</strong></p>
-
-<ul>
-<li>キーの配置
-
-<ul>
-<li>良い所でも書きましたが、日本語キーボードとの違いで最初は戸惑いました。あと、会社のMacで作業するときなど最初のうちはキーの押し間違いが起こります。慣れで解消しそうではあります。</li>
-</ul>
-</li>
-<li>英語、日本語変換
-
-<ul>
-<li>最初は<code>Command + Space</code>のトグルでやってましたが、効率が悪いと考え、キーマッピングのソフトを入れました。(<a href="http://www.morizotter.com/blog/2012/07/07/us-keyboard-key-remap/">これ</a>) 問題は解消です。</li>
-</ul>
-</li>
-</ul>
-
-
-<p><strong>その他</strong></p>
-
-<ul>
-<li>入力が若干早くなったので余裕ができたのか、IMEまわりを触ってみました。いままでMacではずっとことえり一本だったのですが、Google日本語入力を試したところ、希望に近い変換候補が出る確率がかなり高くなったと思います。入力速度が更に上がりました。ATOKも有名なのでそのうち試してみたいなと思っています。</li>
-</ul>
-
-
-<p>こんなところです。このコンバージョンはかなりよかったので自宅のiMacもUSキーボードにしたいなと思っています。</p>
 ]]></content>
   </entry>
   

@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="こんにちは。 US配列キーボードが気に入ってます。日本語、英語変換をJISキーボードと同じように設定してから、更に使い勝手が良くなってます。 で、実はもうひとつ困っている問題がありました。Controlの位置です。USキーボードの場合、Controlがかなり下の方にあるので、 &hellip;">
+  <meta name="description" content="今日Rubyの小さなコマンドを書いたファイルを作りまくっていたのですが、どれだけ作った知りたくなりました。で、検索したところわかりやすい記事が。 ファイル数を取得する方法 基本、このリンク先を見れば解決すると思います。自分メモとして記録しておきます。結論としては、 $ ls -1 | wc -l &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,55 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/16/file-count/">ディレクトリ下のファイル数をカウントする</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-16T00:49:00+09:00" pubdate data-updated="true">Jul 16<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/16/file-count/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今日Rubyの小さなコマンドを書いたファイルを作りまくっていたのですが、どれだけ作った知りたくなりました。で、検索したところわかりやすい記事が。</p>
+
+<p><a href="http://linux.just4fun.biz/%E9%80%86%E5%BC%95%E3%81%8DUNIX%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B.html">ファイル数を取得する方法</a></p>
+
+<p>基本、このリンク先を見れば解決すると思います。自分メモとして記録しておきます。結論としては、</p>
+
+<pre><code>$ ls -1 | wc -l
+</code></pre>
+
+<p>ですね。<code>ls</code>の<code>-l</code>オプションでファイルを1行表示にし、パイプでwcにつなげるということらしいです。</p>
+
+<p><a href="http://www.k-tanaka.net/unix/wc.html">wc</a>は行数や単語数、バイト数をカウントするコマンドで、行数のみカウントする場合は、<code>-l</code>オプションを付けます。この<a href="http://www.k-tanaka.net/unix/">UNIXコマンド</a>ってサイトいいな！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -733,97 +782,6 @@ e130159 HEAD@{10}: commit: 3
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/10/us-keyboard/">USキーボード4日目の感想</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-10T08:46:00+09:00" pubdate data-updated="true">Jul 10<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/10/us-keyboard/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>7/7にMacBook Air Mid 2012が届いて4日になります。この間毎日使っているのですが、初めてトライしたUSキーボードの感想を書きたいと思います。概ね良好です！</p>
-
-<p><strong>よい所</strong></p>
-
-<ul>
-<li>キーの配置
-
-<ul>
-<li>日本語キーボードに比べてキーを見ることが減りました。日本語キーボードよりキーの配置が良いと思います。</li>
-<li>手に馴染みます。今のところControlを押す時以外は自然な手の配置のままでキーが打てます。</li>
-<li>Return、Commandなどが近いところにあるなど指を不自然に伸ばす必要がないので疲労が軽減されます。</li>
-</ul>
-</li>
-<li>見た目がすっきりしていて綺麗。
-
-<ul>
-<li>不要な情報が目に入ってこないというのは地味ですがすっきり感が増します。</li>
-</ul>
-</li>
-<li>日本語キーボードからのスイッチが意外と楽。
-
-<ul>
-<li>最初は押し間違えが起こるかなぁなどと思っていたのですが、2日くらいで慣れました。Mac日本語キーボードとWindows日本語キーボードの差よりもだいぶ差が小さいです。</li>
-</ul>
-</li>
-</ul>
-
-
-<p><strong>最初戸惑ったところ</strong></p>
-
-<ul>
-<li>キーの配置
-
-<ul>
-<li>良い所でも書きましたが、日本語キーボードとの違いで最初は戸惑いました。あと、会社のMacで作業するときなど最初のうちはキーの押し間違いが起こります。慣れで解消しそうではあります。</li>
-</ul>
-</li>
-<li>英語、日本語変換
-
-<ul>
-<li>最初は<code>Command + Space</code>のトグルでやってましたが、効率が悪いと考え、キーマッピングのソフトを入れました。(<a href="http://www.morizotter.com/blog/2012/07/07/us-keyboard-key-remap/">これ</a>) 問題は解消です。</li>
-</ul>
-</li>
-</ul>
-
-
-<p><strong>その他</strong></p>
-
-<ul>
-<li>入力が若干早くなったので余裕ができたのか、IMEまわりを触ってみました。いままでMacではずっとことえり一本だったのですが、Google日本語入力を試したところ、希望に近い変換候補が出る確率がかなり高くなったと思います。入力速度が更に上がりました。ATOKも有名なのでそのうち試してみたいなと思っています。</li>
-</ul>
-
-
-<p>こんなところです。このコンバージョンはかなりよかったので自宅のiMacもUSキーボードにしたいなと思っています。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -847,6 +805,10 @@ e130159 HEAD@{10}: commit: 3
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/26/dash/">Dashが快適！</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/26/xcode4-dot-4/">xcode4.4でコード補完できなくなる問題が解消！？</a>
       </li>
     
@@ -860,10 +822,6 @@ e130159 HEAD@{10}: commit: 3
     
       <li class="post">
         <a href="/blog/2012/07/20/vundle-snipmate/">Vimにphpコード補完のsnipMateとか</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/19/batch-file/">バッチ・ファイルを作ってみた</a>
       </li>
     
   </ul>
