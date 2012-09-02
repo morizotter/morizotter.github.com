@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-03T00:49:32+09:00</updated>
+  <updated>2012-09-03T00:53:01+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -91,8 +91,11 @@ $ brew install ragel boost multimarkdown hg ninja
 
 <h3>とりあえず設定</h3>
 
-<p>やった成功！日本語の入力も問題なし！
-ということで、初期設定をちょこっとやります。</p>
+<p>やった成功！日本語の入力も問題なし！</p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2japanese"></p>
+
+<p>ということで、初期設定をちょこっとやります。</p>
 
 <p>まずPreferencesのTerminalでPathを設定します。これで、<code>mate</code>が使えるようになります。</p>
 
