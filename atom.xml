@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-03T00:55:17+09:00</updated>
+  <updated>2012-09-03T00:56:40+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -31,7 +31,7 @@
 
 <p>これだけでした。。。</p>
 
-<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2run"></p>
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2run.png"></p>
 
 <p>こんな感じです。初代と変わらないですね！</p>
 
@@ -99,7 +99,7 @@ $ brew install ragel boost multimarkdown hg ninja
 
 <p>やった成功！日本語の入力も問題なし！</p>
 
-<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2japanese"></p>
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2japanese.png"></p>
 
 <p>ということで、初期設定をちょこっとやります。</p>
 
