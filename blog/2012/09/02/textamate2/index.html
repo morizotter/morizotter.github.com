@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>MacBookAir11インチにした理由 - MORIZOTTER PRESS</title>
+  <title>Textamate2 - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="MacBookAirを購入するときにいつも迷うのは11インチにするか13インチにするかというところです。迷いながら1回目は11インチにしました。プログラムをやるときは大きい画面の方がよいですが、それ以外のことをやる時のことや持ち運びを考えると断然11インチがいい。 &hellip;">
+  <meta name="description" content="もう、半月以上前になりますがTextmate2がgithubで公開されたことを知りました。ずっとインストールしたいと思っていたのですが、後回しになっていました。やっと出来ます。 参考にしたのはこちらのサイト 公式
+[Mac] オープンソース化なテキストエディタ「TextMate 2」 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/03/air-display-and-macbook-air-11/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/09/02/textamate2/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +82,7 @@
   
   <header>
     
-      <h1 class="entry-title">MacBookAir11インチにした理由</h1>
+      <h1 class="entry-title">Textamate2</h1>
     
     
       <p class="meta">
@@ -97,7 +98,7 @@
   
 
 
-<time datetime="2012-07-03T21:59:00+09:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2012</time>
+<time datetime="2012-09-02T20:20:00+09:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,13 +107,84 @@
   </header>
 
 
-<div class="entry-content"><p>MacBookAirを購入するときにいつも迷うのは11インチにするか13インチにするかというところです。迷いながら1回目は11インチにしました。プログラムをやるときは大きい画面の方がよいですが、それ以外のことをやる時のことや持ち運びを考えると断然11インチがいい。</p>
+<div class="entry-content"><p>もう、半月以上前になりますがTextmate2がgithubで公開されたことを知りました。ずっとインストールしたいと思っていたのですが、後回しになっていました。やっと出来ます。</p>
 
-<p>最初はよくわからずメモリ2GB版を購入してしまい、Lionが来てから頻繁にフリーズするようになってしまいました。そして2回目の購入の機会がやってきます。</p>
+<p>参考にしたのはこちらのサイト</p>
 
-<p>2回目に選んだものそれもまたMBAでした。これを選んだ理由は前述のものもありますが、さらに付け加えて<a href="http://itunes.apple.com/jp/app/air-display/id368158927?mt=8">AirDisplay</a>というアプリがあったからだと思っています。2回目ともなると用途は明確で、CPUもメモリもアップグレードで迷いはありませんでした。一時的に出費は生じても普段使っている途中でフリーズするなどして無駄にする時間の累積の価値の方が高いですからね！</p>
+<ul>
+<li><a href="https://github.com/textmate/textmate">公式</a></li>
+<li><a href="http://tools4hack.santalab.me/howto-oss-textmate-build.html">[Mac] オープンソース化なテキストエディタ「TextMate 2」をビルドした手順メモ</a></li>
+<li><a href="http://blog.f13.jp/post/29942351173/textmate-2">TextMate 2をソースからコンパイルしてみる</a></li>
+</ul>
 
-<p>これをMacとつなげば簡単に2画面が実現します。これで、何かを参照しながら文を書いたりプログラミングをしたりすることが可能になります。どうせMacBookAirとiPadは同時に持ち歩いているので、わざわざ13インチを買う必要はないかなと。</p>
+
+<p>基本は、2つめのサイトを参考にしてやったのですが、少し違うやり方を取ったところもあるのでメモを残しておきます。</p>
+
+<h3>gitからクローンします</h3>
+
+<p>作業スペースはデスクトップでやりました。クローンして、フォルダの中に移動します。</p>
+
+<pre><code>cd ~/Desktop
+git clone git://github.com/textmate/textmate.git
+cd textmate/
+</code></pre>
+
+<p>参考サイトには、<code>git clone https://github.com/textmate/textmate.git</code>とあったのですが、自分の環境ではhttps:が失敗したので<code>git:</code>でやりました。</p>
+
+<h3>必要なものをインストールします</h3>
+
+<p>最初失敗していたのですが、参考サイトの3つめを見て<code>brew update</code>したところ成功しました。</p>
+
+<pre><code>$ brew update
+$ brew install ragel boost multimarkdown hg ninja
+</code></pre>
+
+<h3>混沌</h3>
+
+<p>もしこのブログを参考にされている方がいれば、この混沌の箇所は飛ばして先にビルドをしてみてください。僕はここで恐らく無駄なことをしてつまずきました。</p>
+
+<h3>ビルド！</h3>
+
+<p>公式にあるとおりに下記の処理を実行して成功です！</p>
+
+<pre><code>git submodule update --init
+./configure &amp;&amp; ninja
+</code></pre>
+
+<p>Applicationsフォルダに移動して完了!</p>
+
+<pre><code>cp -r ~/build/TextMate/Applications/TextMate/TextMate.app /Applications/
+</code></pre>
+
+<h3>とりあえず設定</h3>
+
+<p>やった成功！日本語の入力も問題なし！
+ということで、初期設定をちょこっとやります。</p>
+
+<p>まずPreferencesのTerminalでPathを設定します。これで、<code>mate</code>が使えるようになります。</p>
+
+<p>テーマについてですが、変えられないのかな！？と思ったところ発見しました！これもPreferencesのBundlesでThemesタブをクリックすると選択肢が出てくるので、チエックすればインストールされます。インストールされたThemeはViewから適用できます。とりあえず昔使ってたのに近い<code>Blackboard</code>にしました！<code>Oceanic</code>も良かったけど。</p>
+
+<p>あとは、Runの設定です。これ苦戦しました。ですがなんとか解決です。これについては躓く人もいると思いますので、別記事で書こうと思います。</p>
+
+<h3>つまずきメモ</h3>
+
+<p>混沌の箇所ではまっていた部分です。。。</p>
+
+<p>(あとで分かったのですがMountain Lionではやっぱり以下の処理はいらないかも)</p>
+
+<p>ここでビルドしようとしたのですが失敗しました。公式にあるようにproctoolsを入れないといけないようです。Lionの場合とあったのでやらなかったのですが、Mountain Lionでも同様の様子。</p>
+
+<pre><code>brew install proctools
+</code></pre>
+
+<p>ぐは、<code>Failed executing: bsdmake</code>というエラーが出ました。メッセージにある通り<code>brew doctor</code>を実行。<code>libtool</code>ってのの依存関係がおかしいと合ったので<code>brew install</code>を。</p>
+
+<pre><code>brew doctor
+brew install libtool
+</code></pre>
+
+<p>成功！でも、<code>brew install proctools</code>は再度失敗。再度<code>brew doctor</code>を行ったところ、パスの順番を変えてみればということだったので、<a href="http://d.hatena.ne.jp/koseki2/20081201/macportPath">こちら</a>を参考に/usr/local/binを前に（以前やったはずだけどMLインストールの時にリセットされたのかな？？）。で、<code>brew doctor</code>ではエラーはなくなったけど<code>proctools</code>のインストールには失敗する。。</p>
 </div>
 
 
@@ -135,7 +207,7 @@
   
 
 
-<time datetime="2012-07-03T21:59:00+09:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2012</time>
+<time datetime="2012-09-02T20:20:00+09:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2012</time>
       
 
 
@@ -143,7 +215,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/03/air-display-and-macbook-air-11/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/03/air-display-and-macbook-air-11/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/09/02/textamate2/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/09/02/textamate2/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -156,10 +228,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/03/vim/" title="Previous Post: vim">&laquo; vim</a>
+        <a class="basic-alignment left" href="/blog/2012/07/26/dash/" title="Previous Post: Dashが快適！">&laquo; Dashが快適！</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/03/php-login/" title="Next Post: php login">php login &raquo;</a>
       
     </p>
   </footer>
@@ -277,8 +347,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/03/air-display-and-macbook-air-11/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/03/air-display-and-macbook-air-11/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/09/02/textamate2/';
+        var disqus_url = 'http://morizotter.com/blog/2012/09/02/textamate2/';
         var disqus_script = 'embed.js';
       
     (function () {
