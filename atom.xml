@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-03T00:59:40+09:00</updated>
+  <updated>2012-09-03T03:39:25+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -25,11 +25,17 @@
 <pre><code>Support/TextMate/Managed/Bundles/Ruby.tmbundle/Support/RubyMate/run_script.rb:1: undefined method `+' for nil:NilClass (NoMethodError)
 </code></pre>
 
-<p>というエラーが出て先に進みません。いろいろ試行錯誤した結果これを解消する方法が見つかりました。PreferencesのBundlesで<code>Bundle Support</code>にチェックを入れるだけです！</p>
+<p>というエラーが出て先に進みません。いろいろ試行錯誤した結果これを解消する方法が見つかりました。</p>
+
+<p>まずは、PreferencesのBundlesで<code>Bundle Support</code>にチェックを入れます！</p>
 
 <p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2rubyrun.png"></p>
 
-<p>これだけでした。。。</p>
+<p>そして、設定を変更します。</p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2rubyversion.png"></p>
+
+<p>上記の3つはあったほうがよさそうです。これで希望のバージョンで実行することができます。</p>
 
 <p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2run.png"></p>
 
