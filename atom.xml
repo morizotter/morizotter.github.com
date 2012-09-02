@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-03T00:22:51+09:00</updated>
+  <updated>2012-09-03T00:49:32+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[textmate2 ruby run]]></title>
+    <title type="html"><![CDATA[Textmate2でrubyを実行する]]></title>
     <link href="http://morizotter.com/blog/2012/09/03/textmate2-ruby-run/"/>
     <updated>2012-09-03T00:16:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/09/03/textmate2-ruby-run</id>
@@ -27,14 +27,16 @@
 
 <p>というエラーが出て先に進みません。いろいろ試行錯誤した結果これを解消する方法が見つかりました。PreferencesのBundlesで<code>Bundle Support</code>にチェックを入れるだけです！</p>
 
-<p><img src="http://dl.dropbox.com/u/8131276/octopress/textmate2rubyrun.png"></p>
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2rubyrun.png"></p>
 
 <p>解決のヒントになったのは<a href="http://comments.gmane.org/gmane.editors.textmate.general/34487">この記事</a>です。ありがとうございました！</p>
+
+<p>これに3時間は悩まされた。。。</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Textamate2]]></title>
+    <title type="html"><![CDATA[Textamate2のインストール]]></title>
     <link href="http://morizotter.com/blog/2012/09/02/textamate2/"/>
     <updated>2012-09-02T20:20:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/09/02/textamate2</id>
