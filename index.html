@@ -9,8 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="tes
-">
+  <meta name="description" content="前回の記事でTextmate2のビルドを書きましたが、今回は続きでRubyの実行(Run)についてです。 そのまま実行（⌘+R）すると、 Support/TextMate/Managed/Bundles/Ruby.tmbundle/Support/RubyMate/run_script.rb:1 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -110,7 +109,16 @@
   </header>
 
 
-  <div class="entry-content"><p>tes</p>
+  <div class="entry-content"><p><a href="http://www.morizotter.com/blog/2012/09/02/textamate2/">前回の記事</a>でTextmate2のビルドを書きましたが、今回は続きでRubyの実行(Run)についてです。</p>
+
+<p>そのまま実行（⌘+R）すると、</p>
+
+<pre><code>Support/TextMate/Managed/Bundles/Ruby.tmbundle/Support/RubyMate/run_script.rb:1: undefined method `+' for nil:NilClass (NoMethodError)
+</code></pre>
+
+<p>というエラーが出て先に進みません。いろいろ試行錯誤した結果これを解消する方法が見つかりました。PreferencesのBundlesで<code>Bundle Support</code>にチェックを入れるだけです！</p>
+
+<p><img src="http://dl.dropbox.com/u/8131276/octopress/textmat2rubyrun.png"></p>
 </div>
   
   
