@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-03T03:39:25+09:00</updated>
+  <updated>2012-09-03T09:55:08+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -35,7 +35,12 @@
 
 <p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2rubyversion.png"></p>
 
-<p>上記の3つはあったほうがよさそうです。これで希望のバージョンで実行することができます。</p>
+<p>上記の3つはあったほうがよさそうです。これで希望のバージョンで実行することができます。このまま実行すると、以前は別画面で表示されていた実行ウィンドウがテキストウィンドウの下に表示されます。ちょっと邪魔なので、分離する方法を見つけました。</p>
+
+<pre><code>defaults write com.macromates.TextMate.preview htmlOutputPlacement window
+</code></pre>
+
+<p><a href="http://superuser.com/questions/367851/how-to-move-textmate-2-output-pane-to-a-new-window">Stackoverflow</a>情報です。さて実行。</p>
 
 <p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2run.png"></p>
 
