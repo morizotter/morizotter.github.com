@@ -9,9 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="コマンドラインでファイル検索できないと不便だなと思ったので、grepを学んでみることにした。 最初に参考にしたのはここ。基本的だと思う。テストとしてデスクトップに一つ適当にファイルを作ってみた。 $ cd ~/Desktop/
-$ mkdir test
-$ echo "test テスト" &gt &hellip;">
+  <meta name="description" content="最近、よく電車の中で移動中に記事を更新してる。このブログは完成度を高めるというよりも思いつきで断片的なことを書く傾向があるので、電車の中の移動時間が記事を書くのにちょうど良い。都内の移動なのでだいたい10分〜15分くらい。座れたら書くという感じ。 だいたいこれが最寄り駅のホームに着く頃にrake &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +78,110 @@ $ echo "test テスト" &gt &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/08/train-study/">電車の中での学習</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-08T22:29:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/08/train-study/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近、よく電車の中で移動中に記事を更新してる。このブログは完成度を高めるというよりも思いつきで断片的なことを書く傾向があるので、電車の中の移動時間が記事を書くのにちょうど良い。都内の移動なのでだいたい10分〜15分くらい。座れたら書くという感じ。</p>
+
+<p>だいたいこれが最寄り駅のホームに着く頃に<code>rake gen_deploy</code>する。で、余裕があれば扉が開く前に、<code>git add .</code>して<code>git commit -m "*"</code>して、<code>git push</code>する。たいてい、<code>git push</code>の途中で電車を降りるが、pushが終わってなかったら駅のベンチで終わりまで見守り歩き出す。</p>
+
+<p>そんな感じ。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/08/git-init/">gitで共有リポジトリを作る</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-08T22:15:00+09:00" pubdate data-updated="true">Jul 8<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/08/git-init/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://blog.s21g.com/articles/1312">共有リポジトリを作る</a>という記事が非常に参考になったので備忘録として記しておきます。</p>
+
+<p>基本的にはからのリポジトリを<code>&lt;任意の名前&gt;.git</code>という形で作り、</p>
+
+<pre><code>git init --bare --shared=true
+</code></pre>
+
+<p>をするということですね。</p>
+
+<p><code>--bare</code>オプションに関しては、<a href="http://d.hatena.ne.jp/naokirin/20111201/1322576109">ここ</a>を参考にすると、管理ファイルのみのリポジトリを作成するということなんですね。で、グループ作業するときには<code>--shared=true</code>を指定すると。</p>
+
+<p><code>--shared=true</code>を設定するとsshでアクセスしたときに自動的に適切なパーミッション設定をしてくれる？</p>
+
+<pre><code>If a user SSHs into a server and has write access to the /opt/git/my_project.git directory, they will also automatically have push access. Git will automatically add group write permissions to a repository properly if you run the git init command with the --shared option.
+</code></pre>
+
+<p><a href="http://git-scm.com/book/en/Git-on-the-Server-Getting-Git-on-a-Server#Putting-the-Bare-Repository-on-a-Server">Putting the Bare Repository on a Server</a></p>
+
+<p>この辺りはちょっとまだわかっていません。</p>
+
+<p>あとはローカルの方でgit pushするとcloneできるようです。</p>
+
+<p>完全に理解した訳ではないですが、上記の件だけでだいぶgitが身近になった気分です。</p>
+
+<p>Dropboxに共有リポジトリを作る方法は<a href="http://naoki.sato.name/lab/archives/38">こちら</a>を参考にしました。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -592,149 +694,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/07/macbook-air-2012/">Macbook Air mid 2012が届いた！</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-07T10:12:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/07/macbook-air-2012/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.apple.com/jp/macbookair/">MacbookAir Mid 2012</a>が届いた！これから設定！設定の過程を記しておこうと思います。</p>
-
-<p>移行アシスタントで一気に移行してみてもよかったんですが、ほとんどDropboxやiCloudやEvernoteなので移行らくちん。面倒なのはPHPやMySQLなどの環境系だけなので、勉強も兼ねつつ環境系は再設定するということで、きれいな状態からやります！</p>
-
-<h2>構成</h2>
-
-<ul>
-<li>11インチ</li>
-<li>2.0GHz Intel Corei7 (Turbo Boost使用時最大2.6GHz)</li>
-<li>8GB</li>
-<li>256GB</li>
-<li>USキーボード</li>
-</ul>
-
-
-<h2>ファーストインプレッション</h2>
-
-<p><strong>早い！</strong></p>
-
-<p>MacbookAir2010と比べると格段の差です。まぁ以前はメモリ2GBでLionにしてからメモリぎりぎりでやってるしな〜。2012は検索やウィンドウを閉じるときなど早いです。きれいな環境というのもあると思いますが！</p>
-
-<h2>セッティング開始</h2>
-
-<h4>ソフトウェア・ダウンロード</h4>
-
-<p>早速実行したのはソフトウェアダウンロード。いくつか更新がありました。</p>
-
-<h4>システム環境設定</h4>
-
-<p>Finderの設定を変更。トラックパッドの設定を変更。ことえりをいれとく。へー、アイヌ語キーボードなんてあるんだ。アイヌ語って文字あったっけな。ふむ。便宜的に日本語を拡張して表現するのか。USキーボードの<code>Command+Space</code>に慣れなきゃな。いちおキーボードのファンクションキーを使えるようにしておく。コンピュータ名が&#8221;〜〜no Macbook Air&#8221;とか変な感じだったので共有から変更。</p>
-
-<h4>アプリをインストール</h4>
-
-<p>DropboxとEvernoteをインストールして同期。がっつり同期！GoogleChromeインストール。最近、iOS系でAppStoreに問題がありインストールしても起動しないなどのエラーが心配だったが、ちょっと調べて問題は解決してるらしいので、他のアプリもDL、TwitterとかPixelmaterとかスカイプとかiWorkとかiTerms2とかいろいろ！ MacAppStoreからOS X Lionがダウンロードできるんだけど何だろう。Snowleopard用かな。ちなみに、The Tiny Bang Stroyってゲーム面白いっす。</p>
-
-<h4>もう移行終わり？</h4>
-
-<p>んーーー。これでほぼ移行完了したっぽい。。10分くらいだよこれ。すごすぎる。まぁ、今裏ではEvernoteやDropboxが、そしてiCloudがメール関係で動いてるっぽいけど。移行アシスタント必要ないな。</p>
-
-<hr />
-
-<h4>ちょい手間取った1</h4>
-
-<p>あ、Photoshopの移行忘れてた！現行のPhotoshopをアンインストールしてライセンス認証を解除してっと。うは、新しいMacBook Airにソフトをインストールするにはどうすればいいの！？</p>
-
-<p>Adobeの体験版ダウンロードページに行ってもCS5のダウンロードは終了しているということ。サポートフォーラムでも、インストール用CDやDVDがない場合は、アップグレードの推奨。うーむ、困った。</p>
-
-<p>ネットを探してもグレーっぽいものしか見つからず来週Adobeに電話するかと諦めかけていたところで、昔購入した本にCS5の体験版があったことを思い出した。で、はじめて<a href="http://support.apple.com/kb/HT5287?viewlocale=ja_JP">リモートディスク</a>を使いiMacに接続、CD-ROMから無事インストールし、Adobeのサイトに登録していたシリアルから無事ライセンス認証をクリアしたのでした。</p>
-
-<h4>ちょい手間取った2</h4>
-
-<p>メールアドレスが増えすぎちゃっているのだが、ほとんどgmailなので登録は一発。ただ、さくらのメール設定には苦戦した。ユーザ名はメールアドレスなので。でも、最終的に躓いた原因はパスワードの間違えでした。あふあふ。</p>
-
-<p>さて、基本設定はこれでほぼ終わりかな。次は恐怖の環境設定です。Homebrewで一通りやろうと思ってます。phpの設定ファイルとか面倒そうだ！</p>
-
-<p><a href="http://www.morizotter.com/blog/2012/07/07/macbook-air-2012-env/">環境設定について読む</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/06/numbers/">少しNumbersのことを</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-06T13:34:00+09:00" pubdate data-updated="true">Jul 6<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/06/numbers/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今日は少しNumbersのことを学ぼうと思っている。Numbersはプログラムを書く前に思考を整理したりするのに使っている。ただ単に項目を列挙するだけのシンプルな使い方。だけど、やっぱりExcelほど使いこなしていない。</p>
-
-<h3>選択中のセルを編集</h3>
-
-<p>Numbersについてちょっと学ぼうと思ったのは、ExcelのF2にあたる<strong>選択中のセルを編集</strong>機能を当たりをつけて探っていたところ、<code>Option+Enter</code>でできたことがきっかけ。これがあるだけで、大分違う。できるだけ、トラックパッドやマウスを使わないで作業をしたいのだ。</p>
-
-<h3>セルの中で改行</h3>
-
-<p>他に便利なのは確か<code>Alt+Enter</code>にあたる<code>Option+Enter</code>。セルの中で改行ができる。</p>
-
-<h3>行を追加</h3>
-
-<p>うっほ、<code>Option+↑</code>で行を追加できるのね！これはいい！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/5/">&larr; Older</a>
@@ -758,6 +717,14 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/09/10/making-logviewer/">making-logviewer</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/03/about-twitter-bootstarap/">TwitterBootstrapについて</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/09/03/textmate2-ruby-run/">Textmate2でrubyを実行する</a>
       </li>
     
@@ -767,14 +734,6 @@ Target /usr/local/bin/git-credential-osxkeychain already exists. You may need to
     
       <li class="post">
         <a href="/blog/2012/07/26/dash/">Dashが快適！</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/26/xcode4-dot-4/">xcode4.4でコード補完できなくなる問題が解消！？</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/23/textmate-ruby-version/">textMateでテスト実行時のRubyのバージョンを変更する！</a>
       </li>
     
   </ul>

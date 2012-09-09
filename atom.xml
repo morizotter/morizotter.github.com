@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-03T09:56:20+09:00</updated>
+  <updated>2012-09-10T02:24:43+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[making-logviewer]]></title>
+    <link href="http://morizotter.com/blog/2012/09/10/making-logviewer/"/>
+    <updated>2012-09-10T02:21:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/09/10/making-logviewer</id>
+    <content type="html"><![CDATA[<p>勉強も兼ねていろいろiOSアプリの部品を作ったりしているんだけど、その副産物としてLogViewerってのができそう。Logをコンソールじゃなくてアプリに表示するって感じ。</p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/logViewerMax.png"></p>
+
+<p>サイズ変更とかも一応できる。常に全面だと邪魔だしアプリ操作できなかったら意味ないし。</p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/logViewerSmall.png"></p>
+
+<p>近日中にgithubで公開しようと思います！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[TwitterBootstrapについて]]></title>
+    <link href="http://morizotter.com/blog/2012/09/03/about-twitter-bootstarap/"/>
+    <updated>2012-09-03T23:00:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/09/03/about-twitter-bootstarap</id>
+    <content type="html"><![CDATA[<p>使いたいと思っているが、なかなか手を出せていない。電車の中などまとまった時間が取れない時にちょっとずつドキュメントでも読むかな。で、ちょっとずつスニペットでも登録していこう。</p>
+
+<p><a href="http://twitter.github.com/bootstrap/getting-started.html">Twitter Bootstrap - Getting started</a></p>
+
+<p>はやくこれ使いこなしたいぜ！Dashでスニペット登録しちゃえば、サクサク作れそう！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Textmate2でrubyを実行する]]></title>
@@ -788,165 +818,6 @@ origin  git://github.com/imathis/octopress.git (push)
 <p>反映されました（＞＜）</p>
 
 <p>ただ単に<code>rake generate</code>を忘れてただけだったみたいです！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[gitのブランチについて学ぶ]]></title>
-    <link href="http://morizotter.com/blog/2012/07/14/git-branch/"/>
-    <updated>2012-07-14T14:12:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/14/git-branch</id>
-    <content type="html"><![CDATA[<p>調子に乗ってgitのブランチについても学ぼうと思います！最近、誰かが書いたブログ記事から学ぶことが多いのですが、これってなんて素晴らしいことなんでしょうね。知識の共有って善だと思います。確かに本の方がまとまっていたり、全体を俯瞰できたりする点は優れているのですが、個人のブログのほうがリアルでしかも情報量が適切で飽きません。また、書いた人の個性や工夫などが感じられて楽しいです！</p>
-
-<p>では、gitのbranchについて。</p>
-
-<p>基本的にはメインにmasterがあって、masterに変更を加えずbranchでいろいろ作業進めていって、良い感じだったらmasterにmergeするっていうのが今の漠然とした理解です。</p>
-
-<p>始めます。参考にしたのは、<a href="http://d.hatena.ne.jp/zariganitosh/20080912/1221260782">アリスがチャレンジなコードを書く時、git branchをちゃんと理解したい！</a>です。うー、これも結構前の記事なんだなぁ。僕がプログラミングをはじめたタイミングより2年も昔だ。</p>
-
-<p>作業前の僕のbranchの状態はこんなかんじです。</p>
-
-<pre><code>$ git branch
-* master
-</code></pre>
-
-<p>ここで、</p>
-
-<pre><code>$ git branch challenge
-</code></pre>
-
-<p>で、branchを作ります。こんな状態になります。</p>
-
-<pre><code>$ git branch
-  challenge
-* master
-</code></pre>
-
-<p>branchが作成されました。作業branchを変更して、現在どのbranchにいるか表示します。</p>
-
-<pre><code>$ git checkout challenge
-$ git branch
-* challenge
-  master
-</code></pre>
-
-<!-- more -->
-
-
-<p>こんな感じになりました。現在の作業branchはchallengeです。とりあえずこの状態でファイルに変更を加えて、新たにファイルを作成して<code>git add .</code>してcommitしてみました。現在のファイルです。</p>
-
-<pre><code>$ ls
-t.txt   u.txt
-</code></pre>
-
-<p>この状態で、masterブランチに変更してみます。</p>
-
-<pre><code>$ git checkout master
-Switched to branch 'master'
-$ git branch
-  challenge
-* master
-$ ls
-t.txt
-</code></pre>
-
-<p>うほ。良い感じ。ファイルの中身を見ても先ほど加えた変更が何にも反映されてません!ちょっとここから参考にしているブログが難しくなってくるのでちょっと飛ばして、masterで今の変更をmergeします。</p>
-
-<pre><code>$ git merge challenge
-$ ls
-t.txt   u.txt
-</code></pre>
-
-<p>できました！良い感じ。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[gitで現在と過去をいったりきたり]]></title>
-    <link href="http://morizotter.com/blog/2012/07/14/git-git/"/>
-    <updated>2012-07-14T01:34:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/14/git-git</id>
-    <content type="html"><![CDATA[<p>さて、gitの学習の時間です。今では毎日暇さえあればgitしてます。なんか気持ちいいんですよね。でも、せっかくgitを使っているのにコミットするばかりで、あまり過去の履歴を見たり過去に戻ったりしていません。</p>
-
-<p>これからちょっと、過去に戻ったり、現在に戻ってきたりやってみようと思います。ネットで探したらよい記事がたくさん！</p>
-
-<p>まずは、<a href="http://d.hatena.ne.jp/idesaku/20091106/1257507849">Git初心者が絶対に覚えておくべきコマンド</a>を参考に学習していきます！</p>
-
-<h2>git &#8211;amend</h2>
-
-<p><strong>直前のコミットを修正</strong></p>
-
-<p><code>git --amend</code>で直前のコミットの内容を修正！できました！良い感じです。ちなみに、やり方としては、<code>git commit -m "t.txtを変更しまshia"</code>とか変なコミット文を打ってしまったときは、</p>
-
-<pre><code>git --amend -m "t.txtを変更しました。"
-</code></pre>
-
-<p>とやれば直前のコミット文が上書きされます。またコード上でも、例えば<code>NSString *widht;</code>とかやっちゃっているときに、コードを修正して、<code>git add .</code>して、</p>
-
-<pre><code>git --amend -m "適当なコミット文"
-</code></pre>
-
-<p>をすれば、直近のコミットが上書きされます。どっかの時点に戻ってしまうということもありません。これは便利！僕の場合、ついコミットしてしまってコミット後に動かしてアプリが落ちるので微修正して再度コミットということがちょくちょくあるので便利に使えそうです。</p>
-
-<h2>git reset</h2>
-
-<p><strong>指定位置まで戻る</strong></p>
-
-<p>先ほどのコミットが終わったあと、logを出し、一応最新のSHAをメモってから、</p>
-
-<pre><code>git reset HEAD^
-</code></pre>
-
-<p>とやってみました。すると最後のコミットをしていない状態に戻りました。<code>git log</code>で確認してみると、最後のコミットの情報が表示されません。ただ単にコミット前に戻っただけで、ソースは何も変わっていませんでした。git resetはHEADの位置を変更することが出来るようです。<code>^</code>はどのくらい前に戻るかということなんでしょうかね。うほ。HEADのいちを移動できるということは、新たにコミットしなければさっきの状態に戻れるかなと思い、以下のコマンドを実行してみました。</p>
-
-<pre><code>git reset e66e5…(先ほどメモしたSHA)
-</code></pre>
-
-<p>すると、最新の状態に戻りました！<code>git status</code>とやっても変更点はないとメッセージが出るだけです。<code>git log</code>を確認して、２つ前に戻ってみました</p>
-
-<pre><code>git reset ga1rg…（２つ前のSHA）
-</code></pre>
-
-<p>戻りました。というか、コードは全く変わってないのですが、2つ前より後にcommitしたものは、すべて未commitの状態に戻りました。この状態から最新の状態にも戻れました。更にもう一度2つ前の状態に戻って、</p>
-
-<p><a href="http://transitive.info/article/git/command/checkout/">git checkoutの使い方</a>を参考に、修正されているファイルを修正前の状態に戻します。</p>
-
-<pre><code>git checkout t.txt
-</code></pre>
-
-<p><code>git status</code>で見たところ、変更点はないというメッセージのみになりました。そして、この状態でちょっと変更を加えてコミット。更に、先ほどの最新の状態のSHAへ<code>git reset e66e5…(先ほどメモしたSHA)</code>で戻って見ることにしました。</p>
-
-<p>ここで少々ややこしいことになりました。2つ前に戻って変更した部分が未コミットのadd候補、そしてe66e5…にはあるが2つ前に戻って変更したファイルにない部分がrm候補の未コミット状態で復活しました。とりあえず、ファイル自体は2つ前に戻って変更したものと変わらないようです。</p>
-
-<p>ふむふむ。</p>
-
-<p>そして最後に紹介されているのが、</p>
-
-<h2>git reflog</h2>
-
-<p><strong>HEADの変更の経緯を見ることができる</strong></p>
-
-<p>ずらっと出てきた。</p>
-
-<pre><code>c7d36af HEAD@{0}: reset: moving to c7d36af...
-57a61a6 HEAD@{1}: commit: この状態の変更は？って文を追加
-e66e588 HEAD@{2}: reset: moving to HEAD^
-c7d36af HEAD@{3}: reset: moving to c7d36af...
-0887fdb HEAD@{4}: reset: moving to 0887fdb...
-c7d36af HEAD@{5}: reset: moving to c7d36af...
-e66e588 HEAD@{6}: reset: moving to HEAD^
-c7d36af HEAD@{7}: commit: -追加
-e66e588 HEAD@{8}: commit (amend): コミット文を変更
-6727c21 HEAD@{9}: commit (amend): 3
-e130159 HEAD@{10}: commit: 3
-0887fdb HEAD@{11}: commit: 更に文を追加
-8d426c4 HEAD@{12}: commit: 文を追加
-3c20bd5 HEAD@{13}: commit (initial): initial commit
-</code></pre>
-
-<p>ウホ、良い感じ。上記の&#8221;…&#8221;の部分は、伏せているだけで実際はちゃんとSHAが出てきます。これで、自分が作業してきたHEADの戻りたい部分に戻れるわけですね！</p>
-
-<p>いや、このブログ分量も適切で説明もわかり易くほんとうに勉強になりました！</p>
 ]]></content>
   </entry>
   

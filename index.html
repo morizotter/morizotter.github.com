@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="前回の記事でTextmate2のビルドを書きましたが、今回は続きでRubyの実行(Run)についてです。 そのまま実行（⌘+R）すると、 Support/TextMate/Managed/Bundles/Ruby.tmbundle/Support/RubyMate/run_script.rb:1 &hellip;">
+  <meta name="description" content="勉強も兼ねていろいろiOSアプリの部品を作ったりしているんだけど、その副産物としてLogViewerってのができそう。Logをコンソールじゃなくてアプリに表示するって感じ。 サイズ変更とかも一応できる。常に全面だと邪魔だしアプリ操作できなかったら意味ないし。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,94 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/09/10/making-logviewer/">making-logviewer</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-10T02:21:00+09:00" pubdate data-updated="true">Sep 10<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/09/10/making-logviewer/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>勉強も兼ねていろいろiOSアプリの部品を作ったりしているんだけど、その副産物としてLogViewerってのができそう。Logをコンソールじゃなくてアプリに表示するって感じ。</p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/logViewerMax.png"></p>
+
+<p>サイズ変更とかも一応できる。常に全面だと邪魔だしアプリ操作できなかったら意味ないし。</p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/logViewerSmall.png"></p>
+
+<p>近日中にgithubで公開しようと思います！</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/09/03/about-twitter-bootstarap/">TwitterBootstrapについて</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-03T23:00:00+09:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2012</time>
+        
+         | <a href="/blog/2012/09/03/about-twitter-bootstarap/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>使いたいと思っているが、なかなか手を出せていない。電車の中などまとまった時間が取れない時にちょっとずつドキュメントでも読むかな。で、ちょっとずつスニペットでも登録していこう。</p>
+
+<p><a href="http://twitter.github.com/bootstrap/getting-started.html">Twitter Bootstrap - Getting started</a></p>
+
+<p>はやくこれ使いこなしたいぜ！Dashでスニペット登録しちゃえば、サクサク作れそう！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -630,139 +718,6 @@ ls -lha
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/18/vundle/">vundleの設定とやらを!</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-18T22:39:00+09:00" pubdate data-updated="true">Jul 18<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/18/vundle/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Vimを使いこなしたいと思って、いろいろ調べていったらどうやらvundleを使ってプラグインを一元管理するのがよさそうということを知りました。そして良いサイトも幾つか！</p>
-
-<ul>
-<li><a href="http://www.curiosity-drives.me/2012/01/rails.html">今年こそ始める！何度も挫折した人のためのモダンVim再入門</a></li>
-</ul>
-
-
-<p>何はともあれ、ここを参考にすれば良いのではないでしょうか。参考になるYoutube動画や、理解を助けるリンクなどが充実しています。一番素晴らしいのは、この方の設定を一つ一つ説明してくれている点です。ここまで手取り足取り教えてもらえれば、すぐにある程度使いこなせるようになるんじゃないでしょうか。</p>
-
-<p>とか思ったんですが、不可でした（汗）。<strong>今の僕には</strong>。</p>
-
-<p>いきなり、参考の設定でが便利そうなプラグインをがっつり入れて、<code>:BundleInstall</code>したのですが、vimが全く分けのわからないものになってしまいました(;;)。多分、vimのシンプルなところが好きだった僕には高機能過ぎました。</p>
-
-<p>いろいろ説明見ていて思ったのですが、標準状態でvimを使っている人にとってはこれ失敗したと思ったら<code>.vim/bundle</code>と、<code>.vimrc</code>を削除すれば元に戻ると思います。そのあたりの気楽さはいいですね。</p>
-
-<p>で、まぁ消そうと思ったんですが、これから少しずつ試していくために基本設定だけは残しておこうと思って、ややこしそうなプラグインは全部<code>.vimrc</code>から削除して、<code>:BundleClean</code>しちゃいました。<code>:BundleClean</code>をすることで、<code>.vimrc</code>にないプラグインが<code>.vim/bundle</code>から削除されます。</p>
-
-<p>で、残したのはこれ。</p>
-
-<pre><code> set nocompatible               " be iMproved
- filetype off                   " required!
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
- " let Vundle manage Vundle
- " required!
- Bundle 'gmarik/vundle'
- "------------------------------------------------------------------
-
-
- "------------------------------------------------------------------
- filetype plugin indent on     " required!
- "
- " Brief help
- " :BundleList          - list configured bundles
- " :BundleInstall(!)    - install(update) bundles
- " :BundleSearch(!) foo - search(or refresh cache first) for foo
- " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
- "
- " see :h vundle for more details or wiki for FAQ
- " NOTE: comments after Bundle command are not allowed..
-</code></pre>
-
-<p>とりあえずの基本設定と、コマンドリストだけです。
-これから１つずつ理解してから入れていこうと思います。そういえば、<code>set number</code>とか基本的なものはちょこちょこ書いておこう。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/18/textmate-japanese/">TextMateを日本語化してみた</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-18T20:13:00+09:00" pubdate data-updated="true">Jul 18<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/18/textmate-japanese/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Rubyを使っている人の8割（世界）はTextMateを使っているという情報をネットで見て、入れてみました。シェアウェアなのでとりあえず30日間のフリートライアル期間を過ぎたら購入するか決めます（多分買います）。</p>
-
-<p><a href="http://macromates.com/">TextMate</a></p>
-
-<p>使ってみて動作が軽快で気持ちいいですね！サクサク、コード補完があるとやっぱいいなぁ。でも、日本語の入力がちょっとおかしいのがマイナスポイント。これは定番の問題らしいので、ネット上に記事がたくさんありました。で、いろいろ見たんですが、結局下記の２つを参照すればとりあえずいけるかなと。</p>
-
-<ol>
-<li><a href="http://hisasann.com/housetect/2008/05/railstextmate.html">Railsに最適なテキストエディター「TextMate」を入れて日本語化してみた</a></li>
-<li><a href="https://twitter.com/yusabana/statuses/194607922771263489">Google日本語入力のサジェストが邪魔な件に関するツイート</a></li>
-</ol>
-
-
-<p>上記２つを参考に設定完了。日本語が半角で表示されるのはちょっと…。だけどまぁ英語で補えばいいし、何より入力が気持ちいいので良い感じ。使って見てまた感想書きます！</p>
-
-<p>次は、viをPHP用にカスタマイズしてみるぞ！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -784,6 +739,14 @@ ls -lha
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/09/10/making-logviewer/">making-logviewer</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/03/about-twitter-bootstarap/">TwitterBootstrapについて</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/09/03/textmate2-ruby-run/">Textmate2でrubyを実行する</a>
       </li>
     
@@ -793,14 +756,6 @@ ls -lha
     
       <li class="post">
         <a href="/blog/2012/07/26/dash/">Dashが快適！</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/26/xcode4-dot-4/">xcode4.4でコード補完できなくなる問題が解消！？</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/23/textmate-ruby-version/">textMateでテスト実行時のRubyのバージョンを変更する！</a>
       </li>
     
   </ul>
