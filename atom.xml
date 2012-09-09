@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-10T02:29:07+09:00</updated>
+  <updated>2012-09-10T02:29:34+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[making-logviewer]]></title>
+    <title type="html"><![CDATA[iOSのログをデバッグ時にアプリで見る]]></title>
     <link href="http://morizotter.com/blog/2012/09/10/making-logviewer/"/>
     <updated>2012-09-10T02:21:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/09/10/making-logviewer</id>
