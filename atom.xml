@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-17T17:21:11+09:00</updated>
+  <updated>2012-09-17T17:22:43+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -24,13 +24,14 @@
 
 <p>Github上のREADME.mdで紹介はしていますが、まだ英語版しかできていないので簡単に説明します。</p>
 
-<p><img class="left" src="http://dl.dropbox.com/u/8131276/octopress/logviewer1.png" width="300" title="" ></p>
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/logviewer1.png" width="300" title="" ></p>
 
-<p>こんな感じです。</p>
+<p>見た目はこんな感じです。</p>
 
-<p><img class="left" src="http://dl.dropbox.com/u/8131276/octopress/logviewer2.png" width="300" title="" ></p>
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/logviewer2.png" width="300" title="" ></p>
 
-<p>小さくもできます。</p>
+<p>小さくもできます。
+不要なときはオフにしたり、色を変えたり、ログに日時をヒュ表示するかどうかなどが簡単に選択できるようになっています。</p>
 ]]></content>
   </entry>
   
