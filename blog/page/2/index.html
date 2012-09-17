@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="Vimを使いこなしたいと思って、いろいろ調べていったらどうやらvundleを使ってプラグインを一元管理するのがよさそうということを知りました。そして良いサイトも幾つか！ 今年こそ始める！何度も挫折した人のためのモダンVim再入門 何はともあれ、ここを参考にすれば良いのではないでしょうか。 &hellip;">
+  <meta name="description" content="一般的な人はコマンドラインでPCを扱うことはないと思う。で、作業を自動化する仕組みをウェブで作ろうとも思ったんだけど、ちょっとこれは面倒だということでバッチ・ファイルの作り方を検索してみました。バッチ・ファイルというのは、コマンドラインから実行するのではなく、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,69 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/19/batch-file/">バッチ・ファイルを作ってみた</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-19T22:23:00+09:00" pubdate data-updated="true">Jul 19<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/19/batch-file/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>一般的な人はコマンドラインでPCを扱うことはないと思う。で、作業を自動化する仕組みをウェブで作ろうとも思ったんだけど、ちょっとこれは面倒だということでバッチ・ファイルの作り方を検索してみました。バッチ・ファイルというのは、コマンドラインから実行するのではなく、ファイルをダブルクリックすることで実行できるファイルのことだそうです(<a href="http://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%83%81%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">wikipedia</a>)。</p>
+
+<ul>
+<li><a href="http://sakuranon.blog.fc2.com/blog-entry-27.html">macでバッチファイル実行</a></li>
+</ul>
+
+
+<p>とりあえずすぐに出てきてわかり易かったのがここです。紹介されているリンク先とあわせて見れば、基本的なことは抑えつつ、ファイルを作成することができました。</p>
+
+<p>作成したファイルはこれです。</p>
+
+<pre><code>#!/bin/bash
+MY_DIRNAME=$(dirname $0)
+cd $MY_DIRNAME
+ls -lha
+</code></pre>
+
+<ul>
+<li>一行目はシェルを使うよということ</li>
+<li>二行目はカレントディレクトリを読み込んでいるようです。</li>
+<li>で、三行目でカレントディレクトリに移動します。</li>
+<li>四行目で処理の実行です。</li>
+</ul>
+
+
+<p>ファイル名は<code>test.command</code>としました。で、これに<code>chmod u+x</code>で実行権限を与えます。ダブルクリックで使えました！次回はrubyを動かしてみよう！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -674,111 +737,6 @@ ggでテキスト最初の行
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/14/octopress-ruby-heroku/">OctopressをHerokuにデプロイ</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-14T15:38:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/14/octopress-ruby-heroku/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Octopress好きが続いています。最初に作ったこのブログがコーディングをテーマにしたものとしてある程度落ち着いてきたので、同じような感じで旅行とビジネスをテーマにしたブログ作成に挑戦してみました。githubでのホスティングはこのブログでやってしまったので、前から気になっていた<a href="http://www.heroku.com/">Heroku</a>でのデプロイを試してみようと思います。で、ブログには躓いたポイントを記しておきます。</p>
-
-<p>基本は、<a href="http://octopress.org/docs/setup/">Octopress Setup</a>を参考に勧めていきます。</p>
-
-<h2>はまり1: Rubyのバージョンがない？？</h2>
-
-<p>Rubyは1.9.3-p194が入っているはずなのに、cloneしたフォルダに入ると、</p>
-
-<pre><code>rbenv: version `1.9.2-p290' is not installed
-</code></pre>
-
-<p>という謎のエラーが出て進みませんでした。Rubyの設定ファイルか何かでlocalのRubyが指定されているのでしょうか？</p>
-
-<pre><code>$ rbenv local 1.9.3-p194
-</code></pre>
-
-<p>でlocalのRubyを変更してエラーはクリアしました（パッケージ管理はHomebrew, Rubyのバージョン管理はrbenvでやってます）。</p>
-
-<p>その後、以前と同様まだちゃんと理解していない、<code>gem install bundler</code>など手順通りにやっていきます。</p>
-
-<p><a href="http://octopress.org/docs/deploying/heroku/">Using Octopress With Heroku</a>へ進みます。</p>
-
-<h2>はまり2: herokuコマンドがnot found</h2>
-
-<p>資料にそって<code>gem install heroku</code>やったのに、<code>heroku</code>コマンドが使えない！</p>
-
-<pre><code>-bash: heroku: command not found
-</code></pre>
-
-<p>勝手にパスを追加して良いかとかまだ曖昧なのでとりあえず<a href="https://devcenter.heroku.com/articles/cli-command-not-found">herokuのTroubleShooting</a>を見て以下を実行。</p>
-
-<pre><code>$ gem environment
-</code></pre>
-
-<p>すると、PATHの場所として、</p>
-
-<pre><code> - GEM PATHS:
-    - /Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1
-    - /Users/&lt;username&gt;/.gem/ruby/1.9.1
-</code></pre>
-
-<p>こんなかんじで出てきた。そのあたりでherokuコマンドを探したら、</p>
-
-<pre><code>/Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/heroku
-</code></pre>
-
-<p>こんなところにあった。おしい。とりあえず上記の長いパスを入れてherokuコマンドを実行。herokuのサイトで登録したemailとパスワード聞かれたので入れたら自動的にmacのsshの情報が転送されていった。で、remoteにherokuが追加された。</p>
-
-<pre><code>$ git remote -v
-git@heroku.com:stormy-lightning-9306.git (fetch)
-heroku  git@heroku.com:stormy-lightning-9306.git (push)
-origin  git://github.com/imathis/octopress.git (fetch)
-origin  git://github.com/imathis/octopress.git (push)
-</code></pre>
-
-<p>このあと、パスの設定をしてみました。このあたり曖昧です。というかまぁ、パスを通すと長いパス打たなくて済むからいいよねというのは分かるんですが、$PATHに色々ぐちゃぐちゃ書いていいのかなと少し不安です。不安もありながら、<a href="https://devcenter.heroku.com/articles/cli-command-not-found">herokuのTroubleShooting</a>を参考に以下のようにやったところなんとかherokuコマンドを使えるようになりました。</p>
-
-<pre><code>export PATH=/Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/heroku-2.28.12/bin:$PATH
-</code></pre>
-
-<p>やっと次のステップに進めます。。。</p>
-
-<p>この後は順調でサイトが表示されるところまで行きました。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/07/14/octopress-ruby-heroku/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -802,6 +760,10 @@ origin  git://github.com/imathis/octopress.git (push)
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/09/17/logviewer/">iOS用LogViewerをgithubに公開しました</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/09/10/making-logviewer/">iOSのログをデバッグ時にアプリで見る</a>
       </li>
     
@@ -815,10 +777,6 @@ origin  git://github.com/imathis/octopress.git (push)
     
       <li class="post">
         <a href="/blog/2012/09/02/textamate2/">Textamate2のインストール</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/26/dash/">Dashが快適！</a>
       </li>
     
   </ul>

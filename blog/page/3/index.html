@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="調子に乗ってgitのブランチについても学ぼうと思います！最近、誰かが書いたブログ記事から学ぶことが多いのですが、これってなんて素晴らしいことなんでしょうね。知識の共有って善だと思います。確かに本の方がまとまっていたり、全体を俯瞰できたりする点は優れているのですが、 &hellip;">
+  <meta name="description" content="Octopress好きが続いています。最初に作ったこのブログがコーディングをテーマにしたものとしてある程度落ち着いてきたので、同じような感じで旅行とビジネスをテーマにしたブログ作成に挑戦してみました。githubでのホスティングはこのブログでやってしまったので、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,111 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/14/octopress-ruby-heroku/">OctopressをHerokuにデプロイ</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-14T15:38:00+09:00" pubdate data-updated="true">Jul 14<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/14/octopress-ruby-heroku/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Octopress好きが続いています。最初に作ったこのブログがコーディングをテーマにしたものとしてある程度落ち着いてきたので、同じような感じで旅行とビジネスをテーマにしたブログ作成に挑戦してみました。githubでのホスティングはこのブログでやってしまったので、前から気になっていた<a href="http://www.heroku.com/">Heroku</a>でのデプロイを試してみようと思います。で、ブログには躓いたポイントを記しておきます。</p>
+
+<p>基本は、<a href="http://octopress.org/docs/setup/">Octopress Setup</a>を参考に勧めていきます。</p>
+
+<h2>はまり1: Rubyのバージョンがない？？</h2>
+
+<p>Rubyは1.9.3-p194が入っているはずなのに、cloneしたフォルダに入ると、</p>
+
+<pre><code>rbenv: version `1.9.2-p290' is not installed
+</code></pre>
+
+<p>という謎のエラーが出て進みませんでした。Rubyの設定ファイルか何かでlocalのRubyが指定されているのでしょうか？</p>
+
+<pre><code>$ rbenv local 1.9.3-p194
+</code></pre>
+
+<p>でlocalのRubyを変更してエラーはクリアしました（パッケージ管理はHomebrew, Rubyのバージョン管理はrbenvでやってます）。</p>
+
+<p>その後、以前と同様まだちゃんと理解していない、<code>gem install bundler</code>など手順通りにやっていきます。</p>
+
+<p><a href="http://octopress.org/docs/deploying/heroku/">Using Octopress With Heroku</a>へ進みます。</p>
+
+<h2>はまり2: herokuコマンドがnot found</h2>
+
+<p>資料にそって<code>gem install heroku</code>やったのに、<code>heroku</code>コマンドが使えない！</p>
+
+<pre><code>-bash: heroku: command not found
+</code></pre>
+
+<p>勝手にパスを追加して良いかとかまだ曖昧なのでとりあえず<a href="https://devcenter.heroku.com/articles/cli-command-not-found">herokuのTroubleShooting</a>を見て以下を実行。</p>
+
+<pre><code>$ gem environment
+</code></pre>
+
+<p>すると、PATHの場所として、</p>
+
+<pre><code> - GEM PATHS:
+    - /Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1
+    - /Users/&lt;username&gt;/.gem/ruby/1.9.1
+</code></pre>
+
+<p>こんなかんじで出てきた。そのあたりでherokuコマンドを探したら、</p>
+
+<pre><code>/Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/heroku
+</code></pre>
+
+<p>こんなところにあった。おしい。とりあえず上記の長いパスを入れてherokuコマンドを実行。herokuのサイトで登録したemailとパスワード聞かれたので入れたら自動的にmacのsshの情報が転送されていった。で、remoteにherokuが追加された。</p>
+
+<pre><code>$ git remote -v
+git@heroku.com:stormy-lightning-9306.git (fetch)
+heroku  git@heroku.com:stormy-lightning-9306.git (push)
+origin  git://github.com/imathis/octopress.git (fetch)
+origin  git://github.com/imathis/octopress.git (push)
+</code></pre>
+
+<p>このあと、パスの設定をしてみました。このあたり曖昧です。というかまぁ、パスを通すと長いパス打たなくて済むからいいよねというのは分かるんですが、$PATHに色々ぐちゃぐちゃ書いていいのかなと少し不安です。不安もありながら、<a href="https://devcenter.heroku.com/articles/cli-command-not-found">herokuのTroubleShooting</a>を参考に以下のようにやったところなんとかherokuコマンドを使えるようになりました。</p>
+
+<pre><code>export PATH=/Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/heroku-2.28.12/bin:$PATH
+</code></pre>
+
+<p>やっと次のステップに進めます。。。</p>
+
+<p>この後は順調でサイトが表示されるところまで行きました。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/07/14/octopress-ruby-heroku/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -682,60 +787,6 @@ bashももっと学びたい！</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/09/us-vs-jpn-keyboard/">USキーボードに慣れてしまうと</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-09T01:15:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/09/us-vs-jpn-keyboard/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>新しいMacBook Air気に入ってます。早いです。キーボードもUSにして正解です。最初は慣れなかったのですが、<code>`</code>や<code>_</code>や<code>=</code>などが打ちやすいです。単体で考えればの話しですが&#8230;。</p>
-
-<p>mou US ya JIS nantenakunatte dochirakani touitsusarerebaiinoni!</p>
-
-<p>あああ</p>
-
-<p>US使いやすいです。</p>
-
-<p>でも、もう一台のMacはJISです。一気に使いづらくなりました。文章を書いている分にはいいのですが、<code>`</code>を打ったり、<code>_</code>を打ったり<code>=</code>を打ったりするときに、いちいちキーボードを見なきゃ行けなくなったりしてます。そして、最初に一番困ったのはEnterの押し間違えです。USの方がEnterが近いので（横に長い）、JISだと、<code>」</code>を入力しちゃいます。Controlの位置もたまに間違えます。最初は嫌だったのですが、Controlの位置はJISの方がよいかなと思います。<code>Control + A</code>だとか、<code>Control + K</code>だとかするときに、USだと小指の根元が痛くなります。まぁ、これも慣れと思ってがんばりますが。</p>
-
-<p>んー、USキーボード。単体では正解。プログラミングも早くなりますきっと。まぁ、出費になるけど家のiMacのキーボードはUS買い直せばよいのかなぁなんて思います。</p>
-
-<p>JISキーボードとの混在はややこしいですね。。他人のMacで作業することが多い場合はJISが無難なのかと思いましたよ。</p>
-
-<p>その点差し引いても、USはプログラミングはしやすくなると思うので正解だと思っていますが！</p>
-
-<p>どなたか、iMac日本語キーボード5ヶ月使用（結構きれい）とUSキーボード交換してくれる人いませんかねぇ。。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -759,6 +810,10 @@ bashももっと学びたい！</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/09/17/logviewer/">iOS用LogViewerをgithubに公開しました</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/09/10/making-logviewer/">iOSのログをデバッグ時にアプリで見る</a>
       </li>
     
@@ -772,10 +827,6 @@ bashももっと学びたい！</p>
     
       <li class="post">
         <a href="/blog/2012/09/02/textamate2/">Textamate2のインストール</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/26/dash/">Dashが快適！</a>
       </li>
     
   </ul>

@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="勉強も兼ねていろいろiOSアプリの部品を作ったりしているんだけど、その副産物としてLogViewerってのができそう。Logをコンソールじゃなくてアプリに表示するって感じ。 サイズ変更とかも一応できる。常に全面だと邪魔だしアプリ操作できなかったら意味ないし。 &hellip;">
+  <meta name="description" content="苦節数日ですが、iOS学習中に思いついたLogViewerをgithubに公開してみました。Xcodeのコンソールに表示されるログをアプリ上でも見ることができるという開発ビギナー向けのモジュールです。初めてモジュールを公開したので、いろいろおかしな所もあるかと思いますが、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,50 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/09/17/logviewer/">iOS用LogViewerをgithubに公開しました</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-17T17:12:00+09:00" pubdate data-updated="true">Sep 17<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/09/17/logviewer/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>苦節数日ですが、iOS学習中に思いついたLogViewerをgithubに公開してみました。Xcodeのコンソールに表示されるログをアプリ上でも見ることができるという開発ビギナー向けのモジュールです。初めてモジュールを公開したので、いろいろおかしな所もあるかと思いますが、徐々に修正していければいいなと考えています。</p>
+
+<p><a href="https://github.com/morizotter/LogViewer">LogViewer - Github</a></p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/logviewer1.png" width="250" title="" ></p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/logviewer2.png" width="250" title="" ></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -655,69 +699,6 @@ syntax on
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/19/batch-file/">バッチ・ファイルを作ってみた</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-19T22:23:00+09:00" pubdate data-updated="true">Jul 19<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/19/batch-file/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>一般的な人はコマンドラインでPCを扱うことはないと思う。で、作業を自動化する仕組みをウェブで作ろうとも思ったんだけど、ちょっとこれは面倒だということでバッチ・ファイルの作り方を検索してみました。バッチ・ファイルというのは、コマンドラインから実行するのではなく、ファイルをダブルクリックすることで実行できるファイルのことだそうです(<a href="http://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%83%81%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">wikipedia</a>)。</p>
-
-<ul>
-<li><a href="http://sakuranon.blog.fc2.com/blog-entry-27.html">macでバッチファイル実行</a></li>
-</ul>
-
-
-<p>とりあえずすぐに出てきてわかり易かったのがここです。紹介されているリンク先とあわせて見れば、基本的なことは抑えつつ、ファイルを作成することができました。</p>
-
-<p>作成したファイルはこれです。</p>
-
-<pre><code>#!/bin/bash
-MY_DIRNAME=$(dirname $0)
-cd $MY_DIRNAME
-ls -lha
-</code></pre>
-
-<ul>
-<li>一行目はシェルを使うよということ</li>
-<li>二行目はカレントディレクトリを読み込んでいるようです。</li>
-<li>で、三行目でカレントディレクトリに移動します。</li>
-<li>四行目で処理の実行です。</li>
-</ul>
-
-
-<p>ファイル名は<code>test.command</code>としました。で、これに<code>chmod u+x</code>で実行権限を与えます。ダブルクリックで使えました！次回はrubyを動かしてみよう！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -739,6 +720,10 @@ ls -lha
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/09/17/logviewer/">iOS用LogViewerをgithubに公開しました</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/09/10/making-logviewer/">iOSのログをデバッグ時にアプリで見る</a>
       </li>
     
@@ -752,10 +737,6 @@ ls -lha
     
       <li class="post">
         <a href="/blog/2012/09/02/textamate2/">Textamate2のインストール</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/26/dash/">Dashが快適！</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-11T02:07:21+09:00</updated>
+  <updated>2012-09-17T17:19:42+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS用LogViewerをgithubに公開しました]]></title>
+    <link href="http://morizotter.com/blog/2012/09/17/logviewer/"/>
+    <updated>2012-09-17T17:12:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/09/17/logviewer</id>
+    <content type="html"><![CDATA[<p>苦節数日ですが、iOS学習中に思いついたLogViewerをgithubに公開してみました。Xcodeのコンソールに表示されるログをアプリ上でも見ることができるという開発ビギナー向けのモジュールです。初めてモジュールを公開したので、いろいろおかしな所もあるかと思いますが、徐々に修正していければいいなと考えています。</p>
+
+<p><a href="https://github.com/morizotter/LogViewer">LogViewer - Github</a></p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/logviewer1.png" width="250" title="" ></p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/logviewer2.png" width="250" title="" ></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOSのログをデバッグ時にアプリで見る]]></title>
@@ -721,103 +736,6 @@ p 1.0.eql? 1    #=&gt;false
 
 
 <p>まぁそうは言っても、簡単にMacにアクセスできるのは素晴らしいですね！旅行先でも気軽にOctopressで投稿できそうですw Octopressは便利なんですが、ターミナル使う必要がありますからねぇ。。sshで接続すればいいのかもしれないのですが、ちょっと設定が面倒なので、まぁほとんど使う機会もないですし、LogMeInをもう少し使い続けそうです。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[OctopressをHerokuにデプロイ]]></title>
-    <link href="http://morizotter.com/blog/2012/07/14/octopress-ruby-heroku/"/>
-    <updated>2012-07-14T15:38:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/14/octopress-ruby-heroku</id>
-    <content type="html"><![CDATA[<p>Octopress好きが続いています。最初に作ったこのブログがコーディングをテーマにしたものとしてある程度落ち着いてきたので、同じような感じで旅行とビジネスをテーマにしたブログ作成に挑戦してみました。githubでのホスティングはこのブログでやってしまったので、前から気になっていた<a href="http://www.heroku.com/">Heroku</a>でのデプロイを試してみようと思います。で、ブログには躓いたポイントを記しておきます。</p>
-
-<p>基本は、<a href="http://octopress.org/docs/setup/">Octopress Setup</a>を参考に勧めていきます。</p>
-
-<h2>はまり1: Rubyのバージョンがない？？</h2>
-
-<p>Rubyは1.9.3-p194が入っているはずなのに、cloneしたフォルダに入ると、</p>
-
-<pre><code>rbenv: version `1.9.2-p290' is not installed
-</code></pre>
-
-<p>という謎のエラーが出て進みませんでした。Rubyの設定ファイルか何かでlocalのRubyが指定されているのでしょうか？</p>
-
-<pre><code>$ rbenv local 1.9.3-p194
-</code></pre>
-
-<p>でlocalのRubyを変更してエラーはクリアしました（パッケージ管理はHomebrew, Rubyのバージョン管理はrbenvでやってます）。</p>
-
-<p>その後、以前と同様まだちゃんと理解していない、<code>gem install bundler</code>など手順通りにやっていきます。</p>
-
-<p><a href="http://octopress.org/docs/deploying/heroku/">Using Octopress With Heroku</a>へ進みます。</p>
-
-<h2>はまり2: herokuコマンドがnot found</h2>
-
-<p>資料にそって<code>gem install heroku</code>やったのに、<code>heroku</code>コマンドが使えない！</p>
-
-<pre><code>-bash: heroku: command not found
-</code></pre>
-
-<p>勝手にパスを追加して良いかとかまだ曖昧なのでとりあえず<a href="https://devcenter.heroku.com/articles/cli-command-not-found">herokuのTroubleShooting</a>を見て以下を実行。</p>
-
-<pre><code>$ gem environment
-</code></pre>
-
-<p>すると、PATHの場所として、</p>
-
-<pre><code> - GEM PATHS:
-    - /Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1
-    - /Users/&lt;username&gt;/.gem/ruby/1.9.1
-</code></pre>
-
-<p>こんなかんじで出てきた。そのあたりでherokuコマンドを探したら、</p>
-
-<pre><code>/Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/heroku
-</code></pre>
-
-<p>こんなところにあった。おしい。とりあえず上記の長いパスを入れてherokuコマンドを実行。herokuのサイトで登録したemailとパスワード聞かれたので入れたら自動的にmacのsshの情報が転送されていった。で、remoteにherokuが追加された。</p>
-
-<pre><code>$ git remote -v
-git@heroku.com:stormy-lightning-9306.git (fetch)
-heroku  git@heroku.com:stormy-lightning-9306.git (push)
-origin  git://github.com/imathis/octopress.git (fetch)
-origin  git://github.com/imathis/octopress.git (push)
-</code></pre>
-
-<p>このあと、パスの設定をしてみました。このあたり曖昧です。というかまぁ、パスを通すと長いパス打たなくて済むからいいよねというのは分かるんですが、$PATHに色々ぐちゃぐちゃ書いていいのかなと少し不安です。不安もありながら、<a href="https://devcenter.heroku.com/articles/cli-command-not-found">herokuのTroubleShooting</a>を参考に以下のようにやったところなんとかherokuコマンドを使えるようになりました。</p>
-
-<pre><code>export PATH=/Users/&lt;username&gt;/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/heroku-2.28.12/bin:$PATH
-</code></pre>
-
-<p>やっと次のステップに進めます。。。</p>
-
-<p>この後は順調でサイトが表示されるところまで行きました。</p>
-
-<!-- more -->
-
-
-<h2>はまり3: herokuアプリのリネーム。。</h2>
-
-<p><code>heroku create</code>では自動でアプリ名が決められるため、すぐにこの名前の変更をトライしてみました。が、その後がうまくいかない。herokuのアプリのページで<strong>Rename</strong>した後、herokuのヘルプ<a href="https://devcenter.heroku.com/articles/renaming-apps">Renaming Apps from the CLI</a>と、<a href="http://d.hatena.ne.jp/Syunpei/20111202/1322806676">herokuでアプリケーションの名前を変更する方法</a>を参照して何とか行ったかのように見えたのですが、<code>rake generate</code>は使えるものの<code>rake deploy</code>が使えない。sshが拒否される。</p>
-
-<p>んー。ただ、pushすれば画面は更新されている。githubでホストしてるのとなんか管理方法が違っていそう。一応記事も表示されるし問題はなさげなので、今日のところはここまでということで！（<code>rake gen_deploy</code>が気持ちがいいので使いたい。。）</p>
-
-<h2>はまり4: 記事が更新されない!?</h2>
-
-<p>その後。。。</p>
-
-<p>サイトの表示と、一つ目の記事が投稿されたのは確認できたのですが、一向に次に投稿した長めの記事が更新されません。タイトルなど設定も変えていたので問題はそこにあると思い、いろいろ試した後に一旦アプリを削除して再度、作り直しました。一度経験していたらほんの数分でブログの構築まではできます。実はこの再作成の間に原因がわかったような気がしました。</p>
-
-<p>さて、同じようにpushしましたが、サイトには何も変化がありません。そこで、</p>
-
-<pre><code>rake generate
-</code></pre>
-
-<p>をやってみました。するとpublicフォルダにザクザク入ります。で、commitしてpush。さて！？</p>
-
-<p>反映されました（＞＜）</p>
-
-<p>ただ単に<code>rake generate</code>を忘れてただけだったみたいです！</p>
 ]]></content>
   </entry>
   
