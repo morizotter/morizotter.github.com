@@ -9,7 +9,8 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="一般的な人はコマンドラインでPCを扱うことはないと思う。で、作業を自動化する仕組みをウェブで作ろうとも思ったんだけど、ちょっとこれは面倒だということでバッチ・ファイルの作り方を検索してみました。バッチ・ファイルというのは、コマンドラインから実行するのではなく、 &hellip;">
+  <meta name="description" content="vimにphpコード補完のsnipMateを入れてみました。例えば、forと入れると、 for ($i = 0; $i &lt; count; $i++) { // code...
+} とか自動で出るやつです。使いこなしてはいませんが、少しは楽になりそう。 vim snipMate &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +79,77 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/20/vundle-snipmate/">Vimにphpコード補完のsnipMateとか</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-20T02:23:00+09:00" pubdate data-updated="true">Jul 20<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/20/vundle-snipmate/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>vimにphpコード補完のsnipMateを入れてみました。例えば、<code>for</code>と入れると、</p>
+
+<pre><code>for ($i = 0; $i &lt; count; $i++) {
+     // code...
+}
+</code></pre>
+
+<p>とか自動で出るやつです。使いこなしてはいませんが、少しは楽になりそう。</p>
+
+<ul>
+<li><a href="http://kaworu.jpn.org/kaworu/2009-10-03-1.php">vim snipMate の入力補完でプログラミングを高速化</a></li>
+<li><a href="http://d.hatena.ne.jp/takkaw/20090517/p1">snipMate.vimをインストールしてみた</a></li>
+</ul>
+
+
+<p>このあたりを参考にさせていただきました。インストールはパッケージ管理のvundleでやりました。vimはまだまだわからないことがたくさん(>&lt;)。超軽量なので使いこなしていきたいところです!</p>
+
+<p>あ、あと通常の設定部分もいろいろ追加してみました。バッファとかよくわからないので分かる範囲で。</p>
+
+<pre><code>"---------------------------------
+" 設定
+"---------------------------------
+set number
+set shiftwidth=4
+set showmatch
+set smarttab
+set tabstop=4
+set expandtab
+syntax on
+</code></pre>
+
+<p>分かる範囲なので少ないですね！</p>
+
+<p>vimで何やら行頭に半角スペース一つ入れている人がたくさんいるんだけど、あれなんの意味があるんだろう。。知りたい。。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -684,59 +756,6 @@ ggでテキスト最初の行
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/15/logmein/">LogMeInでMacにアクセス</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-15T02:08:00+09:00" pubdate data-updated="true">Jul 15<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/15/logmein/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>うむぅ。微妙。微妙だけど、まぁ、とにかく自宅マックじゃなきゃ作業できないってときは重宝するね。というのはLogMeInの話です。LogMeInはPCにリモートアクセスできるアプリです。ちなみに、今この記事もMacにアクセスして作成したテキストファイルにiPad側で書き込みをしています。</p>
-
-<p><strong>微妙な点</strong></p>
-
-<ul>
-<li>日本語、英語の切り替えが面倒
-
-<ul>
-<li>できないこともないのですが、Mac側で設定しなければいけません。キーボードのショートカットが使えないので、結局、メニューバーのことえりやらGoogle日本語入力やらをタップして変更ます。。。</li>
-</ul>
-</li>
-<li>アンダーバーが押せない。なぜか外付けキーボードだとアンダーバーが押せません。IMEのキーボードパットを出して、押しています。。。</li>
-</ul>
-
-
-<p>まぁそうは言っても、簡単にMacにアクセスできるのは素晴らしいですね！旅行先でも気軽にOctopressで投稿できそうですw Octopressは便利なんですが、ターミナル使う必要がありますからねぇ。。sshで接続すればいいのかもしれないのですが、ちょっと設定が面倒なので、まぁほとんど使う機会もないですし、LogMeInをもう少し使い続けそうです。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -760,6 +779,10 @@ ggでテキスト最初の行
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/09/26/rocketdocs/">RocketDocsはいいかもしれない</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/09/17/logviewer/">iOS用LogViewerをgithubに公開しました</a>
       </li>
     
@@ -773,10 +796,6 @@ ggでテキスト最初の行
     
       <li class="post">
         <a href="/blog/2012/09/03/textmate2-ruby-run/">Textmate2でrubyを実行する</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/02/textamate2/">Textamate2のインストール</a>
       </li>
     
   </ul>

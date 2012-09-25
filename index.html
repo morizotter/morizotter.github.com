@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="苦節数日ですが、iOS学習中に思いついたLogViewerをgithubに公開してみました。Xcodeのコンソールに表示されるログをアプリ上でも見ることができるというモジュールで、開発ビギナーやMacと離れた場所での動作確認向けのモジュールになっています。初めてのモジュール公開なので、 &hellip;">
+  <meta name="description" content="GoogleDriveってMacに入ってるけど（入れたけど）ほとんど使う機会がいない。新たになにかを追加しようとすると、以前GoogleDocsとかの時代に使っていたファイルが散乱していて追加したい気分が一気にしぼむ。フォルダ分けとかきちんとやればいいんだけど、やっぱり、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,49 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/09/26/rocketdocs/">RocketDocsはいいかもしれない</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-26T02:28:00+09:00" pubdate data-updated="true">Sep 26<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/09/26/rocketdocs/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>GoogleDriveってMacに入ってるけど（入れたけど）ほとんど使う機会がいない。新たになにかを追加しようとすると、以前GoogleDocsとかの時代に使っていたファイルが散乱していて追加したい気分が一気にしぼむ。フォルダ分けとかきちんとやればいいんだけど、やっぱり、ウェブで使ってなんぼという気がしてしまう。でも、ウェブで使うとGoogleのアカウントが多すぎて、メインで使ってるアカウントでDocsを開くためにログインしなおしたり。。。面倒。だってクラウドは既にDropboxがあるし、、、。</p>
+
+<p><img class="left" src="http://dl.dropbox.com/u/8131276/octopress/RocketDocs.png">
+だけど、今日このアプリを入れてからちょっと印象が変わった。なんという事はない、このアプリはGoogleDocsのウェブページをブラウザとは別の個別のウィンドウに表示してくれるだけなのだ。でも、そこからファイルの作成などいろいろ必要なことができる！</p>
+
+<p><a href="http://click.linksynergy.com/fs-bin/stat?id=dc7i2jvUYME&offerid=94348&type=3&subid=0&tmpid=2192&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fjp%252Fapp%252Frocketdocs-google-docs-client%252Fid505954267%253Fmt%253D12%2526uo%253D4%2526partnerId%253D30" target="itunes_store">RocketDocs - A Google Docs™ Client - Tricky Duck Ltd</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -648,77 +691,6 @@ brew install libtool
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/20/vundle-snipmate/">Vimにphpコード補完のsnipMateとか</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-20T02:23:00+09:00" pubdate data-updated="true">Jul 20<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/20/vundle-snipmate/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>vimにphpコード補完のsnipMateを入れてみました。例えば、<code>for</code>と入れると、</p>
-
-<pre><code>for ($i = 0; $i &lt; count; $i++) {
-     // code...
-}
-</code></pre>
-
-<p>とか自動で出るやつです。使いこなしてはいませんが、少しは楽になりそう。</p>
-
-<ul>
-<li><a href="http://kaworu.jpn.org/kaworu/2009-10-03-1.php">vim snipMate の入力補完でプログラミングを高速化</a></li>
-<li><a href="http://d.hatena.ne.jp/takkaw/20090517/p1">snipMate.vimをインストールしてみた</a></li>
-</ul>
-
-
-<p>このあたりを参考にさせていただきました。インストールはパッケージ管理のvundleでやりました。vimはまだまだわからないことがたくさん(>&lt;)。超軽量なので使いこなしていきたいところです!</p>
-
-<p>あ、あと通常の設定部分もいろいろ追加してみました。バッファとかよくわからないので分かる範囲で。</p>
-
-<pre><code>"---------------------------------
-" 設定
-"---------------------------------
-set number
-set shiftwidth=4
-set showmatch
-set smarttab
-set tabstop=4
-set expandtab
-syntax on
-</code></pre>
-
-<p>分かる範囲なので少ないですね！</p>
-
-<p>vimで何やら行頭に半角スペース一つ入れている人がたくさんいるんだけど、あれなんの意味があるんだろう。。知りたい。。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -740,6 +712,10 @@ syntax on
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/09/26/rocketdocs/">RocketDocsはいいかもしれない</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/09/17/logviewer/">iOS用LogViewerをgithubに公開しました</a>
       </li>
     
@@ -753,10 +729,6 @@ syntax on
     
       <li class="post">
         <a href="/blog/2012/09/03/textmate2-ruby-run/">Textmate2でrubyを実行する</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/02/textamate2/">Textamate2のインストール</a>
       </li>
     
   </ul>
