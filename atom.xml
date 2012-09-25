@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-26T03:00:38+09:00</updated>
+  <updated>2012-09-26T03:01:20+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -26,11 +26,11 @@
 
 <p>だけど、今日このアプリを入れてからちょっと印象が変わりました。なんという事はないのです。このアプリはGoogleDocsのウェブページをブラウザとは別の個別のウィンドウに表示してくれるだけなのです。でも、そこからファイルの作成などいろいろ必要なことができる。ちょっと使ってみて気にいったポイントは以下の通りです。</p>
 
-<ul>
+<ol>
 <li><strong>固定のアカウントでウィンドウが開く</strong>のでいちいちログイン・ログアウトをする必要がない！</li>
 <li>MenuBarに常駐してくれるので、開きたい時に開ける。</li>
 <li>ファイルの作成時にはRocketDocsのウィンドウ内のタブで新たなページが作成されるのですっきり。</li>
-</ul>
+</ol>
 
 
 <p>とこんな感じ。特に1が大事ですね。ログイン・ログアウト本当に面倒ですから。</p>
