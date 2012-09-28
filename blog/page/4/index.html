@@ -9,7 +9,9 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="なぜか今日トラックパッドの魅力に目覚めました。目覚めたのは2回目です。1回目は人生で初めてのMac, MacBook Pro Mid 2010を買ったときです。青天の霹靂でした。で、今日、なぜ目覚めたかというと、iMacではトラックパッド買ったものの、 &hellip;">
+  <meta name="description" content="先日お世話になったのがこのサイトです。 複数のファイル拡張子を一括で変更するには シェルのコマンドって抵抗感があったけど、こんなに簡単にできるとは！ $ ls
+1.txt 2.txt 3.txt 4.txt $ for fname in *.txt; do
+&gt; mv $fname ${ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +80,62 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/09/bash-command/">bashのコマンド</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-09T23:27:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/09/bash-command/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>先日お世話になったのが<a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/248chngext.html">このサイト</a>です。</p>
+
+<p><a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/248chngext.html">複数のファイル拡張子を一括で変更するには</a></p>
+
+<p>シェルのコマンドって抵抗感があったけど、こんなに簡単にできるとは！</p>
+
+<pre><code>$ ls
+1.txt   2.txt   3.txt   4.txt 
+
+$ for fname in *.txt; do
+&gt; mv $fname ${fname%.txt}.md;
+&gt; done
+
+$ ls
+1.md    2.md    3.md    4.md
+</code></pre>
+
+<p>ちょっと復習がてらやってみた。できた。
+bashももっと学びたい！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -558,81 +616,6 @@ $ echo "test テスト" &gt; test/test.txt
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/07/chrome-shortcut/">Google Chromeをさらに便利に</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-07T22:24:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/07/chrome-shortcut/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>GoogleChromeを使っているときに、まだトラックパッドを使うことがちょこちょこあるので、調べてみました。調べた中で秀逸だったのがこのページ。</p>
-
-<p><a href="http://wayohoo.com/google-chrome/tips/useful-shortcut-key-list.html">【厳選】本当に使える Google Chrome のショートカットキー17個まとめ。</a></p>
-
-<p>17個という数も適切です。既に使っているものも多々あるのですが、今後使っていこうと思ったものを書いてみます。</p>
-
-<table>
-<thead>
-<tr>
-<th align="left">タブを閉じる      </th>
-<th align="left"> Command + W</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">指定したタブへ移動 </td>
-<td align="left"> Command + 数字(0〜9)</td>
-</tr>
-<tr>
-<td align="left">アドレスバーにカーソルを移動 </td>
-<td align="left"> Command + L</td>
-</tr>
-<tr>
-<td align="left">ページを更新      </td>
-<td align="left"> Command + R</td>
-</tr>
-<tr>
-<td align="left">テキストの情報のみをペースト </td>
-<td align="left"> Command + Shif + Option + V</td>
-</tr>
-</tbody>
-</table>
-
-
-<br>
-
-
-<p>最後のは使わないかも。特に<code>Command + W</code>と<code>Command + L</code>と<code>Command + R</code>が重宝しそうです！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/5/">&larr; Older</a>
@@ -656,6 +639,10 @@ $ echo "test テスト" &gt; test/test.txt
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/09/29/clean-install/">MacOSX Mountain Lionのクリーンインストールってこんなに簡単だったのね</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/09/26/rocketdocs/">RocketDocsはいいかもしれない</a>
       </li>
     
@@ -669,10 +656,6 @@ $ echo "test テスト" &gt; test/test.txt
     
       <li class="post">
         <a href="/blog/2012/09/03/about-twitter-bootstarap/">TwitterBootstrapについて</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/03/textmate2-ruby-run/">Textmate2でrubyを実行する</a>
       </li>
     
   </ul>
