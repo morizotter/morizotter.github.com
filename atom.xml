@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-29T03:10:57+09:00</updated>
+  <updated>2012-09-29T13:55:48+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -31,9 +31,11 @@
 
 <p>ほんとにこの手順でやるだけでした。いやー、クリーンインストールってこんなに簡単だったんですね！この記事は画像もあってわかりやすいですし、僕が他に書くことはありません。自分記録として一応残しておきます！</p>
 
-<p>ちなみに、移行アシスタントはゲストユーザでログインして、メインのユーザを上書きするような形で移行しました。うん。すっきりして全体的に早くなったし満足！</p>
-
 <p>追記が生まれそうです。</p>
+
+<p>【追記】</p>
+
+<p>自宅のiMacも同様の方法でクリーンインストールしました。Timemachineでバックアップを取っていたので、ストレスを感じることなく出来るってのもいいですね。こちらもMountain Lionにしてから、アプリが強制終了したりFinderがDockから開かなかったり、通信が不安定になったりいろいろ問題がありましたが、今のところ快適な使い心地です！</p>
 ]]></content>
   </entry>
   
