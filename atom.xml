@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-10-06T20:00:21+09:00</updated>
+  <updated>2012-10-07T01:57:24+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[facebookの投稿]]></title>
+    <link href="http://morizotter.com/blog/2012/10/07/facebook-publish/"/>
+    <updated>2012-10-07T00:37:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/10/07/facebook-publish</id>
+    <content type="html"><![CDATA[<p><a href="http://www.morizotter.com/blog/2012/10/06/facebook/">facebookのログイン</a>ができたので次は投稿に挑戦しました。これも、Facebookの公式ページにそって学んだらすぐに出来ました。</p>
+
+<ul>
+<li><a href="https://developers.facebook.com/docs/howtos/publish-to-feed-ios-sdk/">Publish to Feed</a></li>
+<li><a href="https://developers.facebook.com/docs/howtos/ios-6/">Using the Facebook integration in iOS 6</a></li>
+</ul>
+
+
+<p>とりあえず、最初のリンクでiOS6以前のベースを作って、最後のリンクでiOS6の場合の投稿処理の場合分けを実装という流れですね。</p>
+
+<p>iOS6の場合、端末にFacebookの情報を入れていないとiOS6以前の投稿フォームが出てくるという感じになります。ちょっと混乱したのは、iOS6で端末に情報がある状態でアプリでFacebookを使わないという設定にしているのにiOS6だと投稿ができてしまうという点です。ただ、考えてみたらFacebookの情報を使うことはできないようになっていたのでこれでいいんでしょうね。投稿するしないはユーザが判断することでアプリ側としてはFacebookから何も情報を取得していないので。</p>
+
+<p>グラフ処理にも手を出してみようか。でも、すぐに使う事にはならないと思うので</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[facebookのログインについて]]></title>
@@ -697,26 +718,6 @@ ggでテキスト最初の行
 </code></pre>
 
 <p>使いそうなキーをまとめました。このチュートリアルよくできてます。Vimの使い方がいまいちわからないという人は是非試してみてください！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ディレクトリ下のファイル数をカウントする]]></title>
-    <link href="http://morizotter.com/blog/2012/07/16/file-count/"/>
-    <updated>2012-07-16T00:49:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/16/file-count</id>
-    <content type="html"><![CDATA[<p>今日Rubyの小さなコマンドを書いたファイルを作りまくっていたのですが、どれだけ作った知りたくなりました。で、検索したところわかりやすい記事が。</p>
-
-<p><a href="http://linux.just4fun.biz/%E9%80%86%E5%BC%95%E3%81%8DUNIX%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%95%B0%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B.html">ファイル数を取得する方法</a></p>
-
-<p>基本、このリンク先を見れば解決すると思います。自分メモとして記録しておきます。結論としては、</p>
-
-<pre><code>$ ls -1 | wc -l
-</code></pre>
-
-<p>ですね。<code>ls</code>の<code>-l</code>オプションでファイルを1行表示にし、パイプでwcにつなげるということらしいです。</p>
-
-<p><a href="http://www.k-tanaka.net/unix/wc.html">wc</a>は行数や単語数、バイト数をカウントするコマンドで、行数のみカウントする場合は、<code>-l</code>オプションを付けます。この<a href="http://www.k-tanaka.net/unix/">UNIXコマンド</a>ってサイトいいな！</p>
 ]]></content>
   </entry>
   

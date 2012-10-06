@@ -9,7 +9,8 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="今日はフェイスブックのログイン認証について学んでます。今までFacebookのSDKには苦手意識があって、やるといっても必要に迫られてサンプルからつまみ食いするような形でしか利用していませんでした。ログインのフローがよくわからなかったんですよね！それが今日恐らく解消しました！！ &hellip;">
+  <meta name="description" content="facebookのログインができたので次は投稿に挑戦しました。これも、Facebookの公式ページにそって学んだらすぐに出来ました。 Publish to Feed
+Using the Facebook integration in iOS 6 とりあえず、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +79,56 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/10/07/facebook-publish/">facebookの投稿</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-07T00:37:00+09:00" pubdate data-updated="true">Oct 7<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/10/07/facebook-publish/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.morizotter.com/blog/2012/10/06/facebook/">facebookのログイン</a>ができたので次は投稿に挑戦しました。これも、Facebookの公式ページにそって学んだらすぐに出来ました。</p>
+
+<ul>
+<li><a href="https://developers.facebook.com/docs/howtos/publish-to-feed-ios-sdk/">Publish to Feed</a></li>
+<li><a href="https://developers.facebook.com/docs/howtos/ios-6/">Using the Facebook integration in iOS 6</a></li>
+</ul>
+
+
+<p>とりあえず、最初のリンクでiOS6以前のベースを作って、最後のリンクでiOS6の場合の投稿処理の場合分けを実装という流れですね。</p>
+
+<p>iOS6の場合、端末にFacebookの情報を入れていないとiOS6以前の投稿フォームが出てくるという感じになります。ちょっと混乱したのは、iOS6で端末に情報がある状態でアプリでFacebookを使わないという設定にしているのにiOS6だと投稿ができてしまうという点です。ただ、考えてみたらFacebookの情報を使うことはできないようになっていたのでこれでいいんでしょうね。投稿するしないはユーザが判断することでアプリ側としてはFacebookから何も情報を取得していないので。</p>
+
+<p>グラフ処理にも手を出してみようか。でも、すぐに使う事にはならないと思うので</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -660,61 +711,6 @@ brew install libtool
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/26/dash/">Dashが快適！</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-26T00:52:00+09:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/26/dash/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>先日、Macおすすめアプリって記事をどこかで見て入れたのがDash。プログラミング言語の閲覧とコードスニペットの管理が主な用途ですが、利用開始直後からかなりよい具合で愛してます。</p>
-
-<p><img src="http://dl.dropbox.com/u/8131276/octopress/dash.png"></p>
-
-<p>とりあえず今貼りつけた画像は、ドキュメント表示画面です。検索早いです。そして、<code>option+Space</code>でDash自体が一発起動するってのも素敵です。</p>
-
-<p>スニペット管理画面もあります。ここにスニペットを書き込めば指定した文字を打つと即コードが差し込まれます。スニペット中に<code>__</code>で囲んだ文字、例えば<code>__filename__</code>なんてやると、スニペットを差し込む前にその部分が選択されて自由に差し込めるようになっています。</p>
-
-<h2>Dropboxで共有</h2>
-
-<p>スニペットを格納したファイルはDropboxに入れることで、複数のMacで情報を共有できます。わかりやすいサイトを見つけたので興味のある方はご参考に。</p>
-
-<ul>
-<li><a href="http://fujitaiju.com/blog/%E3%82%A2%E3%83%97%E3%83%AA/%E5%A4%AAmac%E7%94%A8%E3%82%B9%E3%83%8B%E3%83%9A%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AAdashexpander%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92dropbox%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%90%8C/">[太]Mac用スニペットアプリDashExpanderの設定をDropboxを使って同期する方法。</a></li>
-</ul>
-
-
-<p>基本的にどの動作も非常に簡単でよく考えられてるって印象です。あー、でも一つだけよくわからずいらっときている点が。PreferencesのSnippetsにある<code>enable snippet detection</code>をオンにすると何が変わるのか。うううー。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -736,6 +732,10 @@ brew install libtool
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/10/07/facebook-publish/">facebookの投稿</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/10/06/facebook/">facebookのログインについて</a>
       </li>
     
@@ -749,10 +749,6 @@ brew install libtool
     
       <li class="post">
         <a href="/blog/2012/09/26/rocketdocs/">RocketDocsはいいかもしれない</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/17/logviewer/">iOS用LogViewerをgithubに公開しました</a>
       </li>
     
   </ul>

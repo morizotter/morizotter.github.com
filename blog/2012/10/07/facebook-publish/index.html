@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>textMateでテスト実行時のRubyのバージョンを変更する！ - MORIZOTTER PRESS</title>
+  <title>facebookの投稿 - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="こんにちは。Ruby初心者です！Rubyを始めてとりあえずエディタを探していたのですが、vimは初期設定が難しいしファイル間の移動が面倒だし、NetBeansは大げさだしということでtextMateに落ち着きそうです。で、使っているうちに最初の問題に遭遇しました。 実行(⌘+r) &hellip;">
+  <meta name="description" content="facebookのログインができたので次は投稿に挑戦しました。これも、Facebookの公式ページにそって学んだらすぐに出来ました。 Publish to Feed
+Using the Facebook integration in iOS 6 とりあえず、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/23/textmate-ruby-version/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/10/07/facebook-publish/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +82,7 @@
   
   <header>
     
-      <h1 class="entry-title">textMateでテスト実行時のRubyのバージョンを変更する！</h1>
+      <h1 class="entry-title">facebookの投稿</h1>
     
     
       <p class="meta">
@@ -97,7 +98,7 @@
   
 
 
-<time datetime="2012-07-23T00:45:00+09:00" pubdate data-updated="true">Jul 23<span>rd</span>, 2012</time>
+<time datetime="2012-10-07T00:37:00+09:00" pubdate data-updated="true">Oct 7<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,51 +107,19 @@
   </header>
 
 
-<div class="entry-content"><p>こんにちは。Ruby初心者です！Rubyを始めてとりあえずエディタを探していたのですが、vimは初期設定が難しいしファイル間の移動が面倒だし、NetBeansは大げさだしということでtextMateに落ち着きそうです。で、使っているうちに最初の問題に遭遇しました。</p>
-
-<h2>実行(⌘+r)時に古いRubyで実行してる</h2>
-
-<p>問題が発覚したのは、<a href="http://www.amazon.co.jp/gp/product/4797336617/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4797336617&linkCode=as2&tag=nettoshinjiyu-22">たのしいRuby 第2版 Rubyではじめる気軽なプログラミング</a><img src="http://www.assoc-amazon.jp/e/ir?t=nettoshinjiyu-22&l=as2&o=9&a=4797336617" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />の記述通りにコードを書いているのに、なぜか実行時に失敗するということが続いたからです。</p>
-
-<p><code>Command+R</code>時に表示されるウィンドウを見るとRubyのバージョンが表示されていました。</p>
-
-<p><img src="http://dl.dropbox.com/u/8131276/octopress/textMateversion.png"></p>
-
-<p><em>画像は修正後のものです。赤枠内が古いバージョンを示していました</em></p>
-
-<p>これが古かったんです。それでおそらく<code>require</code>が失敗していたんだと思います。とりあえず、terminalで実行した場合は成功するので、普段使っている<code>ruby 1.9.3p194</code>に変えればよいだろうということで、ネットで情報を探しました。</p>
-
-<p>なかなか見つからなかったのですが、下記の記事に回答に近いものがありました。</p>
+<div class="entry-content"><p><a href="http://www.morizotter.com/blog/2012/10/06/facebook/">facebookのログイン</a>ができたので次は投稿に挑戦しました。これも、Facebookの公式ページにそって学んだらすぐに出来ました。</p>
 
 <ul>
-<li><a href="http://stackoverflow.com/questions/6546308/how-do-i-change-the-ruby-version-textmate-uses">How do I change the Ruby version Textmate uses?</a></li>
+<li><a href="https://developers.facebook.com/docs/howtos/publish-to-feed-ios-sdk/">Publish to Feed</a></li>
+<li><a href="https://developers.facebook.com/docs/howtos/ios-6/">Using the Facebook integration in iOS 6</a></li>
 </ul>
 
 
-<p>方法としては、</p>
+<p>とりあえず、最初のリンクでiOS6以前のベースを作って、最後のリンクでiOS6の場合の投稿処理の場合分けを実装という流れですね。</p>
 
-<ol>
-<li>textMateのPreference>Advanced>Shell Variablesに移動する</li>
-<li>titleを<code>TM_RUBY</code>として、rubyのパスを入力する</li>
-</ol>
+<p>iOS6の場合、端末にFacebookの情報を入れていないとiOS6以前の投稿フォームが出てくるという感じになります。ちょっと混乱したのは、iOS6で端末に情報がある状態でアプリでFacebookを使わないという設定にしているのにiOS6だと投稿ができてしまうという点です。ただ、考えてみたらFacebookの情報を使うことはできないようになっていたのでこれでいいんでしょうね。投稿するしないはユーザが判断することでアプリ側としてはFacebookから何も情報を取得していないので。</p>
 
-
-<p>これだけで完了です。ただ僕はここで少しつまずきました。rubyの場所を</p>
-
-<pre><code>$ which ruby
-</code></pre>
-
-<p>で調べると、</p>
-
-<pre><code>/Users/myname/.rbenv/shims/ruby
-</code></pre>
-
-<p>と出てきたので、最初これを指定したのですがエラーになりました。おそらくこれはただの参照だからダメだったんだと思います（詳しい方教えて下さい＞＜）。下記のように入力することで成功しました。</p>
-
-<pre><code>/Users/myname/.rbenv/versions/1.9.3-p194/bin/ruby
-</code></pre>
-
-<p>これで、実行すると対処の画像の用に指定したRubyのバージョンで実行ができます。ふー、わざわざターミナルで実行するよりも一画面で実行できるのでストレスなく効率的にテストができます！わーい。</p>
+<p>グラフ処理にも手を出してみようか。でも、すぐに使う事にはならないと思うので</p>
 </div>
 
 
@@ -173,7 +142,7 @@
   
 
 
-<time datetime="2012-07-23T00:45:00+09:00" pubdate data-updated="true">Jul 23<span>rd</span>, 2012</time>
+<time datetime="2012-10-07T00:37:00+09:00" pubdate data-updated="true">Oct 7<span>th</span>, 2012</time>
       
 
 
@@ -181,7 +150,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/23/textmate-ruby-version/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/23/textmate-ruby-version/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/10/07/facebook-publish/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/10/07/facebook-publish/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -194,10 +163,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/20/textmate-control-f/" title="Previous Post: textMateのcontrol+f">&laquo; textMateのcontrol+f</a>
+        <a class="basic-alignment left" href="/blog/2012/10/06/facebook/" title="Previous Post: facebookのログインについて">&laquo; facebookのログインについて</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/26/xcode4-dot-4/" title="Next Post: xcode4.4でコード補完できなくなる問題が解消！？">xcode4.4でコード補完できなくなる問題が解消！？ &raquo;</a>
       
     </p>
   </footer>
@@ -315,8 +282,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/23/textmate-ruby-version/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/23/textmate-ruby-version/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/10/07/facebook-publish/';
+        var disqus_url = 'http://morizotter.com/blog/2012/10/07/facebook-publish/';
         var disqus_script = 'embed.js';
       
     (function () {
