@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="こんにちは。Ruby初心者です！Rubyを始めてとりあえずエディタを探していたのですが、vimは初期設定が難しいしファイル間の移動が面倒だし、NetBeansは大げさだしということでtextMateに落ち着きそうです。で、使っているうちに最初の問題に遭遇しました。 実行(⌘+r) &hellip;">
+  <meta name="description" content="おお、Xcodeのアップデート文を読んでいたら嬉しい一文を発見！ 赤枠内です。コード補完ができなくなる問題を解消と書いてあります。 Fixes an issue where code completion could fail, requiring the user to delete &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,55 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/26/xcode4-dot-4/">xcode4.4でコード補完できなくなる問題が解消！？</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-26T00:20:00+09:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/26/xcode4-dot-4/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>おお、Xcodeのアップデート文を読んでいたら嬉しい一文を発見！</p>
+
+<p><img src="http://dl.dropbox.com/u/8131276/octopress/xcode44.png"></p>
+
+<p>赤枠内です。コード補完ができなくなる問題を解消と書いてあります。</p>
+
+<pre><code>Fixes an issue where code completion could fail, requiring the user to delete derived data.
+</code></pre>
+
+<p>&#8220;ユーザにderived dataの削除を要求する&#8221;って、そういう状況に追い込まれた人にはすっと入り込むわかりやすいフレーズ。この問題に何度悩まされたことか！でも、derived dataを削除したくらいじゃ回復しなかったこともあったしなぁ。</p>
+
+<p>そういうのが起こらないようになってるならすごくいいアップデート！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -681,59 +730,6 @@ ggでテキスト最初の行
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/15/mac-control/">うっほ！US配列でControlの位置を変更！</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-15T16:08:00+09:00" pubdate data-updated="true">Jul 15<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/15/mac-control/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>こんにちは。</p>
-
-<p>US配列キーボードが気に入ってます。<a href="http://www.morizotter.com/blog/2012/07/07/us-keyboard-key-remap/">日本語、英語変換をJISキーボードと同じように設定</a>してから、更に使い勝手が良くなってます。</p>
-
-<p>で、実はもうひとつ困っている問題がありました。Controlの位置です。USキーボードの場合、Controlがかなり下の方にあるので、入力するときに小指がガッと下がってかなり手が痛いし不自然なんですね。Emacsを練習していたらそれが顕著にダメージとなって現れてきました。それ以外はUSキーボードのキーはJISよりもスペースキーから近い感じがするので楽になんですが。。。</p>
-
-<p>で、<strong>caps lock</strong>キーにControlの機能をもたせることにしました。</p>
-
-<p>やり方はわかってたのですが、検索してみると<a href="http://firstmac.blogspot.jp/2007/08/caps-lock-control.html">こんな記事</a>も出てきて、みんなやってるらしいし良いだろうということで。</p>
-
-<pre><code>環境設定 &gt; キーボード &gt; 装飾キー
-</code></pre>
-
-<p>で割り当てを変えます。caps lockキーは使わないと思うので、controlキーの機能はそのまま残しました。</p>
-
-<p>うーん、快適！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -757,6 +753,10 @@ ggでテキスト最初の行
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/10/06/facebook/">facebookのログインについて</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/10/06/stackoverflow-edit/">Stackoverflowってすごい！編集とか</a>
       </li>
     
@@ -770,10 +770,6 @@ ggでテキスト最初の行
     
       <li class="post">
         <a href="/blog/2012/09/17/logviewer/">iOS用LogViewerをgithubに公開しました</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/10/making-logviewer/">iOSのログをデバッグ時にアプリで見る</a>
       </li>
     
   </ul>

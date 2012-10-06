@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>USキーボード4日目の感想 - MORIZOTTER PRESS</title>
+  <title>facebookのログインについて - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="7/7にMacBook Air Mid 2012が届いて4日になります。この間毎日使っているのですが、初めてトライしたUSキーボードの感想を書きたいと思います。概ね良好です！ よい所 キーの配置 日本語キーボードに比べてキーを見ることが減りました。日本語キーボードよりキーの配置が良いと思います。 &hellip;">
+  <meta name="description" content="今日はフェイスブックのログイン認証について学んでます。今までFacebookのSDKには苦手意識があって、やるといっても必要に迫られて、サンプルからつまみ食いするような形でしか利用していませんでした。ログインのフローがよくわからなかったんですよね！それが今日恐らく解決しました！！ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/10/us-keyboard/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/10/06/facebook/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">USキーボード4日目の感想</h1>
+      <h1 class="entry-title">facebookのログインについて</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2012-07-10T08:46:00+09:00" pubdate data-updated="true">Jul 10<span>th</span>, 2012</time>
+<time datetime="2012-10-06T19:38:00+09:00" pubdate data-updated="true">Oct 6<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,60 +106,38 @@
   </header>
 
 
-<div class="entry-content"><p>7/7にMacBook Air Mid 2012が届いて4日になります。この間毎日使っているのですが、初めてトライしたUSキーボードの感想を書きたいと思います。概ね良好です！</p>
+<div class="entry-content"><p>今日はフェイスブックのログイン認証について学んでます。今までFacebookのSDKには苦手意識があって、やるといっても必要に迫られて、サンプルからつまみ食いするような形でしか利用していませんでした。ログインのフローがよくわからなかったんですよね！それが今日恐らく解決しました！！</p>
 
-<p><strong>よい所</strong></p>
+<p>なんで解決したかというと、単純に公式のHowToに沿ってやっただけなんです。これ。</p>
 
-<ul>
-<li>キーの配置
+<p><a href="https://developers.facebook.com/docs/howtos/login-with-facebook-using-ios-sdk/">Facebook Login</a></p>
 
-<ul>
-<li>日本語キーボードに比べてキーを見ることが減りました。日本語キーボードよりキーの配置が良いと思います。</li>
-<li>手に馴染みます。今のところControlを押す時以外は自然な手の配置のままでキーが打てます。</li>
-<li>Return、Commandなどが近いところにあるなど指を不自然に伸ばす必要がないので疲労が軽減されます。</li>
-</ul>
-</li>
-<li>見た目がすっきりしていて綺麗。
+<p>なんで最初からこれやらなかったんだって感じました。Facebook SDK 3.1も非常に良く出来ていて、</p>
 
-<ul>
-<li>不要な情報が目に入ってこないというのは地味ですがすっきり感が増します。</li>
-</ul>
-</li>
-<li>日本語キーボードからのスイッチが意外と楽。
-
-<ul>
-<li>最初は押し間違えが起こるかなぁなどと思っていたのですが、2日くらいで慣れました。Mac日本語キーボードとWindows日本語キーボードの差よりもだいぶ差が小さいです。</li>
-</ul>
-</li>
-</ul>
+<ol>
+<li>iOS6の場合</li>
+<li>Facebookアプリが端末にある場合</li>
+<li>Facebookアプリが端末にない場合</li>
+</ol>
 
 
-<p><strong>最初戸惑ったところ</strong></p>
+<p>すべてのケースを判定してログイン処理をしてくれます（＞＜）</p>
 
-<ul>
-<li>キーの配置
+<p>これがほんの1時間ちょっとで実装できました！なんてこと！</p>
 
-<ul>
-<li>良い所でも書きましたが、日本語キーボードとの違いで最初は戸惑いました。あと、会社のMacで作業するときなど最初のうちはキーの押し間違いが起こります。慣れで解消しそうではあります。</li>
-</ul>
-</li>
-<li>英語、日本語変換
+<p>で、まぁ、実装中にほとんど躓きはなかったんですが多少他の人の役に立つことを2点記します。</p>
 
-<ul>
-<li>最初は<code>Command + Space</code>のトグルでやってましたが、効率が悪いと考え、キーマッピングのソフトを入れました。(<a href="http://www.morizotter.com/blog/2012/07/07/us-keyboard-key-remap/">これ</a>) 問題は解消です。</li>
-</ul>
-</li>
-</ul>
+<p><strong>Facebookをgitでcloneした場合にFacebook.frameworkが存在しない問題について</strong></p>
 
+<p>SDKはgitでcloneするのがいいですよね。これでSDKを最新の状態に保つことができます。僕はAppsディレクトリの直下にframeworkというディレクトリを作ってそこに入れていくことにしました。で、とりあえずFacebook.frameworkをcloneしたディレクトリ内で探したけどなかったのです。まぁ、この解決方法は単純にscriptsディレクトリの中の<strong>build_framework.sh</strong>を実行するだけで解消します。まぁcloneする人にはこのくらいは説明いらずかもしれませんね。僕は少し迷いました。</p>
 
-<p><strong>その他</strong></p>
+<p><strong>ログインを実行しようとすると&#8221;The operation couldn&#8217;t be completed. (com.facebook.sdk error 2.)&#8221;というエラーが出る</strong></p>
 
-<ul>
-<li>入力が若干早くなったので余裕ができたのか、IMEまわりを触ってみました。いままでMacではずっとことえり一本だったのですが、Google日本語入力を試したところ、希望に近い変換候補が出る確率がかなり高くなったと思います。入力速度が更に上がりました。ATOKも有名なのでそのうち試してみたいなと思っています。</li>
-</ul>
+<p>はい、これはStackoverflowに回答がありました。FacebookアプリのネイティブiOSアプリの<strong>Bundle ID</strong>をちゃんと入力すればいいんです。以前はこれ入力しなくても動いたような気がします。iOS6だとダメみたいです。</p>
 
+<p>こんなところです。</p>
 
-<p>こんなところです。このコンバージョンはかなりよかったので自宅のiMacもUSキーボードにしたいなと思っています。</p>
+<p>Facebookログインのフローを理解して実装できたのでハッピーです！！</p>
 </div>
 
 
@@ -182,7 +160,7 @@
   
 
 
-<time datetime="2012-07-10T08:46:00+09:00" pubdate data-updated="true">Jul 10<span>th</span>, 2012</time>
+<time datetime="2012-10-06T19:38:00+09:00" pubdate data-updated="true">Oct 6<span>th</span>, 2012</time>
       
 
 
@@ -190,7 +168,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/10/us-keyboard/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/10/us-keyboard/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/10/06/facebook/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/10/06/facebook/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -203,10 +181,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/10/about-this-blog/" title="Previous Post: 最近、見に来てくれくれる人も増えたので">&laquo; 最近、見に来てくれくれる人も増えたので</a>
+        <a class="basic-alignment left" href="/blog/2012/10/06/stackoverflow-edit/" title="Previous Post: Stackoverflowってすごい！編集とか">&laquo; Stackoverflowってすごい！編集とか</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/11/launchpad/" title="Next Post: LaunchPad">LaunchPad &raquo;</a>
       
     </p>
   </footer>
@@ -324,8 +300,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/10/us-keyboard/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/10/us-keyboard/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/10/06/facebook/';
+        var disqus_url = 'http://morizotter.com/blog/2012/10/06/facebook/';
         var disqus_script = 'embed.js';
       
     (function () {

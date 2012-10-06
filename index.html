@@ -9,9 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="今日はStackoverflowについてちょっと驚いたことがあったので書いてます。僕はまだまだ初心者でかなりやれることが限れれている（他人の質問にコメントさえできない汗）のですが、使いこなしていきたいと思いました。 その理由はこれ、  
- 
-僕の書いた質問文が編集されました（＞＜）。 &hellip;">
+  <meta name="description" content="今日はフェイスブックのログイン認証について学んでます。今までFacebookのSDKには苦手意識があって、やるといっても必要に迫られて、サンプルからつまみ食いするような形でしか利用していませんでした。ログインのフローがよくわからなかったんですよね！それが今日恐らく解決しました！！ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +78,75 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/10/06/facebook/">facebookのログインについて</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-06T19:38:00+09:00" pubdate data-updated="true">Oct 6<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/10/06/facebook/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今日はフェイスブックのログイン認証について学んでます。今までFacebookのSDKには苦手意識があって、やるといっても必要に迫られて、サンプルからつまみ食いするような形でしか利用していませんでした。ログインのフローがよくわからなかったんですよね！それが今日恐らく解決しました！！</p>
+
+<p>なんで解決したかというと、単純に公式のHowToに沿ってやっただけなんです。これ。</p>
+
+<p><a href="https://developers.facebook.com/docs/howtos/login-with-facebook-using-ios-sdk/">Facebook Login</a></p>
+
+<p>なんで最初からこれやらなかったんだって感じました。Facebook SDK 3.1も非常に良く出来ていて、</p>
+
+<ol>
+<li>iOS6の場合</li>
+<li>Facebookアプリが端末にある場合</li>
+<li>Facebookアプリが端末にない場合</li>
+</ol>
+
+
+<p>すべてのケースを判定してログイン処理をしてくれます（＞＜）</p>
+
+<p>これがほんの1時間ちょっとで実装できました！なんてこと！</p>
+
+<p>で、まぁ、実装中にほとんど躓きはなかったんですが多少他の人の役に立つことを2点記します。</p>
+
+<p><strong>Facebookをgitでcloneした場合にFacebook.frameworkが存在しない問題について</strong></p>
+
+<p>SDKはgitでcloneするのがいいですよね。これでSDKを最新の状態に保つことができます。僕はAppsディレクトリの直下にframeworkというディレクトリを作ってそこに入れていくことにしました。で、とりあえずFacebook.frameworkをcloneしたディレクトリ内で探したけどなかったのです。まぁ、この解決方法は単純にscriptsディレクトリの中の<strong>build_framework.sh</strong>を実行するだけで解消します。まぁcloneする人にはこのくらいは説明いらずかもしれませんね。僕は少し迷いました。</p>
+
+<p><strong>ログインを実行しようとすると&#8221;The operation couldn&#8217;t be completed. (com.facebook.sdk error 2.)&#8221;というエラーが出る</strong></p>
+
+<p>はい、これはStackoverflowに回答がありました。FacebookアプリのネイティブiOSアプリの<strong>Bundle ID</strong>をちゃんと入力すればいいんです。以前はこれ入力しなくても動いたような気がします。iOS6だとダメみたいです。</p>
+
+<p>こんなところです。</p>
+
+<p>Facebookログインのフローを理解して実装できたのでハッピーです！！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -648,55 +715,6 @@ brew install libtool
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/26/xcode4-dot-4/">xcode4.4でコード補完できなくなる問題が解消！？</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-26T00:20:00+09:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/26/xcode4-dot-4/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>おお、Xcodeのアップデート文を読んでいたら嬉しい一文を発見！</p>
-
-<p><img src="http://dl.dropbox.com/u/8131276/octopress/xcode44.png"></p>
-
-<p>赤枠内です。コード補完ができなくなる問題を解消と書いてあります。</p>
-
-<pre><code>Fixes an issue where code completion could fail, requiring the user to delete derived data.
-</code></pre>
-
-<p>&#8220;ユーザにderived dataの削除を要求する&#8221;って、そういう状況に追い込まれた人にはすっと入り込むわかりやすいフレーズ。この問題に何度悩まされたことか！でも、derived dataを削除したくらいじゃ回復しなかったこともあったしなぁ。</p>
-
-<p>そういうのが起こらないようになってるならすごくいいアップデート！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -718,6 +736,10 @@ brew install libtool
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/10/06/facebook/">facebookのログインについて</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/10/06/stackoverflow-edit/">Stackoverflowってすごい！編集とか</a>
       </li>
     
@@ -731,10 +753,6 @@ brew install libtool
     
       <li class="post">
         <a href="/blog/2012/09/17/logviewer/">iOS用LogViewerをgithubに公開しました</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/10/making-logviewer/">iOSのログをデバッグ時にアプリで見る</a>
       </li>
     
   </ul>

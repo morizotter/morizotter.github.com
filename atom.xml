@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-10-06T19:32:02+09:00</updated>
+  <updated>2012-10-06T19:49:43+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[facebookのログインについて]]></title>
+    <link href="http://morizotter.com/blog/2012/10/06/facebook/"/>
+    <updated>2012-10-06T19:38:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/10/06/facebook</id>
+    <content type="html"><![CDATA[<p>今日はフェイスブックのログイン認証について学んでます。今までFacebookのSDKには苦手意識があって、やるといっても必要に迫られて、サンプルからつまみ食いするような形でしか利用していませんでした。ログインのフローがよくわからなかったんですよね！それが今日恐らく解決しました！！</p>
+
+<p>なんで解決したかというと、単純に公式のHowToに沿ってやっただけなんです。これ。</p>
+
+<p><a href="https://developers.facebook.com/docs/howtos/login-with-facebook-using-ios-sdk/">Facebook Login</a></p>
+
+<p>なんで最初からこれやらなかったんだって感じました。Facebook SDK 3.1も非常に良く出来ていて、</p>
+
+<ol>
+<li>iOS6の場合</li>
+<li>Facebookアプリが端末にある場合</li>
+<li>Facebookアプリが端末にない場合</li>
+</ol>
+
+
+<p>すべてのケースを判定してログイン処理をしてくれます（＞＜）</p>
+
+<p>これがほんの1時間ちょっとで実装できました！なんてこと！</p>
+
+<p>で、まぁ、実装中にほとんど躓きはなかったんですが多少他の人の役に立つことを2点記します。</p>
+
+<p><strong>Facebookをgitでcloneした場合にFacebook.frameworkが存在しない問題について</strong></p>
+
+<p>SDKはgitでcloneするのがいいですよね。これでSDKを最新の状態に保つことができます。僕はAppsディレクトリの直下にframeworkというディレクトリを作ってそこに入れていくことにしました。で、とりあえずFacebook.frameworkをcloneしたディレクトリ内で探したけどなかったのです。まぁ、この解決方法は単純にscriptsディレクトリの中の<strong>build_framework.sh</strong>を実行するだけで解消します。まぁcloneする人にはこのくらいは説明いらずかもしれませんね。僕は少し迷いました。</p>
+
+<p><strong>ログインを実行しようとすると&#8221;The operation couldn&#8217;t be completed. (com.facebook.sdk error 2.)&#8221;というエラーが出る</strong></p>
+
+<p>はい、これはStackoverflowに回答がありました。FacebookアプリのネイティブiOSアプリの<strong>Bundle ID</strong>をちゃんと入力すればいいんです。以前はこれ入力しなくても動いたような気がします。iOS6だとダメみたいです。</p>
+
+<p>こんなところです。</p>
+
+<p>Facebookログインのフローを理解して実装できたのでハッピーです！！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Stackoverflowってすごい！編集とか]]></title>
@@ -677,30 +717,6 @@ ggでテキスト最初の行
 <p>ですね。<code>ls</code>の<code>-l</code>オプションでファイルを1行表示にし、パイプでwcにつなげるということらしいです。</p>
 
 <p><a href="http://www.k-tanaka.net/unix/wc.html">wc</a>は行数や単語数、バイト数をカウントするコマンドで、行数のみカウントする場合は、<code>-l</code>オプションを付けます。この<a href="http://www.k-tanaka.net/unix/">UNIXコマンド</a>ってサイトいいな！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[うっほ！US配列でControlの位置を変更！]]></title>
-    <link href="http://morizotter.com/blog/2012/07/15/mac-control/"/>
-    <updated>2012-07-15T16:08:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/15/mac-control</id>
-    <content type="html"><![CDATA[<p>こんにちは。</p>
-
-<p>US配列キーボードが気に入ってます。<a href="http://www.morizotter.com/blog/2012/07/07/us-keyboard-key-remap/">日本語、英語変換をJISキーボードと同じように設定</a>してから、更に使い勝手が良くなってます。</p>
-
-<p>で、実はもうひとつ困っている問題がありました。Controlの位置です。USキーボードの場合、Controlがかなり下の方にあるので、入力するときに小指がガッと下がってかなり手が痛いし不自然なんですね。Emacsを練習していたらそれが顕著にダメージとなって現れてきました。それ以外はUSキーボードのキーはJISよりもスペースキーから近い感じがするので楽になんですが。。。</p>
-
-<p>で、<strong>caps lock</strong>キーにControlの機能をもたせることにしました。</p>
-
-<p>やり方はわかってたのですが、検索してみると<a href="http://firstmac.blogspot.jp/2007/08/caps-lock-control.html">こんな記事</a>も出てきて、みんなやってるらしいし良いだろうということで。</p>
-
-<pre><code>環境設定 &gt; キーボード &gt; 装飾キー
-</code></pre>
-
-<p>で割り当てを変えます。caps lockキーは使わないと思うので、controlキーの機能はそのまま残しました。</p>
-
-<p>うーん、快適！</p>
 ]]></content>
   </entry>
   
