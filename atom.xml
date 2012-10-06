@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-09-29T14:08:45+09:00</updated>
+  <updated>2012-10-06T19:27:22+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Stackoverflowってすごい！編集とか]]></title>
+    <link href="http://morizotter.com/blog/2012/10/06/stackoverflow-edit/"/>
+    <updated>2012-10-06T19:21:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/10/06/stackoverflow-edit</id>
+    <content type="html"><![CDATA[<p>今日はStackoverflowについてちょっと驚いたことがあったので書いてます。僕はまだまだ初心者でかなりやれることが限れれている（他人の質問にコメントさえできない汗）のですが、使いこなしていきたいと思いました。</p>
+
+<p>その理由はこれ、</p>
+
+<p> <img class="center" src="http://dl.dropbox.com/u/8131276/octopress/stackoverflow-edit.png" width="400">
+ 
+ 僕の書いた質問が編集されました（＞＜）。プログラミング英語の勉強にもなっちゃう！いいね！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MacOSX Mountain Lionのクリーンインストールってこんなに簡単だったのね]]></title>
@@ -680,55 +695,6 @@ ggでテキスト最初の行
 <p>で割り当てを変えます。caps lockキーは使わないと思うので、controlキーの機能はそのまま残しました。</p>
 
 <p>うーん、快適！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Rubyを書いていたらEmacsが使いたくなった]]></title>
-    <link href="http://morizotter.com/blog/2012/07/15/emacs/"/>
-    <updated>2012-07-15T16:02:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/15/emacs</id>
-    <content type="html"><![CDATA[<p>RubyではIDEを使わない。エディタで書く。らしいです。で、世界で一番使われているRuby用エディタのTextMateは日本語が使えない。TextMate2は出力はできるようですが、入力に難ありという事です。まぁ、エディタ探す前にVimでやっていて、不便感じないしいちいちソフトを立ち上げなくて済むので楽だなと感じていたのでした。</p>
-
-<p>ただ、Vimの操作にはやっぱりなれない。カーソルの移動などが面倒。Control+F,B,P,Nで移動したい！ということで、Emacsの方がいいような気がしてきました。</p>
-
-<h2>一覧</h2>
-
-<ul>
-<li><p><a href="http://www.unixuser.org/~euske/doc/emacsref/">Emacsクイックリファレンス</a></p>
-
-<ul>
-<li>こちらのサイトの一覧がわかり易かったので、これをiPadに表示しながらいろいろやっていこうと思っています。</li>
-</ul>
-</li>
-<li><p><a href="http://www.k-tanaka.net/unix/emacs.html">Unixコマンド(Emacs)</a></p>
-
-<ul>
-<li>こちらも分かりやすそう。</li>
-</ul>
-</li>
-<li><p><a href="http://e-sahf.jp/class/12/emacs.htm">emacs操作方法</a></p>
-
-<ul>
-<li>こちらも。</li>
-</ul>
-</li>
-</ul>
-
-
-<p>後ろに行くにつれてわかりやすくなってるかも。ちなみに、emacsのとじ方がわからず、emacs操作方法を見つけて本当に助かりましたよ。。。</p>
-
-<h2>Ctr + Spaceの問題</h2>
-
-<p>Emacsを練習していると、どうやらMacの初期設定で<code>Ctr+Space</code>でSpotlightが開いてしまうようなので<a href="http://osuban.jp/devdi/?p=665">ここ</a>を参考にキーバインドを変更しました。</p>
-
-<h2>メタキーの問題</h2>
-
-<p>EmacsでMetaキーをよく使うのですが、これがMacの標準だと<code>esc</code>に設定されているようです。これだと遠い！そこで調べてみたところ、<a href="http://d.hatena.ne.jp/goinger/20090104/1231048095">こんな記事</a>がありまして、参考にしてみました。で、普段使っているiTermで設定しようとしたらメッセージが。</p>
-
-<p><img class="centr" src="http://dl.dropbox.com/u/8131276/octopress/emacs-iterm.png"></p>
-
-<p>メッセージどおり<code>+esc</code>の方にしてみました。とりあえずこの設定でやってみます。</p>
 ]]></content>
   </entry>
   

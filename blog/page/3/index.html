@@ -9,7 +9,7 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="とりあえず、コーディングの全体的な復讐の意味も含めてたのしいRubyを読み始めています。書きながら読んでいますが、Rubyって楽しいです！自分の使っているRubyのバージョンがruby 1.9.3p194なのですが、書籍の記述どおりに行かなかった部分や、ポイントになる部分をメモっておきます。 &hellip;">
+  <meta name="description" content="RubyではIDEを使わない。エディタで書く。らしいです。で、世界で一番使われているRuby用エディタのTextMateは日本語が使えない。TextMate2は出力はできるようですが、入力に難ありという事です。まぁ、エディタ探す前にVimでやっていて、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,84 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/15/emacs/">Rubyを書いていたらEmacsが使いたくなった</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-15T16:02:00+09:00" pubdate data-updated="true">Jul 15<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/15/emacs/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>RubyではIDEを使わない。エディタで書く。らしいです。で、世界で一番使われているRuby用エディタのTextMateは日本語が使えない。TextMate2は出力はできるようですが、入力に難ありという事です。まぁ、エディタ探す前にVimでやっていて、不便感じないしいちいちソフトを立ち上げなくて済むので楽だなと感じていたのでした。</p>
+
+<p>ただ、Vimの操作にはやっぱりなれない。カーソルの移動などが面倒。Control+F,B,P,Nで移動したい！ということで、Emacsの方がいいような気がしてきました。</p>
+
+<h2>一覧</h2>
+
+<ul>
+<li><p><a href="http://www.unixuser.org/~euske/doc/emacsref/">Emacsクイックリファレンス</a></p>
+
+<ul>
+<li>こちらのサイトの一覧がわかり易かったので、これをiPadに表示しながらいろいろやっていこうと思っています。</li>
+</ul>
+</li>
+<li><p><a href="http://www.k-tanaka.net/unix/emacs.html">Unixコマンド(Emacs)</a></p>
+
+<ul>
+<li>こちらも分かりやすそう。</li>
+</ul>
+</li>
+<li><p><a href="http://e-sahf.jp/class/12/emacs.htm">emacs操作方法</a></p>
+
+<ul>
+<li>こちらも。</li>
+</ul>
+</li>
+</ul>
+
+
+<p>後ろに行くにつれてわかりやすくなってるかも。ちなみに、emacsのとじ方がわからず、emacs操作方法を見つけて本当に助かりましたよ。。。</p>
+
+<h2>Ctr + Spaceの問題</h2>
+
+<p>Emacsを練習していると、どうやらMacの初期設定で<code>Ctr+Space</code>でSpotlightが開いてしまうようなので<a href="http://osuban.jp/devdi/?p=665">ここ</a>を参考にキーバインドを変更しました。</p>
+
+<h2>メタキーの問題</h2>
+
+<p>EmacsでMetaキーをよく使うのですが、これがMacの標準だと<code>esc</code>に設定されているようです。これだと遠い！そこで調べてみたところ、<a href="http://d.hatena.ne.jp/goinger/20090104/1231048095">こんな記事</a>がありまして、参考にしてみました。で、普段使っているiTermで設定しようとしたらメッセージが。</p>
+
+<p><img class="centr" src="http://dl.dropbox.com/u/8131276/octopress/emacs-iterm.png"></p>
+
+<p>メッセージどおり<code>+esc</code>の方にしてみました。とりあえずこの設定でやってみます。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -751,56 +829,6 @@ e130159 HEAD@{10}: commit: 3
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/09/iterm2/">iTerm2がなかなか良い</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-09T23:40:00+09:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/09/iterm2/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>何人かの人に勧められたのでMac標準のターミナル.appからiTerm2に変えたのが多分1ヶ月ほど前。少しの間背景をぼやかして薄暗くしているだけでターミナルと同じようにしか使ってなかった。</p>
-
-<p>ただ、最近、この良さに気づき始めている。一番シンプルだけど良いのは、<code>Command + D</code>での複数画面表示、そして、<code>Command + Shift + D</code>で上下にも分割できる。横に広いテーブルを見るときなど便利。下にできたビューで<code>Command + D</code>をするとまた左右に分割なんて。テーブルをたくさん表示したい時にかなり助かる。</p>
-
-<p>更に、テーブルがビューに収まりきらなかったらテーブル単位で<code>Command + +</code>とか<code>Command + -</code>とかで、拡大縮小できる！地味に助かる。</p>
-
-<p>ちょっと関連のない作業するときには右下の小さいビューでやったり、タブを開いてそちらでやったり。タブへの移動は<code>Command + 数字（タブ番号）</code>でらくらく。</p>
-
-<p>そして早い！</p>
-
-<p>こりゃ、人気の訳がわかりますなぁ！！</p>
-
-<p>それにしても、日本語キーボードと英語キーボードの行き来はちょっと疲れる。MacBook Airの軽快さで印象がアップしているのかわからないけど、US慣れるとかなりいいよ！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -824,6 +852,10 @@ e130159 HEAD@{10}: commit: 3
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/10/06/stackoverflow-edit/">Stackoverflowってすごい！編集とか</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/09/29/clean-install/">MacOSX Mountain Lionのクリーンインストールってこんなに簡単だったのね</a>
       </li>
     
@@ -837,10 +869,6 @@ e130159 HEAD@{10}: commit: 3
     
       <li class="post">
         <a href="/blog/2012/09/10/making-logviewer/">iOSのログをデバッグ時にアプリで見る</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/03/about-twitter-bootstarap/">TwitterBootstrapについて</a>
       </li>
     
   </ul>
