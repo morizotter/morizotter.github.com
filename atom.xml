@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-10-06T19:27:22+09:00</updated>
+  <updated>2012-10-06T19:32:02+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -18,13 +18,19 @@
     <link href="http://morizotter.com/blog/2012/10/06/stackoverflow-edit/"/>
     <updated>2012-10-06T19:21:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/10/06/stackoverflow-edit</id>
-    <content type="html"><![CDATA[<p>今日はStackoverflowについてちょっと驚いたことがあったので書いてます。僕はまだまだ初心者でかなりやれることが限れれている（他人の質問にコメントさえできない汗）のですが、使いこなしていきたいと思いました。</p>
+    <content type="html"><![CDATA[<p>今日は<a href="http://stackoverflow.com/">Stackoverflow</a>についてちょっと驚いたことがあったので書いてます。僕はまだまだ初心者でかなりやれることが限れれている（他人の質問にコメントさえできない汗）のですが、使いこなしていきたいと思いました。</p>
 
 <p>その理由はこれ、</p>
 
-<p> <img class="center" src="http://dl.dropbox.com/u/8131276/octopress/stackoverflow-edit.png" width="400">
+<p> <img class="center" src="http://dl.dropbox.com/u/8131276/octopress/stackoverflow-edit.png">
  
- 僕の書いた質問が編集されました（＞＜）。プログラミング英語の勉強にもなっちゃう！いいね！</p>
+<a href="http://stackoverflow.com/questions/12411758/how-to-manipulate-views-while-for-loop">僕の書いた質問文</a>が編集されました（＞＜）。プログラミング英語の勉強にもなっちゃう！すげ。ちなみに、僕の質問がレビューされた経緯がある。ぐは。</p>
+
+<p><a href="http://stackoverflow.com/posts/12411758/revisions">Revisions</a></p>
+
+<p>すごいわ。</p>
+
+<p>よし、後で誰かの疑問に答えてレピュテーションあげてもっとコミットしよう！</p>
 ]]></content>
   </entry>
   
