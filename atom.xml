@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-10-07T01:57:24+09:00</updated>
+  <updated>2012-10-07T15:48:01+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ドキュメント自動生成機能（appledoc）を試してみたよ]]></title>
+    <link href="http://morizotter.com/blog/2012/10/07/appledoc/"/>
+    <updated>2012-10-07T15:44:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/10/07/appledoc</id>
+    <content type="html"><![CDATA[<h2>Xcodeのドキュメントを自動で生成する</h2>
+
+<h2>参考リンク</h2>
+
+<ul>
+<li><a href="http://gentlebytes.com/appledoc/">appledoc公式</a></li>
+<li><a href="https://github.com/tomaz/appledoc">tomaz/appledoc - Github</a></li>
+<li><a href="http://safx-dev.blogspot.jp/2012/06/appledocobjective-cxcode-organizer.html">appledocを使ってObjective-CソースをXcode Organizerで表示できるようにする</a></li>
+<li><a href="http://safx-dev.blogspot.jp/2012/06/appledoc.html">appledocのドキュメント作成を自動で行うようにする</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[facebookの投稿]]></title>
@@ -626,98 +645,6 @@ ls -lha
     <updated>2012-07-17T01:05:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/07/17/amazon-cloud-drive</id>
     <content type="html"><![CDATA[<p>ちょっと前にリリースされたAmazon Cloud Driveのデスクトップアプリを入れてみました。クラウドはDropboxで足りてるのですが。ふむふむ。デスクトップ側にはデータを置かない仕様のようですね。Kindleへの転送は別みたいだし、使うことあるかなぁ。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Vimもいいなと思ってVimtutorを試してみた]]></title>
-    <link href="http://morizotter.com/blog/2012/07/16/vimtutor/"/>
-    <updated>2012-07-16T02:26:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/16/vimtutor</id>
-    <content type="html"><![CDATA[<p>ターミナルでの作業が快適なので、簡単なRubyなら専用のエディタじゃなくてもいいだろうということで、VimよりいろいろできそうなEmacsの学習を始めました。しかし！やっぱりVimの気軽さが気になってもう一回Vimも学んでみようと思い、vimtutorをやって見ることにしました。</p>
-
-<h2>冒頭：</h2>
-
-<pre><code>Note: カーソルキーでも移動できます。しかし hjkl に一度慣れてしまえば、はるかに速く移動することができるでしょう。いやマジで!
-</code></pre>
-
-<p>出だしからすごいな！期待できるかも。</p>
-
-<h2>メモ：</h2>
-
-<p><strong>文字の置き換え</strong></p>
-
-<pre><code>:s/oldword/newword/
-</code></pre>
-
-<p>最後にgをつけると一行分置き換わる</p>
-
-<p><strong>アンドゥ</strong></p>
-
-<pre><code>u
-</code></pre>
-
-<p><strong>アンドゥをキャンセル</strong></p>
-
-<pre><code>Ctr+r
-</code></pre>
-
-<p><strong>カーソルの移動</strong></p>
-
-<pre><code>ワードの先頭  : w
-ワードの最後  : e
-行の先頭 : 0
-行の最後 : $
-</code></pre>
-
-<p><strong>置き換え</strong></p>
-
-<pre><code>一文字 : r
-一文字以上 : R
-</code></pre>
-
-<p><strong>削除</strong></p>
-
-<pre><code>x
-</code></pre>
-
-<p><strong>コピー</strong></p>
-
-<pre><code>ヴィジュアルモードで選択範囲をy
-yw で単語コピー。同じようにy$で文の最後までコピー
-</code></pre>
-
-<p>yは<a href="http://ejje.weblio.jp/content/Yank">yank</a></p>
-
-<p><strong>貼り付け</strong></p>
-
-<pre><code>p
-</code></pre>
-
-<p>pはput</p>
-
-<p><strong>行の移動</strong></p>
-
-<pre><code>行ナンバーG
-Ctr+Gで現在の行表示
-Gでテキスト最後の行
-ggでテキスト最初の行
-</code></pre>
-
-<p><strong>外部コマンドを利用する</strong></p>
-
-<pre><code>:!ここにコマンドを入れる。
-(例):!ls -lha
-</code></pre>
-
-<p><strong>外部テキストを読み込み</strong></p>
-
-<pre><code>:r テキスト名
-(例):r test.txt
-(例):r !ls -lha
-</code></pre>
-
-<p>使いそうなキーをまとめました。このチュートリアルよくできてます。Vimの使い方がいまいちわからないという人は是非試してみてください！</p>
 ]]></content>
   </entry>
   

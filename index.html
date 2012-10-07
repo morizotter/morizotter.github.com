@@ -9,8 +9,10 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="facebookのログインができたので次は投稿に挑戦しました。これも、Facebookの公式ページにそって学んだらすぐに出来ました。 Publish to Feed
-Using the Facebook integration in iOS 6 とりあえず、 &hellip;">
+  <meta name="description" content="Xcodeのドキュメントを自動で生成する 参考リンク appledoc公式
+tomaz/appledoc - Github
+appledocを使ってObjective-CソースをXcode Organizerで表示できるようにする
+appledocのドキュメント作成を自動で行うようにする ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +81,54 @@ Using the Facebook integration in iOS 6 とりあえず、 &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/10/07/appledoc/">ドキュメント自動生成機能（appledoc）を試してみたよ</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-07T15:44:00+09:00" pubdate data-updated="true">Oct 7<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/10/07/appledoc/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Xcodeのドキュメントを自動で生成する</h2>
+
+<h2>参考リンク</h2>
+
+<ul>
+<li><a href="http://gentlebytes.com/appledoc/">appledoc公式</a></li>
+<li><a href="https://github.com/tomaz/appledoc">tomaz/appledoc - Github</a></li>
+<li><a href="http://safx-dev.blogspot.jp/2012/06/appledocobjective-cxcode-organizer.html">appledocを使ってObjective-CソースをXcode Organizerで表示できるようにする</a></li>
+<li><a href="http://safx-dev.blogspot.jp/2012/06/appledoc.html">appledocのドキュメント作成を自動で行うようにする</a></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -593,124 +643,6 @@ Using the Facebook integration in iOS 6 とりあえず、 &hellip;">
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/09/02/textamate2/">Textamate2のインストール</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-02T20:20:00+09:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2012</time>
-        
-         | <a href="/blog/2012/09/02/textamate2/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>もう、半月以上前になりますがTextmate2がgithubで公開されたことを知りました。ずっとインストールしたいと思っていたのですが、後回しになっていました。やっと出来ます。</p>
-
-<p>参考にしたのはこちらのサイト</p>
-
-<ul>
-<li><a href="https://github.com/textmate/textmate">公式</a></li>
-<li><a href="http://tools4hack.santalab.me/howto-oss-textmate-build.html">[Mac] オープンソース化なテキストエディタ「TextMate 2」をビルドした手順メモ</a></li>
-<li><a href="http://blog.f13.jp/post/29942351173/textmate-2">TextMate 2をソースからコンパイルしてみる</a></li>
-</ul>
-
-
-<p>基本は、2つめのサイトを参考にしてやったのですが、少し違うやり方を取ったところもあるのでメモを残しておきます。</p>
-
-<h3>gitからクローンします</h3>
-
-<p>作業スペースはデスクトップでやりました。クローンして、フォルダの中に移動します。</p>
-
-<pre><code>cd ~/Desktop
-git clone git://github.com/textmate/textmate.git
-cd textmate/
-</code></pre>
-
-<p>参考サイトには、<code>git clone https://github.com/textmate/textmate.git</code>とあったのですが、自分の環境ではhttps:が失敗したので<code>git:</code>でやりました。</p>
-
-<h3>必要なものをインストールします</h3>
-
-<p>最初失敗していたのですが、参考サイトの3つめを見て<code>brew update</code>したところ成功しました。</p>
-
-<pre><code>$ brew update
-$ brew install ragel boost multimarkdown hg ninja
-</code></pre>
-
-<h3>混沌</h3>
-
-<p>もしこのブログを参考にされている方がいれば、この混沌の箇所は飛ばして先にビルドをしてみてください。僕はここで恐らく無駄なことをしてつまずきました。</p>
-
-<h3>ビルド！</h3>
-
-<p>公式にあるとおりに下記の処理を実行して成功です！</p>
-
-<pre><code>git submodule update --init
-./configure &amp;&amp; ninja
-</code></pre>
-
-<p>Applicationsフォルダに移動して完了!</p>
-
-<pre><code>cp -r ~/build/TextMate/Applications/TextMate/TextMate.app /Applications/
-</code></pre>
-
-<h3>とりあえず設定</h3>
-
-<p>やった成功！日本語の入力も問題なし！</p>
-
-<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2japanese.png"></p>
-
-<p>ということで、初期設定をちょこっとやります。</p>
-
-<p>まずPreferencesのTerminalでPathを設定します。これで、<code>mate</code>が使えるようになります。</p>
-
-<p>テーマについてですが、変えられないのかな！？と思ったところ発見しました！これもPreferencesのBundlesでThemesタブをクリックすると選択肢が出てくるので、チエックすればインストールされます。インストールされたThemeはViewから適用できます。とりあえず昔使ってたのに近い<code>Blackboard</code>にしました！<code>Oceanic</code>も良かったけど。</p>
-
-<p>あとは、Runの設定です。これ苦戦しました。ですがなんとか解決です。これについては躓く人もいると思いますので、<a href="http://www.morizotter.com/blog/2012/09/03/textmate2-ruby-run/">別記事</a>で書こうと思います。</p>
-
-<h3>つまずきメモ</h3>
-
-<p>混沌の箇所ではまっていた部分です。。。</p>
-
-<p>(あとで分かったのですがMountain Lionではやっぱり以下の処理はいらないかも)</p>
-
-<p>ここでビルドしようとしたのですが失敗しました。公式にあるようにproctoolsを入れないといけないようです。Lionの場合とあったのでやらなかったのですが、Mountain Lionでも同様の様子。</p>
-
-<pre><code>brew install proctools
-</code></pre>
-
-<p>ぐは、<code>Failed executing: bsdmake</code>というエラーが出ました。メッセージにある通り<code>brew doctor</code>を実行。<code>libtool</code>ってのの依存関係がおかしいと合ったので<code>brew install</code>を。</p>
-
-<pre><code>brew doctor
-brew install libtool
-</code></pre>
-
-<p>成功！でも、<code>brew install proctools</code>は再度失敗。再度<code>brew doctor</code>を行ったところ、パスの順番を変えてみればということだったので、<a href="http://d.hatena.ne.jp/koseki2/20081201/macportPath">こちら</a>を参考に/usr/local/binを前に（以前やったはずだけどMLインストールの時にリセットされたのかな？？）。で、<code>brew doctor</code>ではエラーはなくなったけど<code>proctools</code>のインストールには失敗する。。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -732,6 +664,10 @@ brew install libtool
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/10/07/appledoc/">ドキュメント自動生成機能（appledoc）を試してみたよ</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/10/07/facebook-publish/">facebookの投稿</a>
       </li>
     
@@ -745,10 +681,6 @@ brew install libtool
     
       <li class="post">
         <a href="/blog/2012/09/29/clean-install/">MacOSX Mountain Lionのクリーンインストールってこんなに簡単だったのね</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/26/rocketdocs/">RocketDocsはいいかもしれない</a>
       </li>
     
   </ul>
