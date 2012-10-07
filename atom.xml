@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-10-07T15:57:31+09:00</updated>
+  <updated>2012-10-07T16:00:31+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -20,7 +20,11 @@
     <id>http://morizotter.com/blog/2012/10/07/appledoc</id>
     <content type="html"><![CDATA[<h3>ドキュメントも綺麗なのをつくりたい！</h3>
 
-<p>ということで、ちょっと前に仕入れたappledocの情報を元に手元の環境に設定してみました。ただ開発するだけじゃなくてやっぱりドキュメントも綺麗に作りたいじゃない！</p>
+<p>appledocはXcodeのプロジェクトからクラスドキュメントを生成できるフレームワーク？です。Doxygenと似てるんじゃないかな。でも、Doxygenはちょっと面倒だし、なんかサイトも古くてちょっとしょぼいので、かっこいいappledocを試して見ることにしました！</p>
+
+<p>ちょっと前に仕入れたappledocの情報を元に手元の環境に設定してみました。ただ開発するだけじゃなくてやっぱりドキュメントも綺麗に作りたいじゃない！</p>
+
+<p>あと、コメントの書き方も統一化された一般的なもので行いたい。それにはやっぱりこういうフレームワークを利用するのが一番かなと！</p>
 
 <h3>設定について</h3>
 
@@ -34,7 +38,7 @@
 <li>これでappledocコマンドが使えるようになります。</li>
 </ul>
 </li>
-<li>ああ</li>
+<li><code>~/appledoc -p プロジェクト名 -c 会社名 --keep-undocumented-objects --keep-undocumented-members ディレクトリ</code>で、ドキュメントの生成。</li>
 </ol>
 
 
