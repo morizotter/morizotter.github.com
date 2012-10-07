@@ -123,15 +123,16 @@
 
 <ol>
 <li><code>git clone git://github.com/tomaz/appledoc.git</code>を実行してgithubからclone</li>
-<li><code>sudo sh install-appledoc.sh -t default</code>を実行してMacにインストール
-
-<ul>
-<li>これでappledocコマンドが使えるようになります。</li>
-</ul>
-</li>
-<li><code>~/appledoc -p プロジェクト名 -c 会社名 --keep-undocumented-objects --keep-undocumented-members ディレクトリ</code>で、ドキュメントの生成。</li>
+<li><code>sudo sh install-appledoc.sh -t default</code>を実行してMacにインストール</li>
+<li><code>appledoc -p プロジェクト名 -c 会社名 --keep-undocumented-objects --keep-undocumented-members ディレクトリ</code>で、ドキュメントの生成。</li>
 </ol>
 
+
+<p>これでドキュメントが生成できます。ドキュメントは、<code>/Users/&lt;ユーザ名&gt;/Library/Developer/Shared/Documentation/DocSets/</code>に出来上ががります。Xcodeからも認識されます。</p>
+
+<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/appledoc-xcode.png" title="" ></p>
+
+<p>この状態でパッケージの内容を表示すると、<code>Contents/Resources/Documents</code>下にHTMLも生成されているようです。</p>
 
 <h3>参考リンク</h3>
 
