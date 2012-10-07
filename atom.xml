@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-10-07T15:48:01+09:00</updated>
+  <updated>2012-10-07T15:51:14+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -14,13 +14,13 @@
 
   
   <entry>
-    <title type="html"><![CDATA[ドキュメント自動生成機能（appledoc）を試してみたよ]]></title>
+    <title type="html"><![CDATA[ドキュメント自動生成のappledocを試してみたよ]]></title>
     <link href="http://morizotter.com/blog/2012/10/07/appledoc/"/>
     <updated>2012-10-07T15:44:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/10/07/appledoc</id>
-    <content type="html"><![CDATA[<h2>Xcodeのドキュメントを自動で生成する</h2>
+    <content type="html"><![CDATA[<h3>Xcodeのドキュメントを自動で生成する</h3>
 
-<h2>参考リンク</h2>
+<h3>参考リンク</h3>
 
 <ul>
 <li><a href="http://gentlebytes.com/appledoc/">appledoc公式</a></li>
