@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-10-07T15:51:14+09:00</updated>
+  <updated>2012-10-07T15:57:31+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -18,7 +18,25 @@
     <link href="http://morizotter.com/blog/2012/10/07/appledoc/"/>
     <updated>2012-10-07T15:44:00+09:00</updated>
     <id>http://morizotter.com/blog/2012/10/07/appledoc</id>
-    <content type="html"><![CDATA[<h3>Xcodeのドキュメントを自動で生成する</h3>
+    <content type="html"><![CDATA[<h3>ドキュメントも綺麗なのをつくりたい！</h3>
+
+<p>ということで、ちょっと前に仕入れたappledocの情報を元に手元の環境に設定してみました。ただ開発するだけじゃなくてやっぱりドキュメントも綺麗に作りたいじゃない！</p>
+
+<h3>設定について</h3>
+
+<p>基本的には<a href="https://github.com/tomaz/appledoc">tomaz/appledoc - Github</a>のREADMEが一番良いと思います。更に少しわかりやすく日本語で解説している<a href="http://safx-dev.blogspot.jp/2012/06/appledocobjective-cxcode-organizer.html">appledocを使ってObjective-CソースをXcode Organizerで表示できるようにする</a>を参考にセッティングを行いました。Macにインストールする方法はいくつかあるのですが、僕は下記の方法で行いました。</p>
+
+<ol>
+<li><code>git clone git://github.com/tomaz/appledoc.git</code>を実行してgithubからclone</li>
+<li><code>sudo sh install-appledoc.sh -t default</code>を実行してMacにインストール
+
+<ul>
+<li>これでappledocコマンドが使えるようになります。</li>
+</ul>
+</li>
+<li>ああ</li>
+</ol>
+
 
 <h3>参考リンク</h3>
 
