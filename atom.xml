@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-10-07T16:14:15+09:00</updated>
+  <updated>2012-10-07T16:25:59+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -33,6 +33,12 @@
 <ol>
 <li><code>git clone git://github.com/tomaz/appledoc.git</code>を実行してgithubからclone</li>
 <li><code>sudo sh install-appledoc.sh -t default</code>を実行してMacにインストール</li>
+</ol>
+
+
+<h3>ドキュメントの生成</h3>
+
+<ol>
 <li><code>appledoc -p プロジェクト名 -c 会社名 --keep-undocumented-objects --keep-undocumented-members ディレクトリ</code>で、ドキュメントの生成。</li>
 </ol>
 
@@ -44,6 +50,13 @@
 <p>この状態でパッケージの内容を表示すると、<code>Contents/Resources/Documents</code>下にHTMLも生成されているようです。</p>
 
 <p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/appledoc-contents.png"></p>
+
+<h3>コンパイル時に自動生成</h3>
+
+<p><a href="http://safx-dev.blogspot.jp/2012/06/appledoc.html">appledocのドキュメント作成を自動で行うようにする</a>を参考に、自動で生成されるようにしてみました。とりあえずあまりグローバルにファイルを置くと後で混乱しそうなので、僕は、プロジェクトフォルダの直下に<code>AppledocSettings.plist</code>を置いてみました。</p>
+
+<p>こんなに簡単に綺麗なドキュメントができちゃうなんて感動です。
+今後は少しずつコメントの記述方法に慣れて行きたいと思います！</p>
 
 <h3>参考リンク</h3>
 
