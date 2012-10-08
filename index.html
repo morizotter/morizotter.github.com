@@ -9,7 +9,9 @@
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="ドキュメントも綺麗なのをつくりたい！ appledocはXcodeのプロジェクトからクラスドキュメントを生成できるフレームワーク？です。Doxygenと似てるんじゃないかな。でも、Doxygenはちょっと面倒だし、なんかサイトも古くてちょっとしょぼいので、 &hellip;">
+  <meta name="description" content="Target > Build Phases > Compile Sources で対象のソースを選ぶ
+Enter
+-fno-objc-arcを入力 ウッはこれは気づきませんでした。ライブラリによってはARCにまだ対応していないものもあるんですよね。今までいちいちコメントアウトしたり、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +80,53 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/10/08/no-arc-in-a-file/">ファイル単位でARC対象外にする</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-08T13:37:00+09:00" pubdate data-updated="true">Oct 8<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/10/08/no-arc-in-a-file/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ol>
+<li>Target > Build Phases > Compile Sources で対象のソースを選ぶ</li>
+<li>Enter</li>
+<li><code>-fno-objc-arc</code>を入力</li>
+</ol>
+
+
+<p>ウッはこれは気づきませんでした。ライブラリによってはARCにまだ対応していないものもあるんですよね。今までいちいちコメントアウトしたり、書き換えたりしてやってましたがこんな方法があったとは。他にもコンパイルオプションを入力できそうです！</p>
+
+<p>参考にしたサイト: <a href="http://homepie.blog.shinobi.jp/Entry/32/">予定外 [iOS5/ARC対応] iOSでTwitterクライアント その１ （準備編）</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -620,74 +669,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/09/03/textmate2-ruby-run/">Textmate2でrubyを実行する</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-03T00:16:00+09:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2012</time>
-        
-         | <a href="/blog/2012/09/03/textmate2-ruby-run/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.morizotter.com/blog/2012/09/02/textamate2/">前回の記事</a>でTextmate2のビルドを書きましたが、今回は続きでRubyの実行(Run)についてです。</p>
-
-<p>そのまま実行（⌘+R）すると、</p>
-
-<pre><code>Support/TextMate/Managed/Bundles/Ruby.tmbundle/Support/RubyMate/run_script.rb:1: undefined method `+' for nil:NilClass (NoMethodError)
-</code></pre>
-
-<p>というエラーが出て先に進みません。いろいろ試行錯誤した結果これを解消する方法が見つかりました。</p>
-
-<p>まずは、PreferencesのBundlesで<code>Bundle Support</code>にチェックを入れます！</p>
-
-<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2rubyrun.png"></p>
-
-<p>そして、設定を変更します。</p>
-
-<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2rubyversion.png"></p>
-
-<p>上記の3つはあったほうがよさそうです。これで希望のバージョンで実行することができます。このまま実行すると、以前は別画面で表示されていた実行ウィンドウがテキストウィンドウの下に表示されます。ちょっと邪魔なので、分離する方法を見つけました。</p>
-
-<pre><code>defaults write com.macromates.TextMate.preview htmlOutputPlacement window
-</code></pre>
-
-<p>ターミナルで上記コマンドをそのまま貼り付けて実行するだけです。<a href="http://superuser.com/questions/367851/how-to-move-textmate-2-output-pane-to-a-new-window">Stackoverflow</a>情報です。さて実行。</p>
-
-<p><img class="center" src="http://dl.dropbox.com/u/8131276/octopress/textmate2run.png"></p>
-
-<p>こんな感じです。初代と変わらないですね！</p>
-
-<p>解決のヒントになったのは<a href="http://comments.gmane.org/gmane.editors.textmate.general/34487">この記事</a>です。ありがとうございました！</p>
-
-<p>これに3時間は悩まされた。。。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -709,6 +690,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/10/08/no-arc-in-a-file/">ファイル単位でARC対象外にする</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/10/07/appledoc/">ドキュメント自動生成のappledocを試してみたよ</a>
       </li>
     
@@ -722,10 +707,6 @@
     
       <li class="post">
         <a href="/blog/2012/10/06/stackoverflow-edit/">Stackoverflowってすごい！編集とか</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/29/clean-install/">MacOSX Mountain Lionのクリーンインストールってこんなに簡単だったのね</a>
       </li>
     
   </ul>

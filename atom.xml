@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-10-07T16:47:55+09:00</updated>
+  <updated>2012-10-08T13:45:32+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ファイル単位でARC対象外にする]]></title>
+    <link href="http://morizotter.com/blog/2012/10/08/no-arc-in-a-file/"/>
+    <updated>2012-10-08T13:37:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/10/08/no-arc-in-a-file</id>
+    <content type="html"><![CDATA[<ol>
+<li>Target > Build Phases > Compile Sources で対象のソースを選ぶ</li>
+<li>Enter</li>
+<li><code>-fno-objc-arc</code>を入力</li>
+</ol>
+
+
+<p>ウッはこれは気づきませんでした。ライブラリによってはARCにまだ対応していないものもあるんですよね。今までいちいちコメントアウトしたり、書き換えたりしてやってましたがこんな方法があったとは。他にもコンパイルオプションを入力できそうです！</p>
+
+<p>参考にしたサイト: <a href="http://homepie.blog.shinobi.jp/Entry/32/">予定外 [iOS5/ARC対応] iOSでTwitterクライアント その１ （準備編）</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ドキュメント自動生成のappledocを試してみたよ]]></title>
@@ -684,15 +702,6 @@ ls -lha
 <p>上記２つを参考に設定完了。日本語が半角で表示されるのはちょっと…。だけどまぁ英語で補えばいいし、何より入力が気持ちいいので良い感じ。使って見てまた感想書きます！</p>
 
 <p>次は、viをPHP用にカスタマイズしてみるぞ！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Amazon Cloud Driveを入れてみた]]></title>
-    <link href="http://morizotter.com/blog/2012/07/17/amazon-cloud-drive/"/>
-    <updated>2012-07-17T01:05:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/17/amazon-cloud-drive</id>
-    <content type="html"><![CDATA[<p>ちょっと前にリリースされたAmazon Cloud Driveのデスクトップアプリを入れてみました。クラウドはDropboxで足りてるのですが。ふむふむ。デスクトップ側にはデータを置かない仕様のようですね。Kindleへの転送は別みたいだし、使うことあるかなぁ。</p>
 ]]></content>
   </entry>
   

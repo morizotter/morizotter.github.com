@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>ドメインを変更しました - MORIZOTTER PRESS</title>
+  <title>ファイル単位でARC対象外にする - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="この記事を参考にmorizotter.github.comをmorizotter.comに変えてみた。morizotter.github.comって名前もよかったけどね。 この記事との出会いは本当によかった。この記事と出会わなければOctopressをこんなに楽しんでなかったんじゃないかと思う &hellip;">
+  <meta name="description" content="Target > Build Phases > Compile Sources で対象のソースを選ぶ
+Enter
+-fno-objc-arcを入力 ウッはこれは気づきませんでした。ライブラリによってはARCにまだ対応していないものもあるんですよね。今までいちいちコメントアウトしたり、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/03/morizotter-s-cname/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/10/08/no-arc-in-a-file/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +83,7 @@
   
   <header>
     
-      <h1 class="entry-title">ドメインを変更しました</h1>
+      <h1 class="entry-title">ファイル単位でARC対象外にする</h1>
     
     
       <p class="meta">
@@ -97,7 +99,7 @@
   
 
 
-<time datetime="2012-07-03T22:55:00+09:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2012</time>
+<time datetime="2012-10-08T13:37:00+09:00" pubdate data-updated="true">Oct 8<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,9 +108,16 @@
   </header>
 
 
-<div class="entry-content"><p><a href="http://www.sankitch.me/blog/2012/05/05/build-octopress-on-github-dropbox/">この記事</a>を参考にmorizotter.github.comをmorizotter.comに変えてみた。morizotter.github.comって名前もよかったけどね。</p>
+<div class="entry-content"><ol>
+<li>Target > Build Phases > Compile Sources で対象のソースを選ぶ</li>
+<li>Enter</li>
+<li><code>-fno-objc-arc</code>を入力</li>
+</ol>
 
-<p>この記事との出会いは本当によかった。この記事と出会わなければOctopressをこんなに楽しんでなかったんじゃないかと思う。&#8221;簡単にできる&#8221;って思って、本当にある程度簡単にできました！</p>
+
+<p>ウッはこれは気づきませんでした。ライブラリによってはARCにまだ対応していないものもあるんですよね。今までいちいちコメントアウトしたり、書き換えたりしてやってましたがこんな方法があったとは。他にもコンパイルオプションを入力できそうです！</p>
+
+<p>参考にしたサイト: <a href="http://homepie.blog.shinobi.jp/Entry/32/">予定外 [iOS5/ARC対応] iOSでTwitterクライアント その１ （準備編）</a></p>
 </div>
 
 
@@ -131,7 +140,7 @@
   
 
 
-<time datetime="2012-07-03T22:55:00+09:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2012</time>
+<time datetime="2012-10-08T13:37:00+09:00" pubdate data-updated="true">Oct 8<span>th</span>, 2012</time>
       
 
 
@@ -139,7 +148,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/03/morizotter-s-cname/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/03/morizotter-s-cname/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/10/08/no-arc-in-a-file/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/10/08/no-arc-in-a-file/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -152,10 +161,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/03/php-login/" title="Previous Post: php login">&laquo; php login</a>
+        <a class="basic-alignment left" href="/blog/2012/10/07/appledoc/" title="Previous Post: ドキュメント自動生成のappledocを試してみたよ">&laquo; ドキュメント自動生成のappledocを試してみたよ</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/04/octopress-is-confortable/" title="Next Post: Octopressでブログを書くことがなぜ快適か">Octopressでブログを書くことがなぜ快適か &raquo;</a>
       
     </p>
   </footer>
@@ -273,8 +280,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/03/morizotter-s-cname/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/03/morizotter-s-cname/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/10/08/no-arc-in-a-file/';
+        var disqus_url = 'http://morizotter.com/blog/2012/10/08/no-arc-in-a-file/';
         var disqus_script = 'embed.js';
       
     (function () {
