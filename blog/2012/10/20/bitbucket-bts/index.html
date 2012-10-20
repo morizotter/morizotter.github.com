@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>gitをDropboxで使うと起こる問題 - MORIZOTTER PRESS</title>
+  <title>bitbucketで個人用のBTSを作ったりして - MORIZOTTER PRESS</title>
   <meta name="author" content="morizotter">
 
   
-  <meta name="description" content="gitのPushに失敗するという面倒な事態に陥りました。おそらく、以前のMacBookAirと今のMacBookAirで同じファイルを編集したが原因です。 ゲレゲレめもさんの記述が大変参考になりました。ヒントであってもあるのとないのとは大違いです。 僕の場合は.gitと.git/refs/ &hellip;">
+  <meta name="description" content="BTS（Bug Tracking System / バグ管理システム）って便利ですね。RedmineやTracなど有名どころは既に利用されている方も多いと思います。 で、僕はこれと同じような環境を個人のまとめ用にほしいなと思って探してみました。たどり着いたのがbitbucketでした。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://morizotter.com/blog/2012/07/07/git-dropbox-problem/">
+  <link rel="canonical" href="http://morizotter.com/blog/2012/10/20/bitbucket-bts/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">gitをDropboxで使うと起こる問題</h1>
+      <h1 class="entry-title">bitbucketで個人用のBTSを作ったりして</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2012-07-07T16:44:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
+<time datetime="2012-10-20T17:19:00+09:00" pubdate data-updated="true">Oct 20<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,13 +106,19 @@
   </header>
 
 
-<div class="entry-content"><p>gitのPushに失敗するという面倒な事態に陥りました。おそらく、以前のMacBookAirと今のMacBookAirで同じファイルを編集したが原因です。</p>
+<div class="entry-content"><p>BTS（Bug Tracking System / バグ管理システム）って便利ですね。RedmineやTracなど有名どころは既に利用されている方も多いと思います。</p>
 
-<p><a href="http://d.hatena.ne.jp/gelegele/20120530/git_dropbox_fatal">ゲレゲレめも</a>さんの記述が大変参考になりました。ヒントであってもあるのとないのとは大違いです。</p>
+<p>で、僕はこれと同じような環境を個人のまとめ用にほしいなと思って探してみました。たどり着いたのが<a href="https://bitbucket.org/">bitbucket</a>でした。</p>
 
-<p>僕の場合は<code>.git</code>と<code>.git/refs/heads</code>とさらに<code>.git/refs/remotes/origin/master</code>に問題のあるファイルが生成されていたので、すべてrmして解消しました。</p>
+<p>RedmineやTracなど有名なのはインストール型が多くて面倒くさい。他のを探してみようとするとデザインが微妙だったりして使って行きたいと思えない。探した中でよさそうだった<a href="http://www.pivotaltracker.com/">Pivotal</a>は毎月課金の有料だったので、これからどれだけの期間使っていくかわからないので今はパスです。</p>
 
-<p>ふー。</p>
+<p>で、振り返ってGithubにもIssueやWikiが使えるのでRedmineみたいなチケット(Issue)管理できるかなと思ったのですが、公開されちゃうのでだめ。</p>
+
+<p>んー、ってちょっと迷って別のことしてたらふとBitbucketがあることを思いだしました。</p>
+
+<p>Bitbucketなら非公開でやりたかったことができそうです。とりあえず、テストのために新しいRepositoryを作って、Issue（日本ではチケットと呼ぶことが多い）を発行してみました。で、更新や解決等試してみたけどRedmineと同じように使えます。更に、Wikiも文法は知らない文法だったけど、まぁ慣れればいいし、普通にページ追加など簡単にできるしよかったです。</p>
+
+<p>これで個人のタスク管理なんかしちゃったりしちゃおうと思います。Bitbucketは最近デザインも変わっていい感じになったし、個人的にかなりおすすめしたいサービスです！</p>
 </div>
 
 
@@ -135,7 +141,7 @@
   
 
 
-<time datetime="2012-07-07T16:44:00+09:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
+<time datetime="2012-10-20T17:19:00+09:00" pubdate data-updated="true">Oct 20<span>th</span>, 2012</time>
       
 
 
@@ -143,7 +149,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/07/07/git-dropbox-problem/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/07/07/git-dropbox-problem/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://morizotter.com/blog/2012/10/20/bitbucket-bts/" data-via="morizotter" data-counturl="http://morizotter.com/blog/2012/10/20/bitbucket-bts/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -156,10 +162,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/07/macbook-air-2012-env/" title="Previous Post: MacBook Air環境設定">&laquo; MacBook Air環境設定</a>
+        <a class="basic-alignment left" href="/blog/2012/10/08/no-arc-in-a-file/" title="Previous Post: ファイル単位でARC対象外にする">&laquo; ファイル単位でARC対象外にする</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/07/07/chrome-shortcut/" title="Next Post: Google Chromeをさらに便利に">Google Chromeをさらに便利に &raquo;</a>
       
     </p>
   </footer>
@@ -277,8 +281,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://morizotter.com/blog/2012/07/07/git-dropbox-problem/';
-        var disqus_url = 'http://morizotter.com/blog/2012/07/07/git-dropbox-problem/';
+        var disqus_identifier = 'http://morizotter.com/blog/2012/10/20/bitbucket-bts/';
+        var disqus_url = 'http://morizotter.com/blog/2012/10/20/bitbucket-bts/';
         var disqus_script = 'embed.js';
       
     (function () {

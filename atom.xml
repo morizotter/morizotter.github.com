@@ -4,7 +4,7 @@
   <title><![CDATA[MORIZOTTER PRESS]]></title>
   <link href="http://morizotter.com/atom.xml" rel="self"/>
   <link href="http://morizotter.com/"/>
-  <updated>2012-10-08T13:45:32+09:00</updated>
+  <updated>2012-10-20T17:31:59+09:00</updated>
   <id>http://morizotter.com/</id>
   <author>
     <name><![CDATA[morizotter]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[bitbucketで個人用のBTSを作ったりして]]></title>
+    <link href="http://morizotter.com/blog/2012/10/20/bitbucket-bts/"/>
+    <updated>2012-10-20T17:19:00+09:00</updated>
+    <id>http://morizotter.com/blog/2012/10/20/bitbucket-bts</id>
+    <content type="html"><![CDATA[<p>BTS（Bug Tracking System / バグ管理システム）って便利ですね。RedmineやTracなど有名どころは既に利用されている方も多いと思います。</p>
+
+<p>で、僕はこれと同じような環境を個人のまとめ用にほしいなと思って探してみました。たどり着いたのが<a href="https://bitbucket.org/">bitbucket</a>でした。</p>
+
+<p>RedmineやTracなど有名なのはインストール型が多くて面倒くさい。他のを探してみようとするとデザインが微妙だったりして使って行きたいと思えない。探した中でよさそうだった<a href="http://www.pivotaltracker.com/">Pivotal</a>は毎月課金の有料だったので、これからどれだけの期間使っていくかわからないので今はパスです。</p>
+
+<p>で、振り返ってGithubにもIssueやWikiが使えるのでRedmineみたいなチケット(Issue)管理できるかなと思ったのですが、公開されちゃうのでだめ。</p>
+
+<p>んー、ってちょっと迷って別のことしてたらふとBitbucketがあることを思いだしました。</p>
+
+<p>Bitbucketなら非公開でやりたかったことができそうです。とりあえず、テストのために新しいRepositoryを作って、Issue（日本ではチケットと呼ぶことが多い）を発行してみました。で、更新や解決等試してみたけどRedmineと同じように使えます。更に、Wikiも文法は知らない文法だったけど、まぁ慣れればいいし、普通にページ追加など簡単にできるしよかったです。</p>
+
+<p>これで個人のタスク管理なんかしちゃったりしちゃおうと思います。Bitbucketは最近デザインも変わっていい感じになったし、個人的にかなりおすすめしたいサービスです！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ファイル単位でARC対象外にする]]></title>
@@ -679,29 +700,6 @@ ls -lha
 
 <p>とりあえずの基本設定と、コマンドリストだけです。
 これから１つずつ理解してから入れていこうと思います。そういえば、<code>set number</code>とか基本的なものはちょこちょこ書いておこう。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[TextMateを日本語化してみた]]></title>
-    <link href="http://morizotter.com/blog/2012/07/18/textmate-japanese/"/>
-    <updated>2012-07-18T20:13:00+09:00</updated>
-    <id>http://morizotter.com/blog/2012/07/18/textmate-japanese</id>
-    <content type="html"><![CDATA[<p>Rubyを使っている人の8割（世界）はTextMateを使っているという情報をネットで見て、入れてみました。シェアウェアなのでとりあえず30日間のフリートライアル期間を過ぎたら購入するか決めます（多分買います）。</p>
-
-<p><a href="http://macromates.com/">TextMate</a></p>
-
-<p>使ってみて動作が軽快で気持ちいいですね！サクサク、コード補完があるとやっぱいいなぁ。でも、日本語の入力がちょっとおかしいのがマイナスポイント。これは定番の問題らしいので、ネット上に記事がたくさんありました。で、いろいろ見たんですが、結局下記の２つを参照すればとりあえずいけるかなと。</p>
-
-<ol>
-<li><a href="http://hisasann.com/housetect/2008/05/railstextmate.html">Railsに最適なテキストエディター「TextMate」を入れて日本語化してみた</a></li>
-<li><a href="https://twitter.com/yusabana/statuses/194607922771263489">Google日本語入力のサジェストが邪魔な件に関するツイート</a></li>
-</ol>
-
-
-<p>上記２つを参考に設定完了。日本語が半角で表示されるのはちょっと…。だけどまぁ英語で補えばいいし、何より入力が気持ちいいので良い感じ。使って見てまた感想書きます！</p>
-
-<p>次は、viをPHP用にカスタマイズしてみるぞ！</p>
 ]]></content>
   </entry>
   
